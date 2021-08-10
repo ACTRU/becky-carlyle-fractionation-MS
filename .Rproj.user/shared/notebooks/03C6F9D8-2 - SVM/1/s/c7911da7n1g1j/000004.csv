@@ -1,0 +1,8 @@
+"0",""
+"0","library(org.Hs.eg.db)"
+"0",""
+"0","uniKeys <- keys(org.Hs.eg.db, keytype=""UNIPROT"")"
+"0","cols <- c(""SYMBOL"")"
+"0","conversion_Ref <- select(org.Hs.eg.db, keys=uniKeys, columns=cols, keytype=""UNIPROT"")"
+"2","'select()' returned 1:many mapping between keys and columns
+"

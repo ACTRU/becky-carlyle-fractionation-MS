@@ -1,0 +1,468 @@
+---
+title: "Fractionation analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Read in files and load packages
+
+
+```{r}
+library(tidyverse)
+library(openxlsx)
+library(gplots)
+# library(table1)
+
+data <- read.xlsx("Input data/ProteinLevelRawRenamed.xlsx")  
+LFQ_data <- data %>%
+  select(Protein.IDs, LFQ_A1:LFQ_J7)
+write_csv(LFQ_data, "Input data/LFQ_quants_only.csv")
+
+sample_key <- read.xlsx("Input data/SampleKey.xlsx")
+sample_key_select <- sample_key %>%
+  select(SampleID, Fancy_name)
+table(sample_key$Condition)
+
+# sample_key <- sample_key %>%
+#   dplyr::select(Subject, Condition, Age, PMI) %>%
+#   unique()
+# 
+# 
+# table1 <- table1(~ Age + PMI | Condition, data = sample_key)
+
+```
+
+## Plot fractions
+
+
+```{r}
+LFQ_data_long <- LFQ_data %>%
+  pivot_longer(!Protein.IDs, names_to = "SampleID", values_to = "LFQ")
+
+LFQ_data_long$LFQ[LFQ_data_long$LFQ == 0] <- NA
+
+LFQ_data_long <- merge(sample_key_select, LFQ_data_long, by = "SampleID")
+
+LFQ_dist <- ggplot(LFQ_data_long, aes(x = Fancy_name, y = log2(LFQ))) + geom_boxplot() + 
+  theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("log2 LFQ") + ylab("Sample") +
+  coord_flip()
+
+ggsave("Figures/FigS1_LFQ_distributions.pdf", plot = LFQ_dist, device = "pdf", width = 8.5, height = 11, units = "in", dpi = 300)
+
+LFQ_dist
+```
+
+No need to normalize any further.  This looks great.
+
+##Substitute missing values with column minimum after filtering out any proteins found in fewer than 10 samples 
+
+This is a pretty lax filter that allows for a protein to be detected only in one fraction.
+
+```{r}
+
+NA_summary <- LFQ_data_long %>%
+  group_by(Protein.IDs) %>%
+  summarize(n_NA = sum(is.na(LFQ))) 
+
+ggplot(NA_summary, aes(x = n_NA)) + geom_histogram(binwidth = 2)
+
+NA_summary_filtered <- NA_summary %>%
+  filter(n_NA <= 60)
+
+LFQ_data_long_filtered <- LFQ_data_long %>%
+  filter(Protein.IDs %in% NA_summary_filtered$Protein.IDs)
+
+LFQ_data_wide_filtered <- LFQ_data_long_filtered %>%
+  pivot_wider(names_from = Protein.IDs, values_from = LFQ)
+
+## Replace NAs with lowest LFQ value from that protein
+
+
+LFQ_data_demos <- LFQ_data_wide_filtered[,1:2]
+LFQ_data_matrix <- LFQ_data_wide_filtered[,3:ncol(LFQ_data_wide_filtered)]
+LFQ_data_matrix <- LFQ_data_matrix %>%
+   mutate_all(~ifelse(is.na(.x), min(.x, na.rm = TRUE), .x))
+
+LFQ_data_wide_filtered <- cbind(LFQ_data_demos, LFQ_data_matrix)
+
+
+```
+
+
+```{r}
+##Getting file ready for SVM
+##Original data with columns for high missing data removed
+SVM_LFQ_data <- LFQ_data %>%
+  filter(Protein.IDs %in% NA_summary_filtered$Protein.IDs) %>%
+  separate(Protein.IDs, sep = "\\|", into = c(NA, "UniprotID"), extra = "drop", remove = FALSE) %>%
+  filter(!is.na(UniprotID)) %>%
+  select(-Protein.IDs)
+
+#Some duplicate IDs - sum to collapse
+tmp <- which(duplicated(SVM_LFQ_data$UniprotID))
+tmp <- SVM_LFQ_data[tmp,]
+tmp <- tmp$UniprotID
+
+duplicates_summed <- SVM_LFQ_data %>%
+  filter(UniprotID %in% tmp) %>%
+  arrange(UniprotID) %>%
+  group_by(UniprotID) %>%
+  summarise_all(.funs = sum)
+
+
+SVM_LFQ_data <- SVM_LFQ_data %>%
+  filter(!(UniprotID %in% tmp)) %>%
+  bind_rows(duplicates_summed, .id = NULL) %>%
+  column_to_rownames(var = "UniprotID")
+
+tmp <- t(SVM_LFQ_data)
+  
+SVM_LFQ_data <- data.frame(tmp) %>%
+  rownames_to_column() %>%
+  separate(rowname, into = c(NA, "Code"), sep = "\\_") %>%
+  separate(Code, into = c("Sample", "Fraction"), sep = 1)
+
+write_csv(SVM_LFQ_data, "Input data/data_for_SVM.csv")
+
+
+```
+
+
+##PCA of all samples
+
+```{r}
+
+LFQ_data_logged <- log2(LFQ_data_wide_filtered[,3:ncol(LFQ_data_wide_filtered)])
+rownames(LFQ_data_logged) <- LFQ_data_wide_filtered$Fancy_name
+
+LFQ_PCA <- prcomp(LFQ_data_logged, center = TRUE, scale. = TRUE) 
+plot(LFQ_PCA, type = "l")
+
+summary(LFQ_PCA)
+```
+
+```{r}
+
+PCA_df <- as.data.frame(LFQ_PCA$x)
+PCA_df$group <- sapply( strsplit(as.character(row.names(PCA_df)), "_"), "[[", 2 )
+
+head(PCA_df)
+
+gp_col <- c("1" = "#d73027", "2" = "#fc8d59", "3" = "#fee090", "4" = "#fee090", "5" = "#e0f3f8", "6" = "#91bfdb", "7" = "#4575b4")
+
+PCA_samples <- ggplot(PCA_df,aes(x=PC1,y=PC2)) + geom_point(aes(fill = group, size = 1, alpha = 0.8), colour="black",pch=21) + scale_fill_manual(values = gp_col) + theme_bw()
+
+ggsave("Figures/Fig1B_sample_PCA.pdf", plot = PCA_samples, device = "pdf", width = 4.25, height = 3.66, units = "in", dpi = 300)
+
+
+PCA_samples
+```
+
+
+
+
+## Heatmap - all proteins
+
+```{r}
+
+LFQ_data_to_plot <- LFQ_data_wide_filtered[,3:ncol(LFQ_data_wide_filtered)]
+rownames(LFQ_data_to_plot) <- LFQ_data_wide_filtered$Fancy_name
+LFQ_demos <- LFQ_data_wide_filtered[,1:2]
+LFQ_demos$group <- sapply( strsplit(as.character(LFQ_demos$Fancy_name), "_"), "[[", 2 )
+
+library(gplots)
+
+gp_col_df <- data.frame(gp_col) %>%
+  rownames_to_column() %>%
+  rename(group = rowname) %>%
+  left_join(LFQ_demos)
+
+pdf(file="Figures/FigS2.pdf", width = 4.25, height = 20)
+
+heatmap.2(as.matrix(log2(LFQ_data_to_plot)), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors = gp_col_df$gp_col[match(rownames(LFQ_data_to_plot), gp_col_df$Fancy_name)])
+
+dev.off()
+
+```
+
+## ANOVA
+
+```{r}
+to_ANOVA <- cbind(LFQ_demos, LFQ_data_to_plot)
+LFQ_quants <- as.matrix(to_ANOVA[,4:ncol(to_ANOVA)])
+
+fit <- apply(LFQ_quants, 2, function(protein){ anova(lm(protein ~ as.factor(to_ANOVA$group)))})
+
+anova <- data.frame(unlist(fit))
+anova <- anova %>%
+  rownames_to_column()
+
+anova$protein <- sapply(strsplit(as.character(anova$rowname),'\\.'), "[", 1)
+anova$outcome <- sapply(strsplit(as.character(anova$rowname),'\\.'), "[", 2)
+ anova <- anova %>%
+   select(-rowname) %>%
+   spread(outcome, unlist.fit.) %>%
+   select(-`F value2`, -`Pr(>F)2`)
+anova$padj <- p.adjust(anova$`Pr(>F)1`, method = "BH")
+anova <- arrange(anova, padj)
+anova$Significant <- ifelse(anova$padj < 0.05, "Yes", "No")
+
+table(anova$Significant)
+
+sig_proteins <- anova %>%
+  filter(Significant == "Yes")
+
+sig_proteins_vector <- c(sig_proteins$protein) 
+
+ANOVA_results <- anova
+
+
+```   
+
+
+## Heatmap of sig. proteins
+
+```{r}
+
+LFQ_data_to_plot_filtered <- LFQ_data_wide_filtered[,3:ncol(LFQ_data_wide_filtered)]
+LFQ_data_to_plot_filtered <- LFQ_data_to_plot_filtered %>%
+  select(all_of(sig_proteins_vector))
+
+rownames(LFQ_data_to_plot_filtered) <- LFQ_data_wide_filtered$Fancy_name
+
+
+pdf(file="Figures/Fig2D.pdf", width = 4.25, height = 20)
+
+heatmap.2(as.matrix(log2(LFQ_data_to_plot_filtered)), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors = gp_col_df$gp_col[match(rownames(LFQ_data_to_plot_filtered), gp_col_df$Fancy_name)])
+
+dev.off()
+
+
+
+```
+
+
+## Tukey testing - pairwise comparisons
+
+```{r}
+
+fit_for_Tukey <- apply(LFQ_quants, 2, function(protein){ aov(lm(protein ~ as.factor(to_ANOVA$group)))})
+
+#fit_for_Tukey <- apply(LFQ_quants, 2, function(variable){ aov(lm(variable ~ Dx$Project.diagnosis))})
+
+Tukey_output <- lapply(fit_for_Tukey, TukeyHSD)
+
+
+for(i in seq_along(Tukey_output)) {
+  Tukey_output[[i]] <- as.data.frame(Tukey_output[[i]]$`as.factor(to_ANOVA$group)`)
+  Tukey_output[[i]] <- rownames_to_column(Tukey_output[[i]])
+}
+#Collapse list into one large dataframe for all_data
+df_all_tukey <- map_dfr(Tukey_output, as.data.frame, .id = "id")
+df_all_tukey$Significant <- ifelse(df_all_tukey$`p adj` < 0.05, "Yes", "No")
+
+
+#this includes proteins that didn't survive multiple test corrections at the anova level
+df_all_tukey_filtered <- df_all_tukey %>%
+  filter(id %in% sig_proteins_vector)
+  
+  
+sig_comparisons <- df_all_tukey_filtered %>%
+  filter(Significant == "Yes")
+
+head(sig_comparisons)
+
+table(sig_comparisons$rowname)
+
+wide_sig_comparisons <- sig_comparisons %>%
+  select(id, rowname, `p adj`) %>%
+  pivot_wider(names_from = rowname, values_from = `p adj`, values_fill = NA) %>%
+  select(id, `2-1`, `3-1`, `4-1`, `5-1`, `6-1`, `7-1`, `3-2`, `4-2`, `5-2`, `6-2`, `7-2`, `4-3`, `5-3`, `6-3`, `7-3`, `5-4`, `6-4`, `7-4`, `6-5`, `7-5`, `7-6`)
+
+write_csv(sig_comparisons, "tmp/sig_proteins.csv")
+
+n_sig <- data.frame(table(sig_comparisons$rowname))
+
+ANOVA_results <- merge(ANOVA_results, wide_sig_comparisons, by.x = "protein", by.y = "id", all.x = TRUE)
+write_csv(ANOVA_results, "Supp tables/S2_ANOVA_results.csv")
+```
+
+#Unique fraction proteins?
+
+```{r}
+list_gen <- function(col){
+  wide_sig_comparisons %>%
+    filter(!is.na(col)) %>%
+    pull(id)
+}
+
+
+
+sig_list <- apply(wide_sig_comparisons[,-1], 2, list_gen)
+
+library(UpSetR)
+
+pdf(file="Figures/Fig2C_upset.pdf", width = 8.5, height = 6)
+upset(fromList(sig_list), order.by = "freq", nsets = 10, nintersects = 20)
+dev.off()
+
+
+```
+
+## Where are the marker proteins? 
+
+```{r}
+
+Uniprot_LFQ_data_long_filtered <- LFQ_data_long_filtered %>%
+  separate(Protein.IDs, sep = "\\|", into = c(NA, "UniprotID"), extra = "drop", remove = FALSE)
+
+
+
+marker_list <- read_csv("Input data/gold_markers.csv") %>%
+  rename(Marker = ProteinID)
+
+
+markers <- merge(Uniprot_LFQ_data_long_filtered, marker_list, by.x = "UniprotID", by.y = "Marker", all.x = TRUE)
+
+
+
+
+```
+
+
+```{r}
+
+Fraction_data_logged <- t(LFQ_data_logged)
+
+tmpA <- grep("P14136", rownames(Fraction_data_logged))
+tmpB <- grep("P68871", rownames(Fraction_data_logged))
+
+Fraction_data_logged <- Fraction_data_logged[-c(tmpA,tmpB),]   
+
+tmp <- data.frame(rownames(Fraction_data_logged)) 
+tmp <- tmp %>%
+  separate(rownames.Fraction_data_logged., sep = "\\|", into = c(NA, "UniprotID"), extra = "drop", remove = TRUE) %>%
+  pull(UniprotID)
+rownames(Fraction_data_logged) <- tmp
+
+
+Fraction_PCA <- prcomp(Fraction_data_logged, center = TRUE, scale. = TRUE) 
+plot(Fraction_PCA, type = "l")
+
+summary(Fraction_PCA)
+```
+
+```{r}
+
+Fraction_PCA_df <- as.data.frame(Fraction_PCA$x)
+Fraction_PCA_df <- Fraction_PCA_df %>%
+  rownames_to_column() %>%
+  rename(Uniprot = rowname)
+Fraction_PCA_df <- merge(marker_list, Fraction_PCA_df, by.x = "Marker", by.y = "Uniprot", all.y = TRUE)
+
+
+PCA_1_2 <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  ggplot(aes(x=PC1,y=PC2)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
+  scale_fill_brewer(palette = "Set3") + theme_bw()
+
+ggsave("Figures/Fig2A_PCA12.pdf", plot = PCA_1_2, device = "pdf", width = 6, height = 3.6, units = "in", dpi = 300)
+
+facet_1_2 <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  ggplot(aes(x=PC1,y=PC2)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
+  scale_fill_brewer(palette = "Set3") + theme_bw() + facet_wrap(~Location)
+
+ggsave("Figures/FigS3A_PCA12_facet.pdf", plot = facet_1_2, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
+
+PCA_2_3 <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  ggplot(aes(x=PC2,y=PC3)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
+  scale_fill_brewer(palette = "Set3") + theme_bw()
+
+ggsave("Figures/Fig2B_PCA23.pdf", plot = PCA_2_3, device = "pdf", width = 6, height = 3.6, units = "in", dpi = 300)
+
+facet_2_3 <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  ggplot(aes(x=PC2,y=PC3)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
+  scale_fill_brewer(palette = "Set3") + theme_bw() + facet_wrap(~Location)
+
+ggsave("Figures/FigS3B_PCA23_facet.pdf", plot = facet_2_3, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
+
+
+
+PC_boxplots <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  pivot_longer(-c(Marker, Location), names_to = "PC", values_to = "Loading") %>%
+  mutate(PC = gsub("PC", "", PC)) %>%
+  mutate(PC = as.numeric(PC)) %>%
+  filter( PC <5) %>%
+  ggplot(aes (x= Location, y = Loading, fill = Location)) + 
+  geom_boxplot() + facet_wrap(~PC, scales = "free", ncol = 2) + 
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) + scale_fill_brewer(palette = "Set3")
+
+ggsave("Figures/Fig2C_PCA_boxplots.pdf", plot = PC_boxplots, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
+
+PCA_3_4 <- Fraction_PCA_df %>%
+  filter(!is.na(Location)) %>%
+  ggplot(aes(x=PC3,y=PC4)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
+  scale_fill_brewer(palette = "Set3") + theme_bw()
+```
+
+## Marker average distribution
+
+```{r}
+controls <- c("A", "C", "E", "G", "I")
+control_data <- SVM_LFQ_data %>%
+  filter(Sample %in% controls) %>%
+  pivot_longer(-c(Sample, Fraction), names_to = "ProteinID", values_to = "LFQ")
+  
+summarized_control_data <- control_data %>%
+  group_by(ProteinID, Fraction) %>%
+  summarize(meanLFQ = mean(LFQ))
+
+protein_totals <- summarized_control_data %>%
+  group_by(ProteinID) %>%
+  summarize(total = sum(meanLFQ))
+
+summarized_control_data <- merge(summarized_control_data, protein_totals, by = "ProteinID")
+
+wide_summarized_control_data <- summarized_control_data %>%
+  mutate(proportion = (meanLFQ/total)*100) %>%
+  dplyr::select(-meanLFQ) %>%
+  pivot_wider(names_from = Fraction, values_from = proportion)
+
+wide_markers <- merge(wide_summarized_control_data, marker_list, by.x = "ProteinID", by.y = "Marker", all.x = FALSE)
+long_markers <- wide_markers %>%
+  pivot_longer(-c(ProteinID, Location, total), names_to = "Fraction", values_to = "Proportion")
+
+
+Fig2D <- long_markers %>%
+  group_by(Location, Fraction) %>%
+  summarise(mean_prop = mean(Proportion)) %>%
+  ggplot(aes(x = Fraction, y = mean_prop, group = Location)) + geom_line(aes(color = Location)) + 
+    scale_colour_brewer(palette = "Set3") + theme_bw() + ylab("Mean proportion of LFQ intensity")
+
+
+
+ggsave("Figures/Fig2D_marker_distribution.pdf", plot = Fig2D, device = "pdf", width = 6, height = 3.6, units = "in", dpi = 300)
+
+Fig2D
+
+```
+
+
+
+
+
+
+

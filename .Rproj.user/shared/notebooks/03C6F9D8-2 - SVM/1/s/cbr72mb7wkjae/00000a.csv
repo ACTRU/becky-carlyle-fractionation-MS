@@ -1,0 +1,8 @@
+"0","PMI <- Con_train_results %>%"
+"0","  dplyr::select(-mean_perf) %>%"
+"0","  pivot_longer(-Organelle, names_to = ""Sample"", values_to = ""performance"") %>%"
+"0","  separate(Sample, sep = 6, into = c(NA, ""Subject""), remove = FALSE) %>%"
+"0","  left_join(sample_key) "
+"2","Joining, by = ""Subject""
+"
+"0","ggplot(PMI, aes(x = as.factor(PMI), y = performance)) + geom_boxplot()"

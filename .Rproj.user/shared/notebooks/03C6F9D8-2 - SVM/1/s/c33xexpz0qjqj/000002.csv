@@ -1,0 +1,12 @@
+"0","##Filter out training proteins"
+"0",""
+"0","SampleDtest <- SampleDmerged %>%"
+"0","  anti_join(down_SampleD) %>%"
+"0","  dplyr::select(-Location) %>%"
+"0","  column_to_rownames(var = ""UniprotID"")"
+"2","Joining, by = c(""X1"", ""X2"", ""X3"", ""X4"", ""X5"", ""X6"", ""X7"", ""Location"")
+"
+"0","SampleDtest$predicted.locations_D <- predict(svM_D, newdata = SampleDtest)"
+"0","SampleDtest <- SampleDtest %>%"
+"0","  rownames_to_column()"
+"0",""

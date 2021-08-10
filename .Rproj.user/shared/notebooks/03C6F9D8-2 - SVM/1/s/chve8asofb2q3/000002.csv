@@ -1,0 +1,13 @@
+"0","dummy_df <- data.frame(Organelle = c(""Endolysosome"", ""Golgi Apparatus"", ""Peroxisome""), PMI = c(NA, NA, NA), performance = c(NA, NA, NA))"
+"0",""
+"0","PMI <- All_results_long %>%"
+"0","  group_by(Organelle, PMI) %>%"
+"0","  summarise(performance = mean(performance)) %>%"
+"0","  bind_rows(dummy_df) %>%"
+"0","  ggplot(aes(x = as.factor(PMI), y = performance, group = Organelle, color = Organelle)) + geom_line() +"
+"0","  xlab(""PMI (hours)"") + scale_color_brewer(palette = ""Set3"") + theme_bw()"
+"2","`summarise()` has grouped output by 'Organelle'. You can override using the `.groups` argument.
+"
+"0","ggsave(""Figures/FigS4B_PMI_performance.pdf"", plot = PMI, device = ""pdf"", width = 8.5, height = 4, units = ""in"", dpi = 300)"
+"0",""
+"0","PMI"

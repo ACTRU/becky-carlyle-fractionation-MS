@@ -1,0 +1,438 @@
+library(tidyverse)
+library(openxlsx)
+
+##Read in data
+data <- read.xlsx("Input data/ProteinLevelRawRenamed.xlsx")  
+LFQ_data <- data %>%
+  select(Protein.IDs, LFQ_A1:LFQ_J7)
+
+sample_key <- read.xlsx("Input data/SampleKey.xlsx")
+
+
+
+LFQ_data_long <- LFQ_data %>%
+  pivot_longer(!Protein.IDs, names_to = "SampleID", values_to = "LFQ")
+
+LFQ_data_long$LFQ[LFQ_data_long$LFQ == 0] <- NA
+
+LFQ_data_long <- merge(sample_key, LFQ_data_long, by = "SampleID")
+
+# keep_fractions <- c("2", "3", "4", "5", "6")
+# 
+# LFQ_data_wide_filt <- LFQ_data_long %>%
+#   select(Subject, Condition, Fraction, Protein.IDs, LFQ) %>%
+#   filter(Fraction %in% keep_fractions) %>%
+#   pivot_wider(names_from = Fraction, values_from = LFQ) 
+# 
+# tmp <- which(complete.cases(LFQ_data_wide_filt[,4:8]))
+# 
+# LFQ_data_wide_filt <- LFQ_data_wide_filt[tmp,]
+# 
+# ratios <- LFQ_data_wide_filt %>%
+#   mutate(total_LFQ = `2` + `3` + `4` + `5` + `6`) %>%
+#   pivot_longer(-c(Subject, Condition, Protein.IDs, total_LFQ), names_to = "Fraction", values_to = "LFQ") %>%
+#   mutate(ratio = LFQ/total_LFQ)
+# 
+# 
+# 
+# 
+# ##
+## ROB
+##
+
+# ## check ratio distributions per fraction and condition
+# ratios %>%
+#   ggplot(aes(x=ratio, colour=Condition)) +geom_density() +facet_wrap(~Fraction)
+# 
+# ## how many obs per protein per fraction per group - calc means and stdevs
+# ratio_summary = ratios %>%
+#   filter(!grepl("CON_", Protein.IDs)) %>%
+#   filter(!grepl("REV_", Protein.IDs)) %>%
+#   group_by(Protein.IDs, Fraction) %>%
+#   summarise(n=n(),
+#             n_C=length(which(Condition=="C")),
+#             n_AD=length(which(Condition=="AD")),
+#             mean_C=mean(ratio[Condition=="C"]),
+#             stdev_C=sd(ratio[Condition=="C"]),
+#             mean_AD=mean(ratio[Condition=="AD"]),
+#             stdev_AD=sd(ratio[Condition=="AD"]))
+# 
+# # Can't use these proteins as there aren't enough observations
+# ratio_summary %>%
+#   filter(n_C <= 1  |  n_AD <= 1)
+# 
+# # Proteins with >1 observation per Condition per Fraction
+# tmp = ratio_summary %>%
+#   filter(n_C > 1  &  n_AD > 1)
+# keep_proteins = unique(tmp$Protein.IDs)
+# 
+# ##
+# ## Assess entropy
+# ##
+# res_entropy = ratios %>%
+#   filter(Protein.IDs %in% keep_proteins) %>%
+#   group_by(Protein.IDs,Subject,Condition) %>%
+#   summarise(n=n(),
+#             entropy=-sum(ratio * log2(ratio))/log2(n)) %>%
+#   ungroup() %>%
+#   group_by(Protein.IDs) %>%
+#   summarise(n=n(),
+#             n_C=length(which(Condition=="C")),
+#             n_AD=length(which(Condition=="AD")),
+#             mean_C=mean(entropy[Condition=="C"]),
+#             mean_AD=mean(entropy[Condition=="AD"]),
+#             diff=abs(mean_AD-mean_C),
+#             stdev_C=sd(entropy[Condition=="C"]),
+#             stdev_AD=sd(entropy[Condition=="AD"]),
+#             stat_t=t.test(entropy[Condition=="C"],
+#                           entropy[Condition=="AD"])$statistic,
+#             stat_w=wilcox.test(entropy[Condition=="C"],
+#                                entropy[Condition=="AD"])$statistic,
+#             pVal_t=t.test(entropy[Condition=="C"],
+#                           entropy[Condition=="AD"])$p.value,
+#             pVal_w=wilcox.test(entropy[Condition=="C"],
+#                                entropy[Condition=="AD"])$p.value) %>%
+#   arrange(desc(abs(stat_t)))
+# res_entropy
+# 
+# res_entropy %>%
+#   filter(mean_C < 0.5)
+# 
+# # plot pValue distributions
+# res_entropy %>%
+#   ggplot(aes(x=pVal_t)) +geom_histogram() +
+#   theme(legend.position="none") +
+#   geom_vline(xintercept = 0.05)
+# 
+# interesting = c(res_entropy$Protein.IDs[1:25], "sp|P02792|FRIL_HUMAN","sp|P62899|RL31_HUMAN")
+# 
+# # plot from the original ratios
+# ratios %>%
+#   filter(Protein.IDs %in% interesting) %>%
+#   group_by(Protein.IDs) %>%
+#   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+#   ungroup() %>%
+#   ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+#   geom_hline(yintercept = 0.2, alpha=0.5) +
+#   geom_boxplot(alpha=0.1, width=0.5) +
+#   facet_wrap(~prot, scales="fixed")
+# 
+# 
+# ##
+# ## Perform t-tests
+# ##
+# res_tTest = ratios %>%
+#   filter(Protein.IDs %in% keep_proteins) %>%
+#   group_by(Protein.IDs, Fraction) %>%
+#   summarise(n=n(),
+#             n_C=length(which(Condition=="C")),
+#             n_AD=length(which(Condition=="AD")),
+#             pVal=t.test(ratio[Condition=="C"], 
+#                         ratio[Condition=="AD"])$p.value) %>%
+#   arrange(pVal)
+# 
+# # plot pValue distributions
+# res_tTest %>%
+#   ggplot(aes(x=pVal,fill=Fraction)) +geom_histogram() +
+#   facet_wrap(~Fraction, ncol=1) +theme(legend.position="none") +
+#   geom_vline(xintercept = 0.05)
+# 
+# # Look at the top hits
+# res_tTest
+# interesting = res_tTest$Protein.IDs[1:25]
+# 
+# # plot from the original ratios
+# ratios %>%
+#   filter(Protein.IDs %in% interesting) %>%
+#   group_by(Protein.IDs) %>%
+#   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+#   ungroup() %>%
+#   ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+#   geom_hline(yintercept = 0.2, alpha=0.5) +
+#   geom_boxplot(alpha=0.1, width=0.5) +
+#   facet_wrap(~prot, scales="fixed")
+# 
+# res_tTest %>%
+#   group_by(Protein.IDs) %>%
+#   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+#   ungroup() %>%
+#   filter(prot=="TAU")
+
+
+
+##Use all fractions, don't impute missing values
+NA_summary <- LFQ_data_long %>%
+  group_by(Protein.IDs) %>%
+  summarize(n_NA = sum(is.na(LFQ))) 
+
+NA_summary_filtered <- NA_summary %>%
+  filter(n_NA <= 14)
+
+ratios <- LFQ_data_long %>%
+  filter(Protein.IDs %in% NA_summary_filtered$Protein.IDs) %>%
+  mutate_all(~ifelse(is.na(.x), 0.0000000001, .x)) %>%
+  select(Subject, Protein.IDs, Condition, Fraction, LFQ) %>%
+  pivot_wider(names_from = Fraction, values_from = LFQ) %>%
+  mutate(total_LFQ = `1` + `2` + `3`+ `4` + `5` + `6` + `7`) %>%
+  pivot_longer(-c(Subject, Protein.IDs, Condition, total_LFQ), names_to = "Fraction", values_to = "LFQ") %>%
+  mutate(ratio = LFQ/total_LFQ)
+
+###Consistency of ratios 
+ratio_CV <- ratios %>%
+  group_by(Condition, Protein.IDs, Fraction) %>%
+  summarize(mean_ratio = mean(ratio), sd_ratio = sd(ratio)) %>%
+  mutate(CV = (sd_ratio/mean_ratio)*100)
+
+
+ggplot(ratio_CV, aes(x = CV)) + geom_histogram(binwidth = 5) + facet_grid(rows = vars(Condition), cols = vars(Fraction)) + 
+  geom_vline(xintercept = 20, color = "red") + xlab("Coefficient of variation") + ylab("Number of proteins")
+
+## check ratio distributions per fraction and condition
+ratios %>%
+  ggplot(aes(x=ratio, colour=Condition)) +geom_density() +facet_wrap(~Fraction)
+
+## how many obs per protein per fraction per group - calc means and stdevs
+ratio_summary = ratios %>%
+  filter(!grepl("CON_", Protein.IDs)) %>%
+  filter(!grepl("REV_", Protein.IDs)) %>%
+  group_by(Protein.IDs, Fraction) %>%
+  summarise(n=n(),
+            n_C=length(which(Condition=="C")),
+            n_AD=length(which(Condition=="AD")),
+            mean_C=mean(ratio[Condition=="C"]),
+            stdev_C=sd(ratio[Condition=="C"]),
+            mean_AD=mean(ratio[Condition=="AD"]),
+            stdev_AD=sd(ratio[Condition=="AD"]))
+
+# Can't use these proteins as there aren't enough observations
+#ratio_summary %>%
+#  filter(n_C <= 1  |  n_AD <= 1)
+
+# Proteins with >1 observation per Condition per Fraction
+#tmp = ratio_summary %>%
+#  filter(n_C > 1  &  n_AD > 1)
+#keep_proteins = unique(tmp$Protein.IDs)
+
+##
+## Assess entropy
+##
+res_entropy = ratios %>%
+  filter(!grepl("CON_", Protein.IDs)) %>%
+  filter(!grepl("REV_", Protein.IDs)) %>%
+  group_by(Protein.IDs,Subject,Condition) %>%
+  summarise(n=n(),
+            entropy=-sum(ratio * log2(ratio))/log2(n)) %>%
+  ungroup() %>%
+  group_by(Protein.IDs) %>%
+  summarise(n=n(),
+            n_C=length(which(Condition=="C")),
+            n_AD=length(which(Condition=="AD")),
+            mean_C=mean(entropy[Condition=="C"]),
+            mean_AD=mean(entropy[Condition=="AD"]),
+            diff=abs(mean_AD-mean_C),
+            stdev_C=sd(entropy[Condition=="C"]),
+            stdev_AD=sd(entropy[Condition=="AD"]),
+            stat_t=t.test(entropy[Condition=="C"],
+                          entropy[Condition=="AD"])$statistic,
+            stat_w=wilcox.test(entropy[Condition=="C"],
+                               entropy[Condition=="AD"])$statistic,
+            pVal_t=t.test(entropy[Condition=="C"],
+                          entropy[Condition=="AD"])$p.value,
+            pVal_w=wilcox.test(entropy[Condition=="C"],
+                               entropy[Condition=="AD"])$p.value) %>%
+  arrange(desc(abs(stat_t)))
+res_entropy
+
+# res_entropy %>%
+#   filter(mean_C < 0.5)
+w_sig <- res_entropy %>%
+  filter(pVal_w < 0.1)
+
+# plot pValue distributions
+res_entropy %>%
+  ggplot(aes(x=pVal_t)) +geom_histogram() +
+  theme(legend.position="none") +
+  geom_vline(xintercept = 0.05)
+
+interesting = c(res_entropy$Protein.IDs[1:25], "sp|P02792|FRIL_HUMAN","sp|P62899|RL31_HUMAN")
+
+# plot from the original ratios
+ratios %>%
+  filter(Protein.IDs %in% interesting) %>%
+  group_by(Protein.IDs) %>%
+  dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+  ungroup() %>%
+  ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+  geom_hline(yintercept = 0.2, alpha=0.5) +
+  geom_boxplot(alpha=0.1, width=0.5) +
+  facet_wrap(~prot, scales="fixed")
+
+
+##
+## Perform t-tests
+##
+res_tTest = ratios %>%
+  filter(!grepl("CON_", Protein.IDs)) %>%
+  filter(!grepl("REV_", Protein.IDs)) %>%
+  group_by(Protein.IDs, Fraction) %>%
+  summarise(n=n(),
+            n_C=length(which(Condition=="C")),
+            n_AD=length(which(Condition=="AD")),
+            pVal=t.test(ratio[Condition=="C"], 
+                        ratio[Condition=="AD"])$p.value) %>%
+  mutate(padj = p.adjust(pVal, method = "BH")) %>%
+  arrange(padj)
+
+head(res_tTest)
+
+
+
+# plot pValue distributions
+res_tTest %>%
+  ggplot(aes(x=pVal,fill=Fraction)) +geom_histogram() +
+  facet_wrap(~Fraction, ncol=1) +theme(legend.position="none") +
+  geom_vline(xintercept = 0.05)
+
+# Look at the top hits
+# res_tTest
+interesting = res_tTest %>%
+  filter(padj < 0.05)
+
+interesting <- c("sp|P54750|PDE1A_HUMAN", "sp|P10636|TAU_HUMAN", "sp|Q96F85|CNRP1_HUMAN", "sp|P49841|GSK3B_HUMAN")
+
+# plot from the original ratios
+interesting_ratios <- ratios %>%
+  filter(Protein.IDs %in% interesting) %>%
+  group_by(Protein.IDs) %>%
+  dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+  ungroup() %>%
+  ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+  geom_hline(yintercept = 1/7, alpha=0.5) +
+  geom_boxplot(alpha=0.1, width=0.5) +
+  facet_wrap(~prot, scales="fixed", ncol = 4) + theme_bw()
+
+
+ggsave("Figures/Fig3B_ratios_interesting_proteins.pdf", plot = interesting_ratios, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+
+# res_tTest %>%
+#   group_by(Protein.IDs) %>%
+#   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+#   ungroup() %>%
+#   filter(prot=="TAU")
+
+
+tmp <- grep("GSK3B", res_entropy$Protein.IDs)
+res_entropy[tmp,]
+head(res_tTest)
+
+
+LFQ_interesting <- LFQ_data_long %>%
+  filter(Protein.IDs %in% interesting) %>%
+  separate(Protein.IDs, into = c(NA, "UNIPROT", "DESC"), sep = "\\|", extra = "drop") %>%
+  ggplot(aes(x=as.factor(Fraction),y=log2(LFQ),colour=Condition)) +
+    geom_boxplot(alpha=0.1, width=0.5) +
+    facet_wrap(~DESC, scales="free_y", ncol = 4) + theme_bw()
+
+
+summed <- LFQ_data_long %>%
+  filter(Protein.IDs %in% interesting) %>%
+  separate(Protein.IDs, into = c(NA, "UNIPROT", "DESC"), sep = "\\|", extra = "drop") %>%
+  group_by(Subject, DESC, Condition) %>%
+  filter(!is.na(LFQ)) %>%
+  summarise(total_LFQ = sum(LFQ)) %>%
+  ggplot(aes(x=Condition, y=log2(total_LFQ),colour=Condition)) + geom_point() +
+  geom_boxplot(alpha=0.1, width=0.5) +
+  facet_wrap(~DESC, ncol = 4) + theme_bw()
+
+ggsave("Figures/Fig3A_LFQ_interesting_proteins.pdf", plot = LFQ_interesting, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+
+interesting_res <- res_tTest %>%
+  filter(Protein.IDs %in% interesting)
+
+interesting_entropy <- res_entropy %>%
+  filter(Protein.IDs %in% interesting)
+
+lowest_entropy <- res_entropy %>%
+  slice_min(mean_C, n = 5)
+
+res_entropy$padj <- p.adjust(res_entropy$pVal_t, method = "BH")
+res_entropy$Significant <- ifelse(res_entropy$pVal_t < 0.05, "Yes", "No")
+table(res_entropy$Significant)
+
+res_tTest$Significant <- ifelse(res_tTest$padj < 0.05, "Yes", "No")
+table(res_tTest$Significant)
+
+res_tTest_sig <- res_tTest %>%
+  filter(padj < 0.05) %>%
+  select(Protein.IDs) %>%
+  unique
+
+
+##Lowest entropy
+ratios %>%
+  filter(Protein.IDs %in% lowest_entropy$Protein.IDs) %>%
+  group_by(Protein.IDs) %>%
+  dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
+  ungroup() %>%
+  ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+  geom_hline(yintercept = 0.2, alpha=0.5) +
+  geom_boxplot(alpha=0.1, width=0.5) + facet_wrap(~prot)
+sp|Q03252|LMNB2_HUMAN
+
+
+
+##RMSE for consistency of distribution through fractions
+
+head(ratios)
+
+
+ratio_averages <- ratios %>%
+  group_by(Condition, Protein.IDs, Fraction) %>%
+  summarize(mean_ratio = mean(ratio)) %>%
+  left_join(ratios, by = c("Condition", "Protein.IDs", "Fraction")) %>%
+  mutate(diff_squared = (ratio - mean_ratio)^2) %>%
+  group_by(Protein.IDs, Condition) %>%
+  summarize(RMSE = sqrt(sum(diff_squared)/7))
+
+ggplot(ratio_averages, aes(x = RMSE)) + geom_histogram(binwidth = 0.01) + facet_wrap(~Condition)
+
+ggplot(ratio_averages, aes(x = RMSE, group = Condition)) + geom_density(aes(color = Condition)) 
+
+
+
+##Stratify by confidence
+
+confidence <- read_csv("SVM_confidence.csv")
+confidence <- confidence %>%
+  filter(Condition == "Control") %>%
+  dplyr::select(Var1,  Confidence) %>%
+  rename(ProteinID = Var1)
+
+gold <- read_csv("tmp/gold_markers.csv")
+marker_confidence <- gold %>%
+  mutate(Confidence = "High") %>%
+  select(ProteinID, Confidence) %>%
+  bind_rows(confidence) 
+
+
+RMSE_to_plot <- ratio_averages %>%
+  separate(Protein.IDs, into = c(NA, "ProteinID", NA)) %>%
+  right_join(marker_confidence)
+
+confidence_col <- c("High" = "#2c7bb6", "Medium" = "#fdae61", "Low" = "#d7191c")
+
+RMSE_to_plot <- RMSE_to_plot %>%
+  filter(Confidence != "None")
+RMSE_to_plot$Confidence <- factor(RMSE_to_plot$Confidence, levels = c("High", "Medium", "Low"))
+levels(RMSE_to_plot$Confidence)
+
+RMSE_to_plot %>%
+  filter(!is.na(Condition)) %>%
+  ggplot(aes(x = RMSE, group = Confidence)) + geom_density(aes(color = Confidence)) +
+  scale_color_manual(values = confidence_col) + facet_wrap(~Condition, ncol = 1)
+
+RMSE_to_plot %>%
+  filter(Confidence != "None") %>%
+  filter(!is.na(Condition)) %>%
+  ggplot(aes(x = RMSE)) + geom_histogram(binwidth = 0.01) + facet_grid(rows = vars(Confidence), cols = vars(Condition))
+

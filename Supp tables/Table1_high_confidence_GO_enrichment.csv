@@ -1,0 +1,41 @@
+GO.ID,Term,Annotated,Significant,Expected,classicFisher,SVM_fraction
+GO:0072562,blood microparticle,58,13,3.67,4.4e-05,Cytoplasm
+GO:0005829,cytosol,1489,120,94.32,7.1e-05,Cytoplasm
+GO:0035578,azurophil granule lumen,42,9,2.66,0.00097,Cytoplasm
+GO:0120115,Lsm2-8 complex,5,3,0.32,0.00227,Cytoplasm
+GO:0008537,proteasome activator complex,2,2,0.13,0.00399,Cytoplasm
+GO:0070062,extracellular exosome,932,416,270.34,< 1e-30,Cytoskeleton
+GO:0005925,focal adhesion,212,113,61.49,1.1e-14,Cytoskeleton
+GO:1904813,ficolin-1-rich granule lumen,84,50,24.37,3.3e-09,Cytoskeleton
+GO:0005829,cytosol,1489,514,431.91,1.3e-08,Cytoskeleton
+GO:0005634,nucleus,1192,421,345.76,4.6e-08,Cytoskeleton
+GO:0005789,endoplasmic reticulum membrane,224,55,20.08,4.0e-11,ER
+GO:0016021,integral component of membrane,591,95,52.98,1.1e-07,ER
+GO:0005783,endoplasmic reticulum,332,57,29.76,6.9e-07,ER
+GO:0030126,COPI vesicle coat,10,7,0.9,4.1e-06,ER
+GO:0000139,Golgi membrane,155,33,13.9,1.0e-05,ER
+GO:0005759,mitochondrial matrix,188,31,5.4,8.5e-13,Mitochondria
+GO:0005743,mitochondrial inner membrane,195,36,5.6,5.9e-10,Mitochondria
+GO:0031305,integral component of mitochondrial inne...,17,6,0.49,0.00011,Mitochondria
+GO:0005758,mitochondrial intermembrane space,31,6,0.89,0.00019,Mitochondria
+GO:0017146,NMDA selective glutamate receptor comple...,5,3,0.14,0.00022,Mitochondria
+GO:0000788,nuclear nucleosome,13,10,0.28,3.2e-15,Nucleus
+GO:0005654,nucleoplasm,589,35,12.84,7.5e-09,Nucleus
+GO:0005604,basement membrane,23,11,0.5,7.8e-07,Nucleus
+GO:0000786,nucleosome,29,15,0.63,6.6e-06,Nucleus
+GO:0043260,laminin-11 complex,3,3,0.07,9.9e-06,Nucleus
+GO:0099092,"postsynaptic density, intracellular comp...",15,3,0.25,0.0018,Plasma membrane
+GO:0005886,plasma membrane,981,29,16.64,0.0024,Plasma membrane
+GO:0101003,ficolin-1-rich granule membrane,22,3,0.37,0.0056,Plasma membrane
+GO:0016020,membrane,1853,43,31.43,0.0123,Plasma membrane
+GO:0055038,recycling endosome membrane,32,3,0.54,0.0161,Plasma membrane
+GO:0005743,mitochondrial inner membrane,195,9,1.62,6.7e-05,Postsynapse
+GO:0005739,mitochondrion,566,18,4.7,0.0018,Postsynapse
+GO:0005759,mitochondrial matrix,188,6,1.56,0.0126,Postsynapse
+GO:0099629,postsynaptic specialization of symmetric...,2,1,0.02,0.0165,Postsynapse
+GO:0002169,3-methylcrotonyl-CoA carboxylase complex...,2,1,0.02,0.0165,Postsynapse
+GO:0005925,focal adhesion,212,7,1.39,0.00024,Presynapse
+GO:0070821,tertiary granule membrane,24,3,0.16,0.00045,Presynapse
+GO:0031209,SCAR complex,7,2,0.05,0.00084,Presynapse
+GO:0032433,filopodium tip,7,2,0.05,0.00084,Presynapse
+GO:0035579,specific granule membrane,33,3,0.22,0.00116,Presynapse

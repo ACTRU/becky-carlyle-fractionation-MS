@@ -1,0 +1,94 @@
+"0",""
+"0","results <- final_results %>%"
+"0","  dplyr::rename(UNIPROT = Var1) %>%"
+"0","  left_join(conversion_Ref)%>%"
+"0","  mutate(sig_val = ifelse(Location == ""Endoplasmic Reticulum"" & Confidence == ""High"", 0.01, 1))"
+"2","Joining, by = ""UNIPROT""
+"
+"0","library(topGO)"
+"0","#Convert to vector"
+"0","allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)"
+"0",""
+"0","#Build function to dplyr::select Geneset (significant genes)"
+"0","selFun <- function(x){return(x < 0.05)}"
+"0",""
+"0","#Build GO data object - for biological process"
+"0","GO_data_CC <- new(""topGOdata"", "
+"0","               ontology = ""CC"","
+"0","               allGenes = allGenes_input,"
+"0","               geneSel = selFun,"
+"0","               annot = annFUN.org,"
+"0","               mapping = ""org.Hs.eg.db"","
+"0","               ID = ""symbol"""
+"0",")"
+"2","
+Building most specific GOs .....
+"
+"2","	( 1109 GO terms found. )
+"
+"2","
+Build GO DAG topology ..........
+"
+"2","	( 1377 GO terms and 2387 relations. )
+"
+"2","
+Annotating nodes ...............
+"
+"2","	( 2888 genes annotated to the GO terms. )
+"
+"0","CC_result <- runTest(GO_data_CC, algorithm = ""weight01"", statistic = ""fisher"")"
+"2","
+			 -- Weight01 Algorithm -- 
+
+		 the algorithm is scoring 578 nontrivial nodes
+		 parameters: 
+			 test statistic: fisher
+"
+"2","
+	 Level 14:	1 nodes to be scored	(0 eliminated genes)
+"
+"2","
+	 Level 13:	3 nodes to be scored	(0 eliminated genes)
+"
+"2","
+	 Level 12:	5 nodes to be scored	(1 eliminated genes)
+"
+"2","
+	 Level 11:	23 nodes to be scored	(15 eliminated genes)
+"
+"2","
+	 Level 10:	52 nodes to be scored	(24 eliminated genes)
+"
+"2","
+	 Level 9:	74 nodes to be scored	(305 eliminated genes)
+"
+"2","
+	 Level 8:	83 nodes to be scored	(680 eliminated genes)
+"
+"2","
+	 Level 7:	90 nodes to be scored	(1337 eliminated genes)
+"
+"2","
+	 Level 6:	82 nodes to be scored	(1906 eliminated genes)
+"
+"2","
+	 Level 5:	63 nodes to be scored	(2387 eliminated genes)
+"
+"2","
+	 Level 4:	54 nodes to be scored	(2630 eliminated genes)
+"
+"2","
+	 Level 3:	43 nodes to be scored	(2709 eliminated genes)
+"
+"2","
+	 Level 2:	4 nodes to be scored	(2847 eliminated genes)
+"
+"2","
+	 Level 1:	1 nodes to be scored	(2880 eliminated genes)
+"
+"0","CC_results_ER <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = ""resultFisher"", ranksOf = ""classicFisher"", topNodes = 5)"
+"0","CC_results_ER$SVM_fraction <- ""ER"""
+"0",""
+"0",""
+"0",""
+"0",""

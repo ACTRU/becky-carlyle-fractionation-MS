@@ -1,0 +1,59 @@
+"0","for_SVM <- read_csv(""Input data/data_for_SVM.csv"")"
+"2","
+[36m──[39m [1m[1mColumn specification[1m[22m [36m──────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+cols(
+  .default = col_double(),
+  Sample = [31mcol_character()[39m
+)
+[36mℹ[39m Use [38;5;235m[48;5;253m[38;5;235m[48;5;253m`spec()`[48;5;253m[38;5;235m[49m[39m for the full column specifications.
+
+"
+"0","sample_key <- read.xlsx(""Input data/SampleKey.xlsx"")"
+"0","sample_key <- sample_key %>%"
+"0","  dplyr::select(Subject, Condition, Age, PMI) %>%"
+"0","  unique()"
+"0","marker_list1 <- read_csv(""Input data/gold_markers.csv"")"
+"2","
+[36m──[39m [1m[1mColumn specification[1m[22m [36m──────────────────────────────────────────────────────────────────────────────────────────────────────────────[39m
+cols(
+  ProteinID = [31mcol_character()[39m,
+  Location = [31mcol_character()[39m
+)
+
+"
+"0","marker_list1 <- unique(marker_list1)"
+"0",""
+"0",""
+"0","table(marker_list1$Location)"
+"1","
+"
+"1","            Cytoplasm "
+"1","         Cytoskeleton "
+"1","         Endolysosome "
+"1","Endoplasmic Reticulum "
+"1","      Golgi Apparatus "
+"1","         Mitochondria "
+"1","
+"
+"1","                   54 "
+"1","                   36 "
+"1","                    7 "
+"1","                   67 "
+"1","                    6 "
+"1","                   77 "
+"1","
+"
+"1","              Nucleus "
+"1","           Peroxisome "
+"1","      Plasma membrane "
+"1","          Postsynapse "
+"1","           Presynapse "
+"1","
+"
+"1","                   39 "
+"1","                    4 "
+"1","                   38 "
+"1","                   56 "
+"1","                   41 "
+"1","
+"

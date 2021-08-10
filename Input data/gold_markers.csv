@@ -1,0 +1,449 @@
+ProteinID,Location
+A0MZ66,Cytoskeleton
+O14950,Cytoskeleton
+O14950,Cytoskeleton
+O15144,Cytoskeleton
+O15145,Cytoskeleton
+O60271,Cytoskeleton
+O75347,Cytoskeleton
+O75369,Cytoskeleton
+P04350,Cytoskeleton
+P06753,Cytoskeleton
+P07737,Cytoskeleton
+P09493,Cytoskeleton
+P12814,Cytoskeleton
+P13797,Cytoskeleton
+P23528,Cytoskeleton
+P28289,Cytoskeleton
+P29966,Cytoskeleton
+P47755,Cytoskeleton
+P47756,Cytoskeleton
+P52907,Cytoskeleton
+P59998,Cytoskeleton
+P61158,Cytoskeleton
+P61160,Cytoskeleton
+P63261,Cytoskeleton
+P67936,Cytoskeleton
+Q01518,Cytoskeleton
+Q08AD1,Cytoskeleton
+Q14847,Cytoskeleton
+Q16658,Cytoskeleton
+Q92747,Cytoskeleton
+Q9BPX5,Cytoskeleton
+Q9H3Q1,Cytoskeleton
+Q9NZ32,Cytoskeleton
+Q9NZR1,Cytoskeleton
+Q9UJW0,Cytoskeleton
+Q9Y281,Cytoskeleton
+Q9Y4G6,Cytoskeleton
+O00244,Cytoplasm
+O00625,Cytoplasm
+O14737,Cytoplasm
+O95989,Cytoplasm
+P04114,Cytoplasm
+P06132,Cytoplasm
+P06702,Cytoplasm
+P09488,Cytoplasm
+P09960,Cytoplasm
+P13798,Cytoplasm
+P15559,Cytoplasm
+P16083,Cytoplasm
+P16930,Cytoplasm
+P19174,Cytoplasm
+P19623,Cytoplasm
+P19971,Cytoplasm
+P22676,Cytoplasm
+P29218,Cytoplasm
+P30566,Cytoplasm
+P32929,Cytoplasm
+P34949,Cytoplasm
+P35754,Cytoplasm
+P35813,Cytoplasm
+P37837,Cytoplasm
+P50579,Cytoplasm
+P52566,Cytoplasm
+P54687,Cytoplasm
+P61081,Cytoplasm
+P61086,Cytoplasm
+P62328,Cytoplasm
+Q00796,Cytoplasm
+Q01469,Cytoplasm
+Q13126,Cytoplasm
+Q13177,Cytoplasm
+Q13630,Cytoplasm
+Q15493,Cytoplasm
+Q16222,Cytoplasm
+Q3LXA3,Cytoplasm
+Q6XQN6,Cytoplasm
+Q8TF30,Cytoplasm
+Q92688,Cytoplasm
+Q96AT9,Cytoplasm
+Q9BRA2,Cytoplasm
+Q9BRF8,Cytoplasm
+Q9BUT1,Cytoplasm
+Q9BY32,Cytoplasm
+Q9HA64,Cytoplasm
+Q9NQ88,Cytoplasm
+Q9NVS9,Cytoplasm
+Q9NY33,Cytoplasm
+Q9P2T1,Cytoplasm
+Q9UHD1,Cytoplasm
+Q9UIC8,Cytoplasm
+Q9Y5P6,Cytoplasm
+P07339,Endolysosome
+P07686,Endolysosome
+P07858,Endolysosome
+P09496,Endolysosome
+P10253,Endolysosome
+P51148,Endolysosome
+Q14108,Endolysosome
+A0FGR8,Endoplasmic Reticulum
+O15260,Endoplasmic Reticulum
+O43852,Endoplasmic Reticulum
+O75844,Endoplasmic Reticulum
+O94874,Endoplasmic Reticulum
+O96005,Endoplasmic Reticulum
+P07237,Endoplasmic Reticulum
+P13667,Endoplasmic Reticulum
+P14314,Endoplasmic Reticulum
+P14625,Endoplasmic Reticulum
+P16435,Endoplasmic Reticulum
+P16615,Endoplasmic Reticulum
+P26885,Endoplasmic Reticulum
+P27544,Endoplasmic Reticulum
+P30040,Endoplasmic Reticulum
+P33121,Endoplasmic Reticulum
+P39656,Endoplasmic Reticulum
+P48723,Endoplasmic Reticulum
+P49257,Endoplasmic Reticulum
+P49755,Endoplasmic Reticulum
+P51571,Endoplasmic Reticulum
+Q02818,Endoplasmic Reticulum
+Q06136,Endoplasmic Reticulum
+Q12797,Endoplasmic Reticulum
+Q12907,Endoplasmic Reticulum
+Q13162,Endoplasmic Reticulum
+Q13217,Endoplasmic Reticulum
+Q13586,Endoplasmic Reticulum
+Q13724,Endoplasmic Reticulum
+Q14165,Endoplasmic Reticulum
+Q14257,Endoplasmic Reticulum
+Q14571,Endoplasmic Reticulum
+Q14696,Endoplasmic Reticulum
+Q14697,Endoplasmic Reticulum
+Q15293,Endoplasmic Reticulum
+Q15738,Endoplasmic Reticulum
+Q6DD88,Endoplasmic Reticulum
+Q6IAN0,Endoplasmic Reticulum
+Q6PIU2,Endoplasmic Reticulum
+Q6UW68,Endoplasmic Reticulum
+Q86YN1,Endoplasmic Reticulum
+Q8N9F7,Endoplasmic Reticulum
+Q8NBM8,Endoplasmic Reticulum
+Q8NBS9,Endoplasmic Reticulum
+Q8NF37,Endoplasmic Reticulum
+Q8TC12,Endoplasmic Reticulum
+Q92504,Endoplasmic Reticulum
+Q96A33,Endoplasmic Reticulum
+Q96AG4,Endoplasmic Reticulum
+Q96JJ7,Endoplasmic Reticulum
+Q96N66,Endoplasmic Reticulum
+Q96S52,Endoplasmic Reticulum
+Q99653,Endoplasmic Reticulum
+Q9BS26,Endoplasmic Reticulum
+Q9BTV4,Endoplasmic Reticulum
+Q9H3N1,Endoplasmic Reticulum
+Q9H490,Endoplasmic Reticulum
+Q9HDC9,Endoplasmic Reticulum
+Q9NYU2,Endoplasmic Reticulum
+Q9NZ01,Endoplasmic Reticulum
+Q9P035,Endoplasmic Reticulum
+Q9UBP0,Endoplasmic Reticulum
+Q9UHG3,Endoplasmic Reticulum
+Q9Y2B0,Endoplasmic Reticulum
+Q9Y2G8,Endoplasmic Reticulum
+Q9Y320,Endoplasmic Reticulum
+Q9Y6B6,Endoplasmic Reticulum
+O14579,Golgi Apparatus
+P61923,Golgi Apparatus
+Q5SQI0,Golgi Apparatus
+Q9H4A6,Golgi Apparatus
+Q9NZ52,Golgi Apparatus
+Q9Y678,Golgi Apparatus
+O00217,Mitochondria
+O14521,Mitochondria
+O14874,Mitochondria
+O14949,Mitochondria
+O43181,Mitochondria
+O43676,Mitochondria
+O43678,Mitochondria
+O43772,Mitochondria
+O75208,Mitochondria
+O75306,Mitochondria
+O75879,Mitochondria
+O95139,Mitochondria
+O95167,Mitochondria
+O95202,Mitochondria
+O95299,Mitochondria
+O95571,Mitochondria
+O96008,Mitochondria
+P11498,Mitochondria
+P12074,Mitochondria
+P18859,Mitochondria
+P19404,Mitochondria
+P21953,Mitochondria
+P27144,Mitochondria
+P30837,Mitochondria
+P36542,Mitochondria
+P42704,Mitochondria
+P43897,Mitochondria
+P48047,Mitochondria
+P50336,Mitochondria
+P53597,Mitochondria
+P54886,Mitochondria
+P56181,Mitochondria
+P82909,Mitochondria
+Q10713,Mitochondria
+Q12931,Mitochondria
+Q15031,Mitochondria
+Q15119,Mitochondria
+Q15120,Mitochondria
+Q16891,Mitochondria
+Q4G176,Mitochondria
+Q5HYK3,Mitochondria
+Q5JPH6,Mitochondria
+Q5JTZ9,Mitochondria
+Q5RI15,Mitochondria
+Q6KCM7,Mitochondria
+Q7L3T8,Mitochondria
+Q7Z7H8,Mitochondria
+Q86SX6,Mitochondria
+Q8IYQ7,Mitochondria
+Q8NE62,Mitochondria
+Q8NFV4,Mitochondria
+Q969S9,Mitochondria
+Q969Z0,Mitochondria
+Q96EY7,Mitochondria
+Q96RP9,Mitochondria
+Q99643,Mitochondria
+Q99766,Mitochondria
+Q99807,Mitochondria
+Q9BXW7,Mitochondria
+Q9BYD6,Mitochondria
+Q9GZT3,Mitochondria
+Q9H6K4,Mitochondria
+Q9H845,Mitochondria
+Q9HAV7,Mitochondria
+Q9HD34,Mitochondria
+Q9NP81,Mitochondria
+Q9NSE4,Mitochondria
+Q9NWS8,Mitochondria
+Q9P032,Mitochondria
+Q9P0J1,Mitochondria
+Q9P2R7,Mitochondria
+Q9UBX3,Mitochondria
+Q9UGM6,Mitochondria
+Q9UQ90,Mitochondria
+Q9Y2C4,Mitochondria
+Q9Y5U8,Mitochondria
+Q9Y697,Mitochondria
+O00567,Nucleus
+O75475,Nucleus
+O75533,Nucleus
+O75694,Nucleus
+P02545,Nucleus
+P07910,Nucleus
+P09874,Nucleus
+P17096,Nucleus
+P17844,Nucleus
+P49750,Nucleus
+P51608,Nucleus
+P52272,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62805,Nucleus
+P62995,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P68431,Nucleus
+P78347,Nucleus
+Q00839,Nucleus
+Q03252,Nucleus
+Q07666,Nucleus
+Q08211,Nucleus
+Q13151,Nucleus
+Q13263,Nucleus
+Q14683,Nucleus
+Q14980,Nucleus
+Q15029,Nucleus
+Q15233,Nucleus
+Q1KMD3,Nucleus
+Q6P2Q9,Nucleus
+Q8WU68,Nucleus
+Q8WVV9,Nucleus
+Q92621,Nucleus
+Q9NTI5,Nucleus
+Q9NYB0,Nucleus
+Q9NYF8,Nucleus
+Q9P2K5,Nucleus
+Q9UBT2,Nucleus
+Q9UH99,Nucleus
+Q9Y2X3,Nucleus
+Q9Y3Z3,Nucleus
+O14734,Peroxisome
+O75381,Peroxisome
+P28288,Peroxisome
+Q9P0Z9,Peroxisome
+O15031,Plasma membrane
+O15394,Plasma membrane
+O75955,Plasma membrane
+O94856,Plasma membrane
+P00533,Plasma membrane
+P04216,Plasma membrane
+P05023,Plasma membrane
+P05026,Plasma membrane
+P05556,Plasma membrane
+P08754,Plasma membrane
+P11234,Plasma membrane
+P13591,Plasma membrane
+P14384,Plasma membrane
+P19022,Plasma membrane
+P20020,Plasma membrane
+P21589,Plasma membrane
+P26992,Plasma membrane
+P27105,Plasma membrane
+P32004,Plasma membrane
+P35221,Plasma membrane
+P41732,Plasma membrane
+P51674,Plasma membrane
+P53985,Plasma membrane
+P63092,Plasma membrane
+P80723,Plasma membrane
+P84095,Plasma membrane
+Q01814,Plasma membrane
+Q08722,Plasma membrane
+Q13491,Plasma membrane
+Q14254,Plasma membrane
+Q16720,Plasma membrane
+Q7Z3B1,Plasma membrane
+Q96RD7,Plasma membrane
+Q96S97,Plasma membrane
+Q9P121,Plasma membrane
+Q9UIW2,Plasma membrane
+Q9Y2J2,Plasma membrane
+Q9Y639,Plasma membrane
+O14490,Postsynapse
+O14548,Postsynapse
+O14578,Postsynapse
+O15034,Postsynapse
+O15083,Postsynapse
+O43615,Postsynapse
+O43920,Postsynapse
+O60229,Postsynapse
+O60359,Postsynapse
+O75334,Postsynapse
+O94925,Postsynapse
+O95169,Postsynapse
+O95886,Postsynapse
+P10606,Postsynapse
+P14927,Postsynapse
+P22695,Postsynapse
+P28331,Postsynapse
+P32189,Postsynapse
+P34897,Postsynapse
+P35232,Postsynapse
+P35609,Postsynapse
+P36776,Postsynapse
+P49411,Postsynapse
+P49821,Postsynapse
+P51970,Postsynapse
+P78352,Postsynapse
+Q05586,Postsynapse
+Q07021,Postsynapse
+Q12879,Postsynapse
+Q13505,Postsynapse
+Q16795,Postsynapse
+Q5JU85,Postsynapse
+Q5T5P2,Postsynapse
+Q6UXV4,Postsynapse
+Q7Z6G8,Postsynapse
+Q8NFZ4,Postsynapse
+Q8WZA2,Postsynapse
+Q96DA6,Postsynapse
+Q96EY1,Postsynapse
+Q96PV0,Postsynapse
+Q96RQ3,Postsynapse
+Q96SB3,Postsynapse
+Q9BRQ6,Postsynapse
+Q9BUR5,Postsynapse
+Q9NNW7,Postsynapse
+Q9NVI7,Postsynapse
+Q9NX14,Postsynapse
+Q9UDW1,Postsynapse
+Q9UI09,Postsynapse
+Q9ULD0,Postsynapse
+Q9UPA5,Postsynapse
+Q9UPW8,Postsynapse
+Q9UPX8,Postsynapse
+Q9Y2Z4,Postsynapse
+Q9Y4W6,Postsynapse
+Q9Y6M9,Postsynapse
+O14672,Presynapse
+P06307,Presynapse
+P08247,Presynapse
+P11169,Presynapse
+P11279,Presynapse
+P13473,Presynapse
+P17600,Presynapse
+P21579,Presynapse
+P21964,Presynapse
+P23763,Presynapse
+P27449,Presynapse
+P30531,Presynapse
+P32418,Presynapse
+P48066,Presynapse
+P50150,Presynapse
+P54709,Presynapse
+P60880,Presynapse
+P61266,Presynapse
+Q12974,Presynapse
+Q13740,Presynapse
+Q16623,Presynapse
+Q16849,Presynapse
+Q6IAA8,Presynapse
+Q7Z6L0,Presynapse
+Q8N126,Presynapse
+Q8N608,Presynapse
+Q8TAC9,Presynapse
+Q8TBG9,Presynapse
+Q92542,Presynapse
+Q969L2,Presynapse
+Q99726,Presynapse
+Q9BVK6,Presynapse
+Q9C0H2,Presynapse
+Q9H0Q3,Presynapse
+Q9H1V8,Presynapse
+Q9H3Z4,Presynapse
+Q9H598,Presynapse
+Q9UGV2,Presynapse
+Q9UJ14,Presynapse
+Q9Y371,Presynapse
+Q9Y5L3,Presynapse

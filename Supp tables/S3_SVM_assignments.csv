@@ -1,0 +1,2938 @@
+Var1,Location,Confidence
+A0FGR8,Endoplasmic Reticulum,High
+A2RRP1,Endoplasmic Reticulum,High
+A6NDG6,Cytoplasm,High
+A6NHX0,Cytoplasm,High
+C9J069,Mitochondria,High
+O00142,Mitochondria,High
+O00154,Cytoskeleton,High
+O00161,Endoplasmic Reticulum,High
+O00299,Cytoplasm,High
+O00303,Presynapse,High
+O00410,Cytoskeleton,High
+O00429,Cytoskeleton,High
+O00442,Endoplasmic Reticulum,High
+O00445,Endoplasmic Reticulum,High
+O00468,Nucleus,High
+O00483,Cytoskeleton,High
+O00499,Cytoskeleton,High
+O00505,Cytoskeleton,High
+O00519,Endoplasmic Reticulum,High
+O00533,Cytoskeleton,High
+O00560,Presynapse,High
+O00584,Cytoplasm,High
+O00743,Endoplasmic Reticulum,High
+O00764,Cytoskeleton,High
+O14521,Mitochondria,High
+O14523,Endoplasmic Reticulum,High
+O14531,Cytoskeleton,High
+O14548,Postsynapse,High
+O14576,Cytoskeleton,High
+O14578,Postsynapse,High
+O14594,Cytoskeleton,High
+O14617,Cytoskeleton,High
+O14639,Cytoskeleton,High
+O14672,Presynapse,High
+O14734,Endoplasmic Reticulum,High
+O14735,Endoplasmic Reticulum,High
+O14737,Cytoplasm,High
+O14745,Cytoskeleton,High
+O14773,Cytoskeleton,High
+O14818,Cytoskeleton,High
+O14827,Endoplasmic Reticulum,High
+O14874,Mitochondria,High
+O14880,Cytoskeleton,High
+O14949,Mitochondria,High
+O15020,Cytoskeleton,High
+O15027,Endoplasmic Reticulum,High
+O15061,Nucleus,High
+O15067,Cytoplasm,High
+O15075,Cytoskeleton,High
+O15083,Postsynapse,High
+O15126,Cytoskeleton,High
+O15228,Endoplasmic Reticulum,High
+O15230,Nucleus,High
+O15260,Endoplasmic Reticulum,High
+O15394,Plasma membrane,High
+O15530,Mitochondria,High
+O15540,Cytoplasm,High
+O43143,Nucleus,High
+O43175,Cytoskeleton,High
+O43181,Postsynapse,High
+O43236,Cytoskeleton,High
+O43237,Cytoskeleton,High
+O43301,Cytoskeleton,High
+O43324,Endoplasmic Reticulum,High
+O43390,Cytoskeleton,High
+O43396,Cytoskeleton,High
+O43414,Cytoplasm,High
+O43426,Cytoskeleton,High
+O43432,Endoplasmic Reticulum,High
+O43488,Cytoskeleton,High
+O43491,Cytoskeleton,High
+O43598,Cytoplasm,High
+O43615,Postsynapse,High
+O43674,Mitochondria,High
+O43676,Mitochondria,High
+O43707,Cytoskeleton,High
+O43761,Presynapse,High
+O43768,Cytoplasm,High
+O43772,Mitochondria,High
+O43776,Cytoskeleton,High
+O43813,Cytoskeleton,High
+O43837,Cytoskeleton,High
+O43852,Endoplasmic Reticulum,High
+O43865,Cytoskeleton,High
+O43920,Mitochondria,High
+O60256,Cytoskeleton,High
+O60282,Cytoskeleton,High
+O60313,Cytoskeleton,High
+O60502,Cytoskeleton,High
+O60506,Cytoskeleton,High
+O60641,Cytoskeleton,High
+O60645,Endoplasmic Reticulum,High
+O60664,Cytoskeleton,High
+O60741,Endoplasmic Reticulum,High
+O60763,Endoplasmic Reticulum,High
+O60825,Endoplasmic Reticulum,High
+O60831,Endoplasmic Reticulum,High
+O60841,Endoplasmic Reticulum,High
+O60888,Cytoskeleton,High
+O60936,Cytoplasm,High
+O75061,Cytoskeleton,High
+O75078,Endoplasmic Reticulum,High
+O75083,Cytoskeleton,High
+O75116,Cytoskeleton,High
+O75223,Cytoplasm,High
+O75306,Cytoskeleton,High
+O75363,Plasma membrane,High
+O75367,Nucleus,High
+O75368,Cytoskeleton,High
+O75381,Endoplasmic Reticulum,High
+O75390,Cytoskeleton,High
+O75396,Plasma membrane,High
+O75439,Mitochondria,High
+O75489,Cytoskeleton,High
+O75534,Endoplasmic Reticulum,High
+O75608,Cytoplasm,High
+O75643,Nucleus,High
+O75663,Cytoplasm,High
+O75746,Cytoskeleton,High
+O75781,Cytoskeleton,High
+O75828,Cytoplasm,High
+O75832,Endoplasmic Reticulum,High
+O75844,Endoplasmic Reticulum,High
+O75879,Mitochondria,High
+O75880,Mitochondria,High
+O75884,Cytoplasm,High
+O75891,Cytoskeleton,High
+O75914,Cytoplasm,High
+O75915,Plasma membrane,High
+O75947,Cytoskeleton,High
+O75955,Plasma membrane,High
+O76024,Endoplasmic Reticulum,High
+O76070,Cytoskeleton,High
+O94760,Cytoskeleton,High
+O94811,Cytoskeleton,High
+O94819,Cytoskeleton,High
+O94826,Cytoskeleton,High
+O94874,Endoplasmic Reticulum,High
+O94910,Plasma membrane,High
+O94925,Cytoskeleton,High
+O94973,Cytoskeleton,High
+O94979,Endoplasmic Reticulum,High
+O94985,Cytoplasm,High
+O95057,Endoplasmic Reticulum,High
+O95169,Presynapse,High
+O95197,Cytoskeleton,High
+O95202,Postsynapse,High
+O95248,Cytoskeleton,High
+O95278,Cytoplasm,High
+O95292,Cytoskeleton,High
+O95299,Cytoskeleton,High
+O95336,Cytoskeleton,High
+O95352,Cytoplasm,High
+O95372,Endoplasmic Reticulum,High
+O95373,Cytoskeleton,High
+O95394,Cytoplasm,High
+O95433,Cytoskeleton,High
+O95487,Endoplasmic Reticulum,High
+O95571,Mitochondria,High
+O95670,Cytoskeleton,High
+O95747,Endoplasmic Reticulum,High
+O95757,Cytoskeleton,High
+O95777,Cytoplasm,High
+O95782,Cytoskeleton,High
+O95810,Nucleus,High
+O95817,Cytoplasm,High
+O95822,Cytoplasm,High
+O95831,Mitochondria,High
+O95861,Cytoplasm,High
+O95865,Cytoskeleton,High
+O96000,Cytoskeleton,High
+O96005,Endoplasmic Reticulum,High
+P00338,Cytoskeleton,High
+P00352,Cytoskeleton,High
+P00367,Cytoskeleton,High
+P00387,Cytoskeleton,High
+P00390,Cytoskeleton,High
+P00395,Cytoskeleton,High
+P00403,Cytoskeleton,High
+P00441,Cytoskeleton,High
+P00450,Cytoplasm,High
+P00491,Cytoplasm,High
+P00492,Cytoskeleton,High
+P00505,Cytoskeleton,High
+P00533,Presynapse,High
+P00558,Cytoskeleton,High
+P00568,Cytoskeleton,High
+P00738,Cytoskeleton,High
+P00751,Cytoplasm,High
+P00813,Cytoplasm,High
+P00915,Cytoskeleton,High
+P00918,Cytoskeleton,High
+P01008,Cytoplasm,High
+P01009,Cytoskeleton,High
+P01011,Cytoplasm,High
+P01019,Cytoplasm,High
+P01023,Cytoskeleton,High
+P01024,Cytoskeleton,High
+P01034,Cytoskeleton,High
+P01112,Cytoskeleton,High
+P01834,Cytoskeleton,High
+P01857,Cytoskeleton,High
+P02042,Cytoskeleton,High
+P02462,Nucleus,High
+P02511,Cytoskeleton,High
+P02545,Nucleus,High
+P02549,Mitochondria,High
+P02647,Cytoskeleton,High
+P02649,Cytoskeleton,High
+P02652,Cytoplasm,High
+P02671,Cytoskeleton,High
+P02675,Cytoskeleton,High
+P02679,Cytoskeleton,High
+P02686,Cytoskeleton,High
+P02689,Cytoskeleton,High
+P02750,Cytoplasm,High
+P02763,Cytoplasm,High
+P02765,Cytoplasm,High
+P02766,Cytoplasm,High
+P02768,Cytoskeleton,High
+P02774,Cytoplasm,High
+P02786,Endoplasmic Reticulum,High
+P02787,Cytoskeleton,High
+P02792,Cytoskeleton,High
+P02794,Cytoskeleton,High
+P03928,Mitochondria,High
+P04062,Endoplasmic Reticulum,High
+P04075,Cytoskeleton,High
+P04080,Cytoskeleton,High
+P04083,Cytoskeleton,High
+P04156,Plasma membrane,High
+P04179,Cytoskeleton,High
+P04181,Mitochondria,High
+P04216,Cytoskeleton,High
+P04271,Cytoskeleton,High
+P04406,Cytoskeleton,High
+P04632,Cytoskeleton,High
+P04792,Cytoskeleton,High
+P04839,Endoplasmic Reticulum,High
+P04899,Cytoskeleton,High
+P05067,Cytoskeleton,High
+P05090,Cytoskeleton,High
+P05091,Cytoskeleton,High
+P05109,Nucleus,High
+P05141,Cytoskeleton,High
+P05230,Cytoplasm,High
+P05386,Cytoskeleton,High
+P05387,Cytoskeleton,High
+P05388,Cytoskeleton,High
+P05413,Cytoskeleton,High
+P05771,Cytoskeleton,High
+P05937,Cytoplasm,High
+P06396,Cytoskeleton,High
+P06576,Cytoskeleton,High
+P06702,Cytoskeleton,High
+P06703,Cytoskeleton,High
+P06733,Cytoskeleton,High
+P06744,Cytoskeleton,High
+P06748,Cytoskeleton,High
+P07099,Cytoskeleton,High
+P07108,Cytoskeleton,High
+P07195,Cytoskeleton,High
+P07196,Cytoskeleton,High
+P07197,Cytoskeleton,High
+P07203,Cytoskeleton,High
+P07237,Cytoskeleton,High
+P07311,Cytoplasm,High
+P07339,Cytoskeleton,High
+P07355,Cytoskeleton,High
+P07384,Cytoskeleton,High
+P07437,Cytoskeleton,High
+P07602,Cytoskeleton,High
+P07686,Cytoplasm,High
+P07741,Cytoskeleton,High
+P07814,Cytoskeleton,High
+P07900,Cytoskeleton,High
+P07910,Cytoskeleton,High
+P07919,Cytoskeleton,High
+P07954,Cytoskeleton,High
+P08133,Cytoskeleton,High
+P08134,Endoplasmic Reticulum,High
+P08195,Cytoskeleton,High
+P08237,Cytoskeleton,High
+P08238,Cytoskeleton,High
+P08559,Cytoskeleton,High
+P08572,Nucleus,High
+P08574,Cytoskeleton,High
+P08670,Cytoskeleton,High
+P08708,Cytoskeleton,High
+P08758,Cytoskeleton,High
+P08865,Cytoskeleton,High
+P09104,Cytoskeleton,High
+P09110,Plasma membrane,High
+P09211,Cytoskeleton,High
+P09382,Cytoskeleton,High
+P09417,Cytoskeleton,High
+P09429,Cytoskeleton,High
+P09455,Cytoplasm,High
+P09471,Cytoskeleton,High
+P09488,Cytoskeleton,High
+P09496,Cytoskeleton,High
+P09497,Cytoskeleton,High
+P09525,Presynapse,High
+P09543,Cytoskeleton,High
+P09622,Cytoskeleton,High
+P09651,Cytoskeleton,High
+P09669,Cytoskeleton,High
+P09936,Cytoskeleton,High
+P09960,Cytoplasm,High
+P09972,Cytoskeleton,High
+P0C0L5,Cytoskeleton,High
+P0DMV9,Cytoskeleton,High
+P0DOY3,Cytoskeleton,High
+P0DP25,Cytoskeleton,High
+P0DPI2,Cytoskeleton,High
+P10114,Plasma membrane,High
+P10155,Cytoplasm,High
+P10412,Cytoskeleton,High
+P10451,Cytoplasm,High
+P10515,Cytoskeleton,High
+P10599,Cytoskeleton,High
+P10636,Cytoskeleton,High
+P10645,Cytoskeleton,High
+P10768,Cytoskeleton,High
+P10809,Cytoskeleton,High
+P10909,Cytoskeleton,High
+P10915,Cytoskeleton,High
+P11021,Cytoskeleton,High
+P11047,Nucleus,High
+P11137,Cytoskeleton,High
+P11142,Cytoskeleton,High
+P11177,Cytoskeleton,High
+P11182,Mitochondria,High
+P11215,Endoplasmic Reticulum,High
+P11216,Cytoskeleton,High
+P11217,Cytoskeleton,High
+P11233,Cytoskeleton,High
+P11279,Plasma membrane,High
+P11498,Cytoskeleton,High
+P11532,Endoplasmic Reticulum,High
+P11766,Cytoskeleton,High
+P11940,Cytoskeleton,High
+P12036,Cytoskeleton,High
+P12074,Cytoskeleton,High
+P12235,Cytoskeleton,High
+P12236,Cytoskeleton,High
+P12277,Cytoskeleton,High
+P12429,Cytoplasm,High
+P12532,Cytoskeleton,High
+P13010,Cytoskeleton,High
+P13073,Cytoskeleton,High
+P13489,Cytoskeleton,High
+P13611,Cytoskeleton,High
+P13637,Cytoskeleton,High
+P13639,Cytoskeleton,High
+P13716,Cytoskeleton,High
+P13796,Cytoplasm,High
+P13804,Cytoskeleton,High
+P13861,Cytoskeleton,High
+P13929,Cytoplasm,High
+P14136,Cytoskeleton,High
+P14174,Cytoskeleton,High
+P14314,Endoplasmic Reticulum,High
+P14324,Cytoplasm,High
+P14406,Cytoskeleton,High
+P14415,Cytoskeleton,High
+P14543,Nucleus,High
+P14550,Cytoskeleton,High
+P14618,Cytoskeleton,High
+P14625,Cytoskeleton,High
+P14649,Endoplasmic Reticulum,High
+P14854,Cytoskeleton,High
+P14866,Cytoskeleton,High
+P14923,Endoplasmic Reticulum,High
+P14927,Cytoskeleton,High
+P15104,Cytoskeleton,High
+P15121,Cytoskeleton,High
+P15259,Cytoplasm,High
+P15311,Cytoskeleton,High
+P15531,Cytoskeleton,High
+P15559,Cytoplasm,High
+P15880,Cytoskeleton,High
+P16144,Endoplasmic Reticulum,High
+P16152,Cytoskeleton,High
+P16219,Cytoskeleton,High
+P16435,Endoplasmic Reticulum,High
+P16615,Cytoskeleton,High
+P16870,Endoplasmic Reticulum,High
+P16930,Cytoplasm,High
+P16949,Cytoskeleton,High
+P17066,Cytoskeleton,High
+P17174,Cytoskeleton,High
+P17301,Cytoskeleton,High
+P17302,Cytoskeleton,High
+P17655,Cytoskeleton,High
+P17677,Cytoskeleton,High
+P17812,Endoplasmic Reticulum,High
+P17858,Cytoskeleton,High
+P17987,Cytoskeleton,High
+P18077,Plasma membrane,High
+P18124,Cytoskeleton,High
+P18206,Cytoskeleton,High
+P18621,Cytoskeleton,High
+P18669,Cytoskeleton,High
+P18859,Cytoskeleton,High
+P19086,Cytoskeleton,High
+P19174,Cytoplasm,High
+P19338,Cytoskeleton,High
+P19367,Cytoskeleton,High
+P19525,Endoplasmic Reticulum,High
+P19623,Cytoplasm,High
+P19634,Endoplasmic Reticulum,High
+P19652,Cytoplasm,High
+P19971,Cytoplasm,High
+P20073,Cytoskeleton,High
+P20336,Cytoskeleton,High
+P20340,Cytoplasm,High
+P20618,Cytoskeleton,High
+P20645,Endoplasmic Reticulum,High
+P20674,Cytoskeleton,High
+P20700,Nucleus,High
+P20810,Cytoplasm,High
+P20916,Cytoskeleton,High
+P21266,Cytoskeleton,High
+P21281,Cytoskeleton,High
+P21283,Cytoskeleton,High
+P21291,Cytoskeleton,High
+P21333,Cytoskeleton,High
+P21359,Endoplasmic Reticulum,High
+P21399,Cytoplasm,High
+P21796,Cytoskeleton,High
+P21926,Cytoskeleton,High
+P21953,Postsynapse,High
+P21964,Plasma membrane,High
+P21980,Nucleus,High
+P22033,Mitochondria,High
+P22061,Cytoskeleton,High
+P22234,Cytoskeleton,High
+P22307,Endoplasmic Reticulum,High
+P22314,Cytoskeleton,High
+P22392,Cytoskeleton,High
+P22570,Cytoskeleton,High
+P22626,Cytoskeleton,High
+P22694,Cytoskeleton,High
+P22695,Cytoskeleton,High
+P22732,Endoplasmic Reticulum,High
+P22748,Endoplasmic Reticulum,High
+P23142,Cytoplasm,High
+P23246,Cytoskeleton,High
+P23284,Cytoskeleton,High
+P23297,Cytoskeleton,High
+P23368,Cytoskeleton,High
+P23381,Cytoskeleton,High
+P23396,Cytoskeleton,High
+P23471,Cytoskeleton,High
+P23515,Cytoskeleton,High
+P23526,Cytoskeleton,High
+P23634,Cytoskeleton,High
+P23763,Cytoskeleton,High
+P24043,Nucleus,High
+P24534,Cytoskeleton,High
+P24539,Cytoskeleton,High
+P24666,Cytoplasm,High
+P24752,Cytoskeleton,High
+P24821,Cytoskeleton,High
+P25098,Endoplasmic Reticulum,High
+P25325,Cytoplasm,High
+P25398,Cytoskeleton,High
+P25686,Endoplasmic Reticulum,High
+P25705,Cytoskeleton,High
+P25786,Cytoskeleton,High
+P25787,Cytoskeleton,High
+P25789,Cytoskeleton,High
+P26038,Cytoskeleton,High
+P26232,Cytoskeleton,High
+P26373,Cytoskeleton,High
+P26440,Cytoskeleton,High
+P26639,Cytoskeleton,High
+P26640,Cytoskeleton,High
+P26641,Cytoskeleton,High
+P27144,Mitochondria,High
+P27338,Cytoskeleton,High
+P27348,Cytoskeleton,High
+P27361,Cytoskeleton,High
+P27449,Presynapse,High
+P27635,Cytoskeleton,High
+P27797,Cytoskeleton,High
+P27816,Cytoskeleton,High
+P27824,Cytoskeleton,High
+P28066,Cytoskeleton,High
+P28070,Cytoplasm,High
+P28074,Cytoplasm,High
+P28161,Cytoskeleton,High
+P28288,Endoplasmic Reticulum,High
+P28482,Cytoskeleton,High
+P28838,Cytoskeleton,High
+P29401,Cytoskeleton,High
+P29972,Cytoskeleton,High
+P29992,Plasma membrane,High
+P30038,Cytoskeleton,High
+P30040,Cytoskeleton,High
+P30041,Cytoskeleton,High
+P30043,Cytoskeleton,High
+P30044,Cytoskeleton,High
+P30046,Cytoskeleton,High
+P30048,Cytoskeleton,High
+P30049,Cytoskeleton,High
+P30050,Cytoskeleton,High
+P30084,Cytoskeleton,High
+P30085,Cytoskeleton,High
+P30086,Cytoskeleton,High
+P30101,Cytoskeleton,High
+P30153,Cytoskeleton,High
+P30536,Endoplasmic Reticulum,High
+P30626,Cytoskeleton,High
+P30740,Cytoplasm,High
+P30837,Mitochondria,High
+P31040,Cytoskeleton,High
+P31146,Cytoskeleton,High
+P31150,Cytoskeleton,High
+P31323,Cytoskeleton,High
+P31930,Cytoskeleton,High
+P31942,Nucleus,High
+P31946,Cytoskeleton,High
+P31948,Cytoskeleton,High
+P31949,Cytoplasm,High
+P32119,Cytoskeleton,High
+P32455,Cytoplasm,High
+P32969,Cytoskeleton,High
+P34897,Mitochondria,High
+P34932,Cytoskeleton,High
+P35080,Cytoskeleton,High
+P35222,Cytoskeleton,High
+P35232,Cytoskeleton,High
+P35237,Cytoplasm,High
+P35241,Cytoskeleton,High
+P35244,Cytoskeleton,High
+P35268,Cytoskeleton,High
+P35270,Cytoskeleton,High
+P35573,Cytoskeleton,High
+P35579,Cytoskeleton,High
+P35580,Cytoskeleton,High
+P35606,Endoplasmic Reticulum,High
+P35609,Cytoskeleton,High
+P35611,Cytoskeleton,High
+P35612,Cytoskeleton,High
+P35749,Nucleus,High
+P36405,Cytoskeleton,High
+P36507,Endoplasmic Reticulum,High
+P36542,Cytoskeleton,High
+P36543,Cytoskeleton,High
+P36578,Cytoskeleton,High
+P36776,Cytoskeleton,High
+P36871,Cytoskeleton,High
+P36955,Endoplasmic Reticulum,High
+P36957,Cytoskeleton,High
+P36959,Cytoplasm,High
+P37802,Cytoplasm,High
+P37837,Cytoskeleton,High
+P37840,Cytoskeleton,High
+P38117,Cytoskeleton,High
+P38159,Nucleus,High
+P38606,Cytoskeleton,High
+P38646,Cytoskeleton,High
+P38919,Nucleus,High
+P39023,Cytoskeleton,High
+P39060,Nucleus,High
+P39210,Postsynapse,High
+P39656,Endoplasmic Reticulum,High
+P40123,Cytoskeleton,High
+P40227,Cytoskeleton,High
+P40616,Endoplasmic Reticulum,High
+P40763,Endoplasmic Reticulum,High
+P40925,Cytoskeleton,High
+P40926,Cytoskeleton,High
+P40939,Cytoskeleton,High
+P41222,Cytoskeleton,High
+P41240,Endoplasmic Reticulum,High
+P41250,Cytoskeleton,High
+P41586,Endoplasmic Reticulum,High
+P41732,Endoplasmic Reticulum,High
+P42025,Cytoskeleton,High
+P42126,Cytoplasm,High
+P42167,Nucleus,High
+P42356,Plasma membrane,High
+P42658,Cytoskeleton,High
+P42704,Cytoskeleton,High
+P42765,Cytoskeleton,High
+P42858,Endoplasmic Reticulum,High
+P43003,Cytoskeleton,High
+P43004,Cytoskeleton,High
+P43034,Cytoskeleton,High
+P43243,Cytoskeleton,High
+P43304,Cytoskeleton,High
+P43490,Cytoskeleton,High
+P43897,Postsynapse,High
+P45880,Cytoskeleton,High
+P45954,Mitochondria,High
+P45974,Cytoskeleton,High
+P46109,Cytoskeleton,High
+P46379,Endoplasmic Reticulum,High
+P46459,Cytoskeleton,High
+P46776,Cytoskeleton,High
+P46777,Cytoskeleton,High
+P46781,Cytoskeleton,High
+P46782,Cytoskeleton,High
+P46783,Cytoskeleton,High
+P46821,Cytoskeleton,High
+P46926,Cytoskeleton,High
+P46976,Cytoplasm,High
+P47897,Endoplasmic Reticulum,High
+P47985,Cytoskeleton,High
+P48047,Cytoskeleton,High
+P48066,Endoplasmic Reticulum,High
+P48147,Cytoskeleton,High
+P48163,Cytoskeleton,High
+P48539,Cytoplasm,High
+P48553,Endoplasmic Reticulum,High
+P48643,Cytoskeleton,High
+P48735,Cytoskeleton,High
+P48739,Cytoplasm,High
+P49189,Cytoskeleton,High
+P49257,Endoplasmic Reticulum,High
+P49327,Cytoskeleton,High
+P49368,Cytoskeleton,High
+P49407,Cytoskeleton,High
+P49411,Cytoskeleton,High
+P49418,Cytoskeleton,High
+P49419,Cytoskeleton,High
+P49588,Cytoskeleton,High
+P49589,Cytoplasm,High
+P49591,Cytoskeleton,High
+P49720,Cytoskeleton,High
+P49748,Cytoskeleton,High
+P49755,Endoplasmic Reticulum,High
+P49773,Cytoskeleton,High
+P49802,Plasma membrane,High
+P49821,Cytoskeleton,High
+P49841,Endoplasmic Reticulum,High
+P49902,Cytoplasm,High
+P50135,Cytoplasm,High
+P50148,Cytoskeleton,High
+P50213,Cytoskeleton,High
+P50336,Mitochondria,High
+P50395,Cytoskeleton,High
+P50416,Endoplasmic Reticulum,High
+P50440,Cytoplasm,High
+P50453,Cytoplasm,High
+P50502,Cytoskeleton,High
+P50570,Cytoskeleton,High
+P50897,Cytoskeleton,High
+P50990,Cytoskeleton,High
+P50991,Cytoskeleton,High
+P50993,Cytoskeleton,High
+P50995,Cytoskeleton,High
+P51114,Endoplasmic Reticulum,High
+P51148,Cytoskeleton,High
+P51149,Cytoskeleton,High
+P51178,Cytoskeleton,High
+P51452,Cytoskeleton,High
+P51513,Endoplasmic Reticulum,High
+P51553,Cytoskeleton,High
+P51570,Endoplasmic Reticulum,High
+P51608,Nucleus,High
+P51649,Cytoskeleton,High
+P51659,Cytoskeleton,High
+P51693,Cytoplasm,High
+P51858,Cytoplasm,High
+P51911,Nucleus,High
+P51970,Cytoskeleton,High
+P51991,Cytoskeleton,High
+P52209,Cytoskeleton,High
+P52306,Cytoskeleton,High
+P52565,Cytoskeleton,High
+P52597,Nucleus,High
+P52758,Cytoskeleton,High
+P52888,Cytoplasm,High
+P52943,Cytoskeleton,High
+P53041,Cytoplasm,High
+P53396,Cytoskeleton,High
+P53618,Endoplasmic Reticulum,High
+P53621,Endoplasmic Reticulum,High
+P54289,Plasma membrane,High
+P54577,Cytoskeleton,High
+P54578,Cytoskeleton,High
+P54619,Endoplasmic Reticulum,High
+P54652,Cytoskeleton,High
+P54687,Cytoplasm,High
+P54727,Cytoplasm,High
+P54750,Cytoskeleton,High
+P54819,Cytoplasm,High
+P54920,Cytoskeleton,High
+P55010,Endoplasmic Reticulum,High
+P55060,Cytoskeleton,High
+P55072,Cytoskeleton,High
+P55084,Cytoskeleton,High
+P55087,Cytoskeleton,High
+P55196,Cytoskeleton,High
+P55209,Cytoskeleton,High
+P55263,Cytoplasm,High
+P55268,Nucleus,High
+P55290,Plasma membrane,High
+P55327,Cytoskeleton,High
+P55786,Cytoskeleton,High
+P55795,Cytoskeleton,High
+P55809,Cytoskeleton,High
+P55957,Cytoplasm,High
+P56134,Cytoskeleton,High
+P56181,Mitochondria,High
+P56192,Presynapse,High
+P56537,Endoplasmic Reticulum,High
+P57087,Endoplasmic Reticulum,High
+P58546,Cytoskeleton,High
+P59768,Cytoskeleton,High
+P60033,Cytoskeleton,High
+P60174,Cytoskeleton,High
+P60201,Cytoskeleton,High
+P60520,Cytoskeleton,High
+P60660,Cytoskeleton,High
+P60709,Cytoskeleton,High
+P60880,Cytoskeleton,High
+P60891,Cytoskeleton,High
+P60900,Cytoskeleton,High
+P60953,Cytoskeleton,High
+P60981,Cytoskeleton,High
+P60983,Cytoskeleton,High
+P61011,Endoplasmic Reticulum,High
+P61018,Cytoskeleton,High
+P61019,Cytoskeleton,High
+P61020,Cytoskeleton,High
+P61026,Plasma membrane,High
+P61077,Cytoskeleton,High
+P61086,Cytoplasm,High
+P61088,Cytoskeleton,High
+P61106,Cytoskeleton,High
+P61163,Cytoskeleton,High
+P61201,Cytoskeleton,High
+P61247,Cytoskeleton,High
+P61266,Cytoskeleton,High
+P61353,Cytoskeleton,High
+P61421,Cytoskeleton,High
+P61586,Cytoskeleton,High
+P61604,Cytoskeleton,High
+P61619,Endoplasmic Reticulum,High
+P61758,Cytoskeleton,High
+P61764,Cytoskeleton,High
+P61769,Cytoskeleton,High
+P61916,Cytoplasm,High
+P61925,Cytoplasm,High
+P61970,Cytoskeleton,High
+P61978,Cytoskeleton,High
+P61981,Cytoskeleton,High
+P62081,Cytoskeleton,High
+P62140,Cytoskeleton,High
+P62191,Endoplasmic Reticulum,High
+P62241,Cytoskeleton,High
+P62249,Cytoskeleton,High
+P62258,Cytoskeleton,High
+P62266,Plasma membrane,High
+P62269,Cytoskeleton,High
+P62277,Cytoskeleton,High
+P62280,Cytoskeleton,High
+P62310,Cytoplasm,High
+P62314,Plasma membrane,High
+P62328,Cytoskeleton,High
+P62424,Cytoskeleton,High
+P62701,Cytoskeleton,High
+P62745,Cytoskeleton,High
+P62750,Cytoskeleton,High
+P62753,Cytoskeleton,High
+P62760,Cytoskeleton,High
+P62820,Cytoskeleton,High
+P62826,Cytoskeleton,High
+P62829,Cytoskeleton,High
+P62834,Cytoskeleton,High
+P62873,Cytoskeleton,High
+P62879,Cytoskeleton,High
+P62888,Cytoskeleton,High
+P62906,Cytoskeleton,High
+P62917,Cytoskeleton,High
+P62937,Cytoskeleton,High
+P62942,Cytoskeleton,High
+P62979,Cytoskeleton,High
+P62993,Cytoplasm,High
+P62995,Nucleus,High
+P63000,Cytoskeleton,High
+P63010,Cytoskeleton,High
+P63027,Cytoskeleton,High
+P63096,Cytoskeleton,High
+P63098,Cytoskeleton,High
+P63104,Cytoskeleton,High
+P63151,Cytoskeleton,High
+P63172,Endoplasmic Reticulum,High
+P63208,Cytoskeleton,High
+P63241,Cytoskeleton,High
+P63244,Cytoskeleton,High
+P63313,Cytoskeleton,High
+P67775,Cytoskeleton,High
+P68032,Cytoskeleton,High
+P68036,Cytoskeleton,High
+P68104,Cytoskeleton,High
+P68363,Cytoskeleton,High
+P68366,Cytoskeleton,High
+P68371,Cytoskeleton,High
+P68400,Cytoskeleton,High
+P68402,Cytoskeleton,High
+P68431,Nucleus,High
+P68871,Cytoskeleton,High
+P69849,Endoplasmic Reticulum,High
+P69891,Cytoplasm,High
+P69905,Cytoskeleton,High
+P78324,Cytoskeleton,High
+P78344,Endoplasmic Reticulum,High
+P78352,Cytoskeleton,High
+P78357,Cytoskeleton,High
+P78371,Cytoskeleton,High
+P78417,Cytoskeleton,High
+P78508,Endoplasmic Reticulum,High
+P78559,Cytoskeleton,High
+P80404,Cytoskeleton,High
+P80723,Cytoskeleton,High
+P83916,Cytoplasm,High
+P84074,Cytoskeleton,High
+P84077,Cytoskeleton,High
+P84090,Cytoplasm,High
+P84243,Cytoskeleton,High
+P98160,Nucleus,High
+P99999,Cytoskeleton,High
+Q00013,Endoplasmic Reticulum,High
+Q00169,Cytoskeleton,High
+Q00325,Cytoskeleton,High
+Q00341,Endoplasmic Reticulum,High
+Q00535,Cytoskeleton,High
+Q00577,Cytoskeleton,High
+Q00610,Cytoskeleton,High
+Q01082,Cytoskeleton,High
+Q01105,Cytoskeleton,High
+Q01130,Plasma membrane,High
+Q01432,Cytoplasm,High
+Q01469,Cytoskeleton,High
+Q01484,Cytoskeleton,High
+Q01813,Cytoskeleton,High
+Q01995,Cytoskeleton,High
+Q02218,Cytoskeleton,High
+Q02252,Cytoskeleton,High
+Q02750,Cytoskeleton,High
+Q02790,Cytoskeleton,High
+Q02818,Endoplasmic Reticulum,High
+Q02878,Cytoskeleton,High
+Q02952,Cytoskeleton,High
+Q02978,Cytoskeleton,High
+Q03001,Cytoskeleton,High
+Q03154,Cytoplasm,High
+Q04323,Cytoskeleton,High
+Q04760,Cytoskeleton,High
+Q04917,Cytoskeleton,High
+Q05193,Cytoskeleton,High
+Q05586,Mitochondria,High
+Q05639,Cytoskeleton,High
+Q06124,Cytoskeleton,High
+Q06136,Plasma membrane,High
+Q06323,Cytoplasm,High
+Q06830,Cytoskeleton,High
+Q07020,Cytoskeleton,High
+Q07021,Cytoskeleton,High
+Q07065,Endoplasmic Reticulum,High
+Q07666,Nucleus,High
+Q07954,Presynapse,High
+Q07955,Plasma membrane,High
+Q08209,Cytoskeleton,High
+Q08257,Cytoskeleton,High
+Q08495,Cytoskeleton,High
+Q08623,Cytoplasm,High
+Q09666,Cytoskeleton,High
+Q0VDG4,Cytoplasm,High
+Q10567,Cytoskeleton,High
+Q12756,Endoplasmic Reticulum,High
+Q12765,Cytoskeleton,High
+Q12797,Endoplasmic Reticulum,High
+Q12846,Endoplasmic Reticulum,High
+Q12860,Cytoskeleton,High
+Q12879,Mitochondria,High
+Q12905,Cytoskeleton,High
+Q12906,Cytoskeleton,High
+Q12907,Endoplasmic Reticulum,High
+Q12955,Cytoskeleton,High
+Q12959,Cytoskeleton,High
+Q12974,Endoplasmic Reticulum,High
+Q12979,Plasma membrane,High
+Q13011,Cytoskeleton,High
+Q13126,Cytoplasm,High
+Q13153,Cytoskeleton,High
+Q13162,Endoplasmic Reticulum,High
+Q13177,Cytoplasm,High
+Q13200,Cytoskeleton,High
+Q13224,Mitochondria,High
+Q13228,Cytoskeleton,High
+Q13303,Cytoskeleton,High
+Q13336,Endoplasmic Reticulum,High
+Q13363,Cytoskeleton,High
+Q13404,Cytoplasm,High
+Q13418,Endoplasmic Reticulum,High
+Q13423,Cytoskeleton,High
+Q13449,Plasma membrane,High
+Q13509,Cytoskeleton,High
+Q13510,Cytoskeleton,High
+Q13526,Cytoskeleton,High
+Q13554,Cytoskeleton,High
+Q13555,Cytoskeleton,High
+Q13557,Cytoskeleton,High
+Q13561,Cytoskeleton,High
+Q13620,Cytoplasm,High
+Q13630,Cytoplasm,High
+Q13724,Endoplasmic Reticulum,High
+Q13813,Cytoskeleton,High
+Q13838,Cytoskeleton,High
+Q13867,Cytoplasm,High
+Q13884,Endoplasmic Reticulum,High
+Q13885,Cytoskeleton,High
+Q13907,Cytoplasm,High
+Q13938,Cytoplasm,High
+Q14008,Plasma membrane,High
+Q14019,Cytoskeleton,High
+Q14103,Cytoskeleton,High
+Q14108,Cytoskeleton,High
+Q14112,Nucleus,High
+Q14155,Plasma membrane,High
+Q14157,Endoplasmic Reticulum,High
+Q14165,Endoplasmic Reticulum,High
+Q14194,Cytoskeleton,High
+Q14195,Cytoskeleton,High
+Q14203,Cytoskeleton,High
+Q14204,Cytoskeleton,High
+Q14232,Cytoplasm,High
+Q14240,Cytoskeleton,High
+Q14247,Cytoskeleton,High
+Q14318,Endoplasmic Reticulum,High
+Q14353,Cytoplasm,High
+Q14515,Cytoskeleton,High
+Q14624,Cytoplasm,High
+Q14643,Endoplasmic Reticulum,High
+Q14677,Endoplasmic Reticulum,High
+Q14683,Nucleus,High
+Q14697,Cytoskeleton,High
+Q14764,Cytoskeleton,High
+Q14894,Cytoskeleton,High
+Q14914,Cytoplasm,High
+Q14974,Cytoskeleton,High
+Q14980,Nucleus,High
+Q14982,Cytoskeleton,High
+Q14CZ8,Cytoskeleton,High
+Q15019,Cytoskeleton,High
+Q15031,Mitochondria,High
+Q15042,Endoplasmic Reticulum,High
+Q15046,Endoplasmic Reticulum,High
+Q15056,Plasma membrane,High
+Q15102,Cytoskeleton,High
+Q15119,Mitochondria,High
+Q15120,Postsynapse,High
+Q15121,Cytoskeleton,High
+Q15126,Endoplasmic Reticulum,High
+Q15149,Cytoskeleton,High
+Q15165,Cytoskeleton,High
+Q15181,Cytoskeleton,High
+Q15257,Cytoskeleton,High
+Q15274,Cytoplasm,High
+Q15276,Endoplasmic Reticulum,High
+Q15349,Endoplasmic Reticulum,High
+Q15365,Cytoskeleton,High
+Q15366,Cytoskeleton,High
+Q15369,Endoplasmic Reticulum,High
+Q15393,Cytoplasm,High
+Q15435,Cytoskeleton,High
+Q15493,Cytoplasm,High
+Q15555,Cytoskeleton,High
+Q15631,Cytoplasm,High
+Q15691,Cytoskeleton,High
+Q15700,Cytoskeleton,High
+Q15714,Cytoskeleton,High
+Q15738,Endoplasmic Reticulum,High
+Q15746,Endoplasmic Reticulum,High
+Q15811,Endoplasmic Reticulum,High
+Q15813,Cytoplasm,High
+Q15818,Plasma membrane,High
+Q15819,Cytoskeleton,High
+Q15843,Cytoskeleton,High
+Q15847,Cytoplasm,High
+Q15907,Cytoskeleton,High
+Q15942,Cytoplasm,High
+Q16143,Cytoskeleton,High
+Q16181,Cytoskeleton,High
+Q16222,Cytoplasm,High
+Q16352,Cytoskeleton,High
+Q16531,Cytoskeleton,High
+Q16537,Cytoskeleton,High
+Q16543,Cytoskeleton,High
+Q16555,Cytoskeleton,High
+Q16643,Cytoskeleton,High
+Q16653,Cytoskeleton,High
+Q16698,Cytoskeleton,High
+Q16718,Cytoskeleton,High
+Q16762,Cytoplasm,High
+Q16773,Cytoskeleton,High
+Q16775,Cytoskeleton,High
+Q16777,Cytoskeleton,High
+Q16778,Cytoskeleton,High
+Q16795,Cytoskeleton,High
+Q16798,Cytoskeleton,High
+Q16799,Cytoskeleton,High
+Q16836,Cytoskeleton,High
+Q16849,Plasma membrane,High
+Q16851,Cytoskeleton,High
+Q16864,Cytoskeleton,High
+Q16880,Endoplasmic Reticulum,High
+Q16891,Cytoskeleton,High
+Q17R89,Endoplasmic Reticulum,High
+Q2M2I8,Cytoskeleton,High
+Q2M389,Endoplasmic Reticulum,High
+Q2NKQ1,Endoplasmic Reticulum,High
+Q2TAA2,Cytoplasm,High
+Q330K2,Mitochondria,High
+Q3LXA3,Cytoplasm,High
+Q3SXM5,Postsynapse,High
+Q3ZCM7,Cytoskeleton,High
+Q4G0N4,Cytoplasm,High
+Q4G176,Mitochondria,High
+Q4J6C6,Cytoskeleton,High
+Q4KMQ2,Endoplasmic Reticulum,High
+Q504Y0,Endoplasmic Reticulum,High
+Q53GQ0,Cytoskeleton,High
+Q53H12,Cytoskeleton,High
+Q5H9L2,Cytoplasm,High
+Q5HYK3,Mitochondria,High
+Q5JTJ3,Cytoplasm,High
+Q5JTZ9,Mitochondria,High
+Q5JU85,Postsynapse,High
+Q5SQI0,Endoplasmic Reticulum,High
+Q5SSJ5,Cytoskeleton,High
+Q5T440,Mitochondria,High
+Q5T4S7,Plasma membrane,High
+Q5T5P2,Mitochondria,High
+Q5TF21,Endoplasmic Reticulum,High
+Q5TFE4,Cytoplasm,High
+Q5U4P2,Endoplasmic Reticulum,High
+Q5VIR6,Endoplasmic Reticulum,High
+Q5VST6,Endoplasmic Reticulum,High
+Q5VWQ8,Mitochondria,High
+Q5VYK3,Endoplasmic Reticulum,High
+Q643R3,Endoplasmic Reticulum,High
+Q66K14,Endoplasmic Reticulum,High
+Q66K74,Plasma membrane,High
+Q68DH5,Endoplasmic Reticulum,High
+Q6BCY4,Cytoplasm,High
+Q6DN90,Plasma membrane,High
+Q6IAA8,Plasma membrane,High
+Q6IBS0,Cytoskeleton,High
+Q6NUK1,Mitochondria,High
+Q6NXS1,Cytoplasm,High
+Q6NZI2,Nucleus,High
+Q6P2Q9,Nucleus,High
+Q6P4A7,Mitochondria,High
+Q6P587,Cytoskeleton,High
+Q6P9B6,Endoplasmic Reticulum,High
+Q6PCB7,Endoplasmic Reticulum,High
+Q6PCE3,Cytoplasm,High
+Q6PI78,Mitochondria,High
+Q6PKG0,Endoplasmic Reticulum,High
+Q6PUV4,Cytoskeleton,High
+Q6U841,Plasma membrane,High
+Q6UW68,Endoplasmic Reticulum,High
+Q6UWE0,Endoplasmic Reticulum,High
+Q6UWP2,Cytoplasm,High
+Q6UWR7,Cytoskeleton,High
+Q6XQN6,Cytoplasm,High
+Q6Y7W6,Endoplasmic Reticulum,High
+Q6YN16,Plasma membrane,High
+Q6ZVM7,Cytoskeleton,High
+Q71DI3,Nucleus,High
+Q71U36,Cytoskeleton,High
+Q71UM5,Endoplasmic Reticulum,High
+Q7KZN9,Mitochondria,High
+Q7L099,Cytoskeleton,High
+Q7L0J3,Cytoskeleton,High
+Q7L2E3,Endoplasmic Reticulum,High
+Q7L3T8,Mitochondria,High
+Q7L523,Endoplasmic Reticulum,High
+Q7L775,Nucleus,High
+Q7Z3J2,Endoplasmic Reticulum,High
+Q7Z4H3,Cytoplasm,High
+Q7Z4S6,Cytoskeleton,High
+Q7Z4W1,Cytoskeleton,High
+Q7Z6G3,Cytoskeleton,High
+Q7Z6L0,Cytoskeleton,High
+Q7Z6Z7,Cytoskeleton,High
+Q7Z7A4,Endoplasmic Reticulum,High
+Q7Z7H8,Mitochondria,High
+Q86SK9,Endoplasmic Reticulum,High
+Q86TV6,Mitochondria,High
+Q86TX2,Cytoskeleton,High
+Q86VP6,Cytoskeleton,High
+Q86VU5,Mitochondria,High
+Q86WA6,Mitochondria,High
+Q86WU2,Mitochondria,High
+Q86X24,Cytoskeleton,High
+Q86Y82,Plasma membrane,High
+Q86YN1,Endoplasmic Reticulum,High
+Q8IUR0,Endoplasmic Reticulum,High
+Q8IW45,Cytoskeleton,High
+Q8IWA5,Presynapse,High
+Q8IWQ3,Endoplasmic Reticulum,High
+Q8IXJ6,Cytoskeleton,High
+Q8IY17,Endoplasmic Reticulum,High
+Q8IYQ7,Mitochondria,High
+Q8IZP0,Presynapse,High
+Q8N145,Cytoskeleton,High
+Q8N163,Nucleus,High
+Q8N183,Postsynapse,High
+Q8N1A0,Nucleus,High
+Q8N1B4,Endoplasmic Reticulum,High
+Q8N2K0,Endoplasmic Reticulum,High
+Q8N335,Cytoskeleton,High
+Q8N3F0,Cytoskeleton,High
+Q8N3J6,Cytoskeleton,High
+Q8N461,Cytoplasm,High
+Q8N573,Cytoskeleton,High
+Q8N5S9,Endoplasmic Reticulum,High
+Q8N5V2,Endoplasmic Reticulum,High
+Q8N6C5,Endoplasmic Reticulum,High
+Q8N6M0,Endoplasmic Reticulum,High
+Q8N766,Endoplasmic Reticulum,High
+Q8N7J2,Endoplasmic Reticulum,High
+Q8N8N7,Cytoplasm,High
+Q8N8S7,Cytoplasm,High
+Q8NBM8,Endoplasmic Reticulum,High
+Q8NBQ5,Endoplasmic Reticulum,High
+Q8NBU5,Endoplasmic Reticulum,High
+Q8NBX0,Cytoskeleton,High
+Q8NCB2,Cytoskeleton,High
+Q8NE62,Postsynapse,High
+Q8NE86,Mitochondria,High
+Q8NEU8,Endoplasmic Reticulum,High
+Q8NF91,Cytoskeleton,High
+Q8NFV4,Postsynapse,High
+Q8NFX7,Endoplasmic Reticulum,High
+Q8NFZ8,Cytoskeleton,High
+Q8NHG7,Endoplasmic Reticulum,High
+Q8TAM6,Cytoskeleton,High
+Q8TB36,Cytoskeleton,High
+Q8TBC4,Cytoplasm,High
+Q8TC12,Endoplasmic Reticulum,High
+Q8TCD5,Cytoplasm,High
+Q8TCZ2,Presynapse,High
+Q8TD22,Presynapse,High
+Q8TDJ6,Cytoskeleton,High
+Q8TDQ7,Cytoplasm,High
+Q8TDW7,Cytoplasm,High
+Q8WUK0,Mitochondria,High
+Q8WUM4,Cytoskeleton,High
+Q8WUY1,Endoplasmic Reticulum,High
+Q8WWI5,Cytoskeleton,High
+Q8WXF1,Nucleus,High
+Q8WXF7,Cytoskeleton,High
+Q8WXG6,Plasma membrane,High
+Q8WXH0,Cytoplasm,High
+Q8WXS5,Mitochondria,High
+Q8WYP5,Cytoskeleton,High
+Q8WZA0,Cytoplasm,High
+Q8WZA9,Cytoplasm,High
+Q92499,Cytoskeleton,High
+Q92542,Endoplasmic Reticulum,High
+Q92561,Cytoskeleton,High
+Q92574,Endoplasmic Reticulum,High
+Q92597,Cytoskeleton,High
+Q92598,Cytoskeleton,High
+Q92599,Cytoskeleton,High
+Q92604,Endoplasmic Reticulum,High
+Q92614,Cytoskeleton,High
+Q92616,Endoplasmic Reticulum,High
+Q92667,Cytoplasm,High
+Q92673,Endoplasmic Reticulum,High
+Q92686,Cytoskeleton,High
+Q92688,Cytoplasm,High
+Q92736,Plasma membrane,High
+Q92752,Cytoskeleton,High
+Q92777,Cytoskeleton,High
+Q92823,Cytoskeleton,High
+Q92841,Cytoskeleton,High
+Q92854,Endoplasmic Reticulum,High
+Q92896,Endoplasmic Reticulum,High
+Q92900,Endoplasmic Reticulum,High
+Q92945,Cytoplasm,High
+Q92947,Cytoplasm,High
+Q92974,Plasma membrane,High
+Q93009,Cytoskeleton,High
+Q93050,Cytoskeleton,High
+Q93077,Cytoskeleton,High
+Q969E2,Endoplasmic Reticulum,High
+Q969E4,Cytoplasm,High
+Q969P0,Cytoskeleton,High
+Q969S9,Mitochondria,High
+Q969T9,Endoplasmic Reticulum,High
+Q969Z0,Mitochondria,High
+Q96A00,Cytoskeleton,High
+Q96A33,Endoplasmic Reticulum,High
+Q96A65,Endoplasmic Reticulum,High
+Q96AB3,Cytoskeleton,High
+Q96AC1,Cytoskeleton,High
+Q96AE4,Cytoplasm,High
+Q96AG4,Endoplasmic Reticulum,High
+Q96AQ6,Cytoskeleton,High
+Q96AX1,Endoplasmic Reticulum,High
+Q96BQ5,Mitochondria,High
+Q96CN7,Cytoplasm,High
+Q96CS3,Endoplasmic Reticulum,High
+Q96CV9,Endoplasmic Reticulum,High
+Q96CW1,Cytoskeleton,High
+Q96DA6,Mitochondria,High
+Q96DG6,Cytoplasm,High
+Q96EY1,Postsynapse,High
+Q96F07,Cytoskeleton,High
+Q96F85,Cytoskeleton,High
+Q96FJ2,Cytoskeleton,High
+Q96FW1,Cytoskeleton,High
+Q96G03,Cytoplasm,High
+Q96GG9,Cytoplasm,High
+Q96GR2,Endoplasmic Reticulum,High
+Q96GW7,Cytoskeleton,High
+Q96HN2,Cytoskeleton,High
+Q96HY6,Endoplasmic Reticulum,High
+Q96I15,Cytoplasm,High
+Q96I23,Mitochondria,High
+Q96JE9,Cytoskeleton,High
+Q96JG6,Endoplasmic Reticulum,High
+Q96K17,Plasma membrane,High
+Q96KG9,Endoplasmic Reticulum,High
+Q96KN2,Cytoplasm,High
+Q96KP1,Endoplasmic Reticulum,High
+Q96KP4,Cytoskeleton,High
+Q96MM6,Nucleus,High
+Q96MZ0,Plasma membrane,High
+Q96N66,Endoplasmic Reticulum,High
+Q96NN9,Endoplasmic Reticulum,High
+Q96PE7,Mitochondria,High
+Q96PV0,Cytoskeleton,High
+Q96QE2,Endoplasmic Reticulum,High
+Q96QK1,Cytoskeleton,High
+Q96RP9,Mitochondria,High
+Q96RQ3,Postsynapse,High
+Q96RT1,Endoplasmic Reticulum,High
+Q96RW7,Cytoskeleton,High
+Q96S97,Endoplasmic Reticulum,High
+Q96SB3,Postsynapse,High
+Q96SZ5,Cytoplasm,High
+Q96T76,Endoplasmic Reticulum,High
+Q96TC7,Cytoskeleton,High
+Q99250,Plasma membrane,High
+Q99436,Cytoskeleton,High
+Q99471,Cytoskeleton,High
+Q99497,Cytoskeleton,High
+Q99536,Cytoskeleton,High
+Q99574,Endoplasmic Reticulum,High
+Q99584,Cytoskeleton,High
+Q99598,Cytoplasm,High
+Q99614,Cytoplasm,High
+Q99615,Endoplasmic Reticulum,High
+Q99623,Cytoskeleton,High
+Q99643,Mitochondria,High
+Q99714,Cytoskeleton,High
+Q99719,Cytoskeleton,High
+Q99733,Cytoskeleton,High
+Q99766,Mitochondria,High
+Q99798,Cytoskeleton,High
+Q99805,Endoplasmic Reticulum,High
+Q99807,Postsynapse,High
+Q99816,Endoplasmic Reticulum,High
+Q99832,Cytoskeleton,High
+Q99873,Cytoplasm,High
+Q99879,Nucleus,High
+Q99962,Cytoskeleton,High
+Q99963,Cytoskeleton,High
+Q9BPU6,Cytoskeleton,High
+Q9BPW8,Cytoskeleton,High
+Q9BQ70,Endoplasmic Reticulum,High
+Q9BR01,Cytoplasm,High
+Q9BSH4,Postsynapse,High
+Q9BT78,Cytoskeleton,High
+Q9BTV4,Endoplasmic Reticulum,High
+Q9BTW9,Endoplasmic Reticulum,High
+Q9BU02,Cytoplasm,High
+Q9BUF5,Cytoskeleton,High
+Q9BUT1,Cytoplasm,High
+Q9BV20,Endoplasmic Reticulum,High
+Q9BVA1,Cytoskeleton,High
+Q9BVK6,Nucleus,High
+Q9BW30,Cytoskeleton,High
+Q9BWD1,Cytoskeleton,High
+Q9BWM7,Cytoskeleton,High
+Q9BX68,Cytoskeleton,High
+Q9BXK5,Cytoskeleton,High
+Q9BXW7,Mitochondria,High
+Q9BY11,Cytoskeleton,High
+Q9BY67,Cytoskeleton,High
+Q9BYB0,Postsynapse,High
+Q9BYD6,Nucleus,High
+Q9BZV1,Plasma membrane,High
+Q9C040,Cytoskeleton,High
+Q9C0B1,Cytoplasm,High
+Q9C0C9,Cytoskeleton,High
+Q9GZM7,Nucleus,High
+Q9GZP4,Cytoplasm,High
+Q9GZQ8,Cytoskeleton,High
+Q9GZS3,Endoplasmic Reticulum,High
+Q9GZV7,Cytoskeleton,High
+Q9H008,Cytoskeleton,High
+Q9H074,Cytoplasm,High
+Q9H0A8,Endoplasmic Reticulum,High
+Q9H0E2,Cytoskeleton,High
+Q9H0R8,Endoplasmic Reticulum,High
+Q9H0U4,Plasma membrane,High
+Q9H115,Cytoskeleton,High
+Q9H1E5,Endoplasmic Reticulum,High
+Q9H1K1,Mitochondria,High
+Q9H1P3,Endoplasmic Reticulum,High
+Q9H269,Endoplasmic Reticulum,High
+Q9H2H9,Endoplasmic Reticulum,High
+Q9H2M9,Endoplasmic Reticulum,High
+Q9H2U2,Cytoplasm,High
+Q9H2X9,Cytoskeleton,High
+Q9H3H3,Cytoplasm,High
+Q9H3N1,Nucleus,High
+Q9H3S7,Endoplasmic Reticulum,High
+Q9H479,Cytoskeleton,High
+Q9H492,Cytoskeleton,High
+Q9H4A4,Cytoplasm,High
+Q9H4A6,Endoplasmic Reticulum,High
+Q9H4G0,Cytoskeleton,High
+Q9H6K4,Postsynapse,High
+Q9H6R3,Cytoplasm,High
+Q9H6U6,Endoplasmic Reticulum,High
+Q9H7D0,Endoplasmic Reticulum,High
+Q9H936,Cytoskeleton,High
+Q9H993,Cytoplasm,High
+Q9H9B4,Cytoskeleton,High
+Q9H9S4,Cytoplasm,High
+Q9HA64,Cytoplasm,High
+Q9HAR2,Endoplasmic Reticulum,High
+Q9HAT2,Cytoplasm,High
+Q9HAV7,Mitochondria,High
+Q9HB71,Cytoskeleton,High
+Q9HB90,Endoplasmic Reticulum,High
+Q9HBL0,Nucleus,High
+Q9HCH3,Cytoskeleton,High
+Q9HCJ6,Cytoskeleton,High
+Q9HCM2,Plasma membrane,High
+Q9HCP6,Endoplasmic Reticulum,High
+Q9HD23,Mitochondria,High
+Q9HDC9,Plasma membrane,High
+Q9NNW7,Mitochondria,High
+Q9NP79,Endoplasmic Reticulum,High
+Q9NP80,Mitochondria,High
+Q9NPF4,Cytoplasm,High
+Q9NPQ8,Endoplasmic Reticulum,High
+Q9NQ66,Cytoskeleton,High
+Q9NQ79,Presynapse,High
+Q9NQ88,Cytoplasm,High
+Q9NQC3,Cytoskeleton,High
+Q9NQW6,Cytoskeleton,High
+Q9NQX3,Cytoskeleton,High
+Q9NQX7,Endoplasmic Reticulum,High
+Q9NR46,Cytoskeleton,High
+Q9NRV9,Cytoskeleton,High
+Q9NRW1,Cytoskeleton,High
+Q9NS86,Cytoskeleton,High
+Q9NSD9,Cytoskeleton,High
+Q9NSE4,Mitochondria,High
+Q9NT62,Endoplasmic Reticulum,High
+Q9NTJ4,Cytoplasm,High
+Q9NTJ5,Endoplasmic Reticulum,High
+Q9NTK5,Cytoskeleton,High
+Q9NUJ1,Cytoskeleton,High
+Q9NUQ2,Mitochondria,High
+Q9NUQ9,Cytoskeleton,High
+Q9NV70,Endoplasmic Reticulum,High
+Q9NVA2,Cytoskeleton,High
+Q9NVS9,Cytoplasm,High
+Q9NWS8,Mitochondria,High
+Q9NWV4,Cytoplasm,High
+Q9NX14,Mitochondria,High
+Q9NX63,Mitochondria,High
+Q9NXA8,Mitochondria,High
+Q9NY65,Cytoskeleton,High
+Q9NYB0,Nucleus,High
+Q9NYB9,Presynapse,High
+Q9NYI0,Cytoskeleton,High
+Q9NZ45,Cytoskeleton,High
+Q9NZB8,Mitochondria,High
+Q9NZD2,Cytoskeleton,High
+Q9NZG7,Endoplasmic Reticulum,High
+Q9NZL4,Cytoplasm,High
+Q9NZL9,Cytoplasm,High
+Q9NZM1,Endoplasmic Reticulum,High
+Q9NZN3,Cytoskeleton,High
+Q9P032,Postsynapse,High
+Q9P0J1,Mitochondria,High
+Q9P0J7,Endoplasmic Reticulum,High
+Q9P0L0,Cytoskeleton,High
+Q9P0S9,Endoplasmic Reticulum,High
+Q9P0U1,Mitochondria,High
+Q9P1F3,Cytoplasm,High
+Q9P1U1,Cytoskeleton,High
+Q9P253,Endoplasmic Reticulum,High
+Q9P2J5,Presynapse,High
+Q9P2R7,Cytoskeleton,High
+Q9P2U7,Cytoskeleton,High
+Q9P2W3,Endoplasmic Reticulum,High
+Q9UBB6,Cytoskeleton,High
+Q9UBC2,Cytoskeleton,High
+Q9UBF2,Endoplasmic Reticulum,High
+Q9UBI6,Presynapse,High
+Q9UBN7,Endoplasmic Reticulum,High
+Q9UBP0,Endoplasmic Reticulum,High
+Q9UBP4,Cytoskeleton,High
+Q9UBQ7,Cytoskeleton,High
+Q9UBS5,Endoplasmic Reticulum,High
+Q9UD71,Cytoplasm,High
+Q9UDT6,Endoplasmic Reticulum,High
+Q9UDY2,Endoplasmic Reticulum,High
+Q9UEY8,Cytoskeleton,High
+Q9UGM6,Mitochondria,High
+Q9UH03,Cytoskeleton,High
+Q9UH99,Nucleus,High
+Q9UHA4,Presynapse,High
+Q9UHD1,Cytoskeleton,High
+Q9UHD8,Cytoskeleton,High
+Q9UHL4,Cytoplasm,High
+Q9UHV9,Cytoplasm,High
+Q9UHX1,Nucleus,High
+Q9UHY1,Endoplasmic Reticulum,High
+Q9UHY7,Cytoskeleton,High
+Q9UI12,Cytoskeleton,High
+Q9UI15,Cytoskeleton,High
+Q9UI47,Endoplasmic Reticulum,High
+Q9UIC8,Cytoplasm,High
+Q9UIG0,Cytoskeleton,High
+Q9UJC5,Cytoskeleton,High
+Q9UJU6,Cytoskeleton,High
+Q9UJY5,Cytoplasm,High
+Q9UJZ1,Mitochondria,High
+Q9UK22,Cytoskeleton,High
+Q9UK45,Cytoplasm,High
+Q9UK76,Cytoplasm,High
+Q9UKA9,Nucleus,High
+Q9UKG1,Cytoskeleton,High
+Q9UKK9,Cytoplasm,High
+Q9UL12,Cytoskeleton,High
+Q9UL15,Endoplasmic Reticulum,High
+Q9UL46,Cytoplasm,High
+Q9ULA0,Cytoplasm,High
+Q9ULC4,Cytoskeleton,High
+Q9ULD0,Cytoskeleton,High
+Q9ULN7,Endoplasmic Reticulum,High
+Q9ULR3,Cytoskeleton,High
+Q9ULU8,Cytoskeleton,High
+Q9ULV4,Cytoskeleton,High
+Q9UM19,Cytoskeleton,High
+Q9UN36,Cytoskeleton,High
+Q9UNE7,Endoplasmic Reticulum,High
+Q9UNS2,Cytoskeleton,High
+Q9UNZ2,Cytoskeleton,High
+Q9UPA5,Cytoskeleton,High
+Q9UPN3,Cytoskeleton,High
+Q9UPT5,Endoplasmic Reticulum,High
+Q9UPT6,Endoplasmic Reticulum,High
+Q9UPX0,Postsynapse,High
+Q9UPX8,Nucleus,High
+Q9UPY5,Endoplasmic Reticulum,High
+Q9UPY8,Cytoskeleton,High
+Q9UQ16,Cytoskeleton,High
+Q9UQ90,Mitochondria,High
+Q9UQB8,Plasma membrane,High
+Q9UQM7,Cytoskeleton,High
+Q9Y277,Cytoskeleton,High
+Q9Y285,Cytoskeleton,High
+Q9Y287,Endoplasmic Reticulum,High
+Q9Y2A7,Cytoskeleton,High
+Q9Y2B0,Endoplasmic Reticulum,High
+Q9Y2D4,Endoplasmic Reticulum,High
+Q9Y2J0,Cytoskeleton,High
+Q9Y2J8,Cytoskeleton,High
+Q9Y2K9,Endoplasmic Reticulum,High
+Q9Y2S2,Cytoskeleton,High
+Q9Y2T2,Endoplasmic Reticulum,High
+Q9Y2T3,Cytoskeleton,High
+Q9Y2V2,Cytoplasm,High
+Q9Y2X7,Plasma membrane,High
+Q9Y2Z4,Mitochondria,High
+Q9Y2Z9,Mitochondria,High
+Q9Y320,Endoplasmic Reticulum,High
+Q9Y371,Endoplasmic Reticulum,High
+Q9Y3B3,Endoplasmic Reticulum,High
+Q9Y3B8,Cytoplasm,High
+Q9Y3C6,Endoplasmic Reticulum,High
+Q9Y3D6,Plasma membrane,High
+Q9Y3E1,Nucleus,High
+Q9Y426,Endoplasmic Reticulum,High
+Q9Y490,Cytoskeleton,High
+Q9Y4D1,Endoplasmic Reticulum,High
+Q9Y4E1,Endoplasmic Reticulum,High
+Q9Y4E6,Cytoskeleton,High
+Q9Y4F1,Plasma membrane,High
+Q9Y4I1,Cytoskeleton,High
+Q9Y4L1,Cytoskeleton,High
+Q9Y5K8,Cytoskeleton,High
+Q9Y5P6,Cytoplasm,High
+Q9Y5S2,Endoplasmic Reticulum,High
+Q9Y5U8,Mitochondria,High
+Q9Y5X3,Endoplasmic Reticulum,High
+Q9Y5Z4,Cytoplasm,High
+Q9Y617,Cytoskeleton,High
+Q9Y678,Endoplasmic Reticulum,High
+Q9Y696,Cytoskeleton,High
+Q9Y697,Cytoskeleton,High
+Q9Y6C9,Cytoskeleton,High
+Q9Y6D6,Mitochondria,High
+Q9Y6I3,Cytoskeleton,High
+Q9Y6M9,Mitochondria,High
+Q9Y6R1,Cytoskeleton,High
+Q9Y6V0,Postsynapse,High
+Q9Y6X5,Endoplasmic Reticulum,High
+O00116,Cytoplasm,Low
+O00192,Cytoplasm_Endoplasmic Reticulum,Low
+O14744,Cytoplasm_Endoplasmic Reticulum,Low
+O14841,Cytoplasm,Low
+O14907,Cytoplasm_Endoplasmic Reticulum,Low
+O43708,Cytoplasm_Cytoskeleton,Low
+O43760,Cytoplasm_Nucleus,Low
+O60658,Cytoplasm,Low
+O60749,Cytoplasm,Low
+O60925,Cytoplasm_Cytoskeleton,Low
+O75936,Cytoplasm_Mitochondria,Low
+O95295,Cytoplasm,Low
+P01591,Cytoplasm_Nucleus,Low
+P04114,Cytoplasm_Cytoskeleton,Low
+P04217,Cytoplasm_Mitochondria,Low
+P05155,Cytoplasm_Cytoskeleton,Low
+P05452,Cytoplasm_Nucleus,Low
+P06730,Cytoplasm,Low
+P07738,Cytoplasm_Nucleus,Low
+P08397,Cytoplasm_Endoplasmic Reticulum,Low
+P09012,Cytoplasm,Low
+P0C0L4,Cytoplasm,Low
+P0DJI8,Cytoplasm_Plasma membrane,Low
+P10620,Cytoplasm_Mitochondria,Low
+P20936,Cytoplasm_Mitochondria,Low
+P22059,Cytoplasm,Low
+P28072,Cytoplasm_Cytoskeleton,Low
+P30876,Cytoplasm,Low
+P32929,Cytoplasm_Mitochondria,Low
+P34913,Cytoplasm_Endoplasmic Reticulum,Low
+P34949,Cytoplasm_Cytoskeleton,Low
+P37235,Cytoplasm_Cytoskeleton,Low
+P40145,Cytoplasm_Nucleus,Low
+P40855,Cytoplasm_Mitochondria,Low
+P42566,Cytoplasm_Endoplasmic Reticulum,Low
+P48506,Cytoplasm_Endoplasmic Reticulum,Low
+P49593,Cytoplasm_Cytoskeleton,Low
+P49721,Cytoplasm_Cytoskeleton,Low
+P50226,Cytoplasm,Low
+P50579,Cytoplasm_Mitochondria,Low
+P53367,Cytoplasm,Low
+P53582,Cytoplasm_Cytoskeleton,Low
+P61081,Cytoplasm_Cytoskeleton,Low
+P61204,Cytoplasm,Low
+P61328,Cytoplasm_Cytoskeleton,Low
+P62495,Cytoplasm,Low
+Q06481,Cytoplasm_Mitochondria,Low
+Q13617,Cytoplasm_Cytoskeleton,Low
+Q14978,Cytoplasm_Nucleus,Low
+Q15363,Cytoplasm_Endoplasmic Reticulum,Low
+Q15417,Cytoplasm_Endoplasmic Reticulum,Low
+Q16881,Cytoplasm_Cytoskeleton,Low
+Q4G0P3,Cytoplasm_Plasma membrane,Low
+Q52LD8,Cytoplasm_Mitochondria,Low
+Q562R1,Cytoplasm_Postsynapse,Low
+Q5H9R7,Cytoplasm_Mitochondria,Low
+Q5JSH3,Cytoplasm_Cytoskeleton,Low
+Q5VT25,Cytoplasm,Low
+Q5VWZ2,Cytoplasm_Endoplasmic Reticulum,Low
+Q6IQ22,Cytoplasm_Mitochondria,Low
+Q7L2H7,Cytoplasm,Low
+Q7Z7L7,Cytoplasm_Mitochondria,Low
+Q86VS8,Cytoplasm_Nucleus,Low
+Q8ND24,Cytoplasm_Mitochondria,Low
+Q8NFU3,Cytoplasm,Low
+Q8TEA8,Cytoplasm_Cytoskeleton,Low
+Q8TEQ8,Cytoplasm_Nucleus,Low
+Q8TF30,Cytoplasm_Endoplasmic Reticulum,Low
+Q8WWI1,Cytoplasm_Mitochondria,Low
+Q8WXC6,Cytoplasm_Endoplasmic Reticulum,Low
+Q92696,Cytoplasm_Endoplasmic Reticulum,Low
+Q92905,Cytoplasm_Cytoskeleton,Low
+Q92990,Cytoplasm_Mitochondria,Low
+Q96AJ9,Cytoplasm_Mitochondria,Low
+Q96DZ1,Cytoplasm,Low
+Q96IU4,Cytoplasm_Endoplasmic Reticulum,Low
+Q96JQ2,Cytoplasm_Nucleus,Low
+Q96S66,Cytoplasm_Nucleus,Low
+Q9BSH5,Cytoplasm,Low
+Q9BTE1,Cytoplasm,Low
+Q9BW62,Cytoplasm,Low
+Q9BXS0,Cytoplasm_Nucleus,Low
+Q9BXS5,Cytoplasm_Endoplasmic Reticulum,Low
+Q9C0D9,Cytoplasm,Low
+Q9H2C0,Cytoplasm_Nucleus,Low
+Q9H2W6,Cytoplasm_Mitochondria,Low
+Q9H330,Cytoplasm,Low
+Q9NQ48,Cytoplasm,Low
+Q9NRY5,Cytoplasm_Mitochondria,Low
+Q9NRY6,Cytoplasm,Low
+Q9P2D7,Cytoplasm_Cytoskeleton,Low
+Q9UBB4,Cytoplasm_Cytoskeleton,Low
+Q9Y295,Cytoplasm_Endoplasmic Reticulum,Low
+Q9Y2H9,Cytoplasm_Mitochondria,Low
+Q9Y3C8,Cytoplasm_Endoplasmic Reticulum,Low
+Q9Y3U8,Cytoplasm_Cytoskeleton,Low
+Q9Y4E8,Cytoplasm,Low
+Q9Y4F4,Cytoplasm_Endoplasmic Reticulum,Low
+Q9Y6R7,Cytoplasm_Nucleus,Low
+E9PAV3,Cytoskeleton_Plasma membrane,Low
+O00401,Cytoskeleton_Endoplasmic Reticulum,Low
+O00487,Cytoskeleton_Endoplasmic Reticulum,Low
+O14561,Cytoskeleton_Mitochondria,Low
+O14775,Cytoskeleton_Endoplasmic Reticulum,Low
+O14807,Cytoskeleton,Low
+O15173,Cytoskeleton,Low
+O43399,Cytoskeleton_Presynapse,Low
+O43687,Cytoskeleton,Low
+O60268,Cytoskeleton_Plasma membrane,Low
+O75131,Cytoskeleton,Low
+O75380,Cytoskeleton,Low
+O75506,Cytoskeleton_Postsynapse,Low
+O76054,Cytoskeleton,Low
+O94905,Cytoskeleton_Plasma membrane,Low
+O94919,Cytoskeleton_Plasma membrane,Low
+O95716,Cytoskeleton_Plasma membrane,Low
+P01860,Cytoskeleton,Low
+P02730,Cytoskeleton_Presynapse,Low
+P05166,Cytoskeleton_Mitochondria,Low
+P13521,Cytoskeleton,Low
+P16112,Cytoskeleton_Plasma membrane,Low
+P19784,Cytoskeleton_Endoplasmic Reticulum,Low
+P20339,Cytoskeleton_Presynapse,Low
+P21810,Cytoskeleton_Presynapse,Low
+P21912,Cytoskeleton_Mitochondria,Low
+P26378,Cytoskeleton_Plasma membrane,Low
+P26599,Cytoskeleton,Low
+P30711,Cytoskeleton_Nucleus,Low
+P31689,Cytoskeleton_Plasma membrane,Low
+P33176,Cytoskeleton,Low
+P33402,Cytoskeleton,Low
+P35998,Cytoskeleton,Low
+P36915,Cytoskeleton_Presynapse,Low
+P42224,Cytoskeleton_Endoplasmic Reticulum,Low
+P43007,Cytoskeleton_Presynapse,Low
+P43155,Cytoskeleton,Low
+P49758,Cytoskeleton_Presynapse,Low
+P50454,Cytoskeleton_Endoplasmic Reticulum,Low
+P51575,Cytoskeleton,Low
+P52788,Cytoskeleton_Endoplasmic Reticulum,Low
+P52815,Cytoskeleton,Low
+P53602,Cytoskeleton,Low
+P56385,Cytoskeleton_Mitochondria,Low
+P61254,Cytoskeleton_Plasma membrane,Low
+P61313,Cytoskeleton_Plasma membrane,Low
+P62333,Cytoskeleton_Plasma membrane,Low
+P62851,Cytoskeleton_Plasma membrane,Low
+P83731,Cytoskeleton_Presynapse,Low
+P84085,Cytoskeleton_Endoplasmic Reticulum,Low
+Q00765,Cytoskeleton,Low
+Q02153,Cytoskeleton,Low
+Q02156,Cytoskeleton_Endoplasmic Reticulum,Low
+Q04837,Cytoskeleton_Mitochondria,Low
+Q08722,Cytoskeleton_Plasma membrane,Low
+Q13596,Cytoskeleton_Endoplasmic Reticulum,Low
+Q13616,Cytoskeleton_Endoplasmic Reticulum,Low
+Q13825,Cytoskeleton_Mitochondria,Low
+Q14289,Cytoskeleton_Endoplasmic Reticulum,Low
+Q14738,Cytoskeleton_Plasma membrane,Low
+Q15814,Cytoskeleton_Mitochondria,Low
+Q16401,Cytoskeleton_Endoplasmic Reticulum,Low
+Q16620,Cytoskeleton,Low
+Q27J81,Cytoskeleton_Endoplasmic Reticulum,Low
+Q58FF8,Cytoskeleton_Endoplasmic Reticulum,Low
+Q5JRX3,Cytoskeleton_Postsynapse,Low
+Q684P5,Cytoskeleton_Endoplasmic Reticulum,Low
+Q6H8Q1,Cytoskeleton_Endoplasmic Reticulum,Low
+Q709C8,Cytoskeleton_Endoplasmic Reticulum,Low
+Q7Z460,Cytoskeleton_Endoplasmic Reticulum,Low
+Q86VW0,Cytoskeleton_Endoplasmic Reticulum,Low
+Q8IZD9,Cytoskeleton,Low
+Q8N1G4,Cytoskeleton_Plasma membrane,Low
+Q8N568,Cytoskeleton,Low
+Q8N6T3,Cytoskeleton,Low
+Q8N8Y2,Cytoskeleton_Plasma membrane,Low
+Q8NB37,Cytoskeleton,Low
+Q8WXD2,Cytoskeleton_Endoplasmic Reticulum,Low
+Q92530,Cytoskeleton,Low
+Q92783,Cytoskeleton,Low
+Q92882,Cytoskeleton_Endoplasmic Reticulum,Low
+Q92973,Cytoskeleton,Low
+Q969H8,Cytoskeleton_Plasma membrane,Low
+Q96CX2,Cytoskeleton_Plasma membrane,Low
+Q96EE3,Cytoskeleton_Mitochondria,Low
+Q96HU8,Cytoskeleton_Endoplasmic Reticulum,Low
+Q99685,Cytoskeleton,Low
+Q99747,Cytoskeleton_Presynapse,Low
+Q99829,Cytoskeleton,Low
+Q99961,Cytoskeleton,Low
+Q9BTV5,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9C0H9,Cytoskeleton,Low
+Q9GZY8,Cytoskeleton,Low
+Q9H254,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9H4M3,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9NP97,Cytoskeleton_Plasma membrane,Low
+Q9NRN7,Cytoskeleton,Low
+Q9NTX5,Cytoskeleton,Low
+Q9NVJ2,Cytoskeleton_Plasma membrane,Low
+Q9UBQ0,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9UBV8,Cytoskeleton_Plasma membrane,Low
+Q9UIA9,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9UL25,Cytoskeleton_Plasma membrane,Low
+Q9UNM6,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9Y305,Cytoskeleton_Plasma membrane,Low
+Q9Y4C0,Cytoskeleton_Endoplasmic Reticulum,Low
+O00178,Endoplasmic Reticulum_Nucleus,Low
+O00194,Endoplasmic Reticulum_Mitochondria,Low
+O00231,Endoplasmic Reticulum_Presynapse,Low
+O00232,Endoplasmic Reticulum_Presynapse,Low
+O00291,Endoplasmic Reticulum,Low
+O00478,Endoplasmic Reticulum_Plasma membrane,Low
+O00629,Endoplasmic Reticulum_Plasma membrane,Low
+O14558,Endoplasmic Reticulum,Low
+O14653,Endoplasmic Reticulum_Nucleus,Low
+O14662,Endoplasmic Reticulum_Mitochondria,Low
+O14936,Endoplasmic Reticulum_Presynapse,Low
+O14974,Endoplasmic Reticulum_Mitochondria,Low
+O15118,Endoplasmic Reticulum_Plasma membrane,Low
+O15127,Endoplasmic Reticulum,Low
+O15372,Endoplasmic Reticulum_Presynapse,Low
+O15498,Endoplasmic Reticulum,Low
+O43592,Endoplasmic Reticulum,Low
+O43854,Endoplasmic Reticulum,Low
+O60331,Endoplasmic Reticulum_Presynapse,Low
+O60493,Endoplasmic Reticulum,Low
+O60613,Endoplasmic Reticulum,Low
+O60716,Endoplasmic Reticulum,Low
+O60739,Endoplasmic Reticulum_Plasma membrane,Low
+O75110,Endoplasmic Reticulum_Presynapse,Low
+O75155,Endoplasmic Reticulum,Low
+O75348,Endoplasmic Reticulum,Low
+O75351,Endoplasmic Reticulum,Low
+O75896,Endoplasmic Reticulum,Low
+O94911,Endoplasmic Reticulum_Nucleus,Low
+O95219,Endoplasmic Reticulum_Presynapse,Low
+O95671,Endoplasmic Reticulum,Low
+O95674,Endoplasmic Reticulum_Presynapse,Low
+O95825,Endoplasmic Reticulum,Low
+O95837,Endoplasmic Reticulum_Nucleus,Low
+O95881,Endoplasmic Reticulum,Low
+P01903,Endoplasmic Reticulum,Low
+P02656,Endoplasmic Reticulum,Low
+P02746,Endoplasmic Reticulum_Plasma membrane,Low
+P02747,Endoplasmic Reticulum,Low
+P02749,Endoplasmic Reticulum,Low
+P04003,Endoplasmic Reticulum_Plasma membrane,Low
+P04844,Endoplasmic Reticulum_Presynapse,Low
+P05362,Endoplasmic Reticulum,Low
+P06241,Endoplasmic Reticulum,Low
+P07947,Endoplasmic Reticulum,Low
+P08123,Endoplasmic Reticulum_Mitochondria,Low
+P08240,Endoplasmic Reticulum,Low
+P08575,Endoplasmic Reticulum,Low
+P0C7M8,Endoplasmic Reticulum,Low
+P14209,Endoplasmic Reticulum_Presynapse,Low
+P15374,Endoplasmic Reticulum,Low
+P15882,Endoplasmic Reticulum_Mitochondria,Low
+P17540,Endoplasmic Reticulum,Low
+P17900,Endoplasmic Reticulum,Low
+P18507,Endoplasmic Reticulum,Low
+P20337,Endoplasmic Reticulum_Mitochondria,Low
+P20774,Endoplasmic Reticulum_Plasma membrane,Low
+P23141,Endoplasmic Reticulum,Low
+P23258,Endoplasmic Reticulum_Postsynapse,Low
+P25685,Endoplasmic Reticulum_Presynapse,Low
+P26012,Endoplasmic Reticulum_Presynapse,Low
+P27701,Endoplasmic Reticulum_Plasma membrane,Low
+P28907,Endoplasmic Reticulum_Presynapse,Low
+P30453,Endoplasmic Reticulum_Presynapse,Low
+P35637,Endoplasmic Reticulum,Low
+P36269,Endoplasmic Reticulum_Plasma membrane,Low
+P41208,Endoplasmic Reticulum,Low
+P41567,Endoplasmic Reticulum_Plasma membrane,Low
+P42330,Endoplasmic Reticulum,Low
+P43307,Endoplasmic Reticulum,Low
+P46060,Endoplasmic Reticulum_Plasma membrane,Low
+P48723,Endoplasmic Reticulum_Nucleus,Low
+P49006,Endoplasmic Reticulum_Plasma membrane,Low
+P50150,Endoplasmic Reticulum_Plasma membrane,Low
+P50583,Endoplasmic Reticulum,Low
+P51572,Endoplasmic Reticulum_Presynapse,Low
+P51784,Endoplasmic Reticulum_Nucleus,Low
+P51790,Endoplasmic Reticulum,Low
+P52294,Endoplasmic Reticulum_Postsynapse,Low
+P53007,Endoplasmic Reticulum_Mitochondria,Low
+P53365,Endoplasmic Reticulum_Mitochondria,Low
+P54284,Endoplasmic Reticulum,Low
+P55011,Endoplasmic Reticulum_Plasma membrane,Low
+P55160,Endoplasmic Reticulum,Low
+P61221,Endoplasmic Reticulum_Plasma membrane,Low
+P61513,Endoplasmic Reticulum,Low
+P62068,Endoplasmic Reticulum,Low
+P62166,Endoplasmic Reticulum,Low
+P62273,Endoplasmic Reticulum_Presynapse,Low
+P62308,Endoplasmic Reticulum,Low
+P67870,Endoplasmic Reticulum,Low
+P98194,Endoplasmic Reticulum_Mitochondria,Low
+Q01064,Endoplasmic Reticulum_Plasma membrane,Low
+Q01433,Endoplasmic Reticulum_Plasma membrane,Low
+Q03135,Endoplasmic Reticulum,Low
+Q04609,Endoplasmic Reticulum_Presynapse,Low
+Q05469,Endoplasmic Reticulum,Low
+Q08462,Endoplasmic Reticulum_Presynapse,Low
+Q12768,Endoplasmic Reticulum_Plasma membrane,Low
+Q12904,Endoplasmic Reticulum_Presynapse,Low
+Q12965,Endoplasmic Reticulum_Nucleus,Low
+Q13045,Endoplasmic Reticulum_Postsynapse,Low
+Q13057,Endoplasmic Reticulum,Low
+Q13099,Endoplasmic Reticulum,Low
+Q13155,Endoplasmic Reticulum_Presynapse,Low
+Q13505,Endoplasmic Reticulum_Postsynapse,Low
+Q13586,Endoplasmic Reticulum_Nucleus,Low
+Q13875,Endoplasmic Reticulum_Nucleus,Low
+Q14160,Endoplasmic Reticulum_Mitochondria,Low
+Q14185,Endoplasmic Reticulum,Low
+Q14315,Endoplasmic Reticulum_Nucleus,Low
+Q14416,Endoplasmic Reticulum_Mitochondria,Low
+Q14571,Endoplasmic Reticulum_Presynapse,Low
+Q14696,Endoplasmic Reticulum_Nucleus,Low
+Q14721,Endoplasmic Reticulum,Low
+Q14956,Endoplasmic Reticulum,Low
+Q15049,Endoplasmic Reticulum_Presynapse,Low
+Q15067,Endoplasmic Reticulum,Low
+Q15293,Endoplasmic Reticulum_Presynapse,Low
+Q15599,Endoplasmic Reticulum,Low
+Q15773,Endoplasmic Reticulum_Plasma membrane,Low
+Q3KQU3,Endoplasmic Reticulum,Low
+Q4KMP7,Endoplasmic Reticulum,Low
+Q5T5C0,Endoplasmic Reticulum_Presynapse,Low
+Q5TCZ1,Endoplasmic Reticulum,Low
+Q5VUB5,Endoplasmic Reticulum_Mitochondria,Low
+Q5VW32,Endoplasmic Reticulum,Low
+Q5VWJ9,Endoplasmic Reticulum,Low
+Q5VZK9,Endoplasmic Reticulum,Low
+Q6P2E9,Endoplasmic Reticulum_Plasma membrane,Low
+Q6P995,Endoplasmic Reticulum_Mitochondria,Low
+Q6PIU2,Endoplasmic Reticulum_Plasma membrane,Low
+Q6YP21,Endoplasmic Reticulum_Mitochondria,Low
+Q6ZSS7,Endoplasmic Reticulum_Plasma membrane,Low
+Q6ZT12,Endoplasmic Reticulum_Mitochondria,Low
+Q7L5N7,Endoplasmic Reticulum,Low
+Q7Z392,Endoplasmic Reticulum,Low
+Q7Z406,Endoplasmic Reticulum_Presynapse,Low
+Q86SZ2,Endoplasmic Reticulum,Low
+Q86TP1,Endoplasmic Reticulum,Low
+Q86V81,Endoplasmic Reticulum,Low
+Q86WG3,Endoplasmic Reticulum,Low
+Q86YQ8,Endoplasmic Reticulum_Mitochondria,Low
+Q8IUR7,Endoplasmic Reticulum,Low
+Q8IV01,Endoplasmic Reticulum,Low
+Q8IV38,Endoplasmic Reticulum_Postsynapse,Low
+Q8IVD9,Endoplasmic Reticulum,Low
+Q8IWT6,Endoplasmic Reticulum_Presynapse,Low
+Q8IXI2,Endoplasmic Reticulum_Presynapse,Low
+Q8IYI6,Endoplasmic Reticulum,Low
+Q8IZ83,Endoplasmic Reticulum,Low
+Q8IZS8,Endoplasmic Reticulum_Presynapse,Low
+Q8N0X7,Endoplasmic Reticulum,Low
+Q8N2F6,Endoplasmic Reticulum_Mitochondria,Low
+Q8N3E9,Endoplasmic Reticulum_Plasma membrane,Low
+Q8N468,Endoplasmic Reticulum_Mitochondria,Low
+Q8N4V2,Endoplasmic Reticulum_Mitochondria,Low
+Q8N5K1,Endoplasmic Reticulum,Low
+Q8NBF6,Endoplasmic Reticulum,Low
+Q8NC51,Endoplasmic Reticulum_Plasma membrane,Low
+Q8NCA5,Endoplasmic Reticulum_Plasma membrane,Low
+Q8NE01,Endoplasmic Reticulum,Low
+Q8NF37,Endoplasmic Reticulum_Plasma membrane,Low
+Q8NFP9,Endoplasmic Reticulum,Low
+Q8TAF3,Endoplasmic Reticulum_Plasma membrane,Low
+Q8TBB6,Endoplasmic Reticulum_Mitochondria,Low
+Q8TBG9,Endoplasmic Reticulum_Presynapse,Low
+Q8WU79,Endoplasmic Reticulum_Plasma membrane,Low
+Q8WVC6,Endoplasmic Reticulum_Mitochondria,Low
+Q8WW22,Endoplasmic Reticulum,Low
+Q8WXE9,Endoplasmic Reticulum,Low
+Q92520,Endoplasmic Reticulum_Mitochondria,Low
+Q92556,Endoplasmic Reticulum_Plasma membrane,Low
+Q92932,Endoplasmic Reticulum_Mitochondria,Low
+Q93100,Endoplasmic Reticulum,Low
+Q969G6,Endoplasmic Reticulum_Mitochondria,Low
+Q969Z3,Endoplasmic Reticulum_Mitochondria,Low
+Q96AG3,Endoplasmic Reticulum,Low
+Q96AM1,Endoplasmic Reticulum_Nucleus,Low
+Q96CT7,Endoplasmic Reticulum_Plasma membrane,Low
+Q96DB2,Endoplasmic Reticulum_Plasma membrane,Low
+Q96DD7,Endoplasmic Reticulum,Low
+Q96E17,Endoplasmic Reticulum,Low
+Q96FE5,Endoplasmic Reticulum,Low
+Q96FZ7,Endoplasmic Reticulum_Mitochondria,Low
+Q96RL7,Endoplasmic Reticulum_Plasma membrane,Low
+Q96RR4,Endoplasmic Reticulum,Low
+Q96S52,Endoplasmic Reticulum_Nucleus,Low
+Q99622,Endoplasmic Reticulum_Mitochondria,Low
+Q99683,Endoplasmic Reticulum_Nucleus,Low
+Q99784,Endoplasmic Reticulum_Presynapse,Low
+Q9BQI7,Endoplasmic Reticulum_Presynapse,Low
+Q9BRK0,Endoplasmic Reticulum_Presynapse,Low
+Q9BSA4,Endoplasmic Reticulum,Low
+Q9BWS9,Endoplasmic Reticulum,Low
+Q9BX66,Endoplasmic Reticulum,Low
+Q9BX67,Endoplasmic Reticulum_Presynapse,Low
+Q9BZ29,Endoplasmic Reticulum_Postsynapse,Low
+Q9BZF1,Endoplasmic Reticulum_Nucleus,Low
+Q9H019,Endoplasmic Reticulum,Low
+Q9H1K0,Endoplasmic Reticulum_Mitochondria,Low
+Q9H305,Endoplasmic Reticulum_Mitochondria,Low
+Q9H4G4,Endoplasmic Reticulum_Plasma membrane,Low
+Q9H598,Endoplasmic Reticulum_Presynapse,Low
+Q9HA65,Endoplasmic Reticulum_Postsynapse,Low
+Q9HBH5,Endoplasmic Reticulum_Mitochondria,Low
+Q9HBI6,Endoplasmic Reticulum,Low
+Q9HD42,Endoplasmic Reticulum,Low
+Q9NP72,Endoplasmic Reticulum,Low
+Q9NPD7,Endoplasmic Reticulum_Presynapse,Low
+Q9NSK0,Endoplasmic Reticulum,Low
+Q9NX40,Endoplasmic Reticulum,Low
+Q9NY35,Endoplasmic Reticulum_Presynapse,Low
+Q9NZ01,Endoplasmic Reticulum_Plasma membrane,Low
+Q9NZJ4,Endoplasmic Reticulum_Nucleus,Low
+Q9NZQ3,Endoplasmic Reticulum,Low
+Q9P0L2,Endoplasmic Reticulum_Presynapse,Low
+Q9P1Y5,Endoplasmic Reticulum_Mitochondria,Low
+Q9P265,Endoplasmic Reticulum_Plasma membrane,Low
+Q9UGI6,Endoplasmic Reticulum,Low
+Q9UHB9,Endoplasmic Reticulum,Low
+Q9UHI5,Endoplasmic Reticulum_Nucleus,Low
+Q9UID3,Endoplasmic Reticulum_Presynapse,Low
+Q9UJ41,Endoplasmic Reticulum,Low
+Q9UJQ1,Endoplasmic Reticulum_Mitochondria,Low
+Q9ULC3,Endoplasmic Reticulum_Presynapse,Low
+Q9UM22,Endoplasmic Reticulum,Low
+Q9UM54,Endoplasmic Reticulum,Low
+Q9UMX5,Endoplasmic Reticulum_Mitochondria,Low
+Q9UMY4,Endoplasmic Reticulum,Low
+Q9UNA1,Endoplasmic Reticulum_Plasma membrane,Low
+Q9UNH7,Endoplasmic Reticulum,Low
+Q9UNK0,Endoplasmic Reticulum,Low
+Q9UPQ0,Endoplasmic Reticulum,Low
+Q9UPQ3,Endoplasmic Reticulum,Low
+Q9UPY6,Endoplasmic Reticulum_Presynapse,Low
+Q9Y265,Endoplasmic Reticulum_Presynapse,Low
+Q9Y2E4,Endoplasmic Reticulum_Nucleus,Low
+Q9Y2H1,Endoplasmic Reticulum,Low
+Q9Y4P8,Endoplasmic Reticulum_Presynapse,Low
+Q9Y5K5,Endoplasmic Reticulum,Low
+Q9Y5Y2,Endoplasmic Reticulum,Low
+Q9Y6B6,Endoplasmic Reticulum_Presynapse,Low
+Q9Y6E0,Endoplasmic Reticulum,Low
+Q9Y6K8,Endoplasmic Reticulum_Plasma membrane,Low
+A2RU67,Mitochondria,Low
+O00165,Mitochondria_Postsynapse,Low
+O00305,Mitochondria,Low
+O00471,Mitochondria_Plasma membrane,Low
+O14490,Mitochondria_Postsynapse,Low
+O15034,Mitochondria_Postsynapse,Low
+O15068,Mitochondria_Postsynapse,Low
+O15294,Mitochondria,Low
+O43678,Mitochondria,Low
+O43739,Mitochondria,Low
+O60503,Mitochondria,Low
+O75521,Mitochondria,Low
+O75962,Mitochondria,Low
+O94830,Mitochondria,Low
+O94966,Mitochondria_Nucleus,Low
+O95139,Mitochondria_Postsynapse,Low
+O95167,Mitochondria_Postsynapse,Low
+O95886,Mitochondria_Postsynapse,Low
+O96008,Mitochondria_Postsynapse,Low
+P00846,Mitochondria,Low
+P03891,Mitochondria_Postsynapse,Low
+P11274,Mitochondria_Nucleus,Low
+P17152,Mitochondria,Low
+P22830,Mitochondria_Presynapse,Low
+P23677,Mitochondria_Postsynapse,Low
+P24588,Mitochondria,Low
+P35498,Mitochondria,Low
+P36404,Mitochondria,Low
+P43487,Mitochondria,Low
+P50402,Mitochondria,Low
+P52594,Mitochondria_Plasma membrane,Low
+P54803,Mitochondria,Low
+P56378,Mitochondria_Postsynapse,Low
+P78369,Mitochondria,Low
+P82909,Mitochondria_Presynapse,Low
+Q08499,Mitochondria,Low
+Q08AE8,Mitochondria,Low
+Q12792,Mitochondria_Nucleus,Low
+Q12849,Mitochondria_Postsynapse,Low
+Q12931,Mitochondria_Postsynapse,Low
+Q13015,Mitochondria,Low
+Q13232,Mitochondria,Low
+Q13362,Mitochondria,Low
+Q14161,Mitochondria,Low
+Q14C86,Mitochondria_Nucleus,Low
+Q15582,Mitochondria_Nucleus,Low
+Q5RI15,Mitochondria,Low
+Q5SRE7,Mitochondria,Low
+Q5TC12,Mitochondria_Postsynapse,Low
+Q6FI81,Mitochondria,Low
+Q6PGP7,Mitochondria_Nucleus,Low
+Q6ZMI0,Mitochondria,Low
+Q86UW7,Mitochondria_Presynapse,Low
+Q86XE3,Mitochondria_Postsynapse,Low
+Q8IZU2,Mitochondria,Low
+Q8NFJ9,Mitochondria,Low
+Q8NFZ4,Mitochondria,Low
+Q8TDC3,Mitochondria_Plasma membrane,Low
+Q8WXI2,Mitochondria,Low
+Q92529,Mitochondria,Low
+Q92538,Mitochondria,Low
+Q96A26,Mitochondria_Postsynapse,Low
+Q96IX5,Mitochondria_Postsynapse,Low
+Q96JJ7,Mitochondria,Low
+Q96LT7,Mitochondria,Low
+Q96RF0,Mitochondria,Low
+Q96RS6,Mitochondria_Nucleus,Low
+Q96SW2,Mitochondria,Low
+Q96TA1,Mitochondria,Low
+Q99490,Mitochondria,Low
+Q9BQG1,Mitochondria,Low
+Q9BRK4,Mitochondria,Low
+Q9BW72,Mitochondria_Postsynapse,Low
+Q9C026,Mitochondria_Nucleus,Low
+Q9HBL8,Mitochondria_Nucleus,Low
+Q9HC56,Mitochondria,Low
+Q9HD34,Mitochondria_Postsynapse,Low
+Q9NR48,Mitochondria,Low
+Q9NRA0,Mitochondria,Low
+Q9NS69,Mitochondria_Postsynapse,Low
+Q9NVH1,Mitochondria_Postsynapse,Low
+Q9NZJ7,Mitochondria_Presynapse,Low
+Q9UDW1,Mitochondria_Postsynapse,Low
+Q9UIQ6,Mitochondria,Low
+Q9Y2G8,Mitochondria,Low
+Q9Y4P1,Mitochondria_Nucleus,Low
+Q9Y4W6,Mitochondria_Postsynapse,Low
+Q9Y653,Mitochondria_Nucleus,Low
+O15523,Nucleus,Low
+O75592,Nucleus,Low
+O75923,Nucleus,Low
+P01861,Nucleus,Low
+P05164,Nucleus,Low
+P07305,Nucleus,Low
+P08311,Nucleus,Low
+P16157,Nucleus,Low
+P16403,Nucleus_Plasma membrane,Low
+P30484,Nucleus,Low
+Q02880,Nucleus,Low
+Q03426,Nucleus,Low
+Q08431,Nucleus,Low
+Q13243,Nucleus,Low
+Q14011,Nucleus,Low
+Q16853,Nucleus,Low
+Q5VZ66,Nucleus,Low
+Q68DU8,Nucleus,Low
+Q6NUQ4,Nucleus_Postsynapse,Low
+Q6P1X6,Nucleus,Low
+Q86YS7,Nucleus,Low
+Q8N5R6,Nucleus,Low
+Q8NHP6,Nucleus,Low
+Q8TAC2,Nucleus,Low
+Q92522,Nucleus_Plasma membrane,Low
+Q96D09,Nucleus,Low
+Q9BSF0,Nucleus,Low
+Q9BST9,Nucleus,Low
+Q9H902,Nucleus,Low
+Q9NRR3,Nucleus,Low
+Q9UBQ5,Nucleus,Low
+Q9UJD0,Nucleus_Postsynapse,Low
+O14508,Plasma membrane,Low
+O15400,Plasma membrane_Presynapse,Low
+O75077,Plasma membrane_Presynapse,Low
+O75569,Plasma membrane_Presynapse,Low
+O75822,Plasma membrane,Low
+P08621,Plasma membrane,Low
+P16389,Plasma membrane_Presynapse,Low
+P17980,Plasma membrane,Low
+P40429,Plasma membrane_Presynapse,Low
+P42677,Plasma membrane_Presynapse,Low
+P42766,Plasma membrane_Presynapse,Low
+P49207,Plasma membrane_Presynapse,Low
+P53999,Plasma membrane_Presynapse,Low
+P54764,Plasma membrane_Presynapse,Low
+P62316,Plasma membrane,Low
+P63162,Plasma membrane,Low
+Q05329,Plasma membrane,Low
+Q13347,Plasma membrane_Presynapse,Low
+Q13409,Plasma membrane_Presynapse,Low
+Q13442,Plasma membrane,Low
+Q13492,Plasma membrane_Presynapse,Low
+Q14444,Plasma membrane_Presynapse,Low
+Q15286,Plasma membrane,Low
+Q15334,Plasma membrane_Presynapse,Low
+Q8NFW8,Plasma membrane_Presynapse,Low
+Q8NHM4,Plasma membrane_Postsynapse,Low
+Q92859,Plasma membrane,Low
+Q96ID5,Plasma membrane_Presynapse,Low
+Q99613,Plasma membrane_Presynapse,Low
+Q9H4M9,Plasma membrane,Low
+Q9NUJ3,Plasma membrane,Low
+Q9UHC6,Plasma membrane,Low
+Q9UHQ9,Plasma membrane_Presynapse,Low
+Q9UN86,Plasma membrane_Presynapse,Low
+Q9Y3A5,Plasma membrane_Presynapse,Low
+Q9Y536,Plasma membrane,Low
+P03905,Postsynapse,Low
+P14867,Postsynapse,Low
+P15056,Postsynapse,Low
+P17568,Postsynapse,Low
+P54829,Postsynapse,Low
+Q07002,Postsynapse,Low
+Q16134,Postsynapse,Low
+Q9BVA0,Postsynapse,Low
+Q9C0H5,Postsynapse,Low
+Q9ULJ8,Postsynapse,Low
+Q9Y241,Postsynapse_Presynapse,Low
+Q9Y2Q3,Postsynapse,Low
+Q9Y512,Postsynapse,Low
+O43272,Presynapse,Low
+O75145,Presynapse,Low
+O75146,Presynapse,Low
+O75821,Presynapse,Low
+O95502,Presynapse,Low
+O95573,Presynapse,Low
+P17931,Presynapse,Low
+Q13085,Presynapse,Low
+Q14832,Presynapse,Low
+Q5FWE3,Presynapse,Low
+Q7KZF4,Presynapse,Low
+Q86T65,Presynapse,Low
+Q8N4P6,Presynapse,Low
+Q8N9I0,Presynapse,Low
+Q8ND76,Presynapse,Low
+Q8TB96,Presynapse,Low
+Q92930,Presynapse,Low
+Q9NUM4,Presynapse,Low
+Q9UN37,Presynapse,Low
+A0A024RBG1,Endoplasmic Reticulum,Medium
+A0AVT1,Endoplasmic Reticulum,Medium
+A1L0T0,Plasma membrane,Medium
+A2RTX5,Endoplasmic Reticulum,Medium
+A5PKW4,Mitochondria,Medium
+A5YM72,Cytoskeleton,Medium
+A6NE02,Endoplasmic Reticulum,Medium
+O00139,Plasma membrane,Medium
+O00159,Nucleus,Medium
+O00170,Endoplasmic Reticulum,Medium
+O00186,Endoplasmic Reticulum,Medium
+O00217,Postsynapse,Medium
+O00264,Plasma membrane,Medium
+O00330,Cytoskeleton,Medium
+O00399,Cytoplasm,Medium
+O00408,Cytoskeleton,Medium
+O00571,Endoplasmic Reticulum,Medium
+O00625,Cytoplasm,Medium
+O14495,Presynapse,Medium
+O14525,Endoplasmic Reticulum,Medium
+O14579,Endoplasmic Reticulum,Medium
+O14787,Endoplasmic Reticulum,Medium
+O14810,Cytoskeleton,Medium
+O14828,Endoplasmic Reticulum,Medium
+O14910,Endoplasmic Reticulum,Medium
+O14964,Cytoskeleton,Medium
+O14976,Presynapse,Medium
+O14979,Nucleus,Medium
+O14980,Cytoskeleton,Medium
+O14994,Cytoskeleton,Medium
+O15066,Endoplasmic Reticulum,Medium
+O15069,Endoplasmic Reticulum,Medium
+O15079,Postsynapse,Medium
+O15212,Cytoplasm,Medium
+O15240,Plasma membrane,Medium
+O15371,Plasma membrane,Medium
+O15439,Nucleus,Medium
+O15484,Plasma membrane,Medium
+O43149,Mitochondria,Medium
+O43157,Endoplasmic Reticulum,Medium
+O43169,Presynapse,Medium
+O43242,Cytoskeleton,Medium
+O43295,Endoplasmic Reticulum,Medium
+O43427,Endoplasmic Reticulum,Medium
+O43464,Mitochondria,Medium
+O43504,Plasma membrane,Medium
+O43505,Endoplasmic Reticulum,Medium
+O43581,Presynapse,Medium
+O43681,Cytoskeleton,Medium
+O43747,Cytoskeleton,Medium
+O43752,Endoplasmic Reticulum,Medium
+O43759,Presynapse,Medium
+O43765,Cytoskeleton,Medium
+O43809,Plasma membrane,Medium
+O60220,Postsynapse,Medium
+O60245,Endoplasmic Reticulum,Medium
+O60262,Plasma membrane,Medium
+O60307,Mitochondria,Medium
+O60346,Cytoskeleton,Medium
+O60684,Cytoskeleton,Medium
+O60762,Endoplasmic Reticulum,Medium
+O60784,Cytoskeleton,Medium
+O60861,Presynapse,Medium
+O60869,Endoplasmic Reticulum,Medium
+O60883,Presynapse,Medium
+O60884,Plasma membrane,Medium
+O60939,Endoplasmic Reticulum,Medium
+O75027,Mitochondria,Medium
+O75044,Mitochondria,Medium
+O75051,Endoplasmic Reticulum,Medium
+O75122,Plasma membrane,Medium
+O75170,Endoplasmic Reticulum,Medium
+O75208,Mitochondria,Medium
+O75251,Mitochondria,Medium
+O75323,Cytoskeleton,Medium
+O75340,Cytoskeleton,Medium
+O75352,Endoplasmic Reticulum,Medium
+O75382,Endoplasmic Reticulum,Medium
+O75431,Mitochondria,Medium
+O75438,Mitochondria,Medium
+O75508,Cytoskeleton,Medium
+O75531,Cytoskeleton,Medium
+O75689,Endoplasmic Reticulum,Medium
+O75874,Cytoskeleton,Medium
+O75899,Presynapse,Medium
+O75935,Cytoskeleton,Medium
+O75964,Postsynapse,Medium
+O76003,Endoplasmic Reticulum,Medium
+O76041,Cytoskeleton,Medium
+O76094,Endoplasmic Reticulum,Medium
+O94772,Presynapse,Medium
+O94805,Nucleus,Medium
+O94832,Cytoskeleton,Medium
+O94875,Mitochondria,Medium
+O94903,Endoplasmic Reticulum,Medium
+O94915,Cytoskeleton,Medium
+O94967,Endoplasmic Reticulum,Medium
+O95140,Presynapse,Medium
+O95168,Postsynapse,Medium
+O95182,Mitochondria,Medium
+O95196,Endoplasmic Reticulum,Medium
+O95294,Endoplasmic Reticulum,Medium
+O95298,Mitochondria,Medium
+O95319,Endoplasmic Reticulum,Medium
+O95563,Mitochondria,Medium
+O95741,Plasma membrane,Medium
+O95847,Mitochondria,Medium
+O95858,Endoplasmic Reticulum,Medium
+O95970,Presynapse,Medium
+P00488,Cytoplasm,Medium
+P00966,Cytoplasm,Medium
+P01116,Presynapse,Medium
+P01303,Endoplasmic Reticulum,Medium
+P01859,Cytoplasm,Medium
+P01871,Endoplasmic Reticulum,Medium
+P01876,Cytoskeleton,Medium
+P02745,Endoplasmic Reticulum,Medium
+P02790,Cytoskeleton,Medium
+P03886,Mitochondria,Medium
+P03915,Mitochondria,Medium
+P04040,Cytoplasm,Medium
+P04264,Cytoskeleton,Medium
+P04843,Presynapse,Medium
+P05060,Mitochondria,Medium
+P05107,Endoplasmic Reticulum,Medium
+P05129,Cytoskeleton,Medium
+P05165,Mitochondria,Medium
+P05198,Presynapse,Medium
+P05455,Cytoplasm,Medium
+P06756,Plasma membrane,Medium
+P07093,Endoplasmic Reticulum,Medium
+P07858,Cytoplasm,Medium
+P07951,Cytoplasm,Medium
+P08183,Endoplasmic Reticulum,Medium
+P08246,Nucleus,Medium
+P08571,Cytoplasm,Medium
+P0CG30,Cytoplasm,Medium
+P10253,Cytoplasm,Medium
+P10301,Plasma membrane,Medium
+P10644,Endoplasmic Reticulum,Medium
+P11166,Presynapse,Medium
+P11277,Mitochondria,Medium
+P11310,Cytoplasm,Medium
+P11413,Cytoskeleton,Medium
+P11586,Cytoskeleton,Medium
+P12081,Cytoskeleton,Medium
+P12109,Endoplasmic Reticulum,Medium
+P12110,Endoplasmic Reticulum,Medium
+P12111,Plasma membrane,Medium
+P12268,Endoplasmic Reticulum,Medium
+P12270,Nucleus,Medium
+P12931,Endoplasmic Reticulum,Medium
+P12955,Cytoplasm,Medium
+P12956,Cytoskeleton,Medium
+P13667,Endoplasmic Reticulum,Medium
+P13693,Cytoskeleton,Medium
+P13726,Presynapse,Medium
+P13807,Endoplasmic Reticulum,Medium
+P13987,Plasma membrane,Medium
+P14621,Cytoplasm,Medium
+P14868,Presynapse,Medium
+P15170,Cytoskeleton,Medium
+P15927,Endoplasmic Reticulum,Medium
+P15954,Mitochondria,Medium
+P16070,Plasma membrane,Medium
+P16083,Cytoplasm,Medium
+P16104,Cytoskeleton,Medium
+P16298,Cytoplasm,Medium
+P17252,Cytoskeleton,Medium
+P18085,Cytoskeleton,Medium
+P18433,Endoplasmic Reticulum,Medium
+P19404,Cytoskeleton,Medium
+P20290,Plasma membrane,Medium
+P20338,Cytoskeleton,Medium
+P21397,Plasma membrane,Medium
+P21695,Cytoplasm,Medium
+P22102,Endoplasmic Reticulum,Medium
+P22676,Cytoplasm,Medium
+P23434,Cytoskeleton,Medium
+P23468,Endoplasmic Reticulum,Medium
+P23469,Endoplasmic Reticulum,Medium
+P23588,Cytoplasm,Medium
+P23610,Endoplasmic Reticulum,Medium
+P23743,Mitochondria,Medium
+P23786,Mitochondria,Medium
+P25713,Cytoplasm,Medium
+P25788,Cytoplasm,Medium
+P26196,Endoplasmic Reticulum,Medium
+P26368,Cytoskeleton,Medium
+P27544,Endoplasmic Reticulum,Medium
+P27695,Cytoskeleton,Medium
+P27986,Endoplasmic Reticulum,Medium
+P28676,Endoplasmic Reticulum,Medium
+P29120,Mitochondria,Medium
+P29144,Cytoskeleton,Medium
+P29218,Cytoskeleton,Medium
+P29762,Cytoplasm,Medium
+P30405,Mitochondria,Medium
+P30419,Plasma membrane,Medium
+P30519,Plasma membrane,Medium
+P30520,Cytoplasm,Medium
+P31153,Cytoplasm,Medium
+P31937,Cytoskeleton,Medium
+P31939,Cytoskeleton,Medium
+P31943,Cytoskeleton,Medium
+P31947,Cytoplasm,Medium
+P32189,Mitochondria,Medium
+P33316,Mitochondria,Medium
+P35520,Cytoskeleton,Medium
+P35613,Plasma membrane,Medium
+P35754,Cytoplasm,Medium
+P36222,Cytoplasm,Medium
+P36873,Endoplasmic Reticulum,Medium
+P36969,Plasma membrane,Medium
+P37108,Cytoskeleton,Medium
+P38405,Mitochondria,Medium
+P39019,Cytoskeleton,Medium
+P39687,Cytoskeleton,Medium
+P40121,Cytoplasm,Medium
+P41091,Plasma membrane,Medium
+P41217,Plasma membrane,Medium
+P41252,Presynapse,Medium
+P42262,Postsynapse,Medium
+P42263,Mitochondria,Medium
+P42345,Endoplasmic Reticulum,Medium
+P42785,Cytoplasm,Medium
+P43121,Presynapse,Medium
+P43686,Cytoskeleton,Medium
+P45381,Cytoskeleton,Medium
+P45985,Cytoskeleton,Medium
+P46108,Cytoskeleton,Medium
+P46439,Cytoplasm,Medium
+P46778,Cytoskeleton,Medium
+P46779,Plasma membrane,Medium
+P46939,Endoplasmic Reticulum,Medium
+P46940,Cytoskeleton,Medium
+P46952,Cytoskeleton,Medium
+P47736,Endoplasmic Reticulum,Medium
+P47870,Postsynapse,Medium
+P47914,Plasma membrane,Medium
+P48426,Cytoskeleton,Medium
+P48444,Endoplasmic Reticulum,Medium
+P48556,Endoplasmic Reticulum,Medium
+P48637,Cytoplasm,Medium
+P49354,Endoplasmic Reticulum,Medium
+P49441,Cytoskeleton,Medium
+P49815,Endoplasmic Reticulum,Medium
+P49840,Endoplasmic Reticulum,Medium
+P49915,Cytoskeleton,Medium
+P50151,Plasma membrane,Medium
+P50914,Plasma membrane,Medium
+P51398,Mitochondria,Medium
+P51610,Nucleus,Medium
+P51648,Endoplasmic Reticulum,Medium
+P51665,Cytoskeleton,Medium
+P51808,Cytoskeleton,Medium
+P51888,Plasma membrane,Medium
+P52429,Endoplasmic Reticulum,Medium
+P53004,Cytoskeleton,Medium
+P53597,Cytoskeleton,Medium
+P53677,Presynapse,Medium
+P53680,Cytoskeleton,Medium
+P53779,Cytoskeleton,Medium
+P53990,Endoplasmic Reticulum,Medium
+P53992,Endoplasmic Reticulum,Medium
+P54136,Presynapse,Medium
+P54725,Cytoplasm,Medium
+P55036,Endoplasmic Reticulum,Medium
+P55735,Cytoskeleton,Medium
+P55769,Nucleus,Medium
+P55854,Cytoplasm,Medium
+P55884,Presynapse,Medium
+P56556,Postsynapse,Medium
+P57737,Endoplasmic Reticulum,Medium
+P58549,Presynapse,Medium
+P60228,Endoplasmic Reticulum,Medium
+P60842,Endoplasmic Reticulum,Medium
+P60866,Plasma membrane,Medium
+P60903,Presynapse,Medium
+P61006,Endoplasmic Reticulum,Medium
+P61224,Plasma membrane,Medium
+P61225,Presynapse,Medium
+P61457,Cytoplasm,Medium
+P61601,Cytoskeleton,Medium
+P61923,Endoplasmic Reticulum,Medium
+P61960,Cytoplasm,Medium
+P62070,Mitochondria,Medium
+P62195,Cytoskeleton,Medium
+P62244,Plasma membrane,Medium
+P62263,Cytoskeleton,Medium
+P62304,Plasma membrane,Medium
+P62306,Nucleus,Medium
+P62318,Plasma membrane,Medium
+P62330,Mitochondria,Medium
+P62837,Cytoplasm,Medium
+P62841,Plasma membrane,Medium
+P62847,Cytoskeleton,Medium
+P62854,Plasma membrane,Medium
+P62857,Plasma membrane,Medium
+P62861,Plasma membrane,Medium
+P62899,Plasma membrane,Medium
+P62910,Plasma membrane,Medium
+P62913,Cytoskeleton,Medium
+P63167,Cytoskeleton,Medium
+P63173,Plasma membrane,Medium
+P63215,Cytoskeleton,Medium
+P63218,Endoplasmic Reticulum,Medium
+P63220,Plasma membrane,Medium
+P78356,Cytoskeleton,Medium
+P78362,Plasma membrane,Medium
+P78527,Cytoskeleton,Medium
+P84098,Endoplasmic Reticulum,Medium
+P84103,Cytoskeleton,Medium
+P98179,Nucleus,Medium
+P98196,Cytoskeleton,Medium
+Q00059,Postsynapse,Medium
+Q00587,Nucleus,Medium
+Q00688,Presynapse,Medium
+Q01650,Endoplasmic Reticulum,Medium
+Q01844,Nucleus,Medium
+Q02108,Cytoplasm,Medium
+Q02224,Mitochondria,Medium
+Q02246,Cytoskeleton,Medium
+Q02338,Postsynapse,Medium
+Q02543,Presynapse,Medium
+Q03013,Cytoplasm,Medium
+Q04446,Endoplasmic Reticulum,Medium
+Q04637,Endoplasmic Reticulum,Medium
+Q04828,Endoplasmic Reticulum,Medium
+Q07157,Cytoskeleton,Medium
+Q07866,Cytoskeleton,Medium
+Q07960,Cytoskeleton,Medium
+Q08174,Plasma membrane,Medium
+Q08380,Cytoskeleton,Medium
+Q08752,Endoplasmic Reticulum,Medium
+Q08828,Endoplasmic Reticulum,Medium
+Q08AM6,Presynapse,Medium
+Q09028,Nucleus,Medium
+Q10713,Mitochondria,Medium
+Q12791,Endoplasmic Reticulum,Medium
+Q13017,Endoplasmic Reticulum,Medium
+Q13098,Cytoskeleton,Medium
+Q13131,Endoplasmic Reticulum,Medium
+Q13148,Endoplasmic Reticulum,Medium
+Q13185,Cytoplasm,Medium
+Q13332,Endoplasmic Reticulum,Medium
+Q13367,Cytoskeleton,Medium
+Q13424,Plasma membrane,Medium
+Q13496,Endoplasmic Reticulum,Medium
+Q13564,Cytoplasm,Medium
+Q13574,Nucleus,Medium
+Q13613,Endoplasmic Reticulum,Medium
+Q13618,Cytoplasm,Medium
+Q13642,Cytoplasm,Medium
+Q13683,Endoplasmic Reticulum,Medium
+Q14118,Cytoplasm,Medium
+Q14123,Endoplasmic Reticulum,Medium
+Q14139,Endoplasmic Reticulum,Medium
+Q14141,Cytoskeleton,Medium
+Q14152,Plasma membrane,Medium
+Q14156,Endoplasmic Reticulum,Medium
+Q14168,Cytoskeleton,Medium
+Q14257,Endoplasmic Reticulum,Medium
+Q14344,Plasma membrane,Medium
+Q14376,Cytoplasm,Medium
+Q14558,Cytoskeleton,Medium
+Q14642,Presynapse,Medium
+Q14699,Mitochondria,Medium
+Q14964,Cytoplasm,Medium
+Q15008,Endoplasmic Reticulum,Medium
+Q15041,Presynapse,Medium
+Q15075,Cytoplasm,Medium
+Q15084,Plasma membrane,Medium
+Q15111,Endoplasmic Reticulum,Medium
+Q15185,Plasma membrane,Medium
+Q15223,Endoplasmic Reticulum,Medium
+Q15370,Cytoskeleton,Medium
+Q15382,Endoplasmic Reticulum,Medium
+Q15388,Postsynapse,Medium
+Q15404,Cytoskeleton,Medium
+Q15436,Endoplasmic Reticulum,Medium
+Q15750,Endoplasmic Reticulum,Medium
+Q15751,Endoplasmic Reticulum,Medium
+Q16204,Cytoskeleton,Medium
+Q16566,Endoplasmic Reticulum,Medium
+Q16629,Plasma membrane,Medium
+Q16630,Plasma membrane,Medium
+Q16774,Cytoskeleton,Medium
+Q3KQV9,Cytoplasm,Medium
+Q3YEC7,Endoplasmic Reticulum,Medium
+Q3ZCQ8,Mitochondria,Medium
+Q3ZCW2,Cytoskeleton,Medium
+Q49A26,Nucleus,Medium
+Q4G0F5,Cytoskeleton,Medium
+Q4V328,Endoplasmic Reticulum,Medium
+Q52LJ0,Nucleus,Medium
+Q53HC9,Endoplasmic Reticulum,Medium
+Q59EK9,Endoplasmic Reticulum,Medium
+Q5JPH6,Mitochondria,Medium
+Q5JTD7,Endoplasmic Reticulum,Medium
+Q5SYC1,Endoplasmic Reticulum,Medium
+Q5T0D9,Plasma membrane,Medium
+Q5T848,Endoplasmic Reticulum,Medium
+Q5TGZ0,Mitochondria,Medium
+Q5TH69,Endoplasmic Reticulum,Medium
+Q5TZA2,Cytoskeleton,Medium
+Q5VSL9,Mitochondria,Medium
+Q5VT66,Cytoplasm,Medium
+Q5XKP0,Mitochondria,Medium
+Q68D91,Endoplasmic Reticulum,Medium
+Q6GMV3,Endoplasmic Reticulum,Medium
+Q6IAN0,Endoplasmic Reticulum,Medium
+Q6IQ20,Endoplasmic Reticulum,Medium
+Q6KCM7,Mitochondria,Medium
+Q6L8Q7,Mitochondria,Medium
+Q6NV74,Mitochondria,Medium
+Q6NVY1,Cytoskeleton,Medium
+Q6P3W7,Endoplasmic Reticulum,Medium
+Q6PFW1,Endoplasmic Reticulum,Medium
+Q6PJW8,Endoplasmic Reticulum,Medium
+Q6UXD5,Mitochondria,Medium
+Q6VY07,Endoplasmic Reticulum,Medium
+Q6WCQ1,Postsynapse,Medium
+Q6ZVL6,Endoplasmic Reticulum,Medium
+Q71UI9,Cytoskeleton,Medium
+Q765P7,Endoplasmic Reticulum,Medium
+Q7L1I2,Cytoskeleton,Medium
+Q7L1Q6,Endoplasmic Reticulum,Medium
+Q7L1S5,Endoplasmic Reticulum,Medium
+Q7L266,Cytoplasm,Medium
+Q7L576,Endoplasmic Reticulum,Medium
+Q7L5N1,Cytoplasm,Medium
+Q7Z2K8,Cytoplasm,Medium
+Q7Z3D6,Mitochondria,Medium
+Q7Z3U7,Endoplasmic Reticulum,Medium
+Q86SX6,Mitochondria,Medium
+Q86UP2,Cytoskeleton,Medium
+Q86UR5,Mitochondria,Medium
+Q86UW8,Presynapse,Medium
+Q86UX6,Endoplasmic Reticulum,Medium
+Q86UY8,Mitochondria,Medium
+Q86V88,Cytoplasm,Medium
+Q86X10,Endoplasmic Reticulum,Medium
+Q86X55,Endoplasmic Reticulum,Medium
+Q86X76,Cytoskeleton,Medium
+Q86Y39,Cytoskeleton,Medium
+Q86YM7,Postsynapse,Medium
+Q8IUS5,Mitochondria,Medium
+Q8IV08,Endoplasmic Reticulum,Medium
+Q8IVF2,Cytoskeleton,Medium
+Q8IVP5,Mitochondria,Medium
+Q8IWB7,Endoplasmic Reticulum,Medium
+Q8IXS8,Endoplasmic Reticulum,Medium
+Q8IY22,Endoplasmic Reticulum,Medium
+Q8IYB4,Endoplasmic Reticulum,Medium
+Q8IYB5,Presynapse,Medium
+Q8IYJ1,Mitochondria,Medium
+Q8N111,Cytoskeleton,Medium
+Q8N122,Endoplasmic Reticulum,Medium
+Q8N135,Endoplasmic Reticulum,Medium
+Q8N1F7,Nucleus,Medium
+Q8N1I0,Endoplasmic Reticulum,Medium
+Q8N3P4,Endoplasmic Reticulum,Medium
+Q8N3V7,Postsynapse,Medium
+Q8N414,Mitochondria,Medium
+Q8N465,Mitochondria,Medium
+Q8N4C8,Endoplasmic Reticulum,Medium
+Q8N4Q0,Mitochondria,Medium
+Q8N5H7,Mitochondria,Medium
+Q8N5J2,Endoplasmic Reticulum,Medium
+Q8N668,Endoplasmic Reticulum,Medium
+Q8N684,Nucleus,Medium
+Q8N6N7,Cytoplasm,Medium
+Q8N987,Cytoskeleton,Medium
+Q8N9F0,Mitochondria,Medium
+Q8N9F7,Endoplasmic Reticulum,Medium
+Q8N9N7,Plasma membrane,Medium
+Q8N9R8,Cytoskeleton,Medium
+Q8NBF2,Cytoplasm,Medium
+Q8NBN7,Mitochondria,Medium
+Q8NBS9,Endoplasmic Reticulum,Medium
+Q8NC96,Cytoskeleton,Medium
+Q8NCG7,Plasma membrane,Medium
+Q8NCW5,Cytoplasm,Medium
+Q8NDA8,Endoplasmic Reticulum,Medium
+Q8NDH3,Cytoplasm,Medium
+Q8NE71,Endoplasmic Reticulum,Medium
+Q8NEB9,Mitochondria,Medium
+Q8NHH9,Endoplasmic Reticulum,Medium
+Q8TAT6,Endoplasmic Reticulum,Medium
+Q8TBF2,Endoplasmic Reticulum,Medium
+Q8TBX8,Cytoskeleton,Medium
+Q8TCU6,Endoplasmic Reticulum,Medium
+Q8TF44,Mitochondria,Medium
+Q8WUD1,Endoplasmic Reticulum,Medium
+Q8WUW1,Presynapse,Medium
+Q8WUX9,Mitochondria,Medium
+Q8WUY3,Mitochondria,Medium
+Q8WVM8,Endoplasmic Reticulum,Medium
+Q8WXD9,Endoplasmic Reticulum,Medium
+Q8WY22,Mitochondria,Medium
+Q8WZ42,Cytoskeleton,Medium
+Q92558,Cytoskeleton,Medium
+Q92572,Endoplasmic Reticulum,Medium
+Q92581,Endoplasmic Reticulum,Medium
+Q92734,Cytoplasm,Medium
+Q92743,Endoplasmic Reticulum,Medium
+Q92796,Mitochondria,Medium
+Q92820,Cytoplasm,Medium
+Q92845,Endoplasmic Reticulum,Medium
+Q92982,Endoplasmic Reticulum,Medium
+Q93008,Endoplasmic Reticulum,Medium
+Q93034,Cytoplasm,Medium
+Q969Q0,Plasma membrane,Medium
+Q96BM9,Cytoskeleton,Medium
+Q96C19,Cytoplasm,Medium
+Q96CM8,Mitochondria,Medium
+Q96DA2,Endoplasmic Reticulum,Medium
+Q96DE0,Nucleus,Medium
+Q96DZ9,Endoplasmic Reticulum,Medium
+Q96EK5,Endoplasmic Reticulum,Medium
+Q96EQ0,Cytoskeleton,Medium
+Q96F24,Mitochondria,Medium
+Q96FC7,Cytoskeleton,Medium
+Q96FN4,Endoplasmic Reticulum,Medium
+Q96FQ6,Cytoplasm,Medium
+Q96GA7,Endoplasmic Reticulum,Medium
+Q96GD0,Cytoskeleton,Medium
+Q96GK7,Cytoplasm,Medium
+Q96GQ5,Endoplasmic Reticulum,Medium
+Q96HE7,Endoplasmic Reticulum,Medium
+Q96HR9,Endoplasmic Reticulum,Medium
+Q96HS1,Mitochondria,Medium
+Q96JH7,Cytoskeleton,Medium
+Q96L92,Endoplasmic Reticulum,Medium
+Q96NW7,Mitochondria,Medium
+Q96P47,Plasma membrane,Medium
+Q96P70,Endoplasmic Reticulum,Medium
+Q96PE3,Endoplasmic Reticulum,Medium
+Q96PE5,Endoplasmic Reticulum,Medium
+Q96PU5,Mitochondria,Medium
+Q96PU8,Endoplasmic Reticulum,Medium
+Q96PY5,Plasma membrane,Medium
+Q96Q05,Endoplasmic Reticulum,Medium
+Q96QR8,Endoplasmic Reticulum,Medium
+Q99259,Endoplasmic Reticulum,Medium
+Q99426,Cytoskeleton,Medium
+Q99447,Cytoplasm,Medium
+Q99460,Cytoskeleton,Medium
+Q99523,Endoplasmic Reticulum,Medium
+Q99569,Mitochondria,Medium
+Q99572,Presynapse,Medium
+Q99627,Cytoskeleton,Medium
+Q99653,Presynapse,Medium
+Q99729,Cytoplasm,Medium
+Q99767,Mitochondria,Medium
+Q99884,Endoplasmic Reticulum,Medium
+Q99943,Endoplasmic Reticulum,Medium
+Q99996,Plasma membrane,Medium
+Q9BQ69,Mitochondria,Medium
+Q9BQE5,Cytoskeleton,Medium
+Q9BQI5,Cytoskeleton,Medium
+Q9BQI9,Cytoplasm,Medium
+Q9BR76,Cytoskeleton,Medium
+Q9BRX8,Plasma membrane,Medium
+Q9BSJ8,Cytoskeleton,Medium
+Q9BSU1,Endoplasmic Reticulum,Medium
+Q9BTE6,Endoplasmic Reticulum,Medium
+Q9BV23,Endoplasmic Reticulum,Medium
+Q9BV79,Mitochondria,Medium
+Q9BXF6,Mitochondria,Medium
+Q9BXJ9,Endoplasmic Reticulum,Medium
+Q9BXW6,Cytoskeleton,Medium
+Q9BZC7,Endoplasmic Reticulum,Medium
+Q9BZE9,Cytoplasm,Medium
+Q9BZF3,Endoplasmic Reticulum,Medium
+Q9BZZ5,Endoplasmic Reticulum,Medium
+Q9C0E8,Endoplasmic Reticulum,Medium
+Q9C0G6,Endoplasmic Reticulum,Medium
+Q9GZM8,Nucleus,Medium
+Q9GZN7,Presynapse,Medium
+Q9GZT3,Mitochondria,Medium
+Q9GZT4,Endoplasmic Reticulum,Medium
+Q9GZT6,Mitochondria,Medium
+Q9GZT8,Cytoskeleton,Medium
+Q9GZZ9,Cytoskeleton,Medium
+Q9H061,Mitochondria,Medium
+Q9H078,Mitochondria,Medium
+Q9H0B6,Endoplasmic Reticulum,Medium
+Q9H0Q0,Cytoskeleton,Medium
+Q9H0Q3,Cytoskeleton,Medium
+Q9H0R4,Cytoskeleton,Medium
+Q9H0W9,Cytoplasm,Medium
+Q9H1K4,Mitochondria,Medium
+Q9H1Z4,Postsynapse,Medium
+Q9H244,Endoplasmic Reticulum,Medium
+Q9H270,Endoplasmic Reticulum,Medium
+Q9H299,Cytoplasm,Medium
+Q9H2G2,Endoplasmic Reticulum,Medium
+Q9H313,Presynapse,Medium
+Q9H3K6,Cytoplasm,Medium
+Q9H425,Endoplasmic Reticulum,Medium
+Q9H444,Endoplasmic Reticulum,Medium
+Q9H6K5,Endoplasmic Reticulum,Medium
+Q9H6L5,Mitochondria,Medium
+Q9H7Z7,Cytoskeleton,Medium
+Q9H845,Mitochondria,Medium
+Q9H8H3,Plasma membrane,Medium
+Q9H9A6,Endoplasmic Reticulum,Medium
+Q9H9C1,Endoplasmic Reticulum,Medium
+Q9H9H5,Endoplasmic Reticulum,Medium
+Q9H9J2,Mitochondria,Medium
+Q9H9Q2,Cytoplasm,Medium
+Q9H9S3,Endoplasmic Reticulum,Medium
+Q9HA77,Mitochondria,Medium
+Q9HAV0,Cytoskeleton,Medium
+Q9HBF4,Presynapse,Medium
+Q9HC38,Cytoskeleton,Medium
+Q9HCC0,Cytoskeleton,Medium
+Q9HCD6,Postsynapse,Medium
+Q9NP78,Nucleus,Medium
+Q9NP81,Mitochondria,Medium
+Q9NPJ3,Cytoskeleton,Medium
+Q9NQC7,Mitochondria,Medium
+Q9NQE9,Presynapse,Medium
+Q9NQP4,Cytoplasm,Medium
+Q9NQR4,Cytoplasm,Medium
+Q9NQW7,Cytoplasm,Medium
+Q9NR28,Cytoplasm,Medium
+Q9NR31,Endoplasmic Reticulum,Medium
+Q9NR45,Cytoplasm,Medium
+Q9NRD5,Nucleus,Medium
+Q9NRG7,Mitochondria,Medium
+Q9NRQ2,Endoplasmic Reticulum,Medium
+Q9NRW7,Endoplasmic Reticulum,Medium
+Q9NRX4,Plasma membrane,Medium
+Q9NRY4,Endoplasmic Reticulum,Medium
+Q9NRZ7,Endoplasmic Reticulum,Medium
+Q9NSY0,Endoplasmic Reticulum,Medium
+Q9NUB1,Cytoskeleton,Medium
+Q9NUP9,Endoplasmic Reticulum,Medium
+Q9NUU7,Mitochondria,Medium
+Q9NV96,Endoplasmic Reticulum,Medium
+Q9NVE7,Endoplasmic Reticulum,Medium
+Q9NVI7,Mitochondria,Medium
+Q9NVT9,Mitochondria,Medium
+Q9NWU2,Endoplasmic Reticulum,Medium
+Q9NY47,Presynapse,Medium
+Q9NYU2,Endoplasmic Reticulum,Medium
+Q9NZ52,Endoplasmic Reticulum,Medium
+Q9NZ56,Endoplasmic Reticulum,Medium
+Q9NZH0,Endoplasmic Reticulum,Medium
+Q9NZJ6,Mitochondria,Medium
+Q9NZN4,Nucleus,Medium
+Q9NZW5,Endoplasmic Reticulum,Medium
+Q9P000,Endoplasmic Reticulum,Medium
+Q9P035,Cytoskeleton,Medium
+Q9P0J0,Cytoskeleton,Medium
+Q9P0K1,Plasma membrane,Medium
+Q9P0Z9,Endoplasmic Reticulum,Medium
+Q9P260,Endoplasmic Reticulum,Medium
+Q9P2E9,Endoplasmic Reticulum,Medium
+Q9P2R3,Plasma membrane,Medium
+Q9P2T1,Cytoplasm,Medium
+Q9UBE0,Endoplasmic Reticulum,Medium
+Q9UBW8,Cytoskeleton,Medium
+Q9UBX3,Mitochondria,Medium
+Q9UDY4,Endoplasmic Reticulum,Medium
+Q9UEW8,Cytoskeleton,Medium
+Q9UF11,Postsynapse,Medium
+Q9UFN0,Endoplasmic Reticulum,Medium
+Q9UGC6,Endoplasmic Reticulum,Medium
+Q9UGT4,Endoplasmic Reticulum,Medium
+Q9UHD2,Mitochondria,Medium
+Q9UHG2,Cytoskeleton,Medium
+Q9UHG3,Presynapse,Medium
+Q9UHQ4,Endoplasmic Reticulum,Medium
+Q9UI09,Postsynapse,Medium
+Q9UI40,Endoplasmic Reticulum,Medium
+Q9UII2,Mitochondria,Medium
+Q9UIJ7,Cytoskeleton,Medium
+Q9UJ70,Cytoskeleton,Medium
+Q9UJA5,Endoplasmic Reticulum,Medium
+Q9UJS0,Mitochondria,Medium
+Q9UK41,Endoplasmic Reticulum,Medium
+Q9UKU0,Cytoskeleton,Medium
+Q9UKU6,Endoplasmic Reticulum,Medium
+Q9UL26,Endoplasmic Reticulum,Medium
+Q9UL51,Endoplasmic Reticulum,Medium
+Q9ULB1,Endoplasmic Reticulum,Medium
+Q9ULK0,Endoplasmic Reticulum,Medium
+Q9ULP0,Cytoskeleton,Medium
+Q9ULP9,Plasma membrane,Medium
+Q9ULT8,Nucleus,Medium
+Q9UMF0,Cytoskeleton,Medium
+Q9UMS4,Nucleus,Medium
+Q9UNF0,Cytoskeleton,Medium
+Q9UNN5,Mitochondria,Medium
+Q9UNW9,Endoplasmic Reticulum,Medium
+Q9UPR0,Endoplasmic Reticulum,Medium
+Q9UPR5,Plasma membrane,Medium
+Q9UPU5,Mitochondria,Medium
+Q9UPV7,Cytoskeleton,Medium
+Q9UQ03,Cytoskeleton,Medium
+Q9UQ80,Cytoskeleton,Medium
+Q9UQB3,Plasma membrane,Medium
+Q9Y224,Cytoskeleton,Medium
+Q9Y230,Endoplasmic Reticulum,Medium
+Q9Y262,Endoplasmic Reticulum,Medium
+Q9Y263,Endoplasmic Reticulum,Medium
+Q9Y266,Cytoskeleton,Medium
+Q9Y276,Postsynapse,Medium
+Q9Y2C4,Mitochondria,Medium
+Q9Y2I1,Cytoplasm,Medium
+Q9Y2I8,Endoplasmic Reticulum,Medium
+Q9Y2Q0,Plasma membrane,Medium
+Q9Y2Q5,Endoplasmic Reticulum,Medium
+Q9Y2Z0,Cytoskeleton,Medium
+Q9Y333,Cytoplasm,Medium
+Q9Y342,Nucleus,Medium
+Q9Y376,Cytoskeleton,Medium
+Q9Y394,Plasma membrane,Medium
+Q9Y3C4,Cytoplasm,Medium
+Q9Y3F4,Cytoskeleton,Medium
+Q9Y3I0,Cytoskeleton,Medium
+Q9Y3P9,Endoplasmic Reticulum,Medium
+Q9Y496,Endoplasmic Reticulum,Medium
+Q9Y4D8,Endoplasmic Reticulum,Medium
+Q9Y4F5,Cytoskeleton,Medium
+Q9Y4G8,Cytoskeleton,Medium
+Q9Y4J8,Endoplasmic Reticulum,Medium
+Q9Y4Y9,Cytoplasm,Medium
+Q9Y566,Mitochondria,Medium
+Q9Y570,Cytoskeleton,Medium
+Q9Y584,Mitochondria,Medium
+Q9Y5J7,Postsynapse,Medium
+Q9Y5L0,Endoplasmic Reticulum,Medium
+Q9Y5X1,Endoplasmic Reticulum,Medium
+Q9Y6D5,Endoplasmic Reticulum,Medium
+Q9Y6G9,Plasma membrane,Medium
+O43572,NA,None
+O75334,NA,None
+O75436,NA,None
+O75937,NA,None
+P08603,NA,None
+P12694,NA,None
+P13645,NA,None
+P29692,NA,None
+P57088,NA,None
+P59666,NA,None
+Q14166,NA,None
+Q15904,NA,None
+Q63HM9,NA,None
+Q68CZ2,NA,None
+Q6PL24,NA,None
+Q8IU85,NA,None
+Q8TF61,NA,None
+Q92504,NA,None
+Q96D71,NA,None
+Q96EY7,NA,None
+Q96I99,NA,None
+Q96JJ3,NA,None
+Q9BWQ8,NA,None
+Q9C005,NA,None
+Q9HCJ1,NA,None
+Q9NZZ3,NA,None
+Q9P0V9,NA,None
+Q9P2G1,NA,None
+Q9UMX0,NA,None
+Q9Y6T7,NA,None

@@ -1,0 +1,1460 @@
+---
+title: "SVM"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(caret)
+library(openxlsx)
+```
+
+## Read in data
+
+
+```{r}
+for_SVM <- read_csv("Input data/data_for_SVM.csv")
+sample_key <- read.xlsx("Input data/SampleKey.xlsx")
+sample_key <- sample_key %>%
+  dplyr::select(Subject, Condition, Age, PMI) %>%
+  unique()
+marker_list1 <- read_csv("Input data/gold_markers.csv")
+marker_list1 <- unique(marker_list1)
+
+
+table(marker_list1$Location)
+```
+
+## Test SVM with all markers
+
+```{r}
+
+
+SampleA <- for_SVM %>%
+  filter(Sample == "A") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleA <- t(SampleA)
+SampleA <- data.frame(SampleA) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+
+SampleAmerged <- merge(SampleA, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+
+
+
+
+SampleAtrain <- SampleAmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  column_to_rownames(var = "UniprotID") 
+ 
+
+```
+
+Not very balanced categories, so this might be a bit tough.
+
+
+
+
+## Run a test SVM
+
+```{r}
+
+down_SampleA <- downSample(x = SampleAtrain, y = as.factor(SampleAtrain$Location))
+down_SampleA <- down_SampleA %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+set.seed(2709)
+svM_A <- train(Location ~ ., data = down_SampleA, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_A$bestTune
+
+svM_A
+
+conf <- confusionMatrix(svM_A)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+Endolysosome <- (conf[3,3] / sum(conf[,3])) *100
+`Endoplasmic Reticulum` <- (conf[4,4] / sum(conf[,4])) *100
+`Golgi Apparatus` <- (conf[5,5] / sum(conf[,5])) *100
+Mitochondria <- (conf[6,6] / sum(conf[,6])) *100
+Nucleus <- (conf[7,7] / sum(conf[,7])) *100
+Peroxisome <- (conf[8,8] / sum(conf[,8])) *100
+`Plasma membrane` <- (conf[9,9] / sum(conf[,9])) *100
+Postsynapse <- (conf[10,10] / sum(conf[,10])) *100
+Presynapse <- (conf[11,11] / sum(conf[,11])) *100
+
+conf
+```
+
+This is pretty bad given it has four proteins per category.  Filter out these low n categories.
+
+```{r}
+
+tmp <- data.frame(table(SampleAmerged$Location)) %>%
+  filter(Freq >35)
+
+SampleAtrain <- SampleAmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Rerun SVM
+
+```{r}
+set.seed(2409)
+down_SampleA <- downSample(x = SampleAtrain, y = as.factor(SampleAtrain$Location))
+down_SampleA <- down_SampleA %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+set.seed(2709)
+svM_A <- train(Location ~ ., data = down_SampleA, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_A$bestTune
+
+svM_A
+
+conf <- confusionMatrix(svM_A)
+conf <- conf$table
+
+Cytoplasm2 <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton2 <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum2` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria2 <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus2 <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane2` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse2<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse2 <- (conf[8,8] / sum(conf[,8])) *100
+results <- data.frame(Organelle = c("Cytoplasm", "Cytoskeleton", "Endoplasmic Reticulum", "Mitochondria", "Nucleus", "Plasma membrane", "Postsynapse", "Presynapse"), SampleA = c(Cytoplasm2, Cytoskeleton2, `Endoplasmic Reticulum2`, Mitochondria2, Nucleus2, `Plasma membrane2`, Postsynapse2, Presynapse2))
+
+conf
+```
+
+##Sample C - reduced training set only
+
+```{r}
+SampleC <- for_SVM %>%
+  filter(Sample == "C") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleC <- t(SampleC)
+SampleC <- data.frame(SampleC) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+
+SampleCmerged <- merge(SampleC, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleCtrain <- SampleCmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample C SVM
+
+
+```{r}
+
+down_SampleC <- downSample(x = SampleCtrain, y = as.factor(SampleCtrain$Location))
+down_SampleC <- down_SampleC %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+set.seed(2709)
+svM_C <- train(Location ~ ., data = down_SampleC, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_C$bestTune
+
+svM_C
+
+conf <- confusionMatrix(svM_C)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleC <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+
+##Sample E - reduced training set only
+
+```{r}
+SampleE <- for_SVM %>%
+  filter(Sample == "E") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleE <- t(SampleE)
+SampleE <- data.frame(SampleE) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleEmerged <- merge(SampleE, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleEtrain <- SampleEmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample C SVM
+
+
+```{r}
+
+down_SampleE <- downSample(x = SampleEtrain, y = as.factor(SampleEtrain$Location))
+down_SampleE <- down_SampleE %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_E <- train(Location ~ ., data = down_SampleE, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_E$bestTune
+
+svM_E
+
+conf <- confusionMatrix(svM_E)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleE <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+##Sample G - reduced training set only
+
+```{r}
+SampleG <- for_SVM %>%
+  filter(Sample == "G") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleG <- t(SampleG)
+SampleG <- data.frame(SampleG) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleGmerged <- merge(SampleG, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleGtrain <- SampleGmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample C SVM
+
+
+```{r}
+
+down_SampleG <- downSample(x = SampleGtrain, y = as.factor(SampleGtrain$Location))
+down_SampleG <- down_SampleG %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_G <- train(Location ~ ., data = down_SampleG, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_G$bestTune
+
+svM_G
+
+conf <- confusionMatrix(svM_G)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleG <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+
+##Sample I - reduced training set only
+
+```{r}
+SampleI <- for_SVM %>%
+  filter(Sample == "I") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleI <- t(SampleI)
+SampleI <- data.frame(SampleI) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleImerged <- merge(SampleI, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleItrain <- SampleImerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample I SVM
+
+
+```{r}
+
+down_SampleI <- downSample(x = SampleItrain, y = as.factor(SampleItrain$Location))
+down_SampleI <- down_SampleI %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_I <- train(Location ~ ., data = down_SampleI, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_I$bestTune
+
+svM_I
+
+conf <- confusionMatrix(svM_I)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleI <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+
+Con_train_results <- results %>%
+  mutate(mean_perf = (SampleA + SampleC + SampleE + SampleG + SampleI)/5)
+results
+
+write_csv(Con_train_results, "tmp/control_classification_results.csv")
+
+
+```
+
+##  Compare with PMI
+
+```{r}
+PMI <- Con_train_results %>%
+  dplyr::select(-mean_perf) %>%
+  pivot_longer(-Organelle, names_to = "Sample", values_to = "performance") %>%
+  separate(Sample, sep = 6, into = c(NA, "Subject"), remove = FALSE) %>%
+  left_join(sample_key) 
+
+ggplot(PMI, aes(x = as.factor(PMI), y = performance)) + geom_boxplot()
+ggplot(PMI, aes(x = as.factor(PMI), y = performance, group = Organelle)) + geom_line(aes(color = Organelle))
+
+
+```
+
+No clear effect of increasing PMI between 8 and 23 hours - what happens earlier?
+
+##Prediction for the rest of the proteins
+
+```{r}
+##Filter out training proteins
+
+SampleAtest <- SampleAmerged %>%
+  anti_join(down_SampleA) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleAtest$predicted.locations_A <- predict(svM_A, newdata = SampleAtest)
+SampleAtest <- SampleAtest %>%
+  rownames_to_column()
+
+table(SampleAtest$predicted.locations_A)
+
+write_csv(SampleAtest, "tmp/SampleA_test.csv")
+```
+
+##Sample C
+
+```{r}
+##Filter out training proteins
+
+SampleCtest <- SampleCmerged %>%
+  anti_join(down_SampleC) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleCtest$predicted.locations_C <- predict(svM_C, newdata = SampleCtest)
+SampleCtest <- SampleCtest %>%
+  rownames_to_column()
+
+```
+
+##Sample E
+
+```{r}
+##Filter out training proteins
+
+SampleEtest <- SampleEmerged %>%
+  anti_join(down_SampleE) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleEtest$predicted.locations_E <- predict(svM_E, newdata = SampleEtest)
+SampleEtest <- SampleEtest %>%
+  rownames_to_column()
+
+```
+
+##Sample G
+
+```{r}
+##Filter out training proteins
+
+SampleGtest <- SampleGmerged %>%
+  anti_join(down_SampleG) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleGtest$predicted.locations_G <- predict(svM_G, newdata = SampleGtest)
+SampleGtest <- SampleGtest %>%
+  rownames_to_column()
+
+```
+
+
+##Sample I
+
+```{r}
+##Filter out training proteins
+
+SampleItest <- SampleImerged %>%
+  anti_join(down_SampleI) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleItest$predicted.locations_I <- predict(svM_I, newdata = SampleItest)
+SampleItest <- SampleItest %>%
+  rownames_to_column()
+
+```
+
+
+##Results table
+
+```{r}
+tmpA <- SampleAtest %>%
+  dplyr::select(rowname, predicted.locations_A)
+tmpC <- SampleCtest %>%
+  dplyr::select(rowname, predicted.locations_C)
+tmpE <- SampleEtest %>%
+  dplyr::select(rowname, predicted.locations_E)
+tmpG <- SampleGtest %>%
+  dplyr::select(rowname, predicted.locations_G)
+tmpI <- SampleItest %>%
+  dplyr::select(rowname, predicted.locations_I)
+
+
+
+
+test_results <- merge(tmpA, tmpC, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpE, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpG, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpI, by = "rowname", all = TRUE)
+
+test_results$N <- apply(!is.na(test_results[,2:6]), 1, sum)
+n_group <- test_results %>%
+  dplyr::select(rowname, N)
+
+tmp <- test_results %>%
+  pivot_longer(-c(rowname, N), names_to = "Sample", values_to = "Location") 
+
+tmp <- data.frame(table(tmp$rowname, tmp$Location))
+results_consensus <- tmp %>%
+  group_by(Var1) %>%
+  slice_max(Freq)
+
+
+results_consensus <- merge(results_consensus, n_group, by.x = "Var1", by.y = "rowname")
+results_consensus <- results_consensus %>%
+  mutate(prop = (Freq/N)*100)
+
+clear_location <- results_consensus %>%
+  filter(prop > 50) %>%
+  mutate(Confidence = ifelse(prop > 70, "High", "Medium")) %>%
+  dplyr::select(Var1, Var2, Confidence) %>%
+  dplyr::rename(Location = Var2)
+
+
+ties <- results_consensus %>%
+  filter(!(Var1 %in% clear_location$Var1)) %>%
+  arrange(Var1) 
+
+
+fourty_percent <- ties %>%
+  filter(prop >= 40) %>%
+  group_by(Var1) %>%
+  mutate(id = row_number()) %>%
+  dplyr::select(Var1, id, Var2) %>%
+  arrange(Var2) %>%
+  pivot_wider(names_from = id, values_from = Var2) %>%
+  dplyr::rename(Location_1 = `1`, Location_2 = `2`) %>%
+  unite("Split_location", Location_1:Location_2, remove = FALSE) 
+
+fourty_percent$Split_location <- gsub("_NA", "", fourty_percent$Split_location)
+low_confidence <- fourty_percent %>%
+  mutate(Confidence = "Low") %>%
+  dplyr::select(Var1, Split_location, Confidence) %>%
+  dplyr::rename(Location = Split_location)
+
+remaining <- results_consensus %>%
+  filter(!(Var1 %in% clear_location$Var1)) %>%
+  filter(!(Var1 %in% fourty_percent$Var1)) %>%
+  mutate(Location = NA) %>%
+  mutate(Confidence = "None") %>%
+  dplyr::select(Var1, Location, Confidence) %>%
+  unique()
+ 
+##Change confidence from high group to high and Medium
+final_results <- rbind(clear_location, low_confidence, remaining)
+final_results <- final_results %>%
+  arrange(Confidence)
+
+tmp <- data.frame(table(final_results$Location))
+
+table(final_results$Location, final_results$Confidence)
+
+write_csv(final_results, "Supp tables/S3_SVM_assignments.csv")
+table(final_results$Confidence)
+
+head(final_results)
+
+```
+
+
+## Ontology with TOPGO
+
+Needs ID conversion from Uniprot
+
+
+```{r}
+
+library(org.Hs.eg.db)
+
+uniKeys <- keys(org.Hs.eg.db, keytype="UNIPROT")
+cols <- c("SYMBOL")
+conversion_Ref <- select(org.Hs.eg.db, keys=uniKeys, columns=cols, keytype="UNIPROT")
+
+
+
+```
+
+## ER annotated enrichment
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Endoplasmic Reticulum" & Confidence == "High", 0.01, 1))
+
+library(topGO)
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_ER <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_ER$SVM_fraction <- "ER"
+
+
+
+
+```
+
+## Plasma Membrane annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Plasma membrane" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_Plas_memb <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_Plas_memb$SVM_fraction <- "Plasma membrane"
+
+
+
+
+```
+
+
+## Cytoplasm annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Cytoplasm" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_cytoplasm <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_cytoplasm$SVM_fraction <- "Cytoplasm"
+
+
+
+
+```
+
+## Cytoskeleton annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Cytoskeleton" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_cytoskel <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_cytoskel$SVM_fraction <- "Cytoskeleton"
+
+
+
+
+```
+
+## Nucleus annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Nucleus" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_nuc <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_nuc$SVM_fraction <- "Nucleus"
+
+
+
+
+```
+
+
+## Mitochondria annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Mitochondria" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_mito <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_mito$SVM_fraction <- "Mitochondria"
+
+
+
+
+```
+
+## Postsynapse annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Postsynapse" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_post <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_post$SVM_fraction <- "Postsynapse"
+
+
+
+
+```
+
+
+## Presynapse annotated
+
+```{r}
+
+results <- final_results %>%
+  dplyr::rename(UNIPROT = Var1) %>%
+  left_join(conversion_Ref)%>%
+  mutate(sig_val = ifelse(Location == "Presynapse" & Confidence == "High", 0.01, 1))
+
+
+#Convert to vector
+allGenes_input <- setNames(as.numeric(results$sig_val), results$SYMBOL)
+
+#Build function to dplyr::select Geneset (significant genes)
+selFun <- function(x){return(x < 0.05)}
+
+#Build GO data object - for biological process
+GO_data_CC <- new("topGOdata", 
+               ontology = "CC",
+               allGenes = allGenes_input,
+               geneSel = selFun,
+               annot = annFUN.org,
+               mapping = "org.Hs.eg.db",
+               ID = "symbol"
+)
+
+CC_result <- runTest(GO_data_CC, algorithm = "weight01", statistic = "fisher")
+
+
+CC_results_pre <- GenTable(GO_data_CC, classicFisher = CC_result, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 5)
+CC_results_pre$SVM_fraction <- "Presynapse"
+
+
+All_CC_results <- rbind(CC_results_cytoplasm, CC_results_cytoskel, CC_results_ER, CC_results_mito, CC_results_nuc, CC_results_Plas_memb, CC_results_post, CC_results_pre)
+
+write_csv(All_CC_results, "Supp tables/Table1_high_confidence_GO_enrichment.csv")
+
+All_CC_results
+```
+
+## AD Samples
+
+```{r}
+
+
+SampleB <- for_SVM %>%
+  dplyr::filter(Sample == "B") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleB <- t(SampleB)
+SampleB <- data.frame(SampleB) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+
+SampleBmerged <- merge(SampleB, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+```
+
+
+```{r}
+
+tmp <- data.frame(table(SampleBmerged$Location)) %>%
+  filter(Freq >35)
+
+SampleBtrain <- SampleBmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Rerun SVM
+
+```{r}
+set.seed(2409)
+down_SampleB <- downSample(x = SampleBtrain, y = as.factor(SampleBtrain$Location))
+down_SampleB <- down_SampleB %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+set.seed(2709)
+svM_B <- train(Location ~ ., data = down_SampleB, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_B$bestTune
+
+svM_B
+
+conf <- confusionMatrix(svM_B)
+conf <- conf$table
+
+Cytoplasm2 <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton2 <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum2` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria2 <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus2 <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane2` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse2<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse2 <- (conf[8,8] / sum(conf[,8])) *100
+results <- data.frame(Organelle = c("Cytoplasm", "Cytoskeleton", "Endoplasmic Reticulum", "Mitochondria", "Nucleus", "Plasma membrane", "Postsynapse", "Presynapse"), SampleB = c(Cytoplasm2, Cytoskeleton2, `Endoplasmic Reticulum2`, Mitochondria2, Nucleus2, `Plasma membrane2`, Postsynapse2, Presynapse2))
+
+conf
+```
+
+##Sample D - reduced training set only
+
+```{r}
+SampleD <- for_SVM %>%
+  filter(Sample == "D") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleD <- t(SampleD)
+SampleD <- data.frame(SampleD) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+
+SampleDmerged <- merge(SampleD, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleDtrain <- SampleDmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample D SVM
+
+
+```{r}
+
+down_SampleD <- downSample(x = SampleDtrain, y = as.factor(SampleDtrain$Location))
+down_SampleD <- down_SampleD %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+set.seed(2709)
+svM_D <- train(Location ~ ., data = down_SampleD, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_D$bestTune
+
+svM_D
+
+conf <- confusionMatrix(svM_D)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleD <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+
+##Sample F - reduced training set only
+
+```{r}
+SampleF <- for_SVM %>%
+  filter(Sample == "F") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleF <- t(SampleF)
+SampleF <- data.frame(SampleF) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleFmerged <- merge(SampleF, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleFtrain <- SampleFmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample F SVM
+
+
+```{r}
+
+down_SampleF <- downSample(x = SampleFtrain, y = as.factor(SampleFtrain$Location))
+down_SampleF <- down_SampleF %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_F <- train(Location ~ ., data = down_SampleF, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_F$bestTune
+
+svM_F
+
+conf <- confusionMatrix(svM_F)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleF <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+##Sample H - reduced training set only
+
+```{r}
+SampleH <- for_SVM %>%
+  filter(Sample == "H") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleH <- t(SampleH)
+SampleH <- data.frame(SampleH) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleHmerged <- merge(SampleH, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleHtrain <- SampleHmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample H SVM
+
+
+```{r}
+
+down_SampleH <- downSample(x = SampleHtrain, y = as.factor(SampleHtrain$Location))
+down_SampleH <- down_SampleH %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_H <- train(Location ~ ., data = down_SampleH, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_H$bestTune
+
+svM_H
+
+conf <- confusionMatrix(svM_H)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleH <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+results
+```
+
+
+##Sample J - reduced training set only
+
+```{r}
+SampleJ <- for_SVM %>%
+  filter(Sample == "J") %>%
+  dplyr::select(-Sample) %>%
+  column_to_rownames(var = "Fraction")
+SampleJ <- t(SampleJ)
+SampleJ <- data.frame(SampleJ) %>%
+  rownames_to_column() %>%
+  dplyr::rename(UniprotID = rowname)
+
+
+SampleJmerged <- merge(SampleJ, marker_list1, by.x = "UniprotID",by.y = "ProteinID",  all.x = TRUE)
+
+SampleJtrain <- SampleJmerged %>%
+  dplyr::filter(!is.na(Location)) %>%
+  dplyr::filter(Location %in% tmp$Var1) %>%
+  column_to_rownames(var = "UniprotID") 
+
+```
+
+
+## Sample J SVM
+
+
+```{r}
+
+down_SampleJ <- downSample(x = SampleJtrain, y = as.factor(SampleJtrain$Location))
+down_SampleJ <- down_SampleJ %>%
+  dplyr::select(-Class)
+
+trControl <- trainControl("cv", number = 10, returnData = TRUE)
+
+
+svM_J <- train(Location ~ ., data = down_SampleJ, method = "svmRadial", trControl = trControl, preProcess = c("center","scale"), tuneLength = 10)
+
+svM_J$bestTune
+
+svM_J
+
+conf <- confusionMatrix(svM_J)
+conf <- conf$table
+
+Cytoplasm <- (conf[1,1] / sum(conf[,1])) *100
+Cytoskeleton <- (conf[2,2] / sum(conf[,2])) *100
+`Endoplasmic Reticulum` <- (conf[3,3] / sum(conf[,3])) *100
+Mitochondria <- (conf[4,4] / sum(conf[,4])) *100
+Nucleus <- (conf[5,5] / sum(conf[,5])) *100
+`Plasma membrane` <- (conf[6,6] / sum(conf[,6])) *100
+Postsynapse<- (conf[7,7] / sum(conf[,7])) *100
+Presynapse <- (conf[8,8] / sum(conf[,8])) *100
+
+results$SampleJ <- c(Cytoplasm, Cytoskeleton, `Endoplasmic Reticulum`, Mitochondria, Nucleus, `Plasma membrane`, Postsynapse, Presynapse)
+
+
+AD_train_results <- results %>%
+  mutate(mean_perf = (SampleB + SampleD + SampleF + SampleH + SampleJ)/5)
+AD_train_results
+
+write_csv(AD_train_results, "tmp/control_classification_results_AD.csv")
+
+
+```
+
+##  Compare with PMI
+
+```{r}
+Con_results_long <- Con_train_results %>%
+  dplyr::select(-mean_perf) %>%
+  pivot_longer(-Organelle, names_to = "Sample", values_to = "performance") %>%
+  separate(Sample, sep = 6, into = c(NA, "Subject"), remove = FALSE)
+
+All_results_long <- AD_train_results %>%
+  dplyr::select(-mean_perf) %>%
+  pivot_longer(-Organelle, names_to = "Sample", values_to = "performance") %>%
+  separate(Sample, sep = 6, into = c(NA, "Subject"), remove = FALSE) %>%
+  bind_rows(Con_results_long) %>%
+  left_join(sample_key)
+
+SVM_train_condition <- ggplot(All_results_long, aes(x=Organelle, y = performance, fill = Condition)) + 
+  geom_boxplot() + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1)) 
+
+ggsave("Figures/FigS4A_SVM_performance.pdf", plot = SVM_train_condition, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+
+SVM_train_condition
+```
+
+
+
+
+##Effect of PMI
+
+```{r}
+dummy_df <- data.frame(Organelle = c("Endolysosome", "Golgi Apparatus", "Peroxisome"), PMI = c(NA, NA, NA), performance = c(NA, NA, NA))
+
+PMI <- All_results_long %>%
+  group_by(Organelle, PMI) %>%
+  summarise(performance = mean(performance)) %>%
+  bind_rows(dummy_df) %>%
+  ggplot(aes(x = as.factor(PMI), y = performance, group = Organelle, color = Organelle)) + geom_line() +
+  xlab("PMI (hours)") + scale_color_brewer(palette = "Set3") + theme_bw()
+
+ggsave("Figures/FigS4B_PMI_performance.pdf", plot = PMI, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+
+PMI
+```
+
+
+##lm to check
+
+```{r}
+
+lm_condition <- lm(performance ~ Condition + Age + PMI + Organelle, data = All_results_long)
+
+summary(lm_condition)
+
+
+all_results_summary <- All_results_long %>%
+  group_by(Organelle) %>%
+  summarise(mean = mean(performance))
+
+```
+
+There are clear differences between Organelle in performance of the SVM on training data, but this does not appear to be affected by PMI, condition or age.
+
+##Classify AD proteins
+
+```{r}
+
+##Prediction for the rest of the proteins
+
+
+##Filter out training proteins
+
+SampleBtest <- SampleBmerged %>%
+  anti_join(down_SampleB) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleBtest$predicted.locations_B <- predict(svM_B, newdata = SampleBtest)
+SampleBtest <- SampleBtest %>%
+  rownames_to_column()
+
+table(SampleBtest$predicted.locations_B)
+
+
+```
+
+##Sample D
+
+```{r}
+##Filter out training proteins
+
+SampleDtest <- SampleDmerged %>%
+  anti_join(down_SampleD) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleDtest$predicted.locations_D <- predict(svM_D, newdata = SampleDtest)
+SampleDtest <- SampleDtest %>%
+  rownames_to_column()
+
+```
+
+##Sample F
+
+```{r}
+##Filter out training proteins
+
+SampleFtest <- SampleFmerged %>%
+  anti_join(down_SampleF) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleFtest$predicted.locations_F <- predict(svM_F, newdata = SampleFtest)
+SampleFtest <- SampleFtest %>%
+  rownames_to_column()
+
+```
+
+##Sample H
+
+```{r}
+##Filter out training proteins
+
+SampleHtest <- SampleHmerged %>%
+  anti_join(down_SampleH) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleHtest$predicted.locations_H <- predict(svM_H, newdata = SampleHtest)
+SampleHtest <- SampleHtest %>%
+  rownames_to_column()
+
+```
+
+
+##Sample J
+
+```{r}
+##Filter out training proteins
+
+SampleJtest <- SampleJmerged %>%
+  anti_join(down_SampleJ) %>%
+  dplyr::select(-Location) %>%
+  column_to_rownames(var = "UniprotID")
+
+
+SampleJtest$predicted.locations_J <- predict(svM_J, newdata = SampleJtest)
+SampleJtest <- SampleJtest %>%
+  rownames_to_column()
+
+```
+
+
+##Results table
+
+```{r}
+tmpB <- SampleBtest %>%
+  dplyr::select(rowname, predicted.locations_B)
+tmpD <- SampleDtest %>%
+  dplyr::select(rowname, predicted.locations_D)
+tmpF <- SampleFtest %>%
+  dplyr::select(rowname, predicted.locations_F)
+tmpH <- SampleHtest %>%
+  dplyr::select(rowname, predicted.locations_H)
+tmpJ <- SampleJtest %>%
+  dplyr::select(rowname, predicted.locations_J)
+
+
+
+
+test_results <- merge(tmpB, tmpD, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpF, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpH, by = "rowname", all = TRUE)
+test_results <- merge(test_results, tmpJ, by = "rowname", all = TRUE)
+
+test_results$N <- apply(!is.na(test_results[,2:6]), 1, sum)
+n_group <- test_results %>%
+  dplyr::select(rowname, N)
+
+tmp <- test_results %>%
+  pivot_longer(-c(rowname, N), names_to = "Sample", values_to = "Location") 
+
+tmp <- data.frame(table(tmp$rowname, tmp$Location))
+results_consensus <- tmp %>%
+  group_by(Var1) %>%
+  slice_max(Freq)
+
+
+results_consensus <- merge(results_consensus, n_group, by.x = "Var1", by.y = "rowname")
+results_consensus <- results_consensus %>%
+  mutate(prop = (Freq/N)*100)
+
+clear_location <- results_consensus %>%
+  filter(prop > 50) %>%
+  mutate(Confidence = ifelse(prop > 70, "High", "Medium")) %>%
+  dplyr::select(Var1, Var2, Confidence) %>%
+  dplyr::rename(Location = Var2)
+
+
+ties <- results_consensus %>%
+  filter(!(Var1 %in% clear_location$Var1)) %>%
+  arrange(Var1) 
+
+
+fourty_percent <- ties %>%
+  filter(prop >= 40) %>%
+  group_by(Var1) %>%
+  mutate(id = row_number()) %>%
+  dplyr::select(Var1, id, Var2) %>%
+  arrange(Var2) %>%
+  pivot_wider(names_from = id, values_from = Var2) %>%
+  dplyr::rename(Location_1 = `1`, Location_2 = `2`) %>%
+  unite("Split_location", Location_1:Location_2, remove = FALSE) 
+
+fourty_percent$Split_location <- gsub("_NA", "", fourty_percent$Split_location)
+low_confidence <- fourty_percent %>%
+  mutate(Confidence = "Low") %>%
+  dplyr::select(Var1, Split_location, Confidence) %>%
+  dplyr::rename(Location = Split_location)
+
+remaining <- results_consensus %>%
+  filter(!(Var1 %in% clear_location$Var1)) %>%
+  filter(!(Var1 %in% fourty_percent$Var1)) %>%
+  mutate(Location = NA) %>%
+  mutate(Confidence = "None") %>%
+  dplyr::select(Var1, Location, Confidence) %>%
+  unique()
+ 
+##Change confidence from high group to high and Medium
+AD_final_results <- rbind(clear_location, low_confidence, remaining)
+
+tmp <- data.frame(table(AD_final_results$Location))
+
+table(AD_final_results$Location, final_results$Confidence)
+
+final_results$Condition <- "Control"
+AD_final_results$Condition <- "AD"
+
+all_SVM_results <- rbind(final_results, AD_final_results)
+
+write_csv(all_SVM_results, "tmp/SVM_results.csv")
+
+```

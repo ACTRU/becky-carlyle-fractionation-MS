@@ -1,0 +1,1012 @@
+---
+title: "Categorical analysis of TMT data"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+---
+title: "Categorical analysis of TMT data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages and read in data
+
+This script covers the production of Figures 3A-3I, 4A-C, Table 2, and supplementary tables 4,5 and 6
+
+```{r}
+library(tidyverse)
+library(broom)
+library(ggsignif)
+library(scales)
+library(openxlsx)
+TMT_data <- read.csv("Data/Output/Intermediate tables/TMT_data_filtered_quantile_norm.csv")
+sample_key <- read_csv("Data/Input/Table_S1_individual_sample_demographics.csv")
+
+
+protein_IDs <- TMT_data %>%
+  select(ProteinID:ProteinDescription)
+
+Dx_colors <- c("DEM_AD" = "#e66101", "RES" = "#fdb863", "FRL" = "#b2abd2", "N" = "#5e3c99")
+
+```
+
+
+#First check that we're not seeing a gross effect of synaptic depletion in the AD-DEM group
+
+Create a pre-synaptic and a post synaptic index to check that we're not seeing an artifact of synapse loss.
+
+```{r}
+pre_syn <- c("P17600", "Q92777", "Q9P2U8", "Q9HDB5-3", "Q9HDB5-3", "Q9Y4C0", "Q86UR5-8", "P60880", "P60880", "P08247", "P21579", "P61764-2", "Q16623", "P61266") 
+
+pre_syn_data <- TMT_data %>%
+  filter(UniprotAccession %in% pre_syn) %>%
+  select(GeneName, A1:J9)
+
+colnames <- pre_syn_data$GeneName
+pre_syn_data <- t(pre_syn_data[ ,-1])
+
+colnames(pre_syn_data) <- colnames
+pre_syn_data <- rownames_to_column(as.data.frame(pre_syn_data), var = "Code")
+
+
+#Merge with the sample key
+pre_syn_data_to_model <- merge(sample_key, pre_syn_data, by = "Code")
+pre_syn_data_to_plot <- pre_syn_data_to_model %>%
+  gather(key = "protein", value = "Normalised_Quant", -c(Code:Microscopic_cerebral_infarcts_any))
+```
+
+# One way ANOVA to assess individual markers of the pre synapse
+
+```{r}
+quants_pre <- as.matrix(pre_syn_data_to_model[,21:29])
+
+fit <- apply(quants_pre, 2, function(protein){ anova(lm(protein ~ pre_syn_data_to_model$Project.diagnosis))})
+
+pre_syn_anova <- data.frame(unlist(fit))
+pre_syn_anova <- pre_syn_anova %>%
+  rownames_to_column()
+
+pre_syn_anova$protein <- sapply(strsplit(as.character(pre_syn_anova$rowname),'\\.'), "[", 1)
+pre_syn_anova$outcome <- sapply(strsplit(as.character(pre_syn_anova$rowname),'\\.'), "[", 2)
+ pre_syn_anova <- pre_syn_anova %>%
+   select(-rowname) %>%
+   spread(outcome, unlist.fit.) %>%
+   select(-`F value2`, -`Pr(>F)2`)
+pre_syn_anova$padj <- p.adjust(pre_syn_anova$`Pr(>F)1`, method = "BH")
+pre_syn_anova <- arrange(pre_syn_anova, padj)
+
+pre_syn_anova
+
+```
+
+None of these markers show a significant difference between groups that survives multiple testing correction.  Syt1 is the closest trend.
+
+## Fig 3A - plot individual pre synaptic markers
+
+```{r}
+
+cut_pre_syn_data_to_plot <- pre_syn_data_to_plot %>%
+  filter(protein == "SYN1" | protein == "SYP" | protein == "SNAP25")
+cut_pre_syn_data_to_plot$protein <- gsub("SYN1", "Synapsin 1", cut_pre_syn_data_to_plot$protein)
+cut_pre_syn_data_to_plot$protein <- gsub("SYP", "Synaptophysin", cut_pre_syn_data_to_plot$protein)
+
+
+Fig3A <- ggplot(cut_pre_syn_data_to_plot, aes(x=Project.diagnosis, y = log2(Normalised_Quant))) + 
+  geom_boxplot(outlier.shape=NA) + 
+  geom_point(aes(color = Project.diagnosis, alpha = 0.4)) + scale_color_manual(values = Dx_colors) +
+  facet_wrap(~protein, ncol = 3) + theme_bw(base_size = 8) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("log2 Norm. Quant") + theme(legend.position = "none") +   
+  scale_y_continuous(labels = scientific)
+
+ggsave("Figures/Fig3A.pdf", plot = Fig3A, device = "pdf", width = 3.2, height = 1.8, units = "in", dpi = 300)
+
+Fig3A
+```
+
+There is no clear sign of overall pre-synapse decrease in signal.
+
+##Post synaptic index
+
+Used 7 post synaptic markers to make post synaptic index.
+
+```{r}
+post_syn <- c("Q12959-9","Q15700-2", "Q92796", "P78352", "P78352", "P54762", "Q9NSB8", "Q8NFZ4", "Q8N2Q7", "H9KV90", "Q9Y566", "Q9Y566")
+
+post_syn_data <- TMT_data %>%
+  filter(UniprotAccession %in% post_syn) %>%
+  select(GeneName, A1:J9)
+
+colnames <- post_syn_data$GeneName
+post_syn_data <- t(post_syn_data[ ,-1])
+
+colnames(post_syn_data) <- colnames
+post_syn_data <- rownames_to_column(as.data.frame(post_syn_data), var = "Code")
+
+
+#Merge with the sample key
+post_syn_data_to_model <- merge(sample_key, post_syn_data, by.x = "Code", by.y = "Code")
+post_syn_data_to_plot <- post_syn_data_to_model %>%
+  gather(key = "protein", value = "Normalised_Quant", -c(Code:Microscopic_cerebral_infarcts_any))
+```
+
+# One way ANOVA to assess individual markers of the post synapse
+
+```{r}
+quants_post <- as.matrix(post_syn_data_to_model[,21:27])
+
+fit_post <- apply(quants_post, 2, function(protein){ anova(lm(protein ~ post_syn_data_to_model$Project.diagnosis))})
+
+post_syn_anova <- data.frame(unlist(fit_post))
+post_syn_anova <- post_syn_anova %>%
+  rownames_to_column()
+
+post_syn_anova$protein <- sapply(strsplit(as.character(post_syn_anova$rowname),'\\.'), "[", 1)
+post_syn_anova$outcome <- sapply(strsplit(as.character(post_syn_anova$rowname),'\\.'), "[", 2)
+post_syn_anova <- post_syn_anova %>%
+   select(-rowname) %>%
+   spread(outcome, unlist.fit_post.) %>%
+   select(-`F value2`, -`Pr(>F)2`)
+post_syn_anova$padj <- p.adjust(post_syn_anova$`Pr(>F)1`, method = "BH")
+post_syn_anova <- arrange(post_syn_anova, padj)
+
+post_syn_anova
+
+```
+
+None of these markers show a significant difference between groups that survives multiple testing correction.  EphB1 is the closest trend.
+
+## Fig 1I - plot post synaptic markers
+
+```{r}
+
+
+cut_post_syn_data_to_plot <- post_syn_data_to_plot %>%
+  filter(protein == "HOMER2" | protein == "DLG4" | protein == "NLGN1")
+cut_post_syn_data_to_plot$protein <- gsub("DLG4", "PSD95", cut_post_syn_data_to_plot$protein)
+cut_post_syn_data_to_plot$protein <- gsub("NLGN1", "Neuroligin 1", cut_post_syn_data_to_plot$protein)
+
+
+Fig3B <- ggplot(cut_post_syn_data_to_plot, aes(x=Project.diagnosis, y = log2(Normalised_Quant))) + 
+  geom_boxplot(outlier.shape=NA) + 
+  geom_point(aes(color = Project.diagnosis, alpha = 0.4)) + scale_color_manual(values = Dx_colors) +
+  facet_wrap(~protein, ncol = 3) + theme_bw(base_size = 8) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("log2 Norm. Quant") + theme(legend.position = "none") 
+
+ggsave("Figures/Fig3B.pdf", plot = Fig3B, device = "pdf", width = 3.2, height = 1.8, units = "in", dpi = 300)
+
+Fig3B
+```
+
+There are no clear signs of depletion in standard post synaptic markers either.
+
+## Plots to summarise all markers in each index
+
+```{r}
+
+post_markers <- post_syn_data_to_model %>%
+  select(Code, Project.diagnosis, HOMER2:NLGN1) 
+post_markers$marker_type = "Post synaptic" 
+post_markers[,c(3:9)] <- scale(post_markers[,c(3:9)]) 
+post_markers_long <- post_markers %>%
+  gather(key = "Protein", value = "Z_score", -c(Code, Project.diagnosis, marker_type))
+
+
+pre_marker <- pre_syn_data_to_model %>%
+  select(Code, Project.diagnosis, SYN1:SLC17A6)
+pre_marker$marker_type = "Pre synaptic"
+pre_marker[,c(3:11)] <- scale(pre_marker[,c(3:11)]) 
+pre_markers_long <- pre_marker %>%
+  gather(key = "Protein", value = "Z_score", -c(Code, Project.diagnosis, marker_type))
+
+
+all_markers <- rbind(pre_markers_long, post_markers_long)
+
+Fig3a_b_composite <- all_markers %>%
+  group_by(Code, Project.diagnosis, marker_type) %>%
+  summarize(mean_Z_score = mean(Z_score)) %>%
+  ggplot(aes(x=Project.diagnosis, y = mean_Z_score)) + 
+  geom_boxplot(outlier.shape=NA) + 
+  geom_point(aes(color = Project.diagnosis, alpha = 0.4)) + scale_color_manual(values = Dx_colors) +
+  facet_wrap(~marker_type) + theme_bw(base_size = 8) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("Composite Z-score") + theme(legend.position = "none") 
+  
+ggsave("Figures/Fig3a_b_composite.pdf", plot = Fig3a_b_composite, device = "pdf", width = 3.2, height = 1.8, units = "in", dpi = 300)
+
+
+```
+
+#Make supplementary Table S4 - assessment of synaptic markers
+
+```{r}
+synaptic_ANOVA_outcome <- bind_rows(pre_syn_anova, post_syn_anova, .id = "id")
+
+synaptic_ANOVA_outcome$marker_type <- ifelse(synaptic_ANOVA_outcome$id == 1, "Pre synaptic", "Post synaptic")
+synaptic_ANOVA_outcome <- select(synaptic_ANOVA_outcome, protein, marker_type, Df1:padj, -id)
+
+write_csv(synaptic_ANOVA_outcome, "Data/Output/Supplementary Tables/TableS4_synaptic_marker_ANOVAs.csv")
+```
+
+
+
+
+
+##Differential expression - diagnostic group as a categorical variable
+
+Set up the data for modelling.
+
+```{r}
+to_model <- TMT_data %>%
+  select(UniprotAccession, A1:J9)
+  
+colnames <- to_model$UniprotAccession
+to_model <- t(to_model[ ,-1])
+
+colnames(to_model) <- colnames
+to_model <- rownames_to_column(as.data.frame(to_model), var = "Code")
+
+
+#Merge with the sample key
+to_model <- merge(sample_key, to_model, by.x = "Code", by.y = "Code")
+```
+
+
+#Run linear modelling 
+
+```{r}
+#Set up first round so all comparisons are relative to the normal category
+to_model$Project.diagnosis <- factor(to_model$Project.diagnosis, levels = c("N","DEM_AD","RES","FRL"))  
+diag_lm <- lm(log2(as.matrix(to_model[ ,21:ncol(to_model)])) ~ Project.diagnosis + Sex + Education +
+                Age_at_death + Post_mortem_interval, data = to_model)
+
+diag_lm_tidy <- tidy(diag_lm)
+diag_lm_tidy <- diag_lm_tidy %>%
+  filter(!term == "(Intercept)")
+
+diag_lm_tidy$term[diag_lm_tidy$term == "Project.diagnosisDEM_AD"] = "Dx_DEMoverN"
+diag_lm_tidy$term[diag_lm_tidy$term == "Project.diagnosisFRL"] = "Dx_FRLoverN"
+diag_lm_tidy$term[diag_lm_tidy$term == "Project.diagnosisRES"] = "Dx_RESoverN"
+
+# This time set up everything relative to the DEM-AD category
+to_model$Project.diagnosis <- factor(as.character(to_model$Project.diagnosis), 
+                                     levels = c("DEM_AD","RES","FRL","N"))
+
+diag_lm_2 <- lm(log2(as.matrix(to_model[ ,21:ncol(to_model)])) ~ Project.diagnosis + Sex + Education +
+                Age_at_death + Post_mortem_interval, data = to_model)
+
+diag_lm_2_tidy <- tidy(diag_lm_2)
+diag_lm_2_tidy <- diag_lm_2_tidy %>%
+  filter(term == "Project.diagnosisRES" | term == "Project.diagnosisFRL")
+diag_lm_2_tidy$term[diag_lm_2_tidy$term == "Project.diagnosisFRL"] = "Dx_FRLoverDEM"
+diag_lm_2_tidy$term[diag_lm_2_tidy$term == "Project.diagnosisRES"] = "Dx_RESoverDEM"
+
+
+#Finally, set up factors relative to resilient - all between group comparisons now covered.
+to_model$Project.diagnosis <- factor(as.character(to_model$Project.diagnosis), 
+                                     levels = c("RES","FRL","N","DEM_AD"))
+diag_lm_3 <- lm(log2(as.matrix(to_model[ ,21:ncol(to_model)])) ~ Project.diagnosis + Sex + Education +
+                Age_at_death + Post_mortem_interval, data = to_model)
+
+diag_lm_3_tidy <- tidy(diag_lm_3)
+diag_lm_3_tidy <- diag_lm_3_tidy %>%
+  filter(term == "Project.diagnosisFRL")
+diag_lm_3_tidy$term[diag_lm_3_tidy$term == "Project.diagnosisFRL"] = "Dx_FRLoverRES"
+
+
+```
+
+Glue it all together :-)
+```{r}
+diag_lm_tidy = rbind(diag_lm_tidy, diag_lm_2_tidy, diag_lm_3_tidy)
+```
+
+#Write data tables for each variable of interest, sorted by adjusted p value
+
+#Intermediate table - results from all proteins, all variables
+
+Need to split into individual tables for p value adjustment, then glue back together.
+
+#Protein by diagnosis
+
+```{r}
+#Protein by diagnosis
+
+Categ_diagnosis <- diag_lm_tidy %>%
+  filter(term == "Dx_DEMoverN" | term == "Dx_FRLoverDEM" | term == "Dx_FRLoverN" | term == "Dx_FRLoverRES" | term == "Dx_RESoverDEM" | term == "Dx_RESoverN")
+
+Categ_diagnosis$padj <- p.adjust(Categ_diagnosis$p.value, method = "BH")
+
+
+Categ_diagnosis$Significant <- ifelse(Categ_diagnosis$padj < 0.05, "Yes", "No")
+Categ_diagnosis <- merge(protein_IDs, Categ_diagnosis, by.x = "UniprotAccession", by.y = "response")
+Categ_diagnosis <- Categ_diagnosis %>%
+  arrange(padj)
+Categ_diagnosis$Direction <- ifelse(Categ_diagnosis$estimate > 0, "Increase", "Decrease")
+
+head(Categ_diagnosis)
+```
+
+#Protein by age
+
+```{r}
+Categ_age <- diag_lm_tidy %>%
+  filter(term == "Age_at_death")
+
+Categ_age$padj <- p.adjust(Categ_age$p.value, method = "BH")
+
+
+Categ_age$Significant <- ifelse(Categ_age$padj < 0.05, "Yes", "No")
+Categ_age <- merge(protein_IDs, Categ_age, by.x = "UniprotAccession", by.y = "response")
+Categ_age <- Categ_age %>%
+  arrange(padj)
+Categ_age$Direction <- ifelse(Categ_age$estimate > 0, "Increase", "Decrease")
+
+head(Categ_age)
+```
+
+#Protein by education
+
+```{r}
+Categ_educ <- diag_lm_tidy %>%
+  filter(term == "Education")
+
+Categ_educ$padj <- p.adjust(Categ_educ$p.value, method = "BH")
+
+
+Categ_educ$Significant <- ifelse(Categ_educ$padj < 0.05, "Yes", "No")
+Categ_educ <- merge(protein_IDs, Categ_educ, by.x = "UniprotAccession", by.y = "response")
+Categ_educ <- Categ_educ %>%
+  arrange(padj)
+Categ_educ$Direction <- ifelse(Categ_educ$estimate > 0, "Increase", "Decrease")
+
+head(Categ_educ)
+```
+
+# Protein by sex
+
+```{r}
+Categ_sex <- diag_lm_tidy %>%
+  filter(term == "SexM")
+
+Categ_sex$padj <- p.adjust(Categ_sex$p.value, method = "BH")
+
+
+Categ_sex$Significant <- ifelse(Categ_sex$padj < 0.05, "Yes", "No")
+Categ_sex <- merge(protein_IDs, Categ_sex, by.x = "UniprotAccession", by.y = "response")
+Categ_sex <- Categ_sex %>%
+  arrange(padj)
+Categ_sex$Direction <- ifelse(Categ_sex$estimate > 0, "Increase", "Decrease")
+
+head(Categ_sex)
+```
+
+#Protein by pmi
+
+```{r}
+Categ_pmi <- diag_lm_tidy %>%
+  filter(term == "Post_mortem_interval")
+
+Categ_pmi$padj <- p.adjust(Categ_pmi$p.value, method = "BH")
+
+
+Categ_pmi$Significant <- ifelse(Categ_pmi$padj < 0.05, "Yes", "No")
+Categ_pmi <- merge(protein_IDs, Categ_pmi, by.x = "UniprotAccession", by.y = "response")
+Categ_pmi <- Categ_pmi %>%
+  arrange(padj)
+Categ_pmi$Direction <- ifelse(Categ_pmi$estimate > 0, "Increase", "Decrease")
+
+head(Categ_pmi)
+```
+
+##Comparison with other studies - you're here!!!!
+
+```{r}
+
+Bai <- read.xlsx("Data/Input/Bai_2020_DEX.xlsx", startRow = 3)
+Bai <- Bai[-1,]
+
+Bai_proteins <- unique(Bai$Gene.Name)
+
+Johnson <- read.xlsx("Data/Input/Johnson_2020.xlsx", startRow = 4)
+Johnson$padj <- p.adjust(Johnson$`Pr(>F)`, method = "BH")
+Johnson_proteins <- Johnson %>%
+  filter(padj <= 0.05)
+Johnson_proteins <- Johnson_proteins$`orange:.does.not.follow.rules.to.left`
+Johnson_proteins <- data.frame(Johnson_proteins) %>%
+  separate(col = "Johnson_proteins", into = c("GeneName", "UniprotAcc"), sep = "\\|")
+Johnson_proteins <- Johnson_proteins$GeneName
+
+Categ_diagnosis$Sig_in_Johnson <- ifelse(Categ_diagnosis$GeneName %in% Johnson_proteins, "Yes", "No")
+Categ_diagnosis$Sig_in_Bai <- ifelse(Categ_diagnosis$GeneName %in% Bai_proteins, "Yes", "No")
+
+
+Novel_findings <- Categ_diagnosis %>%
+  filter(padj < 0.05) %>%
+  filter(Sig_in_Johnson == "No" & Sig_in_Bai == "No")
+n_novel <- unique(Novel_findings$GeneName)
+
+```
+
+There are `r Novel_findings` proteins significantly associated with diagnosis in this studied that were not significant in two other recent, well powered studies.
+
+#Bind together
+
+```{r}
+summary_table <- rbind(Categ_age, Categ_educ, Categ_sex, Categ_pmi)
+summary_table$Sig_in_Johnson <- NA
+summary_table$Sig_in_Bai <- NA
+
+summary_table <- rbind(Categ_diagnosis, summary_table)
+
+write_csv(summary_table, "Data/Output/Supplementary Tables/TableS5_modelling_all_results.csv")
+```
+
+##Summary table of proteins with significant differences - all variables
+
+```{r}
+
+sig_summary_table <- summary_table %>%
+  filter(Significant == "Yes") %>%
+  arrange(term)
+
+
+write_csv(sig_summary_table, "Data/Output/Supplementary Tables/TableS6_modelling_significant_all_terms.csv")
+
+head(sig_summary_table)
+```
+
+#Overall summary of number of significant proteins 
+
+```{r}
+
+Table2 <- sig_summary_table %>%
+  group_by(term, Direction) %>%
+  summarise(n = n())
+
+add <-data.frame("Dx_RESoverN","Decrease", 0)
+names(add)<-c("term","Direction","n")
+add$term <- as.character(add$term)
+add$Direction <- as.character(add$Direction)
+add$n <- as.integer(add$n)
+
+Table2 <- bind_rows(Table2, add) %>%
+  arrange(term) %>%
+  spread(Direction, n)
+
+Table2$Variable <- c("Age", "Dx Dementia-AD vs Normal", "Dx Frail vs Dementia-AD", "Dx Frail vs Normal", "Dx Frail vs Resilient", "Dx Resilient vs Dementia-AD", "Dx Resilient vs Normal", "Post Mortem Interval", "Sex Male vs Female")
+
+Table2 <- Table2 %>%
+  ungroup(term) %>%
+  select(Variable, Increase, Decrease) 
+
+write_csv(Table2, "Data/Output/Intermediate tables/Table2_Sig_summary.csv")
+
+Table2
+
+```
+
+
+
+##Heat maps of significant proteins - DEM vs NOR
+
+```{r}
+#Sig proteins
+
+sig_summary_table$UniprotAccession <- as.character(sig_summary_table$UniprotAccession)
+sig_summary_table$GeneName <- as.character(sig_summary_table$GeneName)
+
+Sig_DEMvsNOR <- sig_summary_table %>%
+  filter(term == "Dx_DEMoverN")
+
+##2 entries don't have Genenames
+missing <- which(Sig_DEMvsNOR$GeneName == "n/a")
+Sig_DEMvsNOR[missing,]
+
+#Q9ILI1 is NWD2
+#P48050 is KCNJ4
+
+Uniprot_IDs <- c("Q9ULI1", "P48050")
+Genename_IDs <- c("NWD2", "KCNJ4")
+
+
+Sig_DEMvsNOR$GeneName[Sig_DEMvsNOR$UniprotAccession == Uniprot_IDs[1]] <- Genename_IDs[1]
+Sig_DEMvsNOR$GeneName[Sig_DEMvsNOR$UniprotAccession == Uniprot_IDs[2]] <- Genename_IDs[2]
+
+
+key_DEMvsNOR <- sample_key %>%
+  filter(Project.diagnosis == "DEM_AD" | Project.diagnosis == "N")
+colsDEMvsNOR <- key_DEMvsNOR$Code
+
+for_heatmaps <- TMT_data %>%
+  select(UniprotAccession, GeneName, A1:J9)
+for_heatmaps$GeneName <- as.character(for_heatmaps$GeneName)
+for_heatmaps$UniprotAccession <- as.character(for_heatmaps$UniprotAccession)
+
+for_heatmaps$GeneName[for_heatmaps$UniprotAccession == Uniprot_IDs[1]] <- Genename_IDs[1]
+for_heatmaps$GeneName[for_heatmaps$UniprotAccession == Uniprot_IDs[2]] <- Genename_IDs[2]
+
+
+
+to_map_DEMvsNOR <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_DEMvsNOR$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsDEMvsNOR))
+
+
+
+dx_col = data.frame(sampleID=key_DEMvsNOR$Code, dx=key_DEMvsNOR$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_DEMvsNOR$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_DEMvsNOR$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_DEMvsNOR$Project.diagnosis == "RES"] = "#fdb863"
+
+library(gplots)
+
+pdf(file="Figures/Fig3C.pdf", width = 30, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_DEMvsNOR))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_DEMvsNOR), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+##Heat maps of significant proteins - DEM vs FRL
+
+```{r}
+#Sig proteins
+Sig_DEMvsFRL <- sig_summary_table %>%
+  filter(term == "Dx_FRLoverDEM")
+
+
+
+key_DEMvsFRL <- sample_key %>%
+  filter(Project.diagnosis == "DEM_AD" | Project.diagnosis == "FRL")
+colsDEMvsFRL <- key_DEMvsFRL$Code
+
+to_map_DEMvsFRL <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_DEMvsFRL$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsDEMvsFRL))
+
+
+
+dx_col = data.frame(sampleID=key_DEMvsFRL$Code, dx=key_DEMvsFRL$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_DEMvsFRL$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_DEMvsFRL$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_DEMvsFRL$Project.diagnosis == "RES"] = "#fdb863"
+
+
+
+pdf(file="Figures/Fig3D.pdf", width = 20, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_DEMvsFRL))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_DEMvsFRL), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+
+##Heat maps of significant proteins - DEM vs RES
+
+```{r}
+#Sig proteins
+Sig_DEMvsRES <- sig_summary_table %>%
+  filter(term == "Dx_RESoverDEM")
+
+
+
+key_DEMvsRES <- sample_key %>%
+  filter(Project.diagnosis == "DEM_AD" | Project.diagnosis == "RES")
+colsDEMvsRES <- key_DEMvsRES$Code
+
+to_map_DEMvsRES <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_DEMvsRES$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsDEMvsRES))
+
+
+
+dx_col = data.frame(sampleID=key_DEMvsRES$Code, dx=key_DEMvsRES$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_DEMvsRES$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_DEMvsRES$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_DEMvsRES$Project.diagnosis == "RES"] = "#fdb863"
+
+
+
+pdf(file="Figures/Fig3E.pdf", width = 20, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_DEMvsRES))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_DEMvsRES), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+
+##Heat maps of significant proteins - NOR vs FRL
+
+```{r}
+#Sig proteins
+Sig_NORvsFRL <- sig_summary_table %>%
+  filter(term == "Dx_FRLoverN")
+
+
+
+key_NORvsFRL <- sample_key %>%
+  filter(Project.diagnosis == "N" | Project.diagnosis == "FRL")
+colsNORvsFRL <- key_NORvsFRL$Code
+
+to_map_NORvsFRL <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_NORvsFRL$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsNORvsFRL))
+
+
+
+dx_col = data.frame(sampleID=key_NORvsFRL$Code, dx=key_NORvsFRL$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_NORvsFRL$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_NORvsFRL$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_NORvsFRL$Project.diagnosis == "RES"] = "#fdb863"
+
+
+
+pdf(file="Figures/Fig3F.pdf", width = 20, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_NORvsFRL))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_NORvsFRL), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+##Heat maps of significant proteins - NOR vs RES
+
+```{r}
+#Sig proteins
+Sig_NORvsRES <- sig_summary_table %>%
+  filter(term == "Dx_RESoverN")
+
+
+
+key_NORvsRES <- sample_key %>%
+  filter(Project.diagnosis == "N" | Project.diagnosis == "RES")
+colsNORvsRES <- key_NORvsRES$Code
+
+to_map_NORvsRES <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_NORvsRES$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsNORvsRES))
+
+
+
+dx_col = data.frame(sampleID=key_NORvsRES$Code, dx=key_NORvsRES$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_NORvsRES$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_NORvsRES$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_NORvsRES$Project.diagnosis == "RES"] = "#fdb863"
+
+
+
+pdf(file="Figures/Fig3G.pdf", width = 20, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_NORvsRES))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_NORvsRES), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+##Heat maps of significant proteins - FRL vs RES
+
+```{r}
+#Sig proteins
+Sig_FRLvsRES <- sig_summary_table %>%
+  filter(term == "Dx_FRLoverRES")
+
+key_FRLvsRES <- sample_key %>%
+  filter(Project.diagnosis == "FRL" | Project.diagnosis == "RES")
+colsFRLvsRES <- key_FRLvsRES$Code
+
+to_map_FRLvsRES <- for_heatmaps %>%
+  filter(UniprotAccession %in% Sig_FRLvsRES$UniprotAccession) %>%
+  select(-UniprotAccession) %>%
+  column_to_rownames("GeneName") %>%
+  select(all_of(colsFRLvsRES))
+
+dx_col = data.frame(sampleID=key_FRLvsRES$Code, dx=key_FRLvsRES$Project.diagnosis, colour="#5e3c99",stringsAsFactors = F)
+dx_col$colour[key_FRLvsRES$Project.diagnosis == "DEM_AD"] = "#e66101"
+dx_col$colour[key_FRLvsRES$Project.diagnosis == "FRL"] = "#b2abd2"
+dx_col$colour[key_FRLvsRES$Project.diagnosis == "RES"] = "#fdb863"
+
+
+
+pdf(file="Figures/Fig3H.pdf", width = 20, height = 7)
+
+
+heatmap.2(t(as.matrix(log2(to_map_FRLvsRES))), trace = "none", 
+          scale="col", 
+          col=colorRampPalette(c("steelblue","white","darkred"))(50),
+          RowSideColors=dx_col$colour[match(colnames(to_map_FRLvsRES), dx_col$sampleID)])
+
+dev.off()
+
+```
+
+##Upset plot to show intersection of proteins in comparisons
+
+```{r}
+library(UpSetR)
+sig_lists <- list(DEM_ADvsNOR = c(Sig_DEMvsNOR$GeneName), DEM_ADvsFRL = c(Sig_DEMvsFRL$GeneName), 
+                  DEM_ADvsRES = c(Sig_DEMvsRES$GeneName), NORvsFRL = c(Sig_NORvsFRL$GeneName), 
+                  NORvsRES = c(Sig_NORvsRES$GeneName), RESvsFRL = c(Sig_FRLvsRES$GeneName))
+
+
+Fig3I <- upset(fromList(sig_lists), order.by = "freq", nsets = 6)
+
+pdf(file="Figures/Fig3I.pdf", width = 6, height = 6, onefile=FALSE, useDingbats = FALSE) # or other device
+Fig3I
+dev.off()
+
+
+
+
+```
+
+## Intersections
+
+```{r}
+
+all_path <- protein_IDs %>%
+  filter(GeneName %in% Sig_DEMvsFRL$GeneName & GeneName %in% Sig_DEMvsNOR$GeneName & GeneName %in% Sig_FRLvsRES$GeneName & GeneName %in% Sig_NORvsRES$GeneName)
+
+NOR_cog_FRL <- protein_IDs %>%
+  filter(GeneName %in% Sig_NORvsFRL$GeneName & GeneName %in% Sig_DEMvsNOR$GeneName)
+
+NOR_cog_DEM <- protein_IDs %>%
+  filter(GeneName %in% Sig_DEMvsRES$GeneName & GeneName %in% Sig_DEMvsNOR$GeneName)
+
+three_way <- protein_IDs %>%
+  filter(GeneName %in% Sig_DEMvsRES$GeneName & GeneName %in% Sig_DEMvsNOR$GeneName & GeneName %in% Sig_DEMvsFRL$GeneName)
+
+intersect_IDs <- rbind(all_path, NOR_cog_FRL, NOR_cog_DEM, three_way)
+
+write_csv(intersect_IDs, "Data/Output/Intermediate tables/Intersect_genes.csv")
+
+intersect_IDs
+
+```
+
+##Plotting object for intersecting proteins
+
+```{r}
+
+to_plot_proteins <- to_model %>%
+  gather(key = "Protein", value = "Normalized Quant", -c(Code:Microscopic_cerebral_infarcts_any))
+
+to_plot_dx <- merge(intersect_IDs, to_plot_proteins, by.x = "UniprotAccession", by.y = "Protein", all.y = FALSE)
+
+
+
+```
+
+## Plots for all_path intersect proteins
+
+```{r}
+
+#Use the max value for each protein to set the height of significance markers where possible - a small number will need to be moved manually after this
+max_values <- to_plot_dx %>%
+  group_by(GeneName) %>%
+  summarize(max = max(`Normalized Quant`), min = min(`Normalized Quant`))
+
+
+
+#Make table of co-ordinates for significance markers in those comparisons that are significant
+sig_stars <- sig_summary_table %>%
+  filter(UniprotAccession %in% all_path$UniprotAccession) 
+sig_stars$padj_rounded <- format(round(sig_stars$padj, 3))
+
+sig_stars <- sig_stars %>%
+  select(GeneName, term, padj_rounded, Direction)
+term <- c(unique(sig_stars$term))
+start_loc <- c("DEM_AD", "DEM_AD", "FRL", "N")
+end_loc <- c("N", "FRL", "RES", "RES")
+star_coords <- data.frame(term, start_loc, end_loc)
+sig_stars <- merge(sig_stars, star_coords, by = "term")
+sig_stars <- merge(sig_stars, max_values, by = "GeneName")
+
+#Use the max values for easch protein to try to auto set the height of the error bars
+tmp_Dx_DEMoverN <- sig_stars %>%
+  filter(term =="Dx_DEMoverN") %>%
+  mutate("yloc" = max*0.98)
+tmp_Dx_FRLoverDEM <- sig_stars %>%
+  filter(term =="Dx_FRLoverDEM") %>%
+  mutate("yloc" = max*0.9)
+tmp_Dx_FRLoverRES <- sig_stars %>%
+  filter(term =="Dx_FRLoverRES") %>%
+  mutate("yloc" = max*0.82)
+tmp_Dx_RESoverN <- sig_stars %>%
+  filter(term =="Dx_RESoverN") %>%
+  mutate("yloc" = max*0.9)
+sig_stars <- rbind(tmp_Dx_DEMoverN, tmp_Dx_FRLoverDEM, tmp_Dx_FRLoverRES, tmp_Dx_RESoverN)
+
+
+Fig4a <- to_plot_dx %>%
+  filter(UniprotAccession %in% all_path$UniprotAccession) %>%
+  ggplot(aes(x= Project.diagnosis, y = `Normalized Quant`)) +
+  geom_boxplot(outlier.shape=NA) + geom_point(aes(color = Project.diagnosis, alpha = 0.4)) +
+  facet_wrap(~GeneName, scales = "free_y", ncol = 4) + scale_color_manual(values = Dx_colors) +
+  theme_bw() +
+  theme(text = element_text(size = 10)) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("Normalised Quant") + theme(legend.position = "none") + 
+  scale_y_continuous(labels = scientific) +
+  geom_signif(data = sig_stars, aes(xmin = start_loc, xmax = end_loc, annotations = padj_rounded, y_position = yloc), textsize = 2, vjust = -0.2, manual = TRUE) 
+
+ggsave("Figures/Fig4a_all_path.pdf", plot = Fig4a, device = "pdf", width = 8, height = 5, units = "in", dpi = 300)
+
+
+```
+
+
+## Plots for cog FRL intersect proteins
+
+```{r}
+
+
+#Make table of co-ordinates for significance markers in those comparisons that are significant
+sig_stars <- sig_summary_table %>%
+  filter(UniprotAccession %in% NOR_cog_FRL$UniprotAccession) 
+sig_stars$padj_rounded <- format(round(sig_stars$padj, 3))
+
+sig_stars <- sig_stars %>%
+  select(GeneName, term, padj_rounded, Direction)
+term <- c(unique(sig_stars$term))
+start_loc <- c("DEM_AD", "FRL")
+end_loc <- c("N", "N")
+star_coords <- data.frame(term, start_loc, end_loc)
+sig_stars <- merge(sig_stars, star_coords, by = "term")
+sig_stars <- merge(sig_stars, max_values, by = "GeneName")
+
+#Use the max values for easch protein to try to auto set the height of the error bars
+tmp_Dx_DEMoverN <- sig_stars %>%
+  filter(term =="Dx_DEMoverN") %>%
+  mutate("yloc" = max*0.98)
+tmp_Dx_FRLoverN <- sig_stars %>%
+  filter(term =="Dx_FRLoverN") %>%
+  mutate("yloc" = max*0.9)
+
+sig_stars <- rbind(tmp_Dx_DEMoverN, tmp_Dx_FRLoverN)
+
+
+Fig4b <- to_plot_dx %>%
+  filter(UniprotAccession %in% NOR_cog_FRL$UniprotAccession) %>%
+  ggplot(aes(x= Project.diagnosis, y = `Normalized Quant`)) +
+  geom_boxplot(outlier.shape=NA) + geom_point(aes(color = Project.diagnosis, alpha = 0.4)) +
+  facet_wrap(~GeneName, scales = "free_y", ncol = 4) + scale_color_manual(values = Dx_colors) +
+  theme_bw() +
+  theme(text = element_text(size = 10)) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("Normalised Quant") + theme(legend.position = "none") + 
+  scale_y_continuous(labels = scientific) +
+  geom_signif(data = sig_stars, aes(xmin = start_loc, xmax = end_loc, annotations = padj_rounded, y_position = yloc), textsize = 2, vjust = -0.2, manual = TRUE) 
+
+ggsave("Figures/Fig4b_FRL.pdf", plot = Fig4b, device = "pdf", width = 8, height = 5, units = "in", dpi = 300)
+
+
+```
+
+## Plots for cog RES intersect proteins
+
+```{r}
+
+
+#Make table of co-ordinates for significance markers in those comparisons that are significant
+sig_stars <- sig_summary_table %>%
+  filter(UniprotAccession %in% NOR_cog_DEM$UniprotAccession) 
+sig_stars$padj_rounded <- format(round(sig_stars$padj, 3))
+
+sig_stars <- sig_stars %>%
+  select(GeneName, term, padj_rounded, Direction)
+term <- c(unique(sig_stars$term))
+start_loc <- c("DEM_AD", "DEM_AD", "DEM_AD")
+end_loc <- c("N", "FRL", "RES")
+star_coords <- data.frame(term, start_loc, end_loc)
+sig_stars <- merge(sig_stars, star_coords, by = "term")
+sig_stars <- merge(sig_stars, max_values, by = "GeneName")
+
+#Use the max values for easch protein to try to auto set the height of the error bars
+tmp_Dx_DEMoverN <- sig_stars %>%
+  filter(term =="Dx_DEMoverN") %>%
+  mutate("yloc" = max*0.9)
+tmp_Dx_FRLoverDEM <- sig_stars %>%
+  filter(term =="Dx_FRLoverDEM") %>%
+  mutate("yloc" = max*0.82)
+tmp_Dx_RESoverDEM <- sig_stars %>%
+  filter(term =="Dx_RESoverDEM") %>%
+  mutate("yloc" = max*0.98)
+
+sig_stars <- rbind(tmp_Dx_DEMoverN, tmp_Dx_FRLoverDEM, tmp_Dx_RESoverDEM)
+
+
+Fig4c <- to_plot_dx %>%
+  filter(UniprotAccession %in% NOR_cog_DEM$UniprotAccession) %>%
+  ggplot(aes(x= Project.diagnosis, y = `Normalized Quant`)) +
+  geom_boxplot(outlier.shape=NA) + geom_point(aes(color = Project.diagnosis, alpha = 0.4)) +
+  facet_wrap(~GeneName, scales = "free_y", ncol = 4) + scale_color_manual(values = Dx_colors) +
+  theme_bw() +
+  theme(text = element_text(size = 10)) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("Normalised Quant") + theme(legend.position = "none") + 
+  scale_y_continuous(labels = scientific) +
+  geom_signif(data = sig_stars, aes(xmin = start_loc, xmax = end_loc, annotations = padj_rounded, y_position = yloc), textsize = 2, vjust = -0.2, manual = TRUE) 
+
+ggsave("Figures/Fig4c_RES.pdf", plot = Fig4c, device = "pdf", width = 8, height = 5, units = "in", dpi = 300)
+
+
+```
+
+##Glial markers
+
+```{r}
+GFAP <- grep("GFAP", protein_IDs$GeneName)
+protein_IDs[GFAP,]
+
+ALDH1L1 <- grep("ALDH1L1", protein_IDs$GeneName)
+protein_IDs[ALDH1L1,]
+
+GLUL <- grep("GLUL", protein_IDs$GeneName)
+protein_IDs[GLUL,]
+
+CD11B <- grep("ITGAM", protein_IDs$GeneName)
+protein_IDs[CD11B,]
+
+Glia <- c("P14136", "O75891","P15104", "P11215" )
+
+FigS6 <- to_plot_proteins %>%
+  filter(Protein %in% Glia)
+
+FigS6 <- merge(protein_IDs, FigS6, by.x = "UniprotAccession", by.y =  "Protein", all.x = FALSE)
+
+FigS6 <- FigS6 %>%
+  ggplot(aes(x= Project.diagnosis, y = `Normalized Quant`)) +
+  geom_boxplot(outlier.shape=NA) + geom_point(aes(color = Project.diagnosis, alpha = 0.4)) +
+  facet_wrap(~GeneName, scales = "free_y", ncol = 4) + scale_color_manual(values = Dx_colors) +
+  theme_bw() +
+  theme(text = element_text(size = 10)) +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  xlab("Diagnosis Category") + ylab("Normalised Quant") + theme(legend.position = "none") + 
+  scale_y_continuous(labels = scientific) 
+  
+ggsave("Data/Output/Supplementary Figures/FigS6_glial_markers.pdf", plot = FigS6, device = "pdf", width = 8, height = 5, units = "in", dpi = 300)
+
+FigS6
+
+```
+
