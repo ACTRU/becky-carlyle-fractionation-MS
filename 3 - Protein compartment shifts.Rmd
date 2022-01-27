@@ -17,6 +17,8 @@ library(openxlsx)
 ##Read in data
 data <- read.xlsx("Input data/ProteinLevelRawRenamed.xlsx")  
 LFQ_data <- data %>%
+  filter(is.na(Reverse)) %>%
+  filter(is.na(Potential.contaminant)) %>%
   select(Protein.IDs, LFQ_A1:LFQ_J7)
 
 sample_key <- read.xlsx("Input data/SampleKey.xlsx")
@@ -137,18 +139,7 @@ res_entropy %>%
   theme(legend.position="none") +
   geom_vline(xintercept = 0.05)
 
-# interesting = c(res_entropy$Protein.IDs[1:25], "sp|P02792|FRIL_HUMAN","sp|P62899|RL31_HUMAN")
-# 
-# # plot from the original ratios
-# ratios %>%
-#   filter(Protein.IDs %in% interesting) %>%
-#   group_by(Protein.IDs) %>%
-#   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
-#   ungroup() %>%
-#   ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
-#   geom_hline(yintercept = 0.2, alpha=0.5) +
-#   geom_boxplot(alpha=0.1, width=0.5) +
-#   facet_wrap(~prot, scales="fixed")
+
 
 ```
 
@@ -166,6 +157,8 @@ res_tTest = ratios %>%
   summarise(n=n(),
             n_C=length(which(Condition=="C")),
             n_AD=length(which(Condition=="AD")),
+            tStat=t.test(ratio[Condition=="C"], 
+                        ratio[Condition=="AD"])$statistic,
             pVal=t.test(ratio[Condition=="C"], 
                         ratio[Condition=="AD"])$p.value) %>%
   mutate(padj = p.adjust(pVal, method = "BH")) %>%
@@ -188,8 +181,21 @@ res_tTest %>%
 ```{r}
 # Look at the top hits
 # res_tTest
-interesting = res_tTest %>%
-  filter(padj < 0.05)
+results <- res_tTest %>%
+  mutate(ttest_significant = ifelse(padj < 0.05, "Yes", "No")) 
+  
+entropy <- res_entropy %>%
+  select(Protein.IDs, mean_C, mean_AD, diff) %>%
+  rename(`Entropy Control` = mean_C) %>%
+  rename(`Entropy AD` = mean_AD) %>%
+  rename(`Entropy difference` = diff)
+
+results <- results %>%
+  left_join(entropy) %>%
+  arrange(Protein.IDs)
+  
+
+write_csv(results, "Supp tables/TableS6_ttest_outcomes.csv")
 
 interesting <- c("sp|P54750|PDE1A_HUMAN", "sp|P10636|TAU_HUMAN", "sp|Q96F85|CNRP1_HUMAN", "sp|P49841|GSK3B_HUMAN")
 
@@ -199,9 +205,9 @@ interesting_ratios <- ratios %>%
   group_by(Protein.IDs) %>%
   dplyr::mutate(prot = gsub("_HUMAN","",strsplit(Protein.IDs,"|",fixed=T)[[1]][3])) %>%
   ungroup() %>%
-  ggplot(aes(x=Fraction,y=ratio,colour=Condition)) +
+  ggplot(aes(x=Fraction,y=ratio,colour=Condition)) + ylab("proportion in fraction") +
   geom_hline(yintercept = 1/7, alpha=0.5) +
-  geom_boxplot(alpha=0.1, width=0.5) +
+  geom_boxplot(alpha=0.1, width=0.5, position = position_dodge(0.5)) + geom_point(aes(alpha = 0.2), shape = 16, position = position_dodge(0.5)) + 
   facet_wrap(~prot, scales="fixed", ncol = 4) + theme_bw()
 
 
@@ -221,7 +227,7 @@ LFQ_interesting <- LFQ_data_long %>%
   filter(Protein.IDs %in% interesting) %>%
   separate(Protein.IDs, into = c(NA, "UNIPROT", "DESC"), sep = "\\|", extra = "drop") %>%
   ggplot(aes(x=as.factor(Fraction),y=log2(LFQ),colour=Condition)) +
-    geom_boxplot(alpha=0.1, width=0.5) +
+    geom_boxplot(alpha=0.1, width=0.5, position = position_dodge(0.5)) + geom_point(aes(alpha = 0.2), shape = 16, position = position_dodge(0.5)) + 
     facet_wrap(~DESC, scales="free_y", ncol = 4) + theme_bw()
 
 ggsave("Figures/Fig3A_LFQ_interesting_proteins.pdf", plot = LFQ_interesting, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
@@ -246,7 +252,7 @@ summed <- LFQ_data_long %>%
 
 
 
-ggsave("Figures/Fig3C_LFQ_summed.pdf", plot = summed, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+ggsave("Figures/Fig3C_LFQ_summed.pdf", plot = summed, device = "pdf", width = 8.5, height = 3, units = "in", dpi = 300)
 
 
 summed
@@ -276,23 +282,39 @@ ggplot(ratio_averages, aes(x = RMSE, group = Condition)) + geom_density(aes(colo
 
 
 ##Stratify by confidence
-
-confidence <- read_csv("tmp/SVM_results.csv")
-confidence <- confidence %>%
-  filter(Condition == "Control") %>%
-  dplyr::select(Var1,  Confidence) %>%
-  rename(ProteinID = Var1)
-
 gold <- read_csv("Input data/gold_markers.csv")
 marker_confidence <- gold %>%
   mutate(Confidence = "High") %>%
   select(ProteinID, Confidence) %>%
-  bind_rows(confidence) 
+  mutate(Condition = "AD") %>%
+  select(ProteinID, Condition, Confidence)
+marker_confidence_con <- gold %>%
+  mutate(Confidence = "High") %>%
+  select(ProteinID, Confidence) %>%
+  mutate(Condition = "Control") %>%
+  select(ProteinID, Condition, Confidence) %>%
+  bind_rows(marker_confidence)
+
+
+confidence <- read_csv("Supp tables/Table_S5_SVM_results.csv")
+confidence <- confidence %>%
+  select(Uniprot_ID, Confidence_control, Confidence_AD) %>%
+  pivot_longer(-Uniprot_ID, names_to = "Condition", values_to = "Confidence") %>%
+  rename(ProteinID = Uniprot_ID) %>%
+  mutate(Condition = gsub("Confidence_control", "Control", Condition)) %>%
+  mutate(Condition = gsub("Confidence_AD", "AD", Condition)) %>%
+  bind_rows(marker_confidence_con)
+
+
+
+
+
 
 
 RMSE_to_plot <- ratio_averages %>%
-  separate(Protein.IDs, into = c(NA, "ProteinID", NA)) %>%
-  right_join(marker_confidence)
+  separate(Protein.IDs, into = c(NA, "ProteinID", NA))  %>%
+  mutate(Condition = gsub("C", "Control", Condition))
+RMSE_to_plot <- merge(RMSE_to_plot, confidence, by = c("ProteinID", "Condition"))
 
 confidence_col <- c("High" = "#2c7bb6", "Medium" = "#fdae61", "Low" = "#d7191c")
 
@@ -311,7 +333,7 @@ RMSE_to_plot %>%
   filter(!is.na(Condition)) %>%
   ggplot(aes(x = RMSE)) + geom_histogram(binwidth = 0.01) + facet_grid(rows = vars(Confidence), cols = vars(Condition))
 
-ggsave("Figures/FigS4C_LFQ_interesting_proteins.pdf", plot = RMSE, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+ggsave("Figures/FigS5C_RMSE.pdf", plot = RMSE, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
 
 RMSE
 ```

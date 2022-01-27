@@ -1,0 +1,2944 @@
+Uniprot_ID,Uniprot_name,Location_control,Confidence_control,Location_AD,Confidence_AD
+A0A024RBG1,NUD4B_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+A0AVT1,UBA6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+A0FGR8,ESYT2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+A1L0T0,ILVBL_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+A2RRP1,NBAS_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+A2RTX5,SYTC2_HUMAN,Endoplasmic Reticulum,Medium,Nucleus,Medium
+A2RU67,F234B_HUMAN,Mitochondria,Low,Mitochondria,Medium
+A5PKW4,PSD1_HUMAN,Mitochondria,Medium,Mitochondria_Nucleus,Low
+A5YM72,CRNS1_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+A6NDG6,PGP_HUMAN,Cytoplasm,High,Cytoplasm,High
+A6NE02,BTBDH_HUMAN,NA,None,Mitochondria,Low
+A6NHX0,CAST2_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+C9J069,AJM1_HUMAN,Postsynapse,High,Mitochondria,Medium
+E9PAV3,NACAM_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+O00116,ADAS_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+O00139,KIF2A_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+O00142,KITM_HUMAN,Mitochondria,High,Mitochondria,High
+O00154,BACH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O00159,MYO1C_HUMAN,Nucleus,High,Nucleus,Medium
+O00161,SNP23_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O00165,HAX1_HUMAN,Postsynapse,Medium,Mitochondria_Nucleus,Low
+O00170,AIP_HUMAN,Endoplasmic Reticulum,Low,NA,None
+O00178,GTPB1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+O00186,STXB3_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+O00192,ARVC_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+O00194,RB27B_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum,Medium
+O00217,NDUS8_HUMAN,Postsynapse,Low,Cytoskeleton_Postsynapse,Low
+O00231,PSD11_HUMAN,Cytoskeleton,Medium,Presynapse,Medium
+O00232,PSD12_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+O00244,ATOX1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O00264,PGRC1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+O00291,HIP1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+O00299,CLIC1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O00303,EIF3F_HUMAN,Presynapse,High,Endoplasmic Reticulum,High
+O00305,CACB4_HUMAN;sp,Endoplasmic Reticulum,Medium,Mitochondria_Presynapse,Low
+O00330,ODPX_HUMAN,Plasma membrane,Low,Mitochondria,Medium
+O00399,DCTN6_HUMAN,Cytoplasm,Low,Mitochondria_Postsynapse,Low
+O00401,WASL_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Presynapse,Low
+O00408,PDE2A_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+O00410,IPO5_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O00429,DNM1L_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O00442,RTCA_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Medium
+O00445,SYT5_HUMAN,Endoplasmic Reticulum,High,Nucleus,Low
+O00468,AGRIN_HUMAN,Nucleus,High,Nucleus,High
+O00471,EXOC5_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+O00478,BT3A3_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+O00483,NDUA4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O00487,PSDE_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum_Presynapse,Low
+O00499,BIN1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+O00505,IMA4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O00519,FAAH1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O00533,NCHL1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O00560,SDCB1_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+O00571,DDX3X_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+O00584,RNT2_HUMAN,Cytoplasm,High,Cytoplasm,High
+O00625,PIR_HUMAN,NA,None,Cytoplasm,High
+O00629,IMA3_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O00743,PPP6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+O00764,PDXK_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O14490,DLGP1_HUMAN,Mitochondria,High,Mitochondria,High
+O14495,PLPP3_HUMAN,Presynapse,High,Plasma membrane,Low
+O14521,DHSD_HUMAN,Mitochondria,High,Mitochondria,High
+O14523,C2C2L_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O14525,ASTN1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+O14531,DPYL4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O14548,COX7R_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O14558,HSPB6_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+O14561,ACPM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O14576,DC1I1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O14579,COPE_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+O14594,NCAN_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O14617,AP3D1_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+O14639,ABLM1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+O14653,GOSR2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O14662,STX16_HUMAN,Mitochondria_Postsynapse,Low,Endoplasmic Reticulum_Mitochondria,Low
+O14672,ADA10_HUMAN,Presynapse,High,Cytoskeleton_Presynapse,Low
+O14734,ACOT8_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Presynapse,Low
+O14735,CDIPT_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O14737,PDCD5_HUMAN,Cytoplasm,High,Cytoplasm,High
+O14744,ANM5_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+O14745,NHRF1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O14773,TPP1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O14775,GNB5_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Presynapse,Low
+O14787,TNPO2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O14807,RASM_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Low
+O14810,CPLX1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O14818,PSA7_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+O14827,RGRF2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+O14828,SCAM3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O14841,OPLA_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+O14874,BCKD_HUMAN,Mitochondria,High,Mitochondria,High
+O14880,MGST3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O14907,TX1B3_HUMAN,Cytoplasm,Medium,Endoplasmic Reticulum,Medium
+O14910,LIN7A_HUMAN;sp,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+O14936,CSKP_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton,Medium
+O14949,QCR8_HUMAN,Mitochondria,High,Mitochondria_Postsynapse,Low
+O14964,HGS_HUMAN,Cytoplasm,Low,Cytoskeleton,Low
+O14974,MYPT1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O14976,GAK_HUMAN,Presynapse,Medium,Presynapse,Medium
+O14979,HNRDL_HUMAN,Nucleus,Medium,Endoplasmic Reticulum_Nucleus,Low
+O14980,XPO1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+O14994,SYN3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O15020,SPTN2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O15027,SC16A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O15061,SYNEM_HUMAN,Nucleus,High,Endoplasmic Reticulum,Medium
+O15066,KIF3B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+O15067,PUR4_HUMAN,Cytoplasm,High,Cytoplasm,High
+O15068,MCF2L_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+O15069,NACAD_HUMAN,Endoplasmic Reticulum,High,Nucleus,Low
+O15075,DCLK1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O15079,SNPH_HUMAN,Postsynapse_Presynapse,Low,Mitochondria_Postsynapse,Low
+O15083,ERC2_HUMAN,Postsynapse,High,Postsynapse,High
+O15118,NPC1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Medium
+O15126,SCAM1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O15127,SCAM2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O15173,PGRC2_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+O15212,PFD6_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+O15228,GNPAT_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+O15230,LAMA5_HUMAN,Nucleus,High,Nucleus,High
+O15240,VGF_HUMAN,Plasma membrane,Medium,Presynapse,Low
+O15260,SURF4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O15294,OGT1_HUMAN,Cytoskeleton_Postsynapse,Low,Postsynapse,Low
+O15371,EIF3D_HUMAN,Plasma membrane_Presynapse,Low,Endoplasmic Reticulum,Medium
+O15372,EIF3H_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,Medium
+O15400,STX7_HUMAN,Presynapse,Medium,Cytoplasm,Low
+O15439,MRP4_HUMAN,Mitochondria,Medium,Mitochondria,High
+O15484,CAN5_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+O15498,YKT6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O15523,DDX3Y_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+O15530,PDPK1_HUMAN;sp,Mitochondria_Postsynapse,Low,Nucleus,Medium
+O15540,FABP7_HUMAN,Cytoplasm,Medium,Cytoskeleton,High
+O43143,DHX15_HUMAN,Nucleus,High,Nucleus,High
+O43149,ZZEF1_HUMAN,Mitochondria,Low,Mitochondria,High
+O43157,PLXB1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+O43169,CYB5B_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+O43175,SERA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43181,NDUS4_HUMAN,Postsynapse,High,Postsynapse,High
+O43236,SEPT4_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+O43237,DC1L2_HUMAN,Plasma membrane,High,Cytoskeleton,High
+O43242,PSMD3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O43272,PROD_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum_Mitochondria,Low
+O43295,SRGP3_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Medium
+O43301,HS12A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43324,MCA3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O43390,HNRPR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43396,TXNL1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O43399,TPD54_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+O43414,ERI3_HUMAN,Cytoplasm,High,Cytoplasm,High
+O43426,SYNJ1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43427,FIBP_HUMAN,Endoplasmic Reticulum,High,Presynapse,Low
+O43432,IF4G3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O43464,HTRA2_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Low
+O43488,ARK72_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+O43491,E41L2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O43504,LTOR5_HUMAN,Plasma membrane,Medium,Presynapse,Medium
+O43505,B4GA1_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Medium
+O43572,AKA10_HUMAN,Mitochondria,Low,Mitochondria,High
+O43581,SYT7_HUMAN,Presynapse,Medium,Presynapse,High
+O43592,XPOT_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+O43598,DNPH1_HUMAN,Cytoplasm,High,Cytoplasm,High
+O43615,TIM44_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Plasma membrane,Low
+O43674,NDUB5_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+O43676,NDUB3_HUMAN,Postsynapse,Medium,Postsynapse,Low
+O43678,NDUA2_HUMAN,Mitochondria,High,Postsynapse,High
+O43681,ASNA_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+O43687,AKA7A_HUMAN;sp,NA,None,Nucleus,Low
+O43707,ACTN4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43708,MAAI_HUMAN,Cytoplasm,Medium,Cytoplasm_Cytoskeleton,Low
+O43739,CYH3_HUMAN;sp,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+O43747,AP1G1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O43752,STX6_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+O43759,SNG1_HUMAN,Presynapse,Medium,Presynapse,High
+O43760,SNG2_HUMAN,NA,None,Mitochondria_Nucleus,Low
+O43761,SNG3_HUMAN,Presynapse,High,Presynapse,High
+O43765,SGTA_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+O43768,ENSA_HUMAN,Cytoplasm,Medium,Cytoplasm,Low
+O43772,MCAT_HUMAN,Mitochondria,High,Mitochondria,High
+O43776,SYNC_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O43809,CPSF5_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+O43813,LANC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43837,IDH3B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43852,CALU_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O43854,EDIL3_HUMAN,NA,None,Mitochondria,Low
+O43865,SAHH2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O43920,NDUS5_HUMAN,Postsynapse,High,Cytoskeleton,Medium
+O60220,TIM8A_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,Low
+O60229,KALRN_HUMAN,Mitochondria,High,Mitochondria,High
+O60245,PCDH7_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,NA,None
+O60256,KPRB_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O60262,GBG7_HUMAN,Plasma membrane,Medium,Cytoskeleton_Plasma membrane,Low
+O60268,K0513_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Low
+O60282,KIF5C_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O60307,MAST3_HUMAN,Mitochondria,Low,Mitochondria,High
+O60313,OPA1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O60331,PI51C_HUMAN;sp,Cytoskeleton_Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+O60346,PHLP1_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,NA,None
+O60359,CCG3_HUMAN,Mitochondria,High,Mitochondria,High
+O60493,SNX3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O60502,OGA_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum,Medium
+O60503,ADCY9_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+O60506,HNRPQ_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O60613,SEP15_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,Medium
+O60641,AP180_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O60645,EXOC3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O60658,PDE8A_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+O60664,PLIN3_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,Medium
+O60684,IMA7_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O60716,CTND1_HUMAN,Presynapse,Low,Endoplasmic Reticulum,High
+O60739,EIF1B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O60741,HCN1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+O60749,SNX2_HUMAN,Cytoplasm,Medium,Mitochondria,Medium
+O60762,DPM1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O60763,USO1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+O60784,TOM1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O60825,F262_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O60831,PRAF2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O60841,IF2P_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+O60861,GAS7_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Medium
+O60869,EDF1_HUMAN,Endoplasmic Reticulum,High,Plasma membrane,Medium
+O60883,G37L1_HUMAN,Presynapse,High,Presynapse,Medium
+O60884,DNJA2_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+O60888,CUTA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O60925,PFD1_HUMAN,Cytoplasm,Medium,Cytoplasm,Low
+O60936,NOL3_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O60939,SCN2B_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Low
+O75027,ABCB7_HUMAN,Mitochondria,Medium,Mitochondria,High
+O75044,SRGP2_HUMAN;sp,Mitochondria,Low,Mitochondria,High
+O75051,PLXA2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+O75061,AUXI_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75077,ADA23_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Presynapse,Low
+O75078,ADA11_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O75083,WDR1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75110,ATP9A_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+O75116,ROCK2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O75122,CLAP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75131,CPNE3_HUMAN;sp,Cytoskeleton_Presynapse,Low,Cytoskeleton_Presynapse,Low
+O75145,LIPA3_HUMAN,Postsynapse_Presynapse,Low,Cytoskeleton,Medium
+O75146,HIP1R_HUMAN,Presynapse,High,Endoplasmic Reticulum_Plasma membrane,Low
+O75155,CAND2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+O75170,PP6R2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+O75208,COQ9_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+O75223,GGCT_HUMAN,Cytoplasm,High,Cytoplasm,High
+O75251,NDUS7_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+O75306,NDUS2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75323,NIPS2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O75334,LIPA2_HUMAN,Mitochondria,High,Mitochondria,High
+O75340,PDCD6_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O75348,VATG1_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+O75351,VPS4B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+O75352,MPU1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O75363,BCAS1_HUMAN,Plasma membrane,High,Plasma membrane,High
+O75367,H2AY_HUMAN,Nucleus,High,Nucleus,High
+O75368,SH3L1_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+O75380,NDUS6_HUMAN,Mitochondria,Low,Postsynapse,Medium
+O75381,PEX14_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Plasma membrane,Low
+O75382,TRIM3_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+O75390,CISY_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75396,SC22B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O75431,MTX2_HUMAN,Mitochondria,Medium,Postsynapse,High
+O75436,VP26A_HUMAN,NA,None,Endoplasmic Reticulum,Low
+O75438,NDUB1_HUMAN,Postsynapse,Medium,Postsynapse,High
+O75439,MPPB_HUMAN,Mitochondria,High,Mitochondria,High
+O75489,NDUS3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75506,HSBP1_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+O75508,CLD11_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O75521,ECI2_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum_Nucleus,Low
+O75531,BAF_HUMAN,Nucleus,High,Nucleus,Low
+O75534,CSDE1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O75569,PRKRA_HUMAN,Presynapse,Low,Endoplasmic Reticulum,Medium
+O75592,MYCB2_HUMAN,NA,None,Mitochondria_Nucleus,Low
+O75608,LYPA1_HUMAN,Cytoplasm,High,Cytoplasm,High
+O75643,U520_HUMAN,Nucleus,High,Nucleus,High
+O75663,TIPRL_HUMAN,Cytoplasm,High,Cytoskeleton,High
+O75689,ADAP1_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O75746,CMC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75781,PALM_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O75821,EIF3G_HUMAN,Cytoplasm,Medium,Mitochondria,Low
+O75822,EIF3J_HUMAN,Plasma membrane,Medium,Plasma membrane,Low
+O75828,CBR3_HUMAN,Cytoplasm,High,Cytoskeleton,Medium
+O75832,PSD10_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O75844,FACE1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O75874,IDHC_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+O75879,GATB_HUMAN,Mitochondria,High,Mitochondria,High
+O75880,SCO1_HUMAN,Mitochondria,High,Mitochondria,Medium
+O75884,RBBP9_HUMAN,Cytoplasm,High,Cytoplasm,High
+O75891,AL1L1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75896,TUSC2_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Nucleus,Medium
+O75899,GABR2_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+O75914,PAK3_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O75915,PRAF3_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+O75923,DYSF_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+O75935,DCTN3_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Low
+O75936,BODG_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum_Nucleus,Low
+O75937,DNJC8_HUMAN,Nucleus_Postsynapse,Low,Nucleus,High
+O75947,ATP5H_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O75962,TRIO_HUMAN,Endoplasmic Reticulum,Low,Postsynapse,Medium
+O75964,ATP5L_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,High
+O75964,ATP5L_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,High
+O76003,GLRX3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+O76024,WFS1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O76041,NEBL_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+O76054,S14L2_HUMAN;sp,NA,None,Cytoskeleton_Endoplasmic Reticulum,Low
+O76070,SYUG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O76094,SRP72_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O94760,DDAH1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94772,LY6H_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+O94805,ACL6B_HUMAN,Nucleus,Medium,Nucleus,Medium
+O94811,TPPP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94819,KBTBB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94826,TOM70_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94830,DDHD2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+O94832,MYO1D_HUMAN,Cytoskeleton,Low,Cytoskeleton,High
+O94874,UFL1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O94875,SRBS2_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+O94903,PLPHP_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+O94905,ERLN2_HUMAN,Plasma membrane,Low,Cytoskeleton,Medium
+O94910,AGRL1_HUMAN,Plasma membrane,High,NA,None
+O94911,ABCA8_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+O94915,FRYL_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+O94919,ENDD1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94925,GLSK_HUMAN,Plasma membrane,High,Cytoskeleton,High
+O94966,UBP19_HUMAN,Nucleus,Low,Nucleus,Medium
+O94966,UBP19_HUMAN,Nucleus,Low,Nucleus,Medium
+O94967,WDR47_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Low
+O94973,AP2A2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O94979,SC31A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O94985,CSTN1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O95057,DIRA1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O95139,NDUB6_HUMAN,Mitochondria,High,Mitochondria,High
+O95140,MFN2_HUMAN,Plasma membrane_Presynapse,Low,Presynapse,Medium
+O95167,NDUA3_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,Low
+O95168,NDUB4_HUMAN,Postsynapse,Medium,Postsynapse,High
+O95169,NDUB8_HUMAN,Postsynapse,Medium,NA,None
+O95182,NDUA7_HUMAN,Mitochondria,Medium,Mitochondria,High
+O95196,CSPG5_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+O95197,RTN3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O95202,LETM1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O95219,SNX4_HUMAN,Presynapse,Medium,Mitochondria_Postsynapse,Low
+O95248,MTMR5_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O95278,EPM2A_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O95292,VAPB_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O95294,RASL1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+O95295,SNAPN_HUMAN,Cytoplasm,Low,Mitochondria,Medium
+O95298,NDUC2_HUMAN;sp,Postsynapse,Medium,Postsynapse,High
+O95299,NDUAA_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+O95319,CELF2_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Endoplasmic Reticulum,Low
+O95336,6PGL_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O95352,ATG7_HUMAN,Cytoplasm,High,Cytoplasm,High
+O95372,LYPA2_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Medium
+O95373,IPO7_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+O95394,AGM1_HUMAN,Cytoplasm,High,Cytoplasm,High
+O95433,AHSA1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+O95487,SC24B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+O95502,NPTXR_HUMAN,Presynapse,High,Endoplasmic Reticulum,Medium
+O95563,MPC2_HUMAN,Postsynapse,High,Mitochondria_Postsynapse,Low
+O95571,ETHE1_HUMAN,Mitochondria,High,Cytoplasm,Medium
+O95573,ACSL3_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+O95670,VATG2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O95671,ASML_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+O95674,CDS2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+O95716,RAB3D_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+O95741,CPNE6_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+O95747,OXSR1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+O95757,HS74L_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O95777,LSM8_HUMAN,Cytoplasm,High,Cytoplasm,High
+O95782,AP2A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O95810,CAVN2_HUMAN,Nucleus,High,Nucleus,High
+O95817,BAG3_HUMAN,Cytoplasm,High,Cytoplasm,High
+O95822,DCMC_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+O95825,QORL1_HUMAN,Endoplasmic Reticulum,High,Cytoplasm,High
+O95831,AIFM1_HUMAN,Mitochondria,High,Postsynapse,High
+O95837,GNA14_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+O95847,UCP4_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+O95858,TSN15_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Medium
+O95861,BPNT1_HUMAN,Cytoplasm,High,Cytoplasm,High
+O95865,DDAH2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+O95881,TXD12_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+O95886,DLGP3_HUMAN,Postsynapse,Medium,Postsynapse,Low
+O95970,LGI1_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,Medium
+O96000,NDUBA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+O96005,CLPT1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+O96008,TOM40_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+P00338,LDHA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00352,AL1A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00367,DHE3_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P00387,NB5R3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P00390,GSHR_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P00395,COX1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P00403,COX2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00441,SODC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00450,CERU_HUMAN;CON__ENSEMBL:ENSBTAP00000031900,Cytoplasm,Medium,Cytoplasm,Medium
+P00488,F13A_HUMAN,Cytoplasm,Low,Cytoplasm,High
+P00491,PNPH_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P00492,HPRT_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00505,AATM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00533,EGFR_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P00558,PGK1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00568,KAD1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P00738,HPT_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P00751,CFAB_HUMAN,Cytoplasm,High,Cytoplasm,High
+P00813,ADA_HUMAN,Cytoplasm,High,Cytoplasm,High
+P00846,ATP6_HUMAN,Postsynapse,Low,Mitochondria,Medium
+P00915,CAH1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P00918,CAH2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P00966,ASSY_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+P01008,ANT3_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P01009,A1AT_HUMAN,Cytoplasm_Plasma membrane,Low,Cytoskeleton,High
+P01011,AACT_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P01019,ANGT_HUMAN,Cytoplasm,High,Cytoplasm,High
+P01023,A2MG_HUMAN;CON__ENSEMBL:ENSBTAP00000024146,Plasma membrane,Medium,Cytoskeleton,High
+P01024,CO3_HUMAN,Cytoplasm_Plasma membrane,Low,Cytoskeleton,High
+P01024,CO3_HUMAN,Cytoplasm_Plasma membrane,Low,Cytoskeleton,High
+P01034,CYTC_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P01112,RASH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P01116,RASK_HUMAN,Presynapse,Medium,Endoplasmic Reticulum_Presynapse,Low
+P01303,NPY_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+P01591,IGJ_HUMAN,NA,None,Cytoplasm,Low
+P01834,IGKC_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P01857,IGHG1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P01859,IGHG2_HUMAN,Cytoplasm,Medium,Cytoskeleton,High
+P01860,IGHG3_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,High
+P01861,IGHG4_HUMAN,NA,None,Cytoplasm_Cytoskeleton,Low
+P01871,IGHM_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane,Medium
+P01876,IGHA1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P01903,DRA_HUMAN;sp,Endoplasmic Reticulum,Medium,Mitochondria,Low
+P02042,HBD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P02462,CO4A1_HUMAN;sp,Nucleus,High,Nucleus,High
+P02511,CRYAB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P02549,SPTA1_HUMAN,Mitochondria,High,Mitochondria,High
+P02647,APOA1_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,High
+P02649,APOE_HUMAN;CON__Q03247,Cytoskeleton,Medium,Cytoskeleton,High
+P02652,APOA2_HUMAN,Cytoplasm,High,Cytoplasm_Mitochondria,Low
+P02656,APOC3_HUMAN,NA,None,Cytoskeleton_Mitochondria,Low
+P02671,FIBA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P02675,FIBB_HUMAN;CON__P02676,Cytoskeleton,High,Cytoskeleton,High
+P02679,FIBG_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P02686,MBP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P02689,MYP2_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+P02730,B3AT_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Low
+P02745,C1QA_HUMAN,Endoplasmic Reticulum,High,NA,None
+P02746,C1QB_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+P02747,C1QC_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+P02749,APOH_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+P02750,A2GL_HUMAN,Cytoplasm,High,Cytoplasm,High
+P02763,A1AG1_HUMAN,Cytoplasm,High,Cytoskeleton,Medium
+P02765,FETUA_HUMAN,Cytoplasm,High,Cytoplasm_Mitochondria,Low
+P02766,TTHY_HUMAN,Cytoplasm,High,Cytoplasm,High
+P02774,VTDB_HUMAN;CON__Q3MHN5;CON__ENSEMBL:ENSBTAP00000018229,Cytoplasm,High,Cytoplasm,High
+P02786,TFR1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P02787,TRFE_HUMAN;CON__Q29443;CON__Q0IIK2,Plasma membrane,Medium,Cytoskeleton,High
+P02790,HEMO_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,Medium
+P02792,FRIL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P02794,FRIH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P03886,NU1M_HUMAN,Postsynapse,High,Mitochondria,Medium
+P03891,NU2M_HUMAN,Postsynapse,Medium,Mitochondria,High
+P03905,NU4M_HUMAN,Postsynapse,Low,Mitochondria,Medium
+P03915,NU5M_HUMAN,Postsynapse,Medium,Mitochondria,Medium
+P03928,ATP8_HUMAN,Mitochondria,High,Mitochondria,High
+P04003,C4BPA_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane,Low
+P04040,CATA_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+P04062,GLCM_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P04075,ALDOA_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P04080,CYTB_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P04083,ANXA1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P04114,APOB_HUMAN;CON__ENSEMBL:ENSBTAP00000032840,Cytoskeleton,High,Cytoskeleton,High
+P04156,PRIO_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P04179,SODM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P04181,OAT_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+P04216,THY1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P04217,A1BG_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Cytoplasm,Medium
+P04271,S100B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P04406,G3P_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P04632,CPNS1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P04792,HSPB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P04839,CY24B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+P04843,RPN1_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,Medium
+P04844,RPN2_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+P04899,GNAI2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P05060,SCG1_HUMAN,Postsynapse,Low,Mitochondria_Postsynapse,Low
+P05067,A4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P05090,APOD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P05091,ALDH2_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P05107,ITB2_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Plasma membrane,High
+P05109,S10A8_HUMAN,Nucleus,Medium,Cytoplasm,High
+P05129,KPCG_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P05141,ADT2_HUMAN,Plasma membrane_Postsynapse,Low,Cytoskeleton,High
+P05155,IC1_HUMAN,Cytoplasm,Medium,Cytoplasm_Endoplasmic Reticulum,Low
+P05164,PERM_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+P05165,PCCA_HUMAN,Mitochondria,Low,Postsynapse,Medium
+P05166,PCCB_HUMAN,Cytoskeleton,Low,Cytoskeleton,High
+P05198,IF2A_HUMAN,Plasma membrane_Presynapse,Low,Endoplasmic Reticulum_Plasma membrane,Low
+P05230,FGF1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P05362,ICAM1_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,Low
+P05386,RLA1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P05387,RLA2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P05388,RLA0_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P05413,FABPH_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P05455,LA_HUMAN,Cytoplasm_Nucleus,Low,Nucleus,High
+P05771,KPCB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P05937,CALB1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P06132,DCUP_HUMAN,Cytoplasm,High,Cytoplasm,High
+P06241,FYN_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+P06396,GELS_HUMAN;REV__sp,Plasma membrane,Medium,Cytoskeleton,High
+P06576,ATPB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P06702,S10A9_HUMAN,Cytoplasm,High,Cytoskeleton,High
+P06703,S10A6_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P06730,IF4E_HUMAN;sp,Mitochondria,Low,Mitochondria,Low
+P06733,ENOA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P06744,G6PI_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P06748,NPM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P06756,ITAV_HUMAN,Plasma membrane,Medium,Presynapse,Medium
+P07093,GDN_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+P07099,HYEP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P07108,ACBP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P07195,LDHB_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P07196,NFL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P07197,NFM_HUMAN;REV__sp,Plasma membrane,Medium,Cytoskeleton,High
+P07203,GPX1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P07237,PDIA1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P07305,H10_HUMAN,Nucleus_Plasma membrane,Low,Cytoskeleton_Nucleus,Low
+P07311,ACYP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P07339,CATD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P07355,ANXA2_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P07384,CAN1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P07437,TBB5_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P07602,SAP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P07686,HEXB_HUMAN,Cytoplasm,High,Cytoplasm,High
+P07738,PMGE_HUMAN,Cytoplasm,Low,Cytoplasm,High
+P07741,APT_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+P07814,SYEP_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P07858,CATB_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+P07900,HS90A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P07919,QCR6_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P07947,YES_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+P07954,FUMH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08123,CO1A2_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Medium
+P08133,ANXA6_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08134,RHOC_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P08183,MDR1_HUMAN,Endoplasmic Reticulum,High,Nucleus,High
+P08195,4F2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08237,PFKAM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08238,HS90B_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P08240,SRPRA_HUMAN,Mitochondria,Low,Nucleus,Low
+P08246,ELNE_HUMAN,Nucleus,Low,Nucleus_Postsynapse,Low
+P08311,CATG_HUMAN,Nucleus,Low,Nucleus,Low
+P08397,HEM3_HUMAN,Cytoplasm,Low,Cytoplasm,Medium
+P08559,ODPA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08571,CD14_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P08572,CO4A2_HUMAN,Nucleus,High,Nucleus,High
+P08574,CY1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08575,PTPRC_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Mitochondria,Low
+P08603,CFAH_HUMAN,Cytoplasm,Low,Cytoskeleton_Presynapse,Low
+P08621,RU17_HUMAN,Cytoplasm_Plasma membrane,Low,Plasma membrane,Low
+P08670,VIME_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P08708,RS17_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08758,ANXA5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P08865,RSSA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09012,SNRPA_HUMAN,Plasma membrane,Low,Nucleus_Presynapse,Low
+P09104,ENOG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09110,THIK_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+P09211,GSTP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09382,LEG1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09417,DHPR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09429,HMGB1_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P09455,RET1_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+P09471,GNAO_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09488,GSTM1_HUMAN,Cytoplasm,High,Cytoskeleton,High
+P09496,CLCA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09497,CLCB_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P09525,ANXA4_HUMAN,Plasma membrane,Medium,Cytoplasm_Cytoskeleton,Low
+P09543,CN37_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09622,DLDH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09651,ROA1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P09669,COX6C_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P09936,UCHL1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P09960,LKHA4_HUMAN,Cytoplasm,High,Cytoskeleton,High
+P09972,ALDOC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P0C0L4,CO4A_HUMAN,Cytoplasm,Low,Mitochondria,Low
+P0C0L5,CO4B_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P0C7M8,CLC2L_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P0CG30,GSTT2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P0DJI8,SAA1_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+P0DMV9,HS71B_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P0DOY3,IGLC3_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P0DP25,CALM3_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P0DPI2,GAL3A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P10114,RAP2A_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P10155,RO60_HUMAN,Cytoplasm,High,Cytoplasm,High
+P10253,LYAG_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P10301,RRAS_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P10412,H14_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P10451,OSTP_HUMAN;CON__P31096,Cytoplasm,High,Cytoplasm,High
+P10515,ODP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P10599,THIO_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P10606,COX5B_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P10620,MGST1_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Medium
+P10636,TAU_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P10644,KAP0_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Cytoskeleton,Medium
+P10645,CMGA_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+P10768,ESTD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P10809,CH60_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P10909,CLUS_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P10915,HPLN1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P11021,BIP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11047,LAMC1_HUMAN,Nucleus,High,Nucleus,High
+P11137,MTAP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11142,HSP7C_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11166,GTR1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Plasma membrane,Medium
+P11169,GTR3_HUMAN;sp,Presynapse,High,Presynapse,High
+P11177,ODPB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11182,ODB2_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+P11215,ITAM_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P11216,PYGB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11217,PYGM_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P11233,RALA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11274,BCR_HUMAN,Mitochondria,Medium,Nucleus,Medium
+P11277,SPTB1_HUMAN,Mitochondria,Medium,Mitochondria,Low
+P11310,ACADM_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+P11413,G6PD_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P11498,PYC_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P11532,DMD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P11586,C1TC_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P11766,ADHX_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P11940,PABP1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P12036,NFH_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P12074,CX6A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P12081,SYHC_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P12109,CO6A1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P12110,CO6A2_HUMAN,Endoplasmic Reticulum,Medium,Nucleus,Medium
+P12111,CO6A3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P12235,ADT1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P12236,ADT3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P12268,IMDH2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+P12270,TPR_HUMAN,Cytoplasm,Medium,Nucleus,High
+P12270,TPR_HUMAN,Cytoplasm,Medium,Nucleus,High
+P12277,KCRB_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P12429,ANXA3_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P12532,KCRU_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P12694,ODBA_HUMAN,Mitochondria,Medium,NA,None
+P12931,SRC_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Postsynapse,Low
+P12955,PEPD_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+P12956,XRCC6_HUMAN,Nucleus_Plasma membrane,Low,Cytoskeleton,Medium
+P13010,XRCC5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13073,COX41_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13489,RINI_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13521,SCG2_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,Low
+P13611,CSPG2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13637,AT1A3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13639,EF2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P13667,PDIA4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P13693,TCTP_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+P13716,HEM2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P13726,TF_HUMAN,Presynapse,Medium,Presynapse,Medium
+P13796,PLSL_HUMAN,Cytoplasm,High,Cytoplasm,High
+P13798,ACPH_HUMAN,Cytoplasm,High,Cytoplasm,High
+P13804,ETFA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P13807,GYS1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+P13861,KAP2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P13929,ENOB_HUMAN,Cytoplasm,High,Cytoplasm,High
+P13987,CD59_HUMAN,Plasma membrane,Medium,Plasma membrane,High
+P14136,GFAP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14174,MIF_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14209,CD99_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+P14314,GLU2B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P14324,FPPS_HUMAN,Cytoplasm,High,Cytoplasm,High
+P14384,CBPM_HUMAN,Cytoplasm,High,Plasma membrane,High
+P14406,CX7A2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14415,AT1B2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14543,NID1_HUMAN,Nucleus,High,Nucleus,High
+P14550,AK1A1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P14618,KPYM_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P14621,ACYP2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P14625,ENPL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14649,MYL6B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P14854,CX6B1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14866,HNRPL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P14867,GBRA1_HUMAN;sp,Mitochondria,Low,Postsynapse_Presynapse,Low
+P14868,SYDC_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+P14923,PLAK_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+P14927,QCR7_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P15056,BRAF_HUMAN;sp,Mitochondria,Medium,Nucleus,Medium
+P15104,GLNA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P15121,ALDR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P15170,ERF3A_HUMAN,Cytoplasm_Cytoskeleton,Low,Endoplasmic Reticulum,High
+P15259,PGAM2_HUMAN,Cytoplasm,High,Cytoplasm,High
+P15311,EZRI_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P15374,UCHL3_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+P15531,NDKA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P15559,NQO1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P15880,RS2_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P15882,CHIN_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum,Low
+P15927,RFA2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P15954,COX7C_HUMAN,Mitochondria_Postsynapse,Low,Cytoskeleton_Postsynapse,Low
+P16070,CD44_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P16083,NQO2_HUMAN,Cytoskeleton,High,Cytoplasm,High
+P16104,H2AX_HUMAN;sp,Cytoskeleton_Nucleus,Low,Cytoskeleton,High
+P16112,PGCA_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,High
+P16144,ITB4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+P16152,CBR1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P16157,ANK1_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Medium
+P16219,ACADS_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P16298,PP2BB_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P16389,KCNA2_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P16403,H12_HUMAN,Nucleus_Plasma membrane,Low,Cytoskeleton,Low
+P16435,NCPR_HUMAN,Presynapse,High,Plasma membrane,High
+P16615,AT2A2_HUMAN;sp,Plasma membrane,High,Cytoskeleton,High
+P16870,CBPE_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+P16930,FAAA_HUMAN,Cytoplasm,High,Cytoplasm,High
+P16949,STMN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P17066,HSP76_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+P17152,TMM11_HUMAN,Mitochondria,Low,Postsynapse,Low
+P17174,AATC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P17252,KPCA_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,Medium
+P17301,ITA2_HUMAN,Cytoskeleton,High,Cytoskeleton_Endoplasmic Reticulum,Low
+P17302,CXA1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P17540,KCRS_HUMAN,NA,None,Mitochondria,Low
+P17568,NDUB7_HUMAN,Mitochondria,Low,Mitochondria,Medium
+P17655,CAN2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P17677,NEUM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P17812,PYRG1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P17844,DDX5_HUMAN,Nucleus,High,Nucleus,High
+P17858,PFKAL_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P17900,SAP3_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm_Cytoskeleton,Low
+P17931,LEG3_HUMAN,Presynapse,Low,Plasma membrane,Low
+P17980,PRS6A_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P17987,TCPA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P18077,RL35A_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,High
+P18085,ARF4_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P18124,RL7_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P18206,VINC_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P18433,PTPRA_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P18507,GBRG2_HUMAN,Postsynapse,Medium,Cytoskeleton,Low
+P18621,RL17_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+P18669,PGAM1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P18859,ATP5J_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P19086,GNAZ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P19174,PLCG1_HUMAN,Cytoplasm,High,Mitochondria_Nucleus,Low
+P19338,NUCL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P19367,HXK1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P19404,NDUV2_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P19525,E2AK2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P19623,SPEE_HUMAN,Cytoplasm,High,Cytoplasm,High
+P19634,SL9A1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+P19652,A1AG2_HUMAN,Cytoplasm,High,Cytoplasm,High
+P19784,CSK22_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Low
+P19971,TYPH_HUMAN,Cytoplasm,High,Cytoplasm,High
+P20073,ANXA7_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P20290,BTF3_HUMAN,Plasma membrane,Medium,Plasma membrane,Medium
+P20336,RAB3A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P20337,RAB3B_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+P20338,RAB4A_HUMAN,Cytoskeleton,High,Cytoplasm,High
+P20339,RAB5A_HUMAN,Plasma membrane,Medium,Cytoplasm_Cytoskeleton,Low
+P20340,RAB6A_HUMAN,Cytoplasm,Medium,Cytoplasm_Cytoskeleton,Low
+P20618,PSB1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P20645,MPRD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+P20674,COX5A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P20700,LMNB1_HUMAN,Nucleus,High,Nucleus,High
+P20774,MIME_HUMAN,Endoplasmic Reticulum,Medium,Nucleus,Medium
+P20810,ICAL_HUMAN,Cytoplasm,High,Cytoplasm,High
+P20916,MAG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P20936,RASA1_HUMAN,Cytoplasm_Mitochondria,Low,Mitochondria,Low
+P21266,GSTM3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P21281,VATB2_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P21283,VATC1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P21291,CSRP1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P21333,FLNA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P21359,NF1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P21397,AOFA_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P21399,ACOC_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+P21695,GPDA_HUMAN,Cytoplasm,High,Cytoskeleton,High
+P21796,VDAC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P21810,PGS1_HUMAN,Plasma membrane,Low,Nucleus,Low
+P21912,SDHB_HUMAN,Postsynapse,Low,Cytoskeleton,Medium
+P21926,CD9_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P21953,ODBB_HUMAN,Mitochondria,High,Mitochondria,High
+P21964,COMT_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P21980,TGM2_HUMAN,Nucleus,High,Nucleus,High
+P22033,MUTA_HUMAN,Mitochondria,High,Mitochondria,High
+P22059,OSBP1_HUMAN,Cytoplasm_Mitochondria,Low,Nucleus,Low
+P22061,PIMT_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P22102,PUR2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P22234,PUR6_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P22307,NLTP_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P22314,UBA1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P22392,NDKB_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P22570,ADRO_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P22626,ROA2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P22676,CALB2_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,High
+P22694,KAPCB_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P22695,QCR2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+P22732,GTR5_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+P22748,CAH4_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+P22830,HEMH_HUMAN,Mitochondria_Postsynapse,Low,NA,None
+P23141,EST1_HUMAN,Cytoplasm,Low,Cytoplasm_Mitochondria,Low
+P23142,FBLN1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P23246,SFPQ_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P23258,TBG1_HUMAN;sp,Endoplasmic Reticulum,High,Mitochondria,High
+P23284,PPIB_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P23297,S10A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23368,MAOM_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P23381,SYWC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23396,RS3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23434,GCSH_HUMAN,Cytoplasm,High,Cytoskeleton,High
+P23468,PTPRD_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Low
+P23469,PTPRE_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+P23471,PTPRZ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23515,OMGP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23526,SAHH_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P23588,IF4B_HUMAN,Cytoplasm,High,Cytoplasm,High
+P23610,F8I2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Low
+P23634,AT2B4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P23677,IP3KA_HUMAN,Postsynapse,Low,Postsynapse,Low
+P23743,DGKA_HUMAN,Mitochondria,Low,Mitochondria_Nucleus,Low
+P23763,VAMP1_HUMAN,Plasma membrane,High,Plasma membrane,High
+P23786,CPT2_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+P24043,LAMA2_HUMAN,Nucleus,High,Nucleus,High
+P24534,EF1B_HUMAN,Cytoskeleton,High,Plasma membrane,Medium
+P24539,AT5F1_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P24588,AKAP5_HUMAN,Postsynapse,Low,Mitochondria_Postsynapse,Low
+P24666,PPAC_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P24752,THIL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P24821,TENA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P25098,ARBK1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P25325,THTM_HUMAN,Cytoplasm,High,Cytoplasm,High
+P25398,RS12_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P25685,DNJB1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P25686,DNJB2_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,High
+P25705,ATPA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P25713,MT3_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P25786,PSA1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P25787,PSA2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P25788,PSA3_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P25789,PSA4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P26012,ITB8_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P26038,MOES_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P26196,DDX6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Plasma membrane,Low
+P26232,CTNA2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P26368,U2AF2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoplasm_Cytoskeleton,Low
+P26373,RL13_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P26378,ELAV4_HUMAN,Endoplasmic Reticulum,Low,Cytoplasm,Medium
+P26440,IVD_HUMAN,Cytoskeleton,Medium,Cytoplasm_Cytoskeleton,Low
+P26599,PTBP1_HUMAN,Cytoskeleton_Nucleus,Low,Nucleus,Medium
+P26639,SYTC_HUMAN,Cytoskeleton,High,NA,None
+P26640,SYVC_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum_Presynapse,Low
+P26641,EF1G_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P26885,FKBP2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Plasma membrane,Low
+P26992,CNTFR_HUMAN,Presynapse,High,Endoplasmic Reticulum,High
+P27338,AOFB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P27348,1433T_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P27361,MK03_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P27449,VATL_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoplasm_Presynapse,Low
+P27544,CERS1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+P27635,RL10_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P27695,APEX1_HUMAN,Nucleus_Plasma membrane,Low,Cytoskeleton_Nucleus,Low
+P27701,CD82_HUMAN,Plasma membrane,High,Presynapse,Medium
+P27797,CALR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P27816,MAP4_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P27824,CALX_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P27986,P85A_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P28066,PSA5_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P28070,PSB4_HUMAN,Cytoplasm,High,Cytoplasm,High
+P28072,PSB6_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,Medium
+P28074,PSB5_HUMAN,Cytoplasm,High,Cytoplasm,High
+P28161,GSTM2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P28288,ABCD3_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P28331,NDUS1_HUMAN,Plasma membrane,High,Plasma membrane,High
+P28482,MK01_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P28676,GRAN_HUMAN,Cytoplasm,Low,Mitochondria,Low
+P28838,AMPL_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P28907,CD38_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane_Presynapse,Low
+P29120,NEC1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+P29144,TPP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P29218,IMPA1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P29401,TKT_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P29692,EF1D_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Low
+P29762,RABP1_HUMAN;sp,Cytoplasm,High,Nucleus,Low
+P29972,AQP1_HUMAN,Plasma membrane,Medium,Cytoskeleton_Plasma membrane,Low
+P29992,GNA11_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+P30038,AL4A1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P30041,PRDX6_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30043,BLVRB_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P30044,PRDX5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30046,DOPD_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+P30048,PRDX3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30049,ATPD_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P30050,RL12_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P30084,ECHM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30085,KCY_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P30086,PEBP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30101,PDIA3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30153,2AAA_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P30405,PPIF_HUMAN;sp,Mitochondria,Medium,Mitochondria,Low
+P30419,NMT1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P30453,1A34_HUMAN;sp,Endoplasmic Reticulum,Medium,Plasma membrane_Presynapse,Low
+P30484,1B46_HUMAN;sp,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Plasma membrane,Low
+P30519,HMOX2_HUMAN,Plasma membrane,Medium,Endoplasmic Reticulum_Presynapse,Low
+P30520,PURA2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P30531,SC6A1_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane_Presynapse,Low
+P30536,TSPO_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+P30566,PUR8_HUMAN,Cytoplasm,High,Cytoplasm,High
+P30626,SORCN_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P30711,GSTT1_HUMAN,Cytoskeleton,Low,Cytoplasm,Medium
+P30740,ILEU_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+P30837,AL1B1_HUMAN,Mitochondria,High,Mitochondria,High
+P30876,RPB2_HUMAN,Cytoplasm,Low,Cytoskeleton_Nucleus,Low
+P31040,SDHA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31146,COR1A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P31150,GDIA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31153,METK2_HUMAN;sp,Cytoplasm,Medium,Cytoplasm,High
+P31323,KAP3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31689,DNJA1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+P31930,QCR1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31937,3HIDH_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P31939,PUR9_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P31942,HNRH3_HUMAN,Nucleus,High,Nucleus,High
+P31943,HNRH1_HUMAN,Cytoskeleton_Plasma membrane,Low,Endoplasmic Reticulum_Nucleus,Low
+P31946,1433B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31947,1433S_HUMAN,Cytoplasm,Medium,Mitochondria,Low
+P31948,STIP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P31949,S10AB_HUMAN,Cytoplasm,High,Cytoplasm,High
+P32119,PRDX2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P32189,GLPK_HUMAN;sp,Mitochondria,High,Mitochondria,High
+P32455,GBP1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P32929,CGL_HUMAN,Cytoplasm,High,Nucleus,High
+P32969,RL9_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P33176,KINH_HUMAN,Cytoskeleton,Low,Endoplasmic Reticulum,High
+P33316,DUT_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+P33402,GCYA2_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+P34897,GLYM_HUMAN,Mitochondria,High,NA,None
+P34913,HYES_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,High
+P34932,HSP74_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P34949,MPI_HUMAN,Plasma membrane,High,Cytoplasm,High
+P35080,PROF2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P35221,CTNA1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P35222,CTNB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35232,PHB_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P35237,SPB6_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P35241,RADI_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P35244,RFA3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P35268,RL22_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35270,SPRE_HUMAN,Cytoskeleton,High,Cytoplasm,Medium
+P35498,SCN1A_HUMAN,Postsynapse,Low,Mitochondria_Postsynapse,Low
+P35520,CBS_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+P35573,GDE_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P35579,MYH9_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35580,MYH10_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35606,COPB2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P35611,ADDA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35612,ADDB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P35613,BASI_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P35637,FUS_HUMAN,Nucleus,High,Nucleus,Medium
+P35749,MYH11_HUMAN,Nucleus,High,Nucleus,High
+P35749,MYH11_HUMAN,Nucleus,High,Nucleus,High
+P35754,GLRX1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P35813,PPM1A_HUMAN,Cytoplasm,High,Cytoplasm_Cytoskeleton,Low
+P35998,PRS7_HUMAN,Cytoskeleton,Medium,Presynapse,Low
+P36222,CH3L1_HUMAN,NA,None,Mitochondria,Low
+P36269,GGT5_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Plasma membrane,Low
+P36404,ARL2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Low
+P36405,ARL3_HUMAN,Cytoskeleton,High,Cytoskeleton_Plasma membrane,Low
+P36507,MP2K2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P36542,ATPG_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P36543,VATE1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P36578,RL4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P36776,LONM_HUMAN,NA,None,Cytoskeleton,Medium
+P36871,PGM1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P36873,PP1G_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm,Low
+P36915,GNL1_HUMAN,Cytoskeleton_Presynapse,Low,Endoplasmic Reticulum,Low
+P36955,PEDF_HUMAN;CON__Q95121,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+P36957,ODO2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P36959,GMPR1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P36969,GPX4_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P37108,SRP14_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Low
+P37235,HPCL1_HUMAN,Cytoplasm,Medium,Cytoskeleton,Low
+P37802,TAGL2_HUMAN,Cytoplasm,High,Cytoplasm,High
+P37837,TALDO_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P37840,SYUA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P38117,ETFB_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P38159,RBMX_HUMAN;sp,Nucleus,High,Nucleus,High
+P38405,GNAL_HUMAN,NA,None,Mitochondria_Nucleus,Low
+P38606,VATA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P38646,GRP75_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P38919,IF4A3_HUMAN,Nucleus,High,Nucleus,Medium
+P39019,RS19_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P39023,RL3_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P39060,COIA1_HUMAN,Nucleus,High,Nucleus,High
+P39210,MPV17_HUMAN,Mitochondria,High,Mitochondria,High
+P39656,OST48_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Plasma membrane,Low
+P39687,AN32A_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,Medium
+P40121,CAPG_HUMAN,Cytoplasm,High,Cytoplasm_Cytoskeleton,Low
+P40123,CAP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P40145,ADCY8_HUMAN,NA,None,Endoplasmic Reticulum_Mitochondria,Low
+P40227,TCPZ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P40429,RL13A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton_Presynapse,Low
+P40616,ARL1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P40763,STAT3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P40855,PEX19_HUMAN,Mitochondria,Low,Mitochondria_Postsynapse,Low
+P40925,MDHC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P40926,MDHM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P40939,ECHA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P41091,IF2G_HUMAN;sp,Plasma membrane,Medium,Plasma membrane,Low
+P41208,CETN2_HUMAN;sp,Endoplasmic Reticulum,Medium,Mitochondria_Postsynapse,Low
+P41217,OX2G_HUMAN,Plasma membrane,Medium,Presynapse,Medium
+P41222,PTGDS_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P41240,CSK_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+P41250,GARS_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P41252,SYIC_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+P41567,EIF1_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum_Plasma membrane,Low
+P41586,PACR_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P42025,ACTY_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P42126,ECI1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P42167,LAP2B_HUMAN;sp,Nucleus,High,Nucleus,Medium
+P42224,STAT1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+P42262,GRIA2_HUMAN,Postsynapse,Medium,Cytoskeleton,Low
+P42263,GRIA3_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+P42330,AK1C3_HUMAN,Cytoplasm_Cytoskeleton,Low,Endoplasmic Reticulum,High
+P42345,MTOR_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P42356,PI4KA_HUMAN;sp,Plasma membrane,High,Presynapse,Low
+P42566,EPS15_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P42658,DPP6_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P42677,RS27_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton_Plasma membrane,Low
+P42704,LPPRC_HUMAN,Cytoskeleton_Postsynapse,Low,Cytoskeleton_Plasma membrane,Low
+P42765,THIM_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P42766,RL35_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P42785,PCP_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+P42858,HD_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton,Medium
+P43003,EAA1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P43004,EAA2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P43007,SATT_HUMAN,Presynapse,Medium,Cytoskeleton,High
+P43034,LIS1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P43121,MUC18_HUMAN,Plasma membrane,Medium,Plasma membrane,High
+P43155,CACP_HUMAN,Cytoskeleton,Medium,Mitochondria_Postsynapse,Low
+P43243,MATR3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P43304,GPDM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P43307,SSRA_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+P43487,RANG_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+P43490,NAMPT_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P43686,PRS6B_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P43897,EFTS_HUMAN,Postsynapse,High,Postsynapse,High
+P45381,ACY2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P45880,VDAC2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P45954,ACDSB_HUMAN,Mitochondria,High,Mitochondria,Low
+P45974,UBP5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P45985,MP2K4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P46060,RAGP1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+P46108,CRK_HUMAN,Cytoskeleton,Low,Cytoskeleton,High
+P46109,CRKL_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P46379,BAG6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P46439,GSTM5_HUMAN,Cytoplasm,Medium,Mitochondria,Medium
+P46459,NSF_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P46776,RL27A_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P46777,RL5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P46778,RL21_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P46779,RL28_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Plasma membrane,Medium
+P46781,RS9_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P46782,RS5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P46783,RS10_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P46821,MAP1B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P46926,GNPI1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P46939,UTRO_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P46940,IQGA1_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm_Cytoskeleton,Low
+P46952,3HAO_HUMAN,Cytoskeleton_Nucleus,Low,Cytoskeleton,High
+P46976,GLYG_HUMAN,Cytoplasm,High,Cytoplasm,High
+P47736,RPGP1_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Presynapse,Low
+P47870,GBRB2_HUMAN,Postsynapse,Medium,Cytoskeleton,Medium
+P47897,SYQ_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P47914,RL29_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P47985,UCRI_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P48047,ATPO_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+P48066,S6A11_HUMAN;sp,Presynapse,High,Endoplasmic Reticulum,High
+P48147,PPCE_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P48163,MAOX_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P48426,PI42A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P48444,COPD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P48506,GSH1_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+P48539,PCP4_HUMAN,Cytoplasm,High,Cytoplasm,High
+P48553,TPC10_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Nucleus,Low
+P48556,PSMD8_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,High
+P48637,GSHB_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P48643,TCPE_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P48723,HSP13_HUMAN,Endoplasmic Reticulum,Medium,Nucleus,Medium
+P48735,IDHP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P48739,PIPNB_HUMAN,Cytoplasm,High,Cytoplasm,Low
+P49006,MRP_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane_Presynapse,Low
+P49189,AL9A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49207,RL34_HUMAN,Plasma membrane,Low,Presynapse,Low
+P49257,LMAN1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P49327,FAS_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49354,FNTA_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm_Endoplasmic Reticulum,Low
+P49368,TCPG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49407,ARRB1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P49411,EFTU_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P49418,AMPH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49419,AL7A1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49441,INPP_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P49588,SYAC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49589,SYCC_HUMAN,Cytoplasm,High,Cytoplasm,High
+P49591,SYSC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49593,PPM1F_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,Low
+P49720,PSB3_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+P49721,PSB2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P49748,ACADV_HUMAN,Plasma membrane,Medium,Plasma membrane,Medium
+P49755,TMEDA_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+P49758,RGS6_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+P49773,HINT1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49802,RGS7_HUMAN,Plasma membrane,High,NA,None
+P49815,TSC2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+P49821,NDUV1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P49840,GSK3A_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+P49841,GSK3B_HUMAN,Endoplasmic Reticulum,High,Plasma membrane,Low
+P49902,5NTC_HUMAN,Cytoplasm,High,Cytoplasm,High
+P49915,GUAA_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+P50135,HNMT_HUMAN,Cytoplasm,High,Cytoplasm,High
+P50148,GNAQ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50151,GBG10_HUMAN,Plasma membrane,Medium,Presynapse,Low
+P50213,IDH3A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50226,ST1A2_HUMAN;sp,Endoplasmic Reticulum,Low,Nucleus,Low
+P50336,PPOX_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+P50395,GDIB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50402,EMD_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Nucleus,Low
+P50416,CPT1A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P50440,GATM_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P50453,SPB9_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+P50454,SERPH_HUMAN,Nucleus,Medium,Endoplasmic Reticulum,High
+P50502,F10A1_HUMAN;sp,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P50570,DYN2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P50579,MAP2_HUMAN,Cytoplasm,High,Nucleus,High
+P50583,AP4A_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum,Medium
+P50897,PPT1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P50914,RL14_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P50990,TCPQ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50991,TCPD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50993,AT1A2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P50995,ANX11_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+P51114,FXR1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P51148,RAB5C_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P51149,RAB7A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P51178,PLCD1_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P51398,RT29_HUMAN,Mitochondria,Medium,Mitochondria_Nucleus,Low
+P51452,DUS3_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P51513,NOVA1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Nucleus,Low
+P51553,IDH3G_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P51570,GALK1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P51571,SSRD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P51572,BAP31_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+P51610,HCFC1_HUMAN,Nucleus,Medium,Endoplasmic Reticulum_Nucleus,Low
+P51648,AL3A2_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P51649,SSDH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P51659,DHB4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P51665,PSMD7_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Medium
+P51693,APLP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P51784,UBP11_HUMAN,Nucleus,Medium,Nucleus,High
+P51790,CLCN3_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+P51808,DYLT3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P51858,HDGF_HUMAN,Cytoplasm,High,Cytoplasm,High
+P51888,PRELP_HUMAN,Plasma membrane,High,Endoplasmic Reticulum,Low
+P51911,CNN1_HUMAN,Nucleus,Low,Nucleus,High
+P51970,NDUA8_HUMAN,Plasma membrane,High,Plasma membrane,High
+P51991,ROA3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P52209,6PGD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P52294,IMA5_HUMAN,Cytoskeleton,Low,Endoplasmic Reticulum,Low
+P52306,GDS1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P52429,DGKE_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P52565,GDIR1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P52566,GDIR2_HUMAN,Cytoplasm,High,Cytoplasm,High
+P52594,AGFG1_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Postsynapse,Low
+P52597,HNRPF_HUMAN,Nucleus,Medium,Nucleus,High
+P52758,RIDA_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P52788,SPSY_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Medium
+P52815,RM12_HUMAN,Postsynapse,Low,Postsynapse,Medium
+P52888,THOP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P52943,CRIP2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P53004,BIEA_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P53007,TXTP_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+P53041,PPP5_HUMAN,Cytoplasm,High,Cytoplasm,High
+P53365,ARFP2_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Low
+P53367,ARFP1_HUMAN,Mitochondria,Low,Mitochondria,Low
+P53396,ACLY_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P53582,MAP11_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Cytoplasm,Low
+P53597,SUCA_HUMAN,Postsynapse,High,Cytoskeleton,High
+P53602,MVD1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+P53618,COPB_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P53621,COPA_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P53677,AP3M2_HUMAN,Plasma membrane,Medium,Cytoskeleton_Presynapse,Low
+P53680,AP2S1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P53779,MK10_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P53990,IST1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P53992,SC24C_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P53999,TCP4_HUMAN,Plasma membrane_Presynapse,Low,Presynapse,Low
+P54136,SYRC_HUMAN,Presynapse,Medium,Endoplasmic Reticulum_Presynapse,Low
+P54284,CACB3_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Low
+P54289,CA2D1_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+P54577,SYYC_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P54578,UBP14_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P54619,AAKG1_HUMAN,Endoplasmic Reticulum,High,Presynapse,High
+P54652,HSP72_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P54687,BCAT1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P54709,AT1B3_HUMAN,Presynapse,High,Presynapse,High
+P54725,RD23A_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P54727,RD23B_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+P54750,PDE1A_HUMAN,Cytoskeleton,High,NA,None
+P54764,EPHA4_HUMAN;sp,Presynapse,Medium,Cytoskeleton,Low
+P54803,GALC_HUMAN,Mitochondria,Medium,Nucleus,Low
+P54819,KAD2_HUMAN,Cytoplasm,High,Cytoplasm,High
+P54829,PTN5_HUMAN,Postsynapse,High,Mitochondria_Nucleus,Low
+P54886,P5CS_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Mitochondria,Medium
+P54920,SNAA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P55010,IF5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P55011,S12A2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P55036,PSMD4_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Medium
+P55060,XPO2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P55072,TERA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P55084,ECHB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P55087,AQP4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P55160,NCKPL_HUMAN,NA,None,Mitochondria,High
+P55196,AFAD_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P55209,NP1L1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P55263,ADK_HUMAN,Cytoplasm,High,Cytoplasm,High
+P55268,LAMB2_HUMAN,Nucleus,High,Cytoskeleton,Medium
+P55290,CAD13_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+P55327,TPD52_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P55735,SEC13_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Low
+P55769,NH2L1_HUMAN,Nucleus,High,Nucleus,Medium
+P55786,PSA_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P55795,HNRH2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P55809,SCOT1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P55854,SUMO3_HUMAN;sp,Cytoplasm,Medium,Cytoplasm_Nucleus,Low
+P55884,EIF3B_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+P55957,BID_HUMAN,Cytoplasm,High,Cytoplasm,High
+P56134,ATPK_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P56181,NDUV3_HUMAN,Mitochondria,Medium,Mitochondria,High
+P56192,SYMC_HUMAN,Presynapse,High,Presynapse,Medium
+P56378,68MP_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Medium
+P56385,ATP5I_HUMAN,Postsynapse,Medium,Cytoskeleton,High
+P56537,IF6_HUMAN,Endoplasmic Reticulum,Low,Cytoplasm,High
+P56556,NDUA6_HUMAN,Postsynapse,High,Postsynapse,High
+P57087,JAM2_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm,Medium
+P57088,TMM33_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+P57737,CORO7_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+P58546,MTPN_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P58549,FXYD7_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+P59666,DEF3_HUMAN;sp,NA,None,Nucleus,Low
+P59768,GBG2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P60033,CD81_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P60174,TPIS_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P60201,MYPR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P60228,EIF3E_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P60520,GBRL2_HUMAN,Cytoskeleton,High,Cytoplasm,Medium
+P60660,MYL6_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P60709,ACTB_HUMAN;sp,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P60842,IF4A1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P60866,RS20_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P60891,PRPS1_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P60900,PSA6_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P60903,S10AA_HUMAN,Cytoplasm_Presynapse,Low,Cytoplasm,Low
+P60953,CDC42_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P60981,DEST_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P60983,GMFB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61006,RAB8A_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P61011,SRP54_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P61018,RAB4B_HUMAN,Cytoskeleton,High,Cytoplasm,Medium
+P61019,RAB2A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P61020,RAB5B_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P61026,RAB10_HUMAN,Plasma membrane,Medium,Plasma membrane,Medium
+P61077,UB2D3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P61081,UBC12_HUMAN,Cytoplasm,High,Cytoplasm,High
+P61086,UBE2K_HUMAN,Cytoplasm,High,Cytoplasm,High
+P61088,UBE2N_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P61106,RAB14_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P61163,ACTZ_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61201,CSN2_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+P61204,ARF3_HUMAN,Endoplasmic Reticulum,Low,Cytoplasm,Low
+P61221,ABCE1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum_Plasma membrane,Low
+P61224,RAP1B_HUMAN;sp,Plasma membrane,Medium,Presynapse,High
+P61225,RAP2B_HUMAN,Presynapse,Medium,Presynapse,High
+P61247,RS3A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61254,RL26_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P61266,STX1B_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P61313,RL15_HUMAN,Plasma membrane,High,Presynapse,Medium
+P61328,FGF12_HUMAN;sp,Cytoskeleton,Medium,Cytoplasm,Medium
+P61353,RL27_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P61421,VA0D1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61457,PHS_HUMAN,Cytoplasm,Medium,Cytoplasm,Low
+P61513,RL37A_HUMAN;sp,Cytoplasm,Low,Cytoskeleton,Low
+P61586,RHOA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61601,NCALD_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P61604,CH10_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61619,S61A1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P61758,PFD3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P61764,STXB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61769,B2MG_HUMAN,Cytoskeleton,High,Plasma membrane_Presynapse,Low
+P61916,NPC2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P61923,COPZ1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+P61925,IPKA_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P61960,UFM1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P61970,NTF2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P61978,HNRPK_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P61981,1433G_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62068,UBP46_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Medium
+P62070,RRAS2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+P62081,RS7_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62140,PP1B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62166,NCS1_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane_Postsynapse,Low
+P62191,PRS4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P62195,PRS8_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+P62241,RS8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62244,RS15A_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P62249,RS16_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62258,1433E_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62263,RS14_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62266,RS23_HUMAN,Plasma membrane,High,Cytoskeleton_Plasma membrane,Low
+P62269,RS18_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62273,RS29_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane,Low
+P62277,RS13_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62280,RS11_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P62304,RUXE_HUMAN,Plasma membrane,Medium,Cytoplasm_Plasma membrane,Low
+P62306,RUXF_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Mitochondria,Medium
+P62308,RUXG_HUMAN;sp,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+P62310,LSM3_HUMAN,Cytoplasm,High,Cytoplasm,High
+P62314,SMD1_HUMAN,Plasma membrane,Medium,Plasma membrane,Low
+P62316,SMD2_HUMAN,Plasma membrane,Low,Plasma membrane,Medium
+P62318,SMD3_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+P62328,TYB4_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P62330,ARF6_HUMAN,Postsynapse,Medium,Mitochondria_Postsynapse,Low
+P62333,PRS10_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+P62424,RL7A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62495,ERF1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+P62701,RS4X_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62745,RHOB_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P62750,RL23A_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62753,RS6_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62760,VISL1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62805,H4_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P62820,RAB1A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62826,RAN_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62829,RL23_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62834,RAP1A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62837,UB2D2_HUMAN,Cytoplasm,Low,Cytoplasm_Nucleus,Low
+P62841,RS15_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P62847,RS24_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62851,RS25_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P62854,RS26_HUMAN;sp,Plasma membrane,High,Cytoskeleton_Plasma membrane,Low
+P62857,RS28_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P62861,RS30_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane,Medium
+P62873,GBB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62879,GBB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62888,RL30_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+P62899,RL31_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+P62906,RL10A_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P62910,RL32_HUMAN,Plasma membrane,High,Cytoskeleton_Plasma membrane,Low
+P62913,RL11_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+P62917,RL8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P62937,PPIA_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P62942,FKB1A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P62979,RS27A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P62993,GRB2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+P62995,TRA2B_HUMAN,Nucleus,High,Nucleus,High
+P63000,RAC1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P63010,AP2B1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63027,VAMP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63096,GNAI1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63098,CANB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63104,1433Z_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63151,2ABA_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P63162,RSMN_HUMAN;sp,Plasma membrane,Medium,Plasma membrane_Presynapse,Low
+P63167,DYL1_HUMAN,Cytoskeleton,High,Cytoskeleton,Low
+P63172,DYLT1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P63173,RL38_HUMAN,Plasma membrane,High,Plasma membrane_Presynapse,Low
+P63208,SKP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63215,GBG3_HUMAN,Cytoskeleton_Plasma membrane,Low,Plasma membrane,Medium
+P63218,GBG5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P63220,RS21_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+P63241,IF5A1_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P63244,RACK1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P63313,TYB10_HUMAN;CON__P21752,Plasma membrane,Medium,Cytoskeleton,High
+P67775,PP2AA_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P67870,CSK2B_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,High
+P68032,ACTC_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P68036,UB2L3_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+P68104,EF1A1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P68363,TBA1B_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P68366,TBA4A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P68371,TBB4B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P68400,CSK21_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+P68402,PA1B2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P68431,H31_HUMAN;sp,Nucleus,High,Nucleus,High
+P68871,HBB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P69849,NOMO3_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+P69891,HBG1_HUMAN,Cytoplasm,High,Cytoplasm_Nucleus,Low
+P69905,HBA_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P78324,SHPS1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+P78344,IF4G2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+P78347,GTF2I_HUMAN,Cytoskeleton_Nucleus,Low,Nucleus,High
+P78352,DLG4_HUMAN,Plasma membrane,High,Cytoskeleton,High
+P78356,PI42B_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+P78357,CNTP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P78362,SRPK2_HUMAN;sp,Endoplasmic Reticulum_Plasma membrane,Low,Plasma membrane,Low
+P78369,CLD10_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+P78371,TCPB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P78417,GSTO1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+P78508,KCJ10_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+P78527,PRKDC_HUMAN,Cytoskeleton_Nucleus,Low,Nucleus,High
+P78559,MAP1A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P80404,GABT_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P80723,BASP1_HUMAN,Plasma membrane,High,Plasma membrane,High
+P82909,RT36_HUMAN,Mitochondria_Postsynapse,Low,Cytoskeleton_Postsynapse,Low
+P83731,RL24_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton_Plasma membrane,Low
+P83916,CBX1_HUMAN,Cytoplasm,High,Cytoplasm,High
+P84074,HPCA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+P84077,ARF1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P84085,ARF5_HUMAN,Cytoskeleton,High,Cytoskeleton_Presynapse,Low
+P84090,ERH_HUMAN,Cytoplasm,High,Cytoplasm,High
+P84098,RL19_HUMAN,Plasma membrane,Low,Cytoskeleton,Low
+P84103,SRSF3_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+P84243,H33_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+P98160,PGBM_HUMAN,Nucleus,High,Cytoskeleton,High
+P98179,RBM3_HUMAN,Nucleus,Medium,Nucleus,Medium
+P98194,AT2C1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+P99999,CYC_HUMAN;CON__P62894,Plasma membrane,Medium,Cytoskeleton,High
+Q00013,EM55_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Medium
+Q00059,TFAM_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,Medium
+Q00169,PIPNA_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q00325,MPCP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q00341,VIGLN_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q00535,CDK5_HUMAN;sp,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,Medium
+Q00577,PURA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q00587,BORG5_HUMAN,Mitochondria,Low,Mitochondria_Nucleus,Low
+Q00610,CLH1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q00688,FKBP3_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane_Presynapse,Low
+Q00765,REEP5_HUMAN,Cytoskeleton_Presynapse,Low,Endoplasmic Reticulum,Low
+Q00796,DHSO_HUMAN,Cytoskeleton,High,Cytoplasm_Cytoskeleton,Low
+Q01064,PDE1B_HUMAN,Postsynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+Q01082,SPTB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q01105,SET_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+Q01130,SRSF2_HUMAN,Plasma membrane,High,Presynapse,High
+Q01432,AMPD3_HUMAN,Cytoplasm,High,Mitochondria,Low
+Q01433,AMPD2_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm,Medium
+Q01469,FABP5_HUMAN;sp,NA,None,Cytoskeleton,High
+Q01484,ANK2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q01650,LAT1_HUMAN;sp,Endoplasmic Reticulum,Medium,Plasma membrane,Medium
+Q01813,PFKAP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q01844,EWS_HUMAN,Cytoplasm,Medium,Nucleus,High
+Q01995,TAGL_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q02108,GCYA1_HUMAN,Cytoplasm,Medium,Postsynapse,Low
+Q02153,GCYB1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q02156,KPCE_HUMAN;sp,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q02218,ODO1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q02246,CNTN2_HUMAN,Cytoskeleton,Medium,Plasma membrane,Medium
+Q02252,MMSA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q02338,BDH_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+Q02543,RL18A_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane_Presynapse,Low
+Q02750,MP2K1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q02790,FKBP4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q02818,NUCB1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q02878,RL6_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q02880,TOP2B_HUMAN,Nucleus,High,Nucleus,High
+Q02952,AKA12_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q02978,M2OM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q03001,DYST_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q03013,GSTM4_HUMAN,Cytoplasm,Medium,Mitochondria_Nucleus,Low
+Q03135,CAV1_HUMAN;sp,NA,None,Plasma membrane,Low
+Q03154,ACY1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q03426,KIME_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q04323,UBXN1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q04446,GLGB_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q04609,FOLH1_HUMAN;sp,Endoplasmic Reticulum,Medium,Presynapse,Low
+Q04637,IF4G1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q04760,LGUL_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q04828,AK1C1_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q04837,SSBP_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q04917,1433F_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q05193,DYN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q05329,DCE2_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+Q05469,LIPS_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q05586,NMDZ1_HUMAN,Mitochondria_Postsynapse,Low,Nucleus_Postsynapse,Low
+Q05639,EF1A2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q06124,PTN11_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q06136,KDSR_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q06323,PSME1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q06481,APLP2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q06830,PRDX1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q07002,CDK18_HUMAN,Postsynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+Q07020,RL18_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q07020,RL18_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q07021,C1QBP_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q07065,CKAP4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q07157,ZO1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton,Low
+Q07866,KLC1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q07954,LRP1_HUMAN,Presynapse,High,Presynapse,High
+Q07955,SRSF1_HUMAN,Plasma membrane,Medium,Plasma membrane,High
+Q07960,RHG01_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q08174,PCDH1_HUMAN,Presynapse,Medium,Plasma membrane,Low
+Q08209,PP2BA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q08257,QOR_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q08380,LG3BP_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q08431,MFGM_HUMAN,NA,None,Endoplasmic Reticulum,Medium
+Q08462,ADCY2_HUMAN,Mitochondria,Low,Presynapse,High
+Q08495,DEMA_HUMAN,Cytoskeleton,High,Cytoskeleton_Endoplasmic Reticulum,Low
+Q08499,PDE4D_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Nucleus,Medium
+Q08623,HDHD1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q08752,PPID_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q08828,ADCY1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q08AE8,SPIR1_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q08AM6,VAC14_HUMAN,Presynapse,High,Endoplasmic Reticulum_Presynapse,Low
+Q09028,RBBP4_HUMAN,Cytoskeleton,Medium,Nucleus,Medium
+Q09666,AHNK_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q0VDG4,SCRN3_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q10567,AP1B1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q10713,MPPA_HUMAN,Postsynapse,High,Postsynapse,High
+Q12756,KIF1A_HUMAN;sp,Endoplasmic Reticulum,High,Cytoskeleton_Endoplasmic Reticulum,Low
+Q12765,SCRN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q12768,WASC5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q12791,KCMA1_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q12792,TWF1_HUMAN,Nucleus,Low,Mitochondria,Low
+Q12797,ASPH_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q12846,STX4_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q12849,GRSF1_HUMAN,Mitochondria_Presynapse,Low,Mitochondria,Medium
+Q12860,CNTN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q12879,NMDE1_HUMAN,Mitochondria,High,NA,NA
+Q12904,AIMP1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q12905,ILF2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q12906,ILF3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q12907,LMAN2_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Nucleus_Plasma membrane,Low
+Q12931,TRAP1_HUMAN,Postsynapse,High,Cytoskeleton_Postsynapse,Low
+Q12955,ANK3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q12959,DLG1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q12965,MYO1E_HUMAN;sp,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q12974,TP4A2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q12979,ABR_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q13011,ECH1_HUMAN,Cytoskeleton,High,Cytoskeleton,Low
+Q13015,AF1Q_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Medium
+Q13017,RHG05_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q13045,FLII_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Mitochondria,Medium
+Q13057,COASY_HUMAN,Cytoskeleton,Low,NA,None
+Q13085,ACACA_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Postsynapse,Low
+Q13098,CSN1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q13099,IFT88_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q13126,MTAP_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q13131,AAPK1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13148,TADBP_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q13151,ROA0_HUMAN,Nucleus,High,Nucleus,High
+Q13153,PAK1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13155,AIMP2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q13162,PRDX4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13177,PAK2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q13185,CBX3_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Nucleus,Low
+Q13200,PSMD2_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q13217,DNJC3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13224,NMDE2_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+Q13228,SBP1_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,High
+Q13232,NDK3_HUMAN,Mitochondria,Low,Mitochondria,Low
+Q13243,SRSF5_HUMAN;sp,Nucleus,Medium,Nucleus,Low
+Q13263,TIF1B_HUMAN,Nucleus,High,Nucleus,High
+Q13303,KCAB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13332,PTPRS_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Low
+Q13336,UT1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q13347,EIF3I_HUMAN,Presynapse,Low,Presynapse,Medium
+Q13362,2A5G_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Mitochondria_Presynapse,Low
+Q13363,CTBP1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q13367,AP3B2_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Presynapse,Low
+Q13404,UB2V1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q13409,DC1I2_HUMAN,Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+Q13418,ILK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13423,NNTM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13424,SNTA1_HUMAN,Presynapse,Low,Cytoskeleton,Medium
+Q13442,HAP28_HUMAN,Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+Q13449,LSAMP_HUMAN,Plasma membrane,High,Cytoskeleton_Plasma membrane,Low
+Q13491,GPM6B_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,High
+Q13492,PICAL_HUMAN,Plasma membrane_Presynapse,Low,Presynapse,Medium
+Q13496,MTM1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q13505,MTX1_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,Low
+Q13509,TBB3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13510,ASAH1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q13526,PIN1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q13554,KCC2B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13555,KCC2G_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13557,KCC2D_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q13561,DCTN2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13564,ULA1_HUMAN,Cytoplasm,High,Cytoskeleton,Medium
+Q13574,DGKZ_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q13586,STIM1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q13596,SNX1_HUMAN,Presynapse,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q13613,MTMR1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q13616,CUL1_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,High
+Q13617,CUL2_HUMAN,Cytoplasm_Cytoskeleton,Low,Endoplasmic Reticulum,Low
+Q13618,CUL3_HUMAN,Cytoplasm,High,Cytoskeleton,Medium
+Q13620,CUL4B_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q13630,FCL_HUMAN,Cytoplasm,High,Endoplasmic Reticulum,High
+Q13642,FHL1_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+Q13683,ITA7_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q13724,MOGS_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13813,SPTN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13825,AUHM_HUMAN,Presynapse,Low,Presynapse,Low
+Q13838,DX39B_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+Q13867,BLMH_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q13875,MOBP_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Postsynapse,Low
+Q13884,SNTB1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q13885,TBB2A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q13907,IDI1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q13938,CAYP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q14008,CKAP5_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q14011,CIRBP_HUMAN,Nucleus,Low,Nucleus,Medium
+Q14019,COTL1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q14103,HNRPD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14108,SCRB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14112,NID2_HUMAN,Nucleus,High,Nucleus,High
+Q14118,DAG1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q14123,PDE1C_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q14139,UBE4A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q14141,SEPT6_HUMAN,Cytoskeleton_Presynapse,Low,Cytoskeleton,Medium
+Q14152,EIF3A_HUMAN,Plasma membrane,High,Plasma membrane_Presynapse,Low
+Q14155,ARHG7_HUMAN,Plasma membrane,High,Postsynapse,Low
+Q14156,EFR3A_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q14157,UBP2L_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q14160,SCRIB_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q14161,GIT2_HUMAN,NA,None,Mitochondria,Low
+Q14165,MLEC_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q14166,TTL12_HUMAN,Mitochondria,Low,Endoplasmic Reticulum_Postsynapse,Low
+Q14168,MPP2_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+Q14185,DOCK1_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Low
+Q14194,DPYL1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14195,DPYL3_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q14203,DCTN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14204,DYHC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14204,DYHC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14232,EI2BA_HUMAN,Cytoplasm,High,Nucleus,Medium
+Q14240,IF4A2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q14247,SRC8_HUMAN,Cytoskeleton,High,Cytoplasm_Cytoskeleton,Low
+Q14254,FLOT2_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q14257,RCN2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q14289,FAK2_HUMAN,Cytoskeleton,Medium,Plasma membrane,Medium
+Q14315,FLNC_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q14318,FKBP8_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q14344,GNA13_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q14353,GAMT_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q14376,GALE_HUMAN,Cytoplasm,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q14416,GRM2_HUMAN;sp,Mitochondria,Medium,Nucleus,Low
+Q14444,CAPR1_HUMAN,Plasma membrane_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q14515,SPRL1_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q14558,KPRA_HUMAN,Plasma membrane,Medium,Cytoskeleton_Plasma membrane,Low
+Q14571,ITPR2_HUMAN,NA,None,NA,None
+Q14624,ITIH4_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q14642,I5P1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q14643,ITPR1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q14643,ITPR1_HUMAN;REV__sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q14677,EPN4_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Mitochondria,Low
+Q14683,SMC1A_HUMAN,Cytoplasm,High,Mitochondria,High
+Q14696,MESD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q14697,GANAB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14699,RFTN1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q14721,KCNB1_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q14738,2A5D_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+Q14764,MVP_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14832,GRM3_HUMAN,Presynapse,Low,Endoplasmic Reticulum_Plasma membrane,Low
+Q14894,CRYM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14914,PTGR1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q14956,GPNMB_HUMAN,Cytoskeleton,Low,Cytoskeleton,Low
+Q14964,RB39A_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q14974,IMB1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14978,NOLC1_HUMAN,Cytoplasm,Low,Mitochondria_Nucleus,Low
+Q14980,NUMA1_HUMAN,Nucleus,High,Nucleus,High
+Q14982,OPCM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q14C86,GAPD1_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Mitochondria,High
+Q14CZ8,HECAM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15008,PSMD6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q15019,SEPT2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15031,SYLM_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q15041,AR6P1_HUMAN,Presynapse,Medium,Plasma membrane_Presynapse,Low
+Q15042,RB3GP_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q15046,SYK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q15049,MLC1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q15056,IF4H_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15067,ACOX1_HUMAN,NA,None,Endoplasmic Reticulum,Medium
+Q15075,EEA1_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q15084,PDIA6_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q15102,PA1B3_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum,Medium
+Q15111,PLCL1_HUMAN,Endoplasmic Reticulum,High,Presynapse,High
+Q15119,PDK2_HUMAN,Mitochondria,High,Postsynapse,High
+Q15120,PDK3_HUMAN,Postsynapse,High,Mitochondria_Postsynapse,Low
+Q15121,PEA15_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15126,PMVK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q15149,PLEC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15165,PON2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q15181,IPYR_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q15185,TEBP_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q15223,NECT1_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q15257,PTPA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15274,NADC_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q15276,RABE1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q15286,RAB35_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q15293,RCN1_HUMAN,Presynapse,High,Endoplasmic Reticulum,High
+Q15334,L2GL1_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,High
+Q15349,KS6A2_HUMAN;sp,Endoplasmic Reticulum,High,Presynapse,High
+Q15363,TMED2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q15365,PCBP1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15366,PCBP2_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+Q15369,ELOC_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q15370,ELOB_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum_Presynapse,Low
+Q15382,RHEB_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q15388,TOM20_HUMAN,Postsynapse,Low,Mitochondria,Medium
+Q15404,RSU1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15417,CNN3_HUMAN;sp,Endoplasmic Reticulum,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q15435,PP1R7_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q15436,SC23A_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Cytoskeleton_Plasma membrane,Low
+Q15555,MARE2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q15582,BGH3_HUMAN,Nucleus,Low,NA,None
+Q15599,NHRF2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Low
+Q15631,TSN_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q15691,MARE1_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q15700,DLG2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15714,T22D1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15738,NSDHL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q15746,MYLK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q15750,TAB1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Nucleus,Low
+Q15751,HERC1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q15773,MLF2_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q15811,ITSN1_HUMAN;CON__ENSEMBL:ENSBTAP00000001528,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+Q15813,TBCE_HUMAN,Cytoplasm,High,Endoplasmic Reticulum,Low
+Q15814,TBCC_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q15818,NPTX1_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q15819,UB2V2_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,Medium
+Q15843,NEDD8_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15847,ADIRF_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q15904,VAS1_HUMAN,NA,None,Presynapse,Low
+Q15907,RB11B_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q15942,ZYX_HUMAN,Cytoplasm,High,Cytoplasm_Mitochondria,Low
+Q16134,ETFD_HUMAN,Postsynapse,Low,NA,None
+Q16143,SYUB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16181,SEPT7_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q16204,CCDC6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q16222,UAP1_HUMAN,Cytoplasm,High,NA,None
+Q16352,AINX_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16401,PSMD5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q16531,DDB1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q16537,2A5E_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q16543,CDC37_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q16555,DPYL2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16566,KCC4_HUMAN,Endoplasmic Reticulum,Medium,Postsynapse,Low
+Q16620,NTRK2_HUMAN;sp,Plasma membrane_Presynapse,Low,Presynapse,Medium
+Q16623,STX1A_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q16629,SRSF7_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+Q16630,CPSF6_HUMAN,Plasma membrane,Medium,Cytoplasm_Presynapse,Low
+Q16643,DREB_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q16653,MOG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16698,DECR_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+Q16718,NDUA5_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q16762,THTR_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q16773,KAT1_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q16774,KGUA_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Presynapse,Low
+Q16775,GLO2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q16777,H2A2C_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q16778,H2B2E_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q16795,NDUA9_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q16798,MAON_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16799,RTN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16836,HCDH_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q16851,UGPA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q16853,AOC3_HUMAN,NA,None,Nucleus,Low
+Q16864,VATF_HUMAN,Cytoskeleton,High,Plasma membrane,Medium
+Q16880,CGT_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q16881,TRXR1_HUMAN,Cytoplasm_Cytoskeleton,Low,Endoplasmic Reticulum,Low
+Q16891,MIC60_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q17R89,RHG44_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Medium
+Q1KMD3,HNRL2_HUMAN,Nucleus,High,Nucleus,High
+Q27J81,INF2_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q2M2I8,AAK1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+Q2M389,WASC4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q2NKQ1,SGSM1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q2TAA2,IAH1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q330K2,NDUF6_HUMAN,Mitochondria,Low,Mitochondria_Nucleus,Low
+Q3KQU3,MA7D1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q3KQV9,UAP1L_HUMAN,Cytoplasm,Low,Mitochondria,Medium
+Q3LXA3,TKFC_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q3SXM5,HSDL1_HUMAN,Postsynapse,High,Postsynapse,Medium
+Q3YEC7,RABL6_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q3ZCM7,TBB8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q3ZCQ8,TIM50_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+Q3ZCW2,LEGL_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q49A26,GLYR1_HUMAN,Nucleus,Medium,Nucleus,High
+Q4G0F5,VP26B_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q4G0N4,NAKD2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q4G0P3,HYDIN_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Cytoplasm,Low
+Q4G176,ACSF3_HUMAN,Mitochondria,High,Mitochondria_Postsynapse,Low
+Q4J6C6,PPCEL_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q4KMP7,TB10B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q4KMQ2,ANO6_HUMAN,Endoplasmic Reticulum,High,Plasma membrane_Presynapse,Low
+Q4V328,GRAP1_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q504Y0,S39AC_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q52LD8,RFTN2_HUMAN,NA,None,Mitochondria,Medium
+Q52LJ0,FA98B_HUMAN,Nucleus,Medium,Nucleus,High
+Q53GQ0,DHB12_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q53H12,AGK_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Low
+Q53HC9,EIPR1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q562R1,ACTBL_HUMAN,Cytoplasm,Medium,Endoplasmic Reticulum,Low
+Q58FF8,H90B2_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,High
+Q59EK9,RUN3A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q5FWE3,PRRT3_HUMAN,Plasma membrane,Low,Endoplasmic Reticulum,Medium
+Q5H9L2,TCAL5_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q5H9R7,PP6R3_HUMAN,NA,None,Mitochondria,Medium
+Q5HYK3,COQ5_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q5JPH6,SYEM_HUMAN,Mitochondria,High,Mitochondria,High
+Q5JRX3,PREP_HUMAN,Postsynapse,Medium,Postsynapse,Low
+Q5JSH3,WDR44_HUMAN,Cytoskeleton,Low,Cytoplasm,Medium
+Q5JTD7,LRC73_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q5JTJ3,COA6_HUMAN,Cytoplasm,High,Cytoplasm_Postsynapse,Low
+Q5JTZ9,SYAM_HUMAN,Mitochondria,High,Nucleus,High
+Q5JU85,IQEC2_HUMAN,Postsynapse,High,Mitochondria,High
+Q5RI15,COX20_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Medium
+Q5SQI0,ATAT_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q5SRE7,PHYD1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+Q5SSJ5,HP1B3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q5SYC1,CLVS2_HUMAN,Endoplasmic Reticulum,High,Presynapse,Low
+Q5T0D9,TPRGL_HUMAN,Plasma membrane,High,Presynapse,Medium
+Q5T440,CAF17_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q5T4S7,UBR4_HUMAN,Plasma membrane,Medium,Endoplasmic Reticulum,Medium
+Q5T5C0,STXB5_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q5T5P2,SKT_HUMAN,Postsynapse,Low,Nucleus,Low
+Q5T848,GP158_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+Q5TC12,ATPF1_HUMAN,Postsynapse,Low,Presynapse,Low
+Q5TCZ1,SPD2A_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q5TF21,SOGA3_HUMAN;sp,Endoplasmic Reticulum,Medium,Cytoskeleton,Low
+Q5TFE4,NT5D1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q5TGZ0,MIC10_HUMAN,Postsynapse,High,Mitochondria_Postsynapse,Low
+Q5TH69,BIG3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q5TZA2,CROCC_HUMAN,Cytoplasm,Low,Nucleus,Medium
+Q5TZA2,CROCC_HUMAN,Cytoplasm,Low,Nucleus,Medium
+Q5U4P2,ASPH1_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Postsynapse,Low
+Q5VIR6,VPS53_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q5VSL9,STRP1_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q5VST6,AB17B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q5VT25,MRCKA_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,High
+Q5VT66,MARC1_HUMAN,Cytoplasm,Low,Mitochondria,Medium
+Q5VUB5,F1711_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q5VW32,BROX_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q5VWJ9,SNX30_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Postsynapse,Low
+Q5VWQ8,DAB2P_HUMAN,Mitochondria,Low,Mitochondria,Medium
+Q5VWZ2,LYPL1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q5VYK3,ECM29_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q5VZ66,JKIP3_HUMAN,NA,None,Mitochondria_Postsynapse,Low
+Q5VZK9,CARL1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+Q5XKP0,MIC13_HUMAN,Mitochondria,Medium,Mitochondria_Postsynapse,Low
+Q63HM9,PLCX3_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q643R3,LPCT4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q66K14,TBC9B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q66K74,MAP1S_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q684P5,RPGP2_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q68CZ2,TENS3_HUMAN;sp,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q68D91,MBLC2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,High
+Q68DH5,LMBD2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q68DU8,KCD16_HUMAN,Mitochondria_Postsynapse,Low,Nucleus_Postsynapse,Low
+Q6BCY4,NB5R2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q6DD88,ATLA3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q6DN90,IQEC1_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q6FI81,CPIN1_HUMAN,Nucleus,Low,Nucleus,Medium
+Q6GMV3,PTRD1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q6H8Q1,ABLM2_HUMAN;sp,Cytoskeleton_Endoplasmic Reticulum,Low,NA,None
+Q6IAA8,LTOR1_HUMAN,Plasma membrane,High,Presynapse,High
+Q6IAN0,DRS7B_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q6IBS0,TWF2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q6IQ20,NAPEP_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q6IQ22,RAB12_HUMAN,Cytoplasm,Low,Mitochondria,Low
+Q6KCM7,SCMC2_HUMAN,Postsynapse,High,Postsynapse,Low
+Q6L8Q7,PDE12_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,NA,None
+Q6NUK1,SCMC1_HUMAN,Mitochondria,High,Mitochondria,High
+Q6NV74,K121L_HUMAN,Mitochondria,Low,Mitochondria_Nucleus,Low
+Q6NVY1,HIBCH_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Postsynapse,Low
+Q6NXS1,IPP2B_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+Q6NZI2,CAVN1_HUMAN,Nucleus,High,Nucleus,High
+Q6P1X6,CH082_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q6P2E9,EDC4_HUMAN,Plasma membrane,Low,Endoplasmic Reticulum,Low
+Q6P3W7,SCYL2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q6P4A7,SFXN4_HUMAN,Mitochondria,Low,Mitochondria,High
+Q6P587,FAHD1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q6P995,F171B_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q6P9B6,TLDC1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q6PCB7,S27A1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q6PCE3,PGM2L_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q6PFW1,VIP1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q6PGP7,TTC37_HUMAN,Mitochondria_Nucleus,Low,Endoplasmic Reticulum_Nucleus,Low
+Q6PI78,TMM65_HUMAN,Mitochondria,Medium,Mitochondria_Postsynapse,Low
+Q6PJW8,CNST_HUMAN,Endoplasmic Reticulum,Medium,Postsynapse,Low
+Q6PKG0,LARP1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q6PUV4,CPLX2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q6U841,S4A10_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q6UW68,TM205_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q6UWE0,LRSM1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q6UWP2,DHR11_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q6UWR7,ENPP6_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q6UXD5,SE6L2_HUMAN,Postsynapse,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q6VY07,PACS1_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+Q6WCQ1,MPRIP_HUMAN,Postsynapse,Medium,Nucleus,Medium
+Q6Y7W6,GGYF2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q6YN16,HSDL2_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q6YP21,KAT3_HUMAN,Mitochondria,Medium,Postsynapse,Low
+Q6ZMI0,PPR21_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q6ZSS7,MFSD6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q6ZT12,UBR3_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q6ZVL6,K154L_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Postsynapse,Low
+Q6ZVM7,TM1L2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q709C8,VP13C_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q71DI3,H32_HUMAN,Nucleus,High,Nucleus,High
+Q71U36,TBA1A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q71UI9,H2AV_HUMAN;sp,Plasma membrane,Medium,Nucleus,Medium
+Q71UM5,RS27L_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q765P7,MTSSL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q7KZF4,SND1_HUMAN,Presynapse,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q7KZN9,COX15_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q7L099,RUFY3_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q7L0J3,SV2A_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q7L1I2,SV2B_HUMAN,Plasma membrane,High,Plasma membrane,Medium
+Q7L1Q6,BZW1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q7L1S5,CHST9_HUMAN,Endoplasmic Reticulum,Medium,Postsynapse,Medium
+Q7L266,ASGL1_HUMAN,Cytoplasm,Medium,Cytoskeleton,High
+Q7L2E3,DHX30_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q7L2H7,EIF3M_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,High
+Q7L3T8,SYPM_HUMAN,Mitochondria,Medium,NA,None
+Q7L523,RRAGA_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q7L576,CYFP1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q7L5N1,CSN6_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton_Presynapse,Low
+Q7L5N7,PCAT2_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q7L775,EPMIP_HUMAN,Nucleus,Medium,Endoplasmic Reticulum,Medium
+Q7Z2K8,GRIN1_HUMAN,Cytoplasm,Medium,Nucleus,Low
+Q7Z392,TPC11_HUMAN,NA,None,Mitochondria,Medium
+Q7Z3D6,GLUCM_HUMAN,Postsynapse,Medium,Cytoskeleton,Low
+Q7Z3J2,CP062_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q7Z3U7,MON2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q7Z406,MYH14_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q7Z460,CLAP1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q7Z4H3,HDDC2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q7Z4S6,KI21A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q7Z4W1,DCXR_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q7Z6G3,NECA2_HUMAN,Cytoskeleton,High,Cytoplasm,High
+Q7Z6G8,ANS1B_HUMAN,Postsynapse,High,Mitochondria_Postsynapse,Low
+Q7Z6Z7,HUWE1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q7Z7A4,PXK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q7Z7H8,RM10_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q7Z7L7,ZER1_HUMAN,Cytoplasm,Medium,Mitochondria_Nucleus,Low
+Q86SK9,SCD5_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q86SX6,GLRX5_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Postsynapse,Low
+Q86SZ2,TPC6B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q86T65,DAAM2_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Low
+Q86TP1,PRUN1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q86TV6,TTC7B_HUMAN,Mitochondria,Low,Presynapse,Medium
+Q86TX2,ACOT1_HUMAN,Cytoskeleton,High,Cytoplasm,Medium
+Q86UP2,KTN1_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q86UR5,RIMS1_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Postsynapse,Low
+Q86UW7,CAPS2_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum_Postsynapse,Low
+Q86UW8,HPLN4_HUMAN,Cytoskeleton_Presynapse,Low,Cytoskeleton_Presynapse,Low
+Q86UX6,ST32C_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Presynapse,Low
+Q86UY8,NT5D3_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+Q86V81,THOC4_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Nucleus,Low
+Q86V88,MGDP1_HUMAN,Cytoplasm,High,Cytoplasm_Endoplasmic Reticulum,Low
+Q86VP6,CAND1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q86VS8,HOOK3_HUMAN,Cytoplasm,Low,Mitochondria,Medium
+Q86VU5,CMTD1_HUMAN,Mitochondria,High,Mitochondria,High
+Q86VW0,SESD1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q86WA6,BPHL_HUMAN,Mitochondria,High,Mitochondria_Postsynapse,Low
+Q86WG3,ATCAY_HUMAN;sp,Cytoskeleton_Postsynapse,Low,Cytoskeleton,Medium
+Q86WU2,LDHD_HUMAN,Mitochondria,High,Mitochondria,High
+Q86X10,RLGPB_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton,Medium
+Q86X55,CARM1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q86X55,CARM1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q86X76,NIT1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q86XE3,MICU3_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+Q86Y39,NDUAB_HUMAN,Postsynapse,Low,Mitochondria,Medium
+Q86Y82,STX12_HUMAN,Plasma membrane,Medium,Endoplasmic Reticulum,Low
+Q86YM7,HOME1_HUMAN;REV__sp,Cytoskeleton_Mitochondria,Low,Postsynapse,High
+Q86YN1,DOPP1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q86YQ8,CPNE8_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Low
+Q86YS7,C2CD5_HUMAN,NA,None,Nucleus,Medium
+Q8IU85,KCC1D_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q8IUR0,TPPC5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8IUR7,ARMC8_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Nucleus,Low
+Q8IUS5,EPHX4_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q8IV01,SYT12_HUMAN,Presynapse,Low,Presynapse,Low
+Q8IV08,PLD3_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q8IV38,ANKY2_HUMAN,Postsynapse,Medium,Mitochondria,Low
+Q8IVD9,NUDC3_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Low
+Q8IVF2,AHNK2_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm,Medium
+Q8IVP5,FUND1_HUMAN,Mitochondria_Nucleus,Low,Mitochondria,Medium
+Q8IW45,NNRD_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q8IWA5,CTL2_HUMAN,Presynapse,High,Cytoskeleton_Presynapse,Low
+Q8IWB7,WDFY1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q8IWQ3,BRSK2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q8IWT6,LRC8A_HUMAN,Presynapse,High,Endoplasmic Reticulum_Presynapse,Low
+Q8IXI2,MIRO1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton_Postsynapse,Low
+Q8IXJ6,SIR2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8IXS8,F126B_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q8IY17,PLPL6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8IY22,CMIP_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q8IYB4,PEX5R_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Low
+Q8IYB5,SMAP1_HUMAN,Plasma membrane_Presynapse,Low,Presynapse,Medium
+Q8IYI6,EXOC8_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8IYJ1,CPNE9_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q8IYQ7,THNS1_HUMAN,Mitochondria,High,Nucleus_Postsynapse,Low
+Q8IZ83,A16A1_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm,Medium
+Q8IZD9,DOCK3_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q8IZP0,ABI1_HUMAN,Presynapse,Medium,Presynapse,High
+Q8IZS8,CA2D3_HUMAN,Presynapse,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q8IZU2,WDR17_HUMAN,Mitochondria,Low,Postsynapse,Low
+Q8N0X7,SPART_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+Q8N111,CEND_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8N122,RPTOR_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q8N135,LGI4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q8N145,LGI3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q8N163,CCAR2_HUMAN,Nucleus,High,Nucleus,Medium
+Q8N183,NDUF2_HUMAN,Mitochondria,Medium,Cytoskeleton_Postsynapse,Low
+Q8N1B4,VPS52_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8N1F7,NUP93_HUMAN,Nucleus,Medium,Mitochondria,High
+Q8N1G4,LRC47_HUMAN,Cytoskeleton_Plasma membrane,Low,Endoplasmic Reticulum,Low
+Q8N1I0,DOCK4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q8N2F6,ARM10_HUMAN,Presynapse,Low,Postsynapse,Medium
+Q8N2K0,ABD12_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8N335,GPD1L_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q8N3E9,PLCD3_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum_Plasma membrane,Low
+Q8N3F0,MTURN_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q8N3J6,CADM2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8N3P4,VPS8_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q8N3V7,SYNPO_HUMAN,Postsynapse,Medium,Postsynapse,High
+Q8N414,PGBD5_HUMAN,Postsynapse,Medium,Nucleus,Low
+Q8N461,FXL16_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q8N465,D2HDH_HUMAN,Cytoskeleton_Mitochondria,Low,Nucleus,Low
+Q8N468,MFD4A_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,High
+Q8N4C8,MINK1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8N4P6,LRC71_HUMAN,NA,None,Mitochondria,Low
+Q8N4Q0,PTGR3_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q8N4V2,SVOP_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q8N568,DCLK2_HUMAN;sp,Cytoskeleton_Endoplasmic Reticulum,Low,Presynapse,Medium
+Q8N573,OXR1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8N5H7,SH2D3_HUMAN,Mitochondria,Medium,Mitochondria_Nucleus,Low
+Q8N5J2,MINY1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q8N5K1,CISD2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8N5R6,CCD33_HUMAN,NA,None,Cytoplasm,Low
+Q8N5S9,KKCC1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q8N5V2,NGEF_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8N668,COMD1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8N684,CPSF7_HUMAN,Nucleus,High,Nucleus,Medium
+Q8N6C5,IGSF1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q8N6M0,OTU6B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8N6N7,ACBD7_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8N6T3,ARFG1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Presynapse,Low
+Q8N766,EMC1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8N7J2,AMER2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q8N8N7,PTGR2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8N8S7,ENAH_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q8N8Y2,VA0D2_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,High
+Q8N987,NECA1_HUMAN,Cytoskeleton,High,Cytoskeleton,Low
+Q8N9F0,NAT8L_HUMAN,NA,None,Mitochondria,Medium
+Q8N9I0,SYT2_HUMAN,Presynapse,Low,Cytoskeleton,Medium
+Q8N9N7,LRC57_HUMAN,Presynapse,High,Endoplasmic Reticulum_Presynapse,Low
+Q8N9R8,SCAI_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q8NB37,GALD1_HUMAN,Plasma membrane,Low,Endoplasmic Reticulum_Presynapse,Low
+Q8NBF2,NHLC2_HUMAN,Cytoplasm,Medium,Mitochondria,Medium
+Q8NBF6,AVL9_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+Q8NBM8,PCYXL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q8NBN7,RDH13_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q8NBQ5,DHB11_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8NBS9,TXND5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8NBU5,ATAD1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q8NBX0,SCPDL_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q8NC51,PAIRB_HUMAN,Plasma membrane,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q8NC96,NECP1_HUMAN,Presynapse,Medium,Presynapse,High
+Q8NCA5,FA98A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q8NCB2,CAMKV_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q8NCG7,DGLB_HUMAN,Plasma membrane,Medium,Presynapse,Low
+Q8NCW5,NNRE_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q8ND24,RN214_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q8ND76,CCNY_HUMAN,Presynapse,Low,Plasma membrane,Low
+Q8NDA8,MROH1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q8NDH3,PEPL1_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q8NE01,CNNM3_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q8NE62,CHDH_HUMAN,Mitochondria,Medium,NA,None
+Q8NE71,ABCF1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q8NE86,MCU_HUMAN,Mitochondria,Medium,Endoplasmic Reticulum,Medium
+Q8NEB9,PK3C3_HUMAN,NA,None,Mitochondria,High
+Q8NEU8,DP13B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8NF37,PCAT1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8NF91,SYNE1_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q8NF91,SYNE1_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q8NFJ9,BBS1_HUMAN,Postsynapse,Low,Mitochondria,High
+Q8NFP9,NBEA_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q8NFU3,TSTD1_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Mitochondria,High
+Q8NFV4,ABHDB_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+Q8NFW8,NEUA_HUMAN,Plasma membrane,Low,Nucleus,Medium
+Q8NFX7,STXB6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q8NFZ4,NLGN2_HUMAN,Nucleus,High,Mitochondria,High
+Q8NFZ8,CADM4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q8NHG7,SVIP_HUMAN,Presynapse,Medium,Plasma membrane,Low
+Q8NHH9,ATLA2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q8NHP6,MSPD2_HUMAN,Nucleus,Low,Mitochondria,High
+Q8TAC2,JOS2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q8TAF3,WDR48_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q8TAM6,ERMIN_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q8TAT6,NPL4_HUMAN,Endoplasmic Reticulum,Low,NA,None
+Q8TB36,GDAP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8TB96,TIP_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q8TBB6,S7A14_HUMAN,Endoplasmic Reticulum,Medium,Nucleus,Low
+Q8TBC4,UBA3_HUMAN,Cytoplasm,High,Cytoskeleton,Medium
+Q8TBF2,PXL2B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q8TBX8,PI42C_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Plasma membrane,Low
+Q8TC12,RDH11_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8TCD5,NT5C_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8TCU6,PREX1_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Endoplasmic Reticulum,Medium
+Q8TCZ2,C99L2_HUMAN,Presynapse,High,Endoplasmic Reticulum,Low
+Q8TD22,SFXN5_HUMAN,Presynapse,High,NA,None
+Q8TDC3,BRSK1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q8TDJ6,DMXL2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8TDQ7,GNPI2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8TDW7,FAT3_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q8TEA8,DTD1_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q8TEQ8,PIGO_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q8TF30,WHAMM_HUMAN,Cytoplasm,Low,Cytoplasm,High
+Q8TF44,C2C4C_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Nucleus,Low
+Q8TF61,FBX41_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Postsynapse,Low
+Q8WU79,SMAP2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q8WUD1,RAB2B_HUMAN,Mitochondria,Medium,Endoplasmic Reticulum_Postsynapse,Low
+Q8WUK0,PTPM1_HUMAN,Mitochondria,High,Mitochondria,High
+Q8WUM4,PDC6I_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q8WUW1,BRK1_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane_Presynapse,Low
+Q8WUX9,CHMP7_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q8WUY1,THEM6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q8WUY3,PRUN2_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Presynapse,Low
+Q8WVC6,DCAKD_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q8WVM8,SCFD1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+Q8WVV9,HNRLL_HUMAN,Nucleus,High,Endoplasmic Reticulum,High
+Q8WW22,DNJA4_HUMAN,NA,None,Endoplasmic Reticulum,Low
+Q8WWI1,LMO7_HUMAN,NA,None,Mitochondria,Medium
+Q8WWI5,CTL1_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q8WXC6,CSN9_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q8WXD2,SCG3_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Medium
+Q8WXD9,CSKI1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Postsynapse,Low
+Q8WXE9,STON2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,NA,None
+Q8WXF1,PSPC1_HUMAN,Nucleus,High,Nucleus,High
+Q8WXF7,ATLA1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8WXG6,MADD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q8WXH0,SYNE2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8WXH0,SYNE2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q8WXI2,CNKR2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q8WXS5,CCG8_HUMAN,Mitochondria,Low,Nucleus,Medium
+Q8WY22,BRI3B_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Postsynapse,Low
+Q8WZ42,TITIN_HUMAN,Cytoplasm_Presynapse,Low,Cytoskeleton,Medium
+Q8WZ42,TITIN_HUMAN,Cytoplasm_Presynapse,Low,Cytoskeleton,Medium
+Q8WZA0,LZIC_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q8WZA2,RPGF4_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse,High
+Q8WZA9,IRGQ_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q92499,DDX1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92504,S39A7_HUMAN,NA,None,Endoplasmic Reticulum,Medium
+Q92520,FAM3C_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q92522,H1X_HUMAN,Nucleus,Low,Nucleus,High
+Q92529,SHC3_HUMAN,Mitochondria,Medium,Mitochondria_Postsynapse,Low
+Q92530,PSMF1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q92538,GBF1_HUMAN,Mitochondria,Low,Mitochondria_Nucleus,Low
+Q92556,ELMO1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q92558,WASF1_HUMAN,Cytoskeleton,Medium,Plasma membrane,Medium
+Q92561,PHYIP_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q92572,AP3S1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q92574,TSC1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92581,SL9A6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q92597,NDRG1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92598,HS105_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92599,SEPT8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92604,LGAT1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92614,MY18A_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q92616,GCN1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92667,AKAP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q92673,SORL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92686,NEUG_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q92688,AN32B_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q92696,PGTA_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane,Low
+Q92734,TFG_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q92736,RYR2_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton_Presynapse,Low
+Q92743,HTRA1_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum,Low
+Q92752,TENR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92777,SYN2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92783,STAM1_HUMAN;sp,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,Low
+Q92796,DLG3_HUMAN,Cytoplasm_Mitochondria,Low,Cytoplasm_Postsynapse,Low
+Q92820,GGH_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q92823,NRCAM_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q92841,DDX17_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q92845,KIFA3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92854,SEM4D_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q92859,NEO1_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton,High
+Q92882,OSTF1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q92896,GSLG1_HUMAN,Endoplasmic Reticulum,High,Plasma membrane,Medium
+Q92900,RENT1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q92905,CSN5_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,Medium
+Q92930,RAB8B_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,Low
+Q92932,PTPR2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q92945,FUBP2_HUMAN,Cytoplasm,Medium,Cytoskeleton,Medium
+Q92947,GCDH_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q92973,TNPO1_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,High
+Q92974,ARHG2_HUMAN,Plasma membrane,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q92982,NINJ1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q92990,GLMN_HUMAN,NA,None,Mitochondria,High
+Q93008,USP9X_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Medium
+Q93009,UBP7_HUMAN,Cytoskeleton,High,Presynapse,Low
+Q93034,CUL5_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q93050,VPP1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q93077,H2A1C_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+Q93100,KPBB_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q969E2,SCAM4_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+Q969E4,TCAL3_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q969G6,RIFK_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q969H8,MYDGF_HUMAN,Plasma membrane,Low,Cytoplasm_Cytoskeleton,Low
+Q969L2,MAL2_HUMAN,Cytoskeleton,High,Mitochondria,High
+Q969P0,IGSF8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q969P0,IGSF8_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q969Q0,RL36L_HUMAN;sp,Plasma membrane_Presynapse,Low,Plasma membrane,Medium
+Q969S9,RRF2M_HUMAN,Mitochondria,High,Mitochondria_Nucleus,Low
+Q969T9,WBP2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q969Z3,MARC2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Low
+Q96A00,PP14A_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q96A26,F162A_HUMAN,Postsynapse,Medium,Mitochondria_Postsynapse,Low
+Q96A33,CCD47_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96A65,EXOC4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96AB3,ISOC2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q96AC1,FERM2_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+Q96AE4,FUBP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96AG3,S2546_HUMAN,Postsynapse,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q96AG4,LRC59_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96AJ9,VTI1A_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q96AM1,MRGRF_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+Q96AQ6,PBIP1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q96AT9,RPE_HUMAN;sp,Cytoplasm,High,Cytoplasm,High
+Q96AX1,VP33A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q96BM9,ARL8A_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q96BQ5,CC127_HUMAN,Mitochondria,High,Mitochondria,High
+Q96C19,EFHD2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q96CM8,ACSF2_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q96CN7,ISOC1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96CS3,FAF2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96CT7,CC124_HUMAN,Plasma membrane,Medium,Plasma membrane_Presynapse,Low
+Q96CV9,OPTN_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q96CW1,AP2M1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96CX2,KCD12_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Presynapse,Low
+Q96D09,GASP2_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q96D71,REPS1_HUMAN,Cytoplasm_Nucleus,Low,Mitochondria_Nucleus,Low
+Q96DA2,RB39B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q96DA6,TIM14_HUMAN,Mitochondria,High,Mitochondria,High
+Q96DB2,HDA11_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q96DD7,SHSA4_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q96DE0,NUD16_HUMAN,Cytoplasm_Nucleus,Low,Cytoplasm,High
+Q96DG6,CMBL_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q96DZ1,ERLEC_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,Low
+Q96DZ9,CKLF5_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Postsynapse,Low
+Q96E17,RAB3C_HUMAN,Presynapse,Low,Cytoskeleton,Medium
+Q96EE3,SEH1_HUMAN,Mitochondria,Low,Endoplasmic Reticulum_Presynapse,Low
+Q96EK5,KBP_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q96EQ0,SGTB_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q96EY1,DNJA3_HUMAN,Postsynapse,High,Postsynapse,Medium
+Q96EY7,PTCD3_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Postsynapse,High
+Q96F07,CYFP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96F24,NRBF2_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Nucleus,Low
+Q96F85,CNRP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96FC7,PHIPL_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q96FE5,LIGO1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q96FJ2,DYL2_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q96FN4,CPNE2_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Low
+Q96FQ6,S10AG_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q96FW1,OTUB1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q96FZ7,CHMP6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q96G03,PGM2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96GA7,SDSL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96GD0,PLPP_HUMAN;sp,Cytoplasm,Medium,Cytoskeleton,High
+Q96GG9,DCNL1_HUMAN,Cytoplasm,High,Endoplasmic Reticulum,Medium
+Q96GK7,FAH2A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q96GQ5,RUS1_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q96GR2,ACBG1_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q96GW7,PGCB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96HE7,ERO1A_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q96HN2,SAHH3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q96HR9,REEP6_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q96HS1,PGAM5_HUMAN,Mitochondria_Postsynapse,Low,Postsynapse_Presynapse,Low
+Q96HU8,DIRA2_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton_Endoplasmic Reticulum,Low
+Q96HY6,DDRGK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96I15,SCLY_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96I23,PREY_HUMAN,Mitochondria,High,Mitochondria,High
+Q96I99,SUCB2_HUMAN,NA,None,Mitochondria_Postsynapse,Low
+Q96ID5,IGS21_HUMAN,Presynapse,Medium,Plasma membrane_Presynapse,Low
+Q96IU4,ABHEB_HUMAN,Cytoplasm,Medium,Cytoplasm_Endoplasmic Reticulum,Low
+Q96IX5,USMG5_HUMAN,Postsynapse,Medium,Mitochondria_Postsynapse,Low
+Q96JE9,MAP6_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96JG6,VPS50_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q96JH7,VCIP1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+Q96JJ3,ELMO2_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Low
+Q96JJ7,TMX3_HUMAN,Cytoskeleton_Nucleus,Low,Mitochondria,High
+Q96JQ2,CLMN_HUMAN,Mitochondria,Low,Mitochondria,High
+Q96K17,BT3L4_HUMAN,Plasma membrane,Low,Plasma membrane,Medium
+Q96KG9,SCYL1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q96KN2,CNDP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96KP1,EXOC2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96KP4,CNDP2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96L92,SNX27_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q96LT7,CI072_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q96MM6,HS12B_HUMAN,Nucleus,Medium,Nucleus,Medium
+Q96MZ0,GD1L1_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+Q96N66,MBOA7_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96NN9,AIFM3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q96NW7,LRRC7_HUMAN,Postsynapse,Medium,Mitochondria_Nucleus,Low
+Q96P47,AGAP3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96P70,IPO9_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+Q96PE3,INP4A_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q96PE5,OPALI_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q96PE7,MCEE_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q96PU5,NED4L_HUMAN,NA,None,Mitochondria_Nucleus,Low
+Q96PU8,QKI_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q96PY5,FMNL2_HUMAN,Plasma membrane,Medium,Cytoskeleton_Presynapse,Low
+Q96Q05,TPPC9_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q96QE2,MYCT_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q96QK1,VPS35_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q96QR8,PURB_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q96RD7,PANX1_HUMAN,Mitochondria,High,Endoplasmic Reticulum,High
+Q96RF0,SNX18_HUMAN,Endoplasmic Reticulum_Nucleus,Low,Mitochondria,Medium
+Q96RL7,VP13A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96RP9,EFGM_HUMAN,Mitochondria,High,Mitochondria,High
+Q96RQ3,MCCA_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q96RR4,KKCC2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q96RS6,NUDC1_HUMAN,Nucleus,Low,Nucleus,High
+Q96RT1,ERBIN_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q96S52,PIGS_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q96S66,CLCC1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q96S97,MYADM_HUMAN,Endoplasmic Reticulum,High,Presynapse,High
+Q96SB3,NEB2_HUMAN,Postsynapse,High,Mitochondria,High
+Q96SW2,CRBN_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Endoplasmic Reticulum,Medium
+Q96SZ5,AEDO_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q96T76,MMS19_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q96TA1,NIBL1_HUMAN,NA,None,Endoplasmic Reticulum_Mitochondria,Low
+Q96TC7,RMD3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q99250,SCN2A_HUMAN;sp,Plasma membrane,High,Cytoskeleton,Low
+Q99259,DCE1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q99426,TBCB_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q99436,PSB7_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,Medium
+Q99447,PCY2_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q99460,PSMD1_HUMAN,Plasma membrane,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q99471,PFD5_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q99490,AGAP2_HUMAN,NA,None,Nucleus_Postsynapse,Low
+Q99497,PARK7_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99523,SORT_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q99536,VAT1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q99569,PKP4_HUMAN,Postsynapse,Medium,Mitochondria,High
+Q99572,P2RX7_HUMAN,Presynapse,High,Plasma membrane_Presynapse,Low
+Q99574,NEUS_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Nucleus,Low
+Q99584,S10AD_HUMAN,Cytoplasm,Medium,Cytoskeleton,High
+Q99598,TSNAX_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q99613,EIF3C_HUMAN;sp,Presynapse,Low,Endoplasmic Reticulum,High
+Q99614,TTC1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q99615,DNJC7_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q99622,C10_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+Q99623,PHB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99627,CSN8_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q99643,C560_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q99653,CHP1_HUMAN,Presynapse,High,Endoplasmic Reticulum_Presynapse,Low
+Q99683,M3K5_HUMAN,NA,None,Mitochondria,Medium
+Q99685,MGLL_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+Q99714,HCD2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q99719,SEPT5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99729,ROAA_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q99733,NP1L4_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q99747,SNAG_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton,Medium
+Q99766,ATP5S_HUMAN,Postsynapse,High,Postsynapse,High
+Q99767,APBA2_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Low
+Q99784,NOE1_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Medium
+Q99798,ACON_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99805,TM9S2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q99807,COQ7_HUMAN,Postsynapse,Medium,Mitochondria,High
+Q99816,TS101_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q99829,CPNE1_HUMAN,Cytoskeleton,Low,Endoplasmic Reticulum,High
+Q99832,TCPH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99873,ANM1_HUMAN,Cytoplasm,High,Cytoplasm,Low
+Q99879,H2B1M_HUMAN;sp,Nucleus,High,Cytoskeleton,Medium
+Q99884,SC6A7_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Medium
+Q99943,PLCA_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q99961,SH3G1_HUMAN,Postsynapse,Low,Postsynapse,Low
+Q99962,SH3G2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q99963,SH3G3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9BPU6,DPYL5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BPW8,NIPS1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BQ69,MACD1_HUMAN,Mitochondria,High,Postsynapse,High
+Q9BQ70,TCF25_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9BQE5,APOL2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BQG1,SYT3_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q9BQI5,SGIP1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9BQI7,PSD2_HUMAN,Plasma membrane,Low,Endoplasmic Reticulum_Plasma membrane,Low
+Q9BQI9,NRIP2_HUMAN,NA,None,Cytoplasm,Low
+Q9BR01,ST4A1_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9BR76,COR1B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9BRA2,TXD17_HUMAN,Cytoplasm,High,Mitochondria,High
+Q9BRK0,REEP2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9BRK4,LZTS2_HUMAN;sp,Mitochondria,Low,Mitochondria,Low
+Q9BRQ6,MIC25_HUMAN,Mitochondria,High,Mitochondria,High
+Q9BRX8,PXL2A_HUMAN,Cytoskeleton_Presynapse,Low,Cytoskeleton,Medium
+Q9BS26,ERP44_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BSA4,TTYH2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Plasma membrane,Low
+Q9BSF0,SMAKA_HUMAN,NA,None,Mitochondria,Low
+Q9BSH4,TACO1_HUMAN,Mitochondria,High,Postsynapse,Low
+Q9BSH5,HDHD3_HUMAN,Cytoplasm,Low,Mitochondria,Medium
+Q9BSJ8,ESYT1_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,High
+Q9BST9,RTKN_HUMAN,Mitochondria,Low,Endoplasmic Reticulum,Low
+Q9BSU1,CP070_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Medium
+Q9BT78,CSN4_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9BTE1,DCTN5_HUMAN,Cytoplasm,Low,NA,None
+Q9BTE6,AASD1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Postsynapse,Low
+Q9BTV4,TMM43_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q9BTV5,FSD1_HUMAN,Cytoskeleton,High,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9BTW9,TBCD_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BU02,THTPA_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9BUF5,TBB6_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Plasma membrane,Low
+Q9BUR5,MIC26_HUMAN,Mitochondria,High,Plasma membrane,High
+Q9BUT1,BDH2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9BV20,MTNA_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BV23,ABHD6_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Nucleus,Low
+Q9BV79,MECR_HUMAN,Mitochondria,Medium,Postsynapse,Low
+Q9BVA0,KTNB1_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Nucleus,Low
+Q9BVA1,TBB2B_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BVK6,TMED9_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BW30,TPPP3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9BW62,KATL1_HUMAN;sp,Mitochondria,Low,Mitochondria,Low
+Q9BW72,HIG2A_HUMAN,Postsynapse,High,Cytoskeleton,Low
+Q9BWD1,THIC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BWM7,SFXN3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BWQ8,LFG2_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+Q9BWS9,CHID1_HUMAN,NA,None,Mitochondria,Low
+Q9BX66,SRBS1_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Medium
+Q9BX67,JAM3_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Plasma membrane,Low
+Q9BX68,HINT2_HUMAN,Cytoskeleton,High,Postsynapse,Low
+Q9BXF6,RFIP5_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Endoplasmic Reticulum_Nucleus,Low
+Q9BXJ9,NAA15_HUMAN;sp,Cytoplasm_Endoplasmic Reticulum,Low,Cytoplasm_Mitochondria,Low
+Q9BXK5,B2L13_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9BXS0,COPA1_HUMAN,NA,None,Postsynapse,Medium
+Q9BXS5,AP1M1_HUMAN;sp,Cytoplasm,Low,NA,None
+Q9BXW6,OSBL1_HUMAN,Cytoskeleton,Medium,Endoplasmic Reticulum,Medium
+Q9BXW7,HDHD5_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+Q9BY11,PACN1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9BY32,ITPA_HUMAN,Cytoskeleton,High,Cytoplasm,High
+Q9BY67,CADM1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9BYB0,SHAN3_HUMAN,Postsynapse,High,Postsynapse,Medium
+Q9BYD6,RM01_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q9BZ29,DOCK9_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9BZC7,ABCA2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9BZE9,ASPC1_HUMAN,Cytoplasm,Medium,Mitochondria,Medium
+Q9BZF1,OSBL8_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Postsynapse,Low
+Q9BZF3,OSBL6_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q9BZV1,UBXN6_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q9BZZ5,API5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9C005,DPY30_HUMAN,NA,None,Cytoplasm,Low
+Q9C026,TRIM9_HUMAN,NA,None,Nucleus,Medium
+Q9C040,TRIM2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9C0B1,FTO_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9C0C9,UBE2O_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9C0D9,EPT1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9C0E8,LNP_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9C0H2,TTYH3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9C0H5,RHG39_HUMAN,Postsynapse,Medium,Mitochondria,Low
+Q9C0H9,SRCN1_HUMAN,Mitochondria,Medium,Postsynapse,High
+Q9GZM7,TINAL_HUMAN,Nucleus,High,Nucleus,High
+Q9GZM8,NDEL1_HUMAN;sp,Nucleus,Low,Nucleus,Medium
+Q9GZN7,ROGDI_HUMAN,Presynapse,Low,Presynapse,Low
+Q9GZP4,PITH1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9GZQ8,MLP3B_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q9GZS3,WDR61_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9GZT3,SLIRP_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q9GZT4,SRR_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9GZT6,CC90B_HUMAN,Mitochondria,High,Mitochondria_Postsynapse,Low
+Q9GZT8,NIF3L_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q9GZV7,HPLN2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9GZY8,MFF_HUMAN,Postsynapse,Low,Cytoskeleton,Low
+Q9GZZ9,UBA5_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9H008,LHPP_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9H019,MFR1L_HUMAN,Endoplasmic Reticulum,Medium,Postsynapse,Low
+Q9H061,T126A_HUMAN,Postsynapse,Medium,Mitochondria,High
+Q9H074,PAIP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9H078,CLPB_HUMAN,Mitochondria,Low,Mitochondria,High
+Q9H0A8,COMD4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9H0B6,KLC2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9H0E2,TOLIP_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9H0Q0,FA49A_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9H0R4,HDHD2_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,High
+Q9H0R8,GBRL1_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H0U4,RAB1B_HUMAN;sp,Plasma membrane,High,Plasma membrane,Medium
+Q9H0W9,CK054_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9H115,SNAB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9H1E5,TMX4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H1K0,RBNS5_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9H1K1,ISCU_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Low
+Q9H1K4,GHC2_HUMAN,Mitochondria,High,Mitochondria,Low
+Q9H1P3,OSBL2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9H1Z4,WDR13_HUMAN,Postsynapse,Low,Presynapse,Low
+Q9H244,P2Y12_HUMAN,Endoplasmic Reticulum,Medium,NA,None
+Q9H254,SPTN4_HUMAN,Cytoskeleton,Low,Postsynapse,Medium
+Q9H269,VPS16_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q9H270,VPS11_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q9H299,SH3L3_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9H2C0,GAN_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q9H2G2,SLK_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H2H9,S38A1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+Q9H2M9,RBGPR_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9H2U2,IPYR2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9H2W6,RM46_HUMAN,Postsynapse,Low,Mitochondria,High
+Q9H2X9,S12A5_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9H305,CDIP1_HUMAN,Endoplasmic Reticulum,Low,NA,None
+Q9H313,TTYH1_HUMAN,Presynapse,Medium,Presynapse,Medium
+Q9H330,TM245_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q9H3H3,CK068_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9H3K6,BOLA2_HUMAN,Cytoplasm,High,Mitochondria,Medium
+Q9H3N1,TMX1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H3S7,PTN23_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q9H3Z4,DNJC5_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9H425,CA198_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Low
+Q9H444,CHM4B_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Low
+Q9H479,FN3K_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9H492,MLP3A_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+Q9H4A4,AMPB_HUMAN,Cytoplasm,High,Cytoplasm,Low
+Q9H4A6,GOLP3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q9H4G0,E41L1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9H4G4,GAPR1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton_Presynapse,Low
+Q9H4M3,FBX44_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9H4M9,EHD1_HUMAN,Presynapse,Low,Endoplasmic Reticulum,Medium
+Q9H598,VIAAT_HUMAN,Presynapse,Medium,Plasma membrane,Medium
+Q9H6K4,OPA3_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Postsynapse,Low
+Q9H6K5,PRR36_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Medium
+Q9H6L5,RETR1_HUMAN,Nucleus,Low,Mitochondria,High
+Q9H6R3,ACSS3_HUMAN,Cytoplasm,High,Mitochondria,High
+Q9H6U6,BCAS3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H7D0,DOCK5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9H7Z7,PGES2_HUMAN,Cytoskeleton,Medium,Plasma membrane,Medium
+Q9H845,ACAD9_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Postsynapse,Low
+Q9H8H3,MET7A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9H902,REEP1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+Q9H936,GHC1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9H993,ARMT1_HUMAN,Cytoplasm,High,Endoplasmic Reticulum,Low
+Q9H9A6,LRC40_HUMAN,Endoplasmic Reticulum,High,Mitochondria_Presynapse,Low
+Q9H9B4,SFXN1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q9H9C1,SPE39_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,High
+Q9H9H5,MA6D1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9H9J2,RM44_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q9H9Q2,CSN7B_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Mitochondria,Low
+Q9H9S3,S61A2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9H9S4,CB39L_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9HA64,KT3K_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9HA65,TBC17_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+Q9HA77,SYCM_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,High
+Q9HAR2,AGRL3_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9HAT2,SIAE_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9HAV0,GBB4_HUMAN,Plasma membrane_Presynapse,Low,Plasma membrane,Medium
+Q9HAV7,GRPE1_HUMAN,Postsynapse,High,Mitochondria,Medium
+Q9HB71,CYBP_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9HB90,RRAGC_HUMAN;sp,Endoplasmic Reticulum,High,Cytoplasm_Endoplasmic Reticulum,Low
+Q9HBF4,ZFYV1_HUMAN,Postsynapse_Presynapse,Low,Mitochondria,Low
+Q9HBH5,RDH14_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9HBI6,CP4FB_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9HBL0,TENS1_HUMAN,Nucleus,High,Nucleus,High
+Q9HBL8,NMRL1_HUMAN,Nucleus,Low,Mitochondria,Medium
+Q9HC38,GLOD4_HUMAN,Cytoplasm_Plasma membrane,Low,Cytoplasm,Medium
+Q9HC56,PCDH9_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Nucleus,Medium
+Q9HCC0,MCCB_HUMAN,Cytoskeleton_Postsynapse,Low,Cytoplasm_Cytoskeleton,Low
+Q9HCD6,TANC2_HUMAN,Postsynapse,Low,Mitochondria,Medium
+Q9HCH3,CPNE5_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9HCJ1,ANKH_HUMAN,Cytoplasm,Low,NA,None
+Q9HCJ6,VAT1L_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9HCM2,PLXA4_HUMAN,Plasma membrane,High,Endoplasmic Reticulum,Low
+Q9HCP6,HHATL_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9HD23,MRS2_HUMAN,Mitochondria,Low,Mitochondria,Medium
+Q9HD34,LYRM4_HUMAN,Postsynapse,Medium,Mitochondria,Medium
+Q9HD42,CHM1A_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Nucleus,Low
+Q9HDC9,APMAP_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+Q9NNW7,TRXR2_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q9NP72,RAB18_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Low
+Q9NP78,ABCB9_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NP79,VTA1_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9NP80,PLPL8_HUMAN,Mitochondria,High,Mitochondria,High
+Q9NP81,SYSM_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+Q9NP97,DLRB1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q9NPD7,NRN1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Medium
+Q9NPF4,OSGEP_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9NPJ3,ACO13_HUMAN,Postsynapse,Medium,Cytoskeleton,Low
+Q9NPQ8,RIC8A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9NQ48,LZTL1_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,Low
+Q9NQ66,PLCB1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,High
+Q9NQ79,CRAC1_HUMAN,Presynapse,Medium,NA,None
+Q9NQ88,TIGAR_HUMAN,Cytoplasm,High,Endoplasmic Reticulum,Medium
+Q9NQC3,RTN4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NQC7,CYLD_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+Q9NQE9,HINT3_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane_Presynapse,Low
+Q9NQP4,PFD4_HUMAN,Cytoplasm,Medium,Mitochondria,Medium
+Q9NQR4,NIT2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q9NQW6,ANLN_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9NQW7,XPP1_HUMAN;sp,Cytoplasm,Medium,Cytoplasm,High
+Q9NQX3,GEPH_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9NQX7,ITM2C_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q9NR28,DBLOH_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9NR31,SAR1A_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NR45,SIAS_HUMAN,Cytoplasm,Medium,Cytoskeleton,Low
+Q9NR46,SHLB2_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q9NR48,ASH1L_HUMAN,Postsynapse,Low,Nucleus,Low
+Q9NRA0,SPHK2_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Medium
+Q9NRD5,PICK1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Low
+Q9NRG7,D39U1_HUMAN,Postsynapse,Medium,Postsynapse,High
+Q9NRN7,ADPPT_HUMAN,Cytoplasm_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Nucleus,Low
+Q9NRQ2,PLS4_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Low
+Q9NRR3,C42S2_HUMAN,Mitochondria,Low,Plasma membrane,Low
+Q9NRV9,HEBP1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9NRW1,RAB6B_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9NRW7,VPS45_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9NRX4,PHP14_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NRY4,RHG35_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NRY5,F1142_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q9NRY6,PLS3_HUMAN,Cytoplasm,Medium,Endoplasmic Reticulum,Medium
+Q9NRZ7,PLCC_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9NS69,TOM22_HUMAN,Postsynapse,Medium,Mitochondria,Low
+Q9NS86,LANC2_HUMAN,Cytoskeleton,Medium,Plasma membrane,Medium
+Q9NSD9,SYFB_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NSE4,SYIM_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,Low
+Q9NSK0,KLC4_HUMAN,NA,None,Mitochondria,Medium
+Q9NSY0,NRBP2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Mitochondria,Low
+Q9NT62,ATG3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9NTJ4,MA2C1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9NTJ5,SAC1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NTK5,OLA1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9NTX5,ECHD1_HUMAN,Cytoskeleton,Low,Cytoplasm,Low
+Q9NUB1,ACS2L_HUMAN,Mitochondria,Low,Mitochondria_Postsynapse,Low
+Q9NUJ1,ABHDA_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9NUJ3,T11L1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NUM4,T106B_HUMAN,Plasma membrane,Medium,Plasma membrane,High
+Q9NUP9,LIN7C_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton_Presynapse,Low
+Q9NUQ2,PLCE_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q9NUQ9,FA49B_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9NUU7,DD19A_HUMAN;sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9NV70,EXOC1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q9NV96,CC50A_HUMAN;sp,Endoplasmic Reticulum,Medium,Presynapse,High
+Q9NVA2,SEP11_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NVE7,PANK4_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Medium
+Q9NVH1,DJC11_HUMAN,Postsynapse,Medium,Mitochondria,Medium
+Q9NVJ2,ARL8B_HUMAN,Plasma membrane_Presynapse,Low,Cytoskeleton_Plasma membrane,Low
+Q9NVT9,ARMC1_HUMAN,Postsynapse,Medium,Cytoskeleton_Postsynapse,Low
+Q9NWS8,RMND1_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria,High
+Q9NWU2,GID8_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9NWV4,CZIB_HUMAN,Cytoplasm,High,Cytoplasm,Low
+Q9NX14,NDUBB_HUMAN,Mitochondria,High,Postsynapse,High
+Q9NX40,OCAD1_HUMAN,Endoplasmic Reticulum,Low,Cytoskeleton_Postsynapse,Low
+Q9NX63,MIC19_HUMAN,Mitochondria,Medium,Postsynapse,High
+Q9NXA8,SIR5_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q9NY33,DPP3_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9NY35,CLDN1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q9NY47,CA2D2_HUMAN,Presynapse,Low,NA,None
+Q9NY65,TBA8_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9NYB0,TE2IP_HUMAN,Cytoplasm_Mitochondria,Low,Nucleus,High
+Q9NYB9,ABI2_HUMAN,Presynapse,High,Presynapse,Medium
+Q9NYI0,PSD3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NYU2,UGGG1_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton,Medium
+Q9NZ01,TECR_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,High
+Q9NZ45,CISD1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NZ52,GGA3_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9NZ56,FMN2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Presynapse,Low
+Q9NZB8,MOCS1_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q9NZD2,GLTP_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9NZG7,NINJ2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9NZH0,GPC5B_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Medium
+Q9NZJ4,SACS_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Medium
+Q9NZJ6,COQ3_HUMAN,Postsynapse,Medium,Cytoplasm,Low
+Q9NZJ7,MTCH1_HUMAN,Mitochondria_Presynapse,Low,Cytoskeleton,Low
+Q9NZL4,HPBP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9NZL9,MAT2B_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9NZM1,MYOF_HUMAN,Endoplasmic Reticulum,High,Nucleus,Medium
+Q9NZN3,EHD3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9NZN4,EHD2_HUMAN,Nucleus,Medium,Plasma membrane,Low
+Q9NZQ3,SPN90_HUMAN,NA,None,Cytoskeleton,Medium
+Q9NZW5,MPP6_HUMAN;REV__sp,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9NZZ3,CHMP5_HUMAN,Cytoplasm_Presynapse,Low,Mitochondria_Postsynapse,Low
+Q9P000,COMD9_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9P032,NDUF4_HUMAN,Postsynapse,Medium,Mitochondria,Medium
+Q9P035,HACD3_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9P0J0,NDUAD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9P0J1,PDP1_HUMAN,Mitochondria,High,Mitochondria,High
+Q9P0J7,KCMF1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q9P0K1,ADA22_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q9P0L0,VAPA_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9P0L2,MARK1_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,High
+Q9P0S9,TM14C_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9P0U1,TOM7_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q9P0V9,SEP10_HUMAN,Cytoskeleton,Low,Presynapse,Medium
+Q9P0Z9,SOX_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q9P1F3,ABRAL_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q9P1U1,ARP3B_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,Medium
+Q9P1Y5,CAMP3_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum,Medium
+Q9P253,VPS18_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9P260,RELCH_HUMAN,Presynapse,Medium,Endoplasmic Reticulum_Plasma membrane,Low
+Q9P265,DIP2B_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Presynapse,Medium
+Q9P2E9,RRBP1_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Low
+Q9P2G1,AKIB1_HUMAN,NA,None,Nucleus_Postsynapse,Low
+Q9P2J5,SYLC_HUMAN,Presynapse,High,Endoplasmic Reticulum_Presynapse,Low
+Q9P2R3,ANFY1_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Presynapse,Low
+Q9P2R7,SUCB1_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9P2T1,GMPR2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9P2U7,VGLU1_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+Q9P2W3,GBG13_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Medium
+Q9UBB4,ATX10_HUMAN,Cytoplasm_Cytoskeleton,Low,Plasma membrane,Low
+Q9UBB6,NCDN_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UBC2,EP15R_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UBE0,SAE1_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum_Nucleus,Low
+Q9UBF2,COPG2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9UBI6,GBG12_HUMAN,Presynapse,High,Cytoskeleton_Presynapse,Low
+Q9UBN7,HDAC6_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9UBP0,SPAST_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Nucleus,Low
+Q9UBP4,DKK3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UBQ0,VPS29_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,High
+Q9UBQ5,EIF3K_HUMAN,Nucleus_Postsynapse,Low,Endoplasmic Reticulum,Low
+Q9UBQ7,GRHPR_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UBS5,GABR1_HUMAN,Endoplasmic Reticulum,Low,Plasma membrane,Low
+Q9UBV8,PEF1_HUMAN,Cytoskeleton,Medium,Cytoplasm,Medium
+Q9UBW8,CSN7A_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,Low
+Q9UBX3,DIC_HUMAN,Postsynapse,High,Mitochondria_Nucleus,Low
+Q9UD71,PPR1B_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UDT6,CLIP2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9UDY2,ZO2_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q9UDY4,DNJB4_HUMAN,Endoplasmic Reticulum,Medium,Cytoskeleton,Medium
+Q9UEW8,STK39_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+Q9UEY8,ADDG_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UF11,PKHB1_HUMAN,Postsynapse,Low,Postsynapse,Medium
+Q9UFN0,NPS3A_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q9UGC6,RGS17_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,Medium
+Q9UGI6,KCNN3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9UGM6,SYWM_HUMAN,Mitochondria,High,Mitochondria,High
+Q9UGT4,SUSD2_HUMAN,Endoplasmic Reticulum,Low,Nucleus,Low
+Q9UH03,SEPT3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UHA4,LTOR3_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Presynapse,Medium
+Q9UHB9,SRP68_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q9UHC6,CNTP2_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Cytoskeleton,Low
+Q9UHD1,CHRD1_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoplasm_Mitochondria,Low
+Q9UHD2,TBK1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,High
+Q9UHD8,SEPT9_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UHG2,PCSK1_HUMAN;sp,Plasma membrane,Medium,Plasma membrane,Medium
+Q9UHG3,PCYOX_HUMAN,Presynapse,High,Endoplasmic Reticulum,High
+Q9UHI5,LAT2_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Nucleus,Low
+Q9UHL4,DPP2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UHQ4,BAP29_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9UHQ9,NB5R1_HUMAN,Plasma membrane_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q9UHV9,PFD2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UHX1,PUF60_HUMAN,Nucleus,Medium,Nucleus,High
+Q9UHY1,NRBP_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9UHY7,ENOPH_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9UI09,NDUAC_HUMAN,Mitochondria,High,Postsynapse,High
+Q9UI12,VATH_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UI15,TAGL3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UI40,NCKX2_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9UI47,CTNA3_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9UIA9,XPO7_HUMAN;sp,Cytoskeleton_Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Plasma membrane,Low
+Q9UIC8,LCMT1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UID3,VPS51_HUMAN,Presynapse,Medium,Endoplasmic Reticulum,Low
+Q9UIG0,BAZ1B_HUMAN,Cytoplasm_Plasma membrane,Low,Cytoskeleton,High
+Q9UII2,ATIF1_HUMAN,Mitochondria,Low,Mitochondria,Low
+Q9UIJ7,KAD3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UIQ6,LCAP_HUMAN,NA,None,Nucleus,Low
+Q9UJ41,RABX5_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9UJ70,NAGK_HUMAN,Cytoskeleton,Medium,Cytoplasm_Cytoskeleton,Low
+Q9UJC5,SH3L2_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9UJD0,RIMS3_HUMAN,Postsynapse,Low,Nucleus_Postsynapse,Low
+Q9UJQ1,LAMP5_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Nucleus,Medium
+Q9UJS0,CMC2_HUMAN,Postsynapse,Medium,Postsynapse,Medium
+Q9UJU6,DBNL_HUMAN,Cytoskeleton,High,Cytoskeleton_Plasma membrane,Low
+Q9UJY5,GGA1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UJZ1,STML2_HUMAN,Mitochondria,Medium,Postsynapse,Medium
+Q9UK22,FBX2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9UK41,VPS28_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q9UK45,LSM7_HUMAN,Cytoplasm,High,Cytoplasm_Mitochondria,Low
+Q9UK76,JUPI1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UKA9,PTBP2_HUMAN,Nucleus,High,Nucleus,High
+Q9UKG1,DP13A_HUMAN,Cytoskeleton,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9UKK9,NUDT5_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9UKU0,ACSL6_HUMAN;sp,Cytoskeleton_Plasma membrane,Low,Plasma membrane,Medium
+Q9UKU6,TRHDE_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9UL12,SARDH_HUMAN,Cytoskeleton_Plasma membrane,Low,Mitochondria,Low
+Q9UL15,BAG5_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Mitochondria,Low
+Q9UL25,RAB21_HUMAN,Cytoskeleton_Presynapse,Low,Presynapse,Low
+Q9UL26,RB22A_HUMAN,Mitochondria,Low,Endoplasmic Reticulum,High
+Q9UL46,PSME2_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9UL51,HCN2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9ULA0,DNPEP_HUMAN,Cytoplasm,High,Cytoplasm,Medium
+Q9ULB1,NRX1A_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,High
+Q9ULC3,RAB23_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q9ULC4,MCTS1_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum,Low
+Q9ULJ8,NEB1_HUMAN,Mitochondria,High,Mitochondria,Medium
+Q9ULK0,GRID1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,High
+Q9ULN7,PNM8B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9ULP0,NDRG4_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9ULP9,TBC24_HUMAN,Plasma membrane,Medium,Cytoskeleton_Presynapse,Low
+Q9ULR3,PPM1H_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9ULT8,HECD1_HUMAN,Nucleus,Low,Cytoskeleton,High
+Q9ULU8,CAPS1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9ULV4,COR1C_HUMAN;sp,Cytoskeleton,High,Cytoskeleton,High
+Q9UM19,HPCL4_HUMAN,Cytoskeleton,High,Cytoskeleton,Medium
+Q9UM22,EPDR1_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Low
+Q9UM54,MYO6_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Low
+Q9UMF0,ICAM5_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q9UMS4,PRP19_HUMAN,Nucleus,Medium,Nucleus,Low
+Q9UMX0,UBQL1_HUMAN,NA,None,Mitochondria,Low
+Q9UMX5,NENF_HUMAN,Mitochondria,Medium,Endoplasmic Reticulum_Mitochondria,Low
+Q9UMY4,SNX12_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Presynapse,Low
+Q9UN36,NDRG2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UN37,VPS4A_HUMAN;sp,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q9UN86,G3BP2_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Endoplasmic Reticulum,Medium
+Q9UNA1,RHG26_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q9UNE7,CHIP_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9UNF0,PACN2_HUMAN,Cytoskeleton,Low,Plasma membrane,Medium
+Q9UNH7,SNX6_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q9UNK0,STX8_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9UNM6,PSD13_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum_Presynapse,Low
+Q9UNN5,FAF1_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Mitochondria,Medium
+Q9UNS2,CSN3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UNW9,NOVA2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9UNZ2,NSF1C_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UPA5,BSN_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9UPN3,MACF1_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q9UPN3,MACF1_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q9UPQ0,LIMC1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,Low
+Q9UPQ3,AGAP1_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9UPR0,PLCL2_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9UPR5,NAC2_HUMAN,Plasma membrane,Medium,Cytoskeleton,Medium
+Q9UPT5,EXOC7_HUMAN,Endoplasmic Reticulum,Low,Endoplasmic Reticulum_Presynapse,Low
+Q9UPT6,JIP3_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9UPU5,UBP24_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,High
+Q9UPV7,PHF24_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+Q9UPW8,UN13A_HUMAN;sp,Postsynapse,High,Presynapse,High
+Q9UPX0,TUTLB_HUMAN,Postsynapse,High,Postsynapse,High
+Q9UPX8,SHAN2_HUMAN,Mitochondria_Postsynapse,Low,Mitochondria_Nucleus,Low
+Q9UPY5,XCT_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q9UPY6,WASF3_HUMAN,Endoplasmic Reticulum,Medium,Plasma membrane,Medium
+Q9UPY8,MARE3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9UQ03,COR2B_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9UQ16,DYN3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9UQ80,PA2G4_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9UQB3,CTND2_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+Q9UQB8,BAIP2_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9UQM7,KCC2A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y224,RTRAF_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9Y230,RUVB2_HUMAN,Endoplasmic Reticulum,High,Presynapse,Medium
+Q9Y241,HIG1A_HUMAN;sp,Postsynapse_Presynapse,Low,Mitochondria,Low
+Q9Y262,EIF3L_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,High
+Q9Y263,PLAP_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Mitochondria,Low
+Q9Y265,RUVB1_HUMAN,Endoplasmic Reticulum,Low,Presynapse,Medium
+Q9Y266,NUDC_HUMAN,Cytoskeleton,Low,Cytoskeleton,Medium
+Q9Y276,BCS1_HUMAN,Mitochondria,Medium,Mitochondria,Medium
+Q9Y277,VDAC3_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y285,SYFA_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y287,ITM2B_HUMAN,Endoplasmic Reticulum,Medium,Endoplasmic Reticulum,Medium
+Q9Y295,DRG1_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,Medium
+Q9Y2A7,NCKP1_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y2B0,CNPY2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y2C4,EXOG_HUMAN,Endoplasmic Reticulum_Mitochondria,Low,Mitochondria,High
+Q9Y2D4,EXC6B_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum_Presynapse,Low
+Q9Y2E4,DIP2C_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Low
+Q9Y2G8,DJC16_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9Y2H1,ST38L_HUMAN,Endoplasmic Reticulum,Medium,Postsynapse,Low
+Q9Y2H9,MAST1_HUMAN,Endoplasmic Reticulum,Low,Mitochondria,High
+Q9Y2I1,NISCH_HUMAN,Cytoplasm,Medium,Endoplasmic Reticulum,Low
+Q9Y2I8,WDR37_HUMAN,Endoplasmic Reticulum_Plasma membrane,Low,Presynapse,Medium
+Q9Y2J0,RP3A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton,Medium
+Q9Y2J2,E41L3_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9Y2J8,PADI2_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9Y2K9,STB5L_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y2Q0,AT8A1_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q9Y2Q3,GSTK1_HUMAN,Endoplasmic Reticulum_Postsynapse,Low,Cytoskeleton,Medium
+Q9Y2Q5,LTOR2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y2S2,CRYL1_HUMAN,Cytoplasm_Cytoskeleton,Low,Cytoskeleton,High
+Q9Y2T2,AP3M1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y2T3,GUAD_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y2V2,CHSP1_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9Y2X7,GIT1_HUMAN,Plasma membrane,High,Cytoskeleton,Medium
+Q9Y2Z0,SGT1_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Low
+Q9Y2Z4,SYYM_HUMAN,Mitochondria,High,Mitochondria,High
+Q9Y2Z9,COQ6_HUMAN,Mitochondria,Medium,Mitochondria,High
+Q9Y305,ACOT9_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9Y320,TMX2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y333,LSM2_HUMAN,Cytoplasm,Medium,Cytoplasm,High
+Q9Y342,PLLP_HUMAN,Cytoplasm_Nucleus,Low,Endoplasmic Reticulum_Nucleus,Low
+Q9Y371,SHLB1_HUMAN,Presynapse,High,Endoplasmic Reticulum,High
+Q9Y376,CAB39_HUMAN,Cytoplasm,Medium,Cytoskeleton,High
+Q9Y394,DHRS7_HUMAN,Plasma membrane,Medium,Cytoskeleton,Low
+Q9Y3A5,SBDS_HUMAN,Plasma membrane,Medium,Plasma membrane,Medium
+Q9Y3B3,TMED7_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y3B8,ORN_HUMAN,Cytoplasm,Medium,Mitochondria_Nucleus,Low
+Q9Y3C4,TPRKB_HUMAN,Cytoplasm,Medium,Mitochondria_Nucleus,Low
+Q9Y3C6,PPIL1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Low
+Q9Y3C8,UFC1_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm_Nucleus,Low
+Q9Y3D6,FIS1_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9Y3E1,HDGR3_HUMAN,Nucleus,High,Nucleus,Medium
+Q9Y3F4,STRAP_HUMAN,Cytoskeleton,High,Endoplasmic Reticulum,High
+Q9Y3I0,RTCB_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9Y3P9,RBGP1_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y3U8,RL36_HUMAN,Plasma membrane,Low,Plasma membrane,Medium
+Q9Y3Z3,SAMH1_HUMAN,Nucleus,High,Nucleus,High
+Q9Y426,C2CD2_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y490,TLN1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9Y496,KIF3A_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y4C0,NRX3A_HUMAN;sp,Endoplasmic Reticulum_Presynapse,Low,Endoplasmic Reticulum,Medium
+Q9Y4D1,DAAM1_HUMAN,Endoplasmic Reticulum,High,Mitochondria,Medium
+Q9Y4D8,HECD4_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y4E1,WAC2C_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y4E6,WDR7_HUMAN,Cytoskeleton,Medium,Cytoskeleton,Medium
+Q9Y4E8,UBP15_HUMAN,Cytoplasm,Low,Endoplasmic Reticulum,Low
+Q9Y4F1,FARP1_HUMAN,Plasma membrane,Medium,Presynapse,Low
+Q9Y4F5,C170B_HUMAN,Cytoskeleton,Medium,Plasma membrane,Low
+Q9Y4G8,RPGF2_HUMAN;sp,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,Medium
+Q9Y4I1,MYO5A_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y4J8,DTNA_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y4L1,HYOU1_HUMAN,Cytoskeleton_Plasma membrane,Low,Cytoskeleton,High
+Q9Y4P1,ATG4B_HUMAN,Postsynapse,Low,Nucleus,Low
+Q9Y4P8,WIPI2_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton,Low
+Q9Y4Y9,LSM5_HUMAN,Cytoplasm,Medium,Cytoplasm,Medium
+Q9Y512,SAM50_HUMAN,Postsynapse,High,Mitochondria,Low
+Q9Y536,PAL4A_HUMAN;sp,Plasma membrane,Medium,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9Y566,SHAN1_HUMAN,Postsynapse,Medium,Mitochondria_Nucleus,Low
+Q9Y570,PPME1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9Y584,TIM22_HUMAN,Mitochondria,Medium,Mitochondria_Postsynapse,Low
+Q9Y5J7,TIM9_HUMAN,Postsynapse,Medium,Mitochondria,Medium
+Q9Y5K5,UCHL5_HUMAN,Endoplasmic Reticulum,Low,Mitochondria_Postsynapse,Low
+Q9Y5K8,VATD_HUMAN,Cytoskeleton,Medium,Cytoskeleton,High
+Q9Y5L0,TNPO3_HUMAN,Presynapse,Low,Endoplasmic Reticulum_Presynapse,Low
+Q9Y5L3,ENTP2_HUMAN,Plasma membrane,High,Cytoskeleton,High
+Q9Y5S2,MRCKB_HUMAN,Endoplasmic Reticulum,High,Cytoskeleton_Plasma membrane,Low
+Q9Y5U8,MPC1_HUMAN,Postsynapse,High,Endoplasmic Reticulum_Mitochondria,Low
+Q9Y5X1,SNX9_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria_Postsynapse,Low
+Q9Y5X3,SNX5_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y5Y2,NUBP2_HUMAN,Endoplasmic Reticulum,Medium,Cytoplasm_Endoplasmic Reticulum,Low
+Q9Y5Z4,HEBP2_HUMAN,Cytoplasm,High,Cytoplasm,High
+Q9Y617,SERC_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y653,AGRG1_HUMAN,NA,None,NA,None
+Q9Y678,COPG1_HUMAN,Endoplasmic Reticulum,High,Endoplasmic Reticulum,High
+Q9Y696,CLIC4_HUMAN;sp,Cytoskeleton,Medium,Cytoskeleton,High
+Q9Y697,NFS1_HUMAN,Postsynapse,High,Postsynapse,Medium
+Q9Y6B6,SAR1B_HUMAN,Endoplasmic Reticulum_Presynapse,Low,Cytoskeleton_Endoplasmic Reticulum,Low
+Q9Y6C9,MTCH2_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y6D5,BIG2_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,High
+Q9Y6D6,BIG1_HUMAN,Endoplasmic Reticulum,Medium,Mitochondria,Medium
+Q9Y6E0,STK24_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium
+Q9Y6G9,DC1L1_HUMAN,Cytoskeleton,Medium,Presynapse,Low
+Q9Y6I3,EPN1_HUMAN,Cytoskeleton,High,Cytoskeleton,High
+Q9Y6K8,KAD5_HUMAN,Cytoskeleton_Endoplasmic Reticulum,Low,Cytoskeleton,High
+Q9Y6M9,NDUB9_HUMAN,Postsynapse,High,Plasma membrane,High
+Q9Y6R1,S4A4_HUMAN,Plasma membrane,Medium,Cytoskeleton,High
+Q9Y6R7,FCGBP_HUMAN,NA,None,Cytoplasm,Medium
+Q9Y6T7,DGKB_HUMAN,Endoplasmic Reticulum,Medium,Presynapse,Low
+Q9Y6V0,PCLO_HUMAN,Postsynapse,Medium,Postsynapse,High
+Q9Y6X5,ENPP4_HUMAN;sp,Endoplasmic Reticulum,High,Endoplasmic Reticulum,Medium

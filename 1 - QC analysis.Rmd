@@ -14,11 +14,29 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(openxlsx)
 library(gplots)
-# library(table1)
+library(table1)
 
 data <- read.xlsx("Input data/ProteinLevelRawRenamed.xlsx")  
 LFQ_data <- data %>%
+  filter(is.na(Reverse)) %>%
+  filter(is.na(Potential.contaminant)) 
+
+Twopeps <- LFQ_data %>%
+  filter(Unique.peptides >= 2 )
+##3843 proteins have at least 2 unique peptides
+
+
+LFQ_data <- LFQ_data %>%
   select(Protein.IDs, LFQ_A1:LFQ_J7)
+
+tmp <- LFQ_data %>%
+  pivot_longer(-Protein.IDs, names_to = "Sample", values_to = "Quant") %>%
+  filter(Quant >0) %>%
+  group_by(Protein.IDs) %>%
+  summarise(n = n()) %>%
+  filter(n == 70)
+##850 proteins are detected in all samples
+  
 write_csv(LFQ_data, "Input data/LFQ_quants_only.csv")
 
 sample_key <- read.xlsx("Input data/SampleKey.xlsx")
@@ -26,14 +44,44 @@ sample_key_select <- sample_key %>%
   select(SampleID, Fancy_name)
 table(sample_key$Condition)
 
-# sample_key <- sample_key %>%
-#   dplyr::select(Subject, Condition, Age, PMI) %>%
-#   unique()
-# 
-# 
-# table1 <- table1(~ Age + PMI | Condition, data = sample_key)
+sample_key <- sample_key %>%
+   dplyr::select(Subject, Condition, Age, PMI) %>%
+   unique()
+ 
+ 
+ table1 <- table1(~ Age + PMI | Condition, data = sample_key)
 
 ```
+
+##Protein yield differences
+
+```{r}
+yield <- read.xlsx("Input data/Protein yield table.xlsx")
+
+
+yield_plot <- ggplot(data = yield, aes(x = Condition, y = `Final.Conc.(ug/uL)`)) + geom_boxplot() +  geom_point() +  facet_wrap(~Sample, scales = "free_y") + 
+  ylab("Protein concentration (\U03BCg / \U03BCL)")
+
+ggsave("Figures/FigS1_fracton_concentrations.pdf", plot = yield_plot, device = "pdf", width = 8.5, height = 6, units = "in", dpi = 300)
+
+
+yield_ttest = yield %>%
+  group_by(Sample) %>%
+  summarise(n=n(),
+            n_C=length(which(Condition=="Con")),
+            n_AD=length(which(Condition=="AD")),
+            pVal=t.test(`Final.Conc.(ug/uL)`[Condition=="Con"], 
+                        `Final.Conc.(ug/uL)`[Condition=="AD"])$p.value) %>%
+  mutate(padj = p.adjust(pVal, method = "BH")) %>%
+  arrange(padj)
+
+yield_ttest
+
+
+
+
+```
+
 
 ## Plot fractions
 
@@ -50,7 +98,7 @@ LFQ_dist <- ggplot(LFQ_data_long, aes(x = Fancy_name, y = log2(LFQ))) + geom_box
   theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("log2 LFQ") + ylab("Sample") +
   coord_flip()
 
-ggsave("Figures/FigS1_LFQ_distributions.pdf", plot = LFQ_dist, device = "pdf", width = 8.5, height = 11, units = "in", dpi = 300)
+ggsave("Figures/FigS2_LFQ_distributions.pdf", plot = LFQ_dist, device = "pdf", width = 8.5, height = 11, units = "in", dpi = 300)
 
 LFQ_dist
 ```
@@ -180,7 +228,7 @@ gp_col_df <- data.frame(gp_col) %>%
   rename(group = rowname) %>%
   left_join(LFQ_demos)
 
-pdf(file="Figures/FigS2.pdf", width = 4.25, height = 20)
+pdf(file="Figures/FigS3.pdf", width = 4.25, height = 20)
 
 heatmap.2(as.matrix(log2(LFQ_data_to_plot)), trace = "none", 
           scale="col", 
@@ -237,7 +285,7 @@ LFQ_data_to_plot_filtered <- LFQ_data_to_plot_filtered %>%
 rownames(LFQ_data_to_plot_filtered) <- LFQ_data_wide_filtered$Fancy_name
 
 
-pdf(file="Figures/Fig2D.pdf", width = 4.25, height = 20)
+pdf(file="Figures/Fig1D.pdf", width = 4.25, height = 20)
 
 heatmap.2(as.matrix(log2(LFQ_data_to_plot_filtered)), trace = "none", 
           scale="col", 
@@ -293,7 +341,7 @@ write_csv(sig_comparisons, "tmp/sig_proteins.csv")
 n_sig <- data.frame(table(sig_comparisons$rowname))
 
 ANOVA_results <- merge(ANOVA_results, wide_sig_comparisons, by.x = "protein", by.y = "id", all.x = TRUE)
-write_csv(ANOVA_results, "Supp tables/S2_ANOVA_results.csv")
+write_csv(ANOVA_results, "Supp tables/S3_ANOVA_results.csv")
 ```
 
 #Unique fraction proteins?
@@ -311,7 +359,7 @@ sig_list <- apply(wide_sig_comparisons[,-1], 2, list_gen)
 
 library(UpSetR)
 
-pdf(file="Figures/Fig2C_upset.pdf", width = 8.5, height = 6)
+pdf(file="Figures/Fig1B_upset.pdf", width = 8.5, height = 6)
 upset(fromList(sig_list), order.by = "freq", nsets = 10, nintersects = 20)
 dev.off()
 
@@ -382,7 +430,7 @@ facet_1_2 <- Fraction_PCA_df %>%
   ggplot(aes(x=PC1,y=PC2)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
   scale_fill_brewer(palette = "Set3") + theme_bw() + facet_wrap(~Location)
 
-ggsave("Figures/FigS3A_PCA12_facet.pdf", plot = facet_1_2, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
+ggsave("Figures/FigS4A_PCA12_facet.pdf", plot = facet_1_2, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
 
 PCA_2_3 <- Fraction_PCA_df %>%
   filter(!is.na(Location)) %>%
@@ -396,7 +444,7 @@ facet_2_3 <- Fraction_PCA_df %>%
   ggplot(aes(x=PC2,y=PC3)) + geom_point(aes(fill = Location, size = 1, alpha = 0.8), color ="black", pch =  21) + 
   scale_fill_brewer(palette = "Set3") + theme_bw() + facet_wrap(~Location)
 
-ggsave("Figures/FigS3B_PCA23_facet.pdf", plot = facet_2_3, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
+ggsave("Figures/FigS4B_PCA23_facet.pdf", plot = facet_2_3, device = "pdf", width = 10, height = 5.75, units = "in", dpi = 300)
 
 
 

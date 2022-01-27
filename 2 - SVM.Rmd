@@ -100,7 +100,7 @@ This is pretty bad given it has four proteins per category.  Filter out these lo
 ```{r}
 
 tmp <- data.frame(table(SampleAmerged$Location)) %>%
-  filter(Freq >35)
+  filter(Freq >=35)
 
 SampleAtrain <- SampleAmerged %>%
   dplyr::filter(!is.na(Location)) %>%
@@ -576,8 +576,6 @@ tmp <- data.frame(table(final_results$Location))
 
 table(final_results$Location, final_results$Confidence)
 
-write_csv(final_results, "Supp tables/S3_SVM_assignments.csv")
-table(final_results$Confidence)
 
 head(final_results)
 
@@ -927,7 +925,7 @@ SampleBmerged <- merge(SampleB, marker_list1, by.x = "UniprotID",by.y = "Protein
 ```{r}
 
 tmp <- data.frame(table(SampleBmerged$Location)) %>%
-  filter(Freq >35)
+  filter(Freq >=35)
 
 SampleBtrain <- SampleBmerged %>%
   dplyr::filter(!is.na(Location)) %>%
@@ -1228,10 +1226,10 @@ All_results_long <- AD_train_results %>%
   left_join(sample_key)
 
 SVM_train_condition <- ggplot(All_results_long, aes(x=Organelle, y = performance, fill = Condition)) + 
-  geom_boxplot() + theme_bw() +
+  geom_boxplot() + geom_point(position = position_dodge(0.75)) + theme_bw() +
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1)) 
 
-ggsave("Figures/FigS4A_SVM_performance.pdf", plot = SVM_train_condition, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+ggsave("Figures/FigS5A_SVM_performance.pdf", plot = SVM_train_condition, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
 
 SVM_train_condition
 ```
@@ -1251,7 +1249,7 @@ PMI <- All_results_long %>%
   ggplot(aes(x = as.factor(PMI), y = performance, group = Organelle, color = Organelle)) + geom_line() +
   xlab("PMI (hours)") + scale_color_brewer(palette = "Set3") + theme_bw()
 
-ggsave("Figures/FigS4B_PMI_performance.pdf", plot = PMI, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
+ggsave("Figures/FigS5B_PMI_performance.pdf", plot = PMI, device = "pdf", width = 8.5, height = 4, units = "in", dpi = 300)
 
 PMI
 ```
@@ -1261,7 +1259,8 @@ PMI
 
 ```{r}
 
-lm_condition <- lm(performance ~ Condition + Age + PMI + Organelle, data = All_results_long)
+lm_condition <- lm(performance ~ Condition * Organelle + Age + PMI, data = All_results_long)
+lm_condition <- lm(performance ~ Condition * Organelle, data = All_results_long)
 
 summary(lm_condition)
 
@@ -1448,13 +1447,27 @@ AD_final_results <- rbind(clear_location, low_confidence, remaining)
 
 tmp <- data.frame(table(AD_final_results$Location))
 
-table(AD_final_results$Location, final_results$Confidence)
+table(AD_final_results$Location, AD_final_results$Confidence)
 
-final_results$Condition <- "Control"
-AD_final_results$Condition <- "AD"
+final_results <- final_results %>%
+  dplyr::rename(Location_control = Location) %>%
+  dplyr::rename(Confidence_control = Confidence)
 
-all_SVM_results <- rbind(final_results, AD_final_results)
+AD_final_results <- AD_final_results %>%
+  dplyr::rename(Location_AD = Location) %>%
+  dplyr::rename(Confidence_AD = Confidence)
 
-write_csv(all_SVM_results, "tmp/SVM_results.csv")
+data <- read.xlsx("Input data/ProteinLevelRawRenamed.xlsx")  
+ProteinIDs <- data %>%
+  dplyr::select(Protein.IDs) %>%
+  separate(Protein.IDs, into = c(NA, "UniprotID", "Uniprot_name"), sep = "\\|")
+
+all_SVM_results <- merge(final_results, AD_final_results, all = TRUE)
+all_SVM_results <- merge(all_SVM_results, ProteinIDs, all.y = FALSE, by.x = "Var1", by.y = "UniprotID")
+all_SVM_results <- all_SVM_results %>%
+  dplyr::rename(Uniprot_ID = Var1) %>%
+  dplyr::select(Uniprot_ID, Uniprot_name, Location_control, Confidence_control, Location_AD, Confidence_AD)
+
+write_csv(all_SVM_results, "Supp tables/Table_S5_SVM_results.csv")
 
 ```
